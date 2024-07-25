@@ -1,0 +1,3210 @@
+Library {
+  Name			  "BAL_lib"
+  Version		  7.4
+  MdlSubVersion		  0
+  SavedCharacterEncoding  "GBK"
+  LibraryType		  "BlockLibrary"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  MaxMDLFileLineLength	  120
+  Created		  "Fri Oct 10 11:00:37 2014"
+  Creator		  "zhaoxiangri"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "sunsijun"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Sat Oct 31 13:14:28 2015"
+  RTWModifiedTimeStamp	  368198062
+  ModelVersionFormat	  "1.%<AutoIncrement:72>"
+  ConfigurationManager	  "None"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      1
+      Version		      "1.6.0"
+      Array {
+	Type			"Handle"
+	Dimension		9
+	Simulink.SolverCC {
+	  $ObjectID		  2
+	  Version		  "1.6.0"
+	  StartTime		  "0.0"
+	  StopTime		  "Inf"
+	  AbsTol		  "auto"
+	  FixedStep		  "0.01"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  Solver		  "FixedStepDiscrete"
+	  SolverName		  "FixedStepDiscrete"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  3
+	  Version		  "1.6.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  4
+	  Version		  "1.6.0"
+	  BlockReduction	  off
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  off
+	  BufferReuse		  off
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  EnforceIntegerDowncast  on
+	  ExpressionFolding	  off
+	  BooleansAsBitfields	  off
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  2147483647
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  off
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode on
+	  LifeSpan		  "Inf"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  5
+	  Version		  "1.6.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Use local settings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  StrictBusMsg		  "Warning"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  6
+	  Version		  "1.6.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdIntDivRoundTo	  "Zero"
+	  ProdEndianess		  "BigEndian"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "Generic->Custom"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Zero"
+	  TargetEndianess	  "BigEndian"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Generic->Custom"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  7
+	  Version		  "1.6.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  8
+	  Version		  "1.6.0"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  9
+	  Version		  "1.6.0"
+	  SystemTargetFile	  "ert.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  TemplateMakefile	  "ert_default_tmf"
+	  Description		  "Real-Time Workshop Embedded Coder"
+	  GenerateReport	  on
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ProcessScript		  "ert_make_rtw_hook"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport on
+	  LaunchReport		  on
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      10
+	      Version		      "1.6.0"
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses off
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      SimulinkBlockComments   on
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.ERTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      11
+	      Version		      "1.6.0"
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      TargetFunctionLibrary   "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   on
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Use local settings"
+	      CombineOutputUpdateFcns on
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   on
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    on
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      off
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   off
+	      SupportNonInlinedSFcns  off
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      PortableWordSizes	      off
+	      ModelStepFunctionPrototypeControlCompliant on
+	      CPPClassGenCompliant    on
+	      AutosarCompliant	      off
+	      GenerateErtSFunction    off
+	      GenerateASAP2	      off
+	      ExtMode		      off
+	      ExtModeTransport	      0
+	      ExtModeStaticAlloc      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTesting	      off
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      InlinedParameterPlacement	"Hierarchical"
+	      TargetOS		      "BareBoardExample"
+	      MultiInstanceErrorCode  "Error"
+	      RateGroupingCode	      on
+	      RootIOFormat	      "Individual arguments"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      ERTSrcFileBannerTemplate "ert_code_template.cgt"
+	      ERTHdrFileBannerTemplate "ert_code_template.cgt"
+	      ERTDataSrcFileTemplate  "ert_code_template.cgt"
+	      ERTDataHdrFileTemplate  "ert_code_template.cgt"
+	      ERTCustomFileTemplate   "example_file_process.tlc"
+	      ModuleNamingRule	      "Unspecified"
+	      SignalDisplayLevel      10
+	      ParamTuneLevel	      10
+	      GlobalDataDefinition    "Auto"
+	      DataDefinitionFile      "global.c"
+	      GlobalDataReference     "Auto"
+	      DataReferenceFile	      "global.h"
+	      GRTInterface	      off
+	      PreserveExpressionOrder off
+	      PreserveIfCondition     off
+	      ConvertIfToSwitch	      off
+	      PreserveExternInFcnDecls on
+	      EnableUserReplacementTypes off
+	      Array {
+		Type			"Struct"
+		Dimension		1
+		MATStruct {
+		  double		  ""
+		  single		  ""
+		  int32			  ""
+		  int16			  ""
+		  int8			  ""
+		  uint32		  ""
+		  uint16		  ""
+		  uint8			  ""
+		  boolean		  ""
+		  int			  ""
+		  uint			  ""
+		  char			  ""
+		}
+		PropName		"ReplacementTypes"
+	      }
+	      MemSecPackage	      "--- None ---"
+	      MemSecDataConstants     "Default"
+	      MemSecDataIO	      "Default"
+	      MemSecDataInternal      "Default"
+	      MemSecDataParameters    "Default"
+	      MemSecFuncInitTerm      "Default"
+	      MemSecFuncExecute	      "Default"
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	hdlcoderui.hdlcc {
+	  $ObjectID		  12
+	  Version		  "1.6.0"
+	  Description		  "HDL Coder custom configuration component"
+	  Name			  "HDL Coder"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    ""
+	    PropName		    "HDLConfigFile"
+	  }
+	  HDLCActiveTab		  "0"
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition    " [ 520, 225, 1400, 855 ] "
+    }
+    PropName		    "ConfigurationSets"
+  }
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Assignment
+      NumberOfDimensions      "1"
+      IndexMode		      "One-based"
+      OutputInitialize	      "Initialize using input port <Y0>"
+      DiagnosticForDimensions "None"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      BusCreator
+      Inputs		      "4"
+      DisplayOption	      "none"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "fixdt(1,16,0)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      EnablePort
+      StatesWhenEnabling      "held"
+      PropagateVarSize	      "Only when enabling"
+      ShowOutputPort	      off
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      ForIterator
+      ResetStates	      "held"
+      IterationSource	      "internal"
+      IterationLimit	      "5"
+      ExternalIncrement	      off
+      ShowIterationPort	      on
+      IndexMode		      "One-based"
+      IterationVariableDataType	"int32"
+    }
+    Block {
+      BlockType		      From
+      IconDisplay	      "Tag"
+      TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      Goto
+      IconDisplay	      "Tag"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      DataType		      "auto"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchByCopyingInsideSignal off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Logic
+      Operator		      "AND"
+      Inputs		      "2"
+      IconShape		      "rectangular"
+      AllPortsSameDT	      on
+      OutDataTypeMode	      "Logical (see Configuration Parameters: Optimization)"
+      LogicDataType	      "uint(8)"
+      OutDataTypeStr	      "Inherit: Logical (see Configuration Parameters: Optimization)"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      MinMax
+      Function		      "min"
+      Inputs		      "1"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      DataType		      "auto"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      RelationalOperator
+      Operator		      ">="
+      InputSameDT	      on
+      LogicOutDataTypeMode    "Logical (see Configuration Parameters: Optimization)"
+      LogicDataType	      "uint(8)"
+      OutDataTypeStr	      "Inherit: Logical (see Configuration Parameters: Optimization)"
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Reshape
+      OutputDimensionality    "1-D array"
+      OutputDimensions	      "[1,1]"
+    }
+    Block {
+      BlockType		      "S-Function"
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+      SFunctionDeploymentMode off
+    }
+    Block {
+      BlockType		      Selector
+      NumberOfDimensions      "1"
+      IndexMode		      "One-based"
+      InputPortWidth	      "-1"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      AccumDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Switch
+      Criteria		      "u2 >= Threshold"
+      Threshold		      "0"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+      SampleTime	      "-1"
+      AllowDiffInputSizes     off
+    }
+    Block {
+      BlockType		      Terminator
+    }
+    Block {
+      BlockType		      TriggerPort
+      TriggerType	      "rising"
+      StatesWhenEnabling      "inherit"
+      PropagateVarSize	      "During execution"
+      ShowOutputPort	      off
+      OutputDataType	      "auto"
+      SampleTimeType	      "triggered"
+      SampleTime	      "1"
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      UnitDelay
+      X0		      "0"
+      SampleTime	      "1"
+      StateMustResolveToSignalObject off
+      RTWStateStorageClass    "Auto"
+    }
+  }
+  System {
+    Name		    "BAL_lib"
+    Location		    [214, 82, 1902, 1027]
+    Open		    on
+    ModelBrowserVisibility  on
+    ModelBrowserWidth	    212
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "299"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    510
+    Block {
+      BlockType		      SubSystem
+      Name		      "BAL"
+      SID		      45
+      Ports		      [6, 2, 0, 1]
+      Position		      [155, 87, 505, 298]
+      LibraryVersion	      "*1.70"
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"BAL"
+	Location		[202, 82, 1902, 1044]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"166"
+	Block {
+	  BlockType		  Inport
+	  Name			  "IPTd_v_CellVolt"
+	  SID			  151
+	  Position		  [85, 133, 115, 147]
+	  IconDisplay		  "Port number"
+	  PortDimensions	  "[1 160]"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "IPTd_v_CellVolt"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "IPTd_t_MdlTemp"
+	  SID			  153
+	  Position		  [85, 173, 115, 187]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  DataType		  "single"
+	  OutDataTypeStr	  "single"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "IPTd_t_MdlTemp"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "IPTd_t_BMUTemp"
+	  SID			  155
+	  Position		  [85, 213, 115, 227]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	  DataType		  "single"
+	  OutDataTypeStr	  "single"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "IPTd_t_BMUTemp"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "SCMd_enum_ChaSt"
+	  SID			  152
+	  Position		  [85, 253, 115, 267]
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	  DataType		  "uint8"
+	  OutDataTypeStr	  "uint8"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "SCMd_enum_ChaSt"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "FCMd_enum_ChaSt"
+	  SID			  451
+	  Position		  [85, 293, 115, 307]
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "FCMd_enum_ChaSt"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "DEMd_enum_FaultLev"
+	  SID			  154
+	  Position		  [85, 333, 115, 347]
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	  DataType		  "uint8"
+	  OutDataTypeStr	  "uint8"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "DEMd_enum_FaultLev"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  TriggerPort
+	  Name			  "function"
+	  SID			  52
+	  Ports			  []
+	  Position		  [390, 30, 410, 50]
+	  TriggerType		  "function-call"
+	  StatesWhenEnabling	  "held"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "BatteryBAL"
+	  SID			  156
+	  Ports			  [6, 2]
+	  Position		  [295, 126, 630, 354]
+	  LibraryVersion	  "1.762"
+	  TreatAsAtomicUnit	  on
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "BALd_flg_CellBalCmd"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    2
+	    PropagatedSignals	    "BALd_iflt_BalSwthAnml_warn"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  System {
+	    Name		    "BatteryBAL"
+	    Location		    [202, 82, 1902, 1027]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "97"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "IPTd_v_CellVolt"
+	      SID		      157
+	      Position		      [195, 118, 225, 132]
+	      IconDisplay	      "Port number"
+	      DataType		      "single"
+	      OutDataTypeStr	      "single"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"IPTd_v_CellVolt"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "IPTd_t_MdlTemp"
+	      SID		      159
+	      Position		      [195, 228, 225, 242]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"IPTd_t_MdlTemp"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "IPTd_t_BMUTemp"
+	      SID		      161
+	      Position		      [195, 283, 225, 297]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"IPTd_t_BMUTemp"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "SCMd_enum_ChaSt"
+	      SID		      452
+	      Position		      [195, 408, 225, 422]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	      DataType		      "uint8"
+	      OutDataTypeStr	      "uint8"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"SCMd_enum_ChaSt"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "FCMd_enum_ChaSt"
+	      SID		      453
+	      Position		      [195, 448, 225, 462]
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "DEMd_enum_FaultLev"
+	      SID		      160
+	      Position		      [195, 488, 225, 502]
+	      Port		      "6"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"DEMd_enum_FaultLev"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "BattBalAlwd"
+	      SID		      163
+	      Ports		      [4, 1]
+	      Position		      [805, 358, 1070, 512]
+	      LibraryVersion	      "1.762"
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"BALd_flg_CellBalAlwd"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      System {
+		Name			"BattBalAlwd"
+		Location		[202, 82, 1902, 1027]
+		Open			off
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"206"
+		Block {
+		  BlockType		  Inport
+		  Name			  "BALd_v_CellVolt_mean"
+		  SID			  164
+		  Position		  [35, 58, 65, 72]
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "SCMd_enum_ChaSt"
+		  SID			  454
+		  Position		  [35, 123, 65, 137]
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		  DataType		  "uint8"
+		  OutDataTypeStr	  "uint8"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "FCMd_enum_ChaSt"
+		  SID			  455
+		  Position		  [35, 178, 65, 192]
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "DEMd_enum_FaultLev"
+		  SID			  166
+		  Position		  [35, 233, 65, 247]
+		  Port			  "4"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  167
+		  Position		  [160, 254, 185, 276]
+		  ShowName		  off
+		  Value			  "0"
+		  OutDataTypeMode	  "uint8"
+		  OutDataTypeStr	  "uint8"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant2"
+		  SID			  259
+		  Position		  [160, 145, 280, 165]
+		  BackgroundColor	  "green"
+		  ShowName		  off
+		  Value			  "SCM_Charging_St"
+		  OutDataTypeMode	  "uint8"
+		  OutDataTypeStr	  "uint8"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant3"
+		  SID			  260
+		  Position		  [160, 200, 275, 220]
+		  BackgroundColor	  "green"
+		  ShowName		  off
+		  Value			  "FCM_Charging_St"
+		  OutDataTypeMode	  "uint8"
+		  OutDataTypeStr	  "uint8"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator"
+		  SID			  169
+		  Ports			  [3, 1]
+		  Position		  [610, 20, 645, 300]
+		  ShowName		  off
+		  Inputs		  "3"
+		  AllPortsSameDT	  off
+		  OutDataTypeMode	  "boolean"
+		  OutDataTypeStr	  "boolean"
+		  Port {
+		    PortNumber		    1
+		    Name		    "BALd_flg_CellBalAlwd"
+		    MustResolveToSignalObject on
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator1"
+		  SID			  262
+		  Ports			  [2, 1]
+		  Position		  [505, 132, 535, 188]
+		  ShowName		  off
+		  Operator		  "OR"
+		  AllPortsSameDT	  off
+		  OutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator"
+		  SID			  170
+		  Ports			  [2, 1]
+		  Position		  [320, 227, 345, 278]
+		  ShowName		  off
+		  Operator		  "=="
+		  InputSameDT		  off
+		  LogicOutDataTypeMode	  "boolean"
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator1"
+		  SID			  171
+		  Ports			  [2, 1]
+		  Position		  [320, 117, 345, 168]
+		  ShowName		  off
+		  Operator		  "=="
+		  InputSameDT		  off
+		  LogicOutDataTypeMode	  "boolean"
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator2"
+		  SID			  296
+		  Ports			  [2, 1]
+		  Position		  [320, 172, 345, 223]
+		  ShowName		  off
+		  Operator		  "=="
+		  InputSameDT		  off
+		  LogicOutDataTypeMode	  "boolean"
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "hysteresis"
+		  SID			  457
+		  Ports			  [1, 1]
+		  Position		  [160, 45, 305, 85]
+		  BackgroundColor	  "cyan"
+		  ShowName		  off
+		  AttributesFormatString  "[UPPER_LIMIT=%<upper_limit>]\\n[LOWER_LIMIT=%<lower_limit>]"
+		  LibraryVersion	  "1.158"
+		  SourceBlock		  "Defined_Functionality/hysteresis"
+		  SourceType		  "hysterisis"
+		  ShowPortLabels	  "FromPortIcon"
+		  SystemSampleTime	  "-1"
+		  FunctionWithSeparateData off
+		  RTWMemSecFuncInitTerm	  "Inherit from model"
+		  RTWMemSecFuncExecute	  "Inherit from model"
+		  RTWMemSecDataConstants  "Inherit from model"
+		  RTWMemSecDataInternal	  "Inherit from model"
+		  RTWMemSecDataParameters "Inherit from model"
+		  upper_limit		  "BALc_v_BalCellVoltOn"
+		  lower_limit		  "BALc_v_BalCellVoltOff"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "BALd_flg_CellBalAlwd"
+		  SID			  173
+		  Position		  [765, 153, 795, 167]
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  SrcBlock		  "hysteresis"
+		  SrcPort		  1
+		  DstBlock		  "Logical\nOperator"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator2"
+		  SrcPort		  1
+		  Points		  [140, 0]
+		  DstBlock		  "Logical\nOperator1"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Logical\nOperator1"
+		  SrcPort		  1
+		  DstBlock		  "Logical\nOperator"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Constant3"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator2"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "BALd_v_CellVolt_mean"
+		  SrcPort		  1
+		  DstBlock		  "hysteresis"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "BALd_flg_CellBalAlwd"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Logical\nOperator"
+		  SrcPort		  1
+		  DstBlock		  "BALd_flg_CellBalAlwd"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator"
+		  SrcPort		  1
+		  DstBlock		  "Logical\nOperator"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "DEMd_enum_FaultLev"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "FCMd_enum_ChaSt"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator2"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator1"
+		  SrcPort		  1
+		  DstBlock		  "Logical\nOperator1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Constant2"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator1"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "SCMd_enum_ChaSt"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "CellBalCmd"
+	      SID		      174
+	      Ports		      [4, 1, 1]
+	      Position		      [805, 95, 1065, 320]
+	      LibraryVersion	      "1.762"
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      System {
+		Name			"CellBalCmd"
+		Location		[202, 82, 1902, 1027]
+		Open			off
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "IPTd_v_CellVolt"
+		  SID			  176
+		  Position		  [205, 268, 235, 282]
+		  IconDisplay		  "Port number"
+		  Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "IPTd_v_CellVolt"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "BALd_v_CellVolt_mean"
+		  SID			  178
+		  Position		  [205, 318, 235, 332]
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		  Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "BALd_v_CellVolt_mean"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "IPTd_t_MdlTemp"
+		  SID			  177
+		  Position		  [205, 448, 235, 462]
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		  Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "IPTd_t_MdlTemp"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "IPTd_t_BMUTemp"
+		  SID			  175
+		  Position		  [205, 493, 235, 507]
+		  Port			  "4"
+		  IconDisplay		  "Port number"
+		  Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "IPTd_t_BMUTemp"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  EnablePort
+		  Name			  "Enable"
+		  SID			  179
+		  Ports			  []
+		  Position		  [410, 115, 430, 135]
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "CellBalAsign"
+		  SID			  180
+		  Ports			  [2, 1]
+		  Position		  [995, 296, 1270, 409]
+		  MinAlgLoopOccurrences	  off
+		  PropExecContextOutsideSubsystem off
+		  RTWSystemCode		  "Auto"
+		  FunctionWithSeparateData off
+		  Opaque		  off
+		  RequestExecContextInheritance	off
+		  MaskHideContents	  off
+		  Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "BALd_flg_CellBalCmdRaw"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		  System {
+		    Name		    "CellBalAsign"
+		    Location		    [202, 82, 1902, 1044]
+		    Open		    off
+		    ModelBrowserVisibility  on
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "149"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "BALd_enum_SrcCell"
+		    SID			    181
+		    Position		    [35, 158, 65, 172]
+		    IconDisplay		    "Port number"
+		    Port {
+		    PortNumber		    1
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "BALd_flg_TempAwld"
+		    SID			    182
+		    Position		    [250, 258, 280, 272]
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "BALd_flg_TempAwld"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    }
+		    Block {
+		    BlockType		    Assignment
+		    Name		    "Assignment"
+		    SID			    183
+		    Ports		    [3, 1]
+		    Position		    [800, 176, 865, 274]
+		    ShowName		    off
+		    IndexOptions	    "Index vector (port)"
+		    Indices		    "1"
+		    OutputSizes		    "1"
+		    Port {
+		    PortNumber		    1
+		    Name		    "BALd_flg_CellBalCmdRaw"
+		    MustResolveToSignalObject on
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "Constant"
+		    SID			    184
+		    Position		    [145, 300, 175, 330]
+		    ShowName		    off
+		    Value		    "5"
+		    OutDataTypeMode	    "uint8"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    OutDataTypeStr	    "uint8"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "Constant1"
+		    SID			    185
+		    Position		    [505, 300, 535, 330]
+		    ShowName		    off
+		    Value		    "0"
+		    OutDataTypeMode	    "boolean"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    OutDataTypeStr	    "boolean"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "Constant3"
+		    SID			    186
+		    Position		    [660, 182, 765, 208]
+		    ShowName		    off
+		    Value		    "zeros(1,160)"
+		    OutDataTypeMode	    "boolean"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    OutDataTypeStr	    "boolean"
+		    }
+		    Block {
+		    BlockType		    Product
+		    Name		    "Divide"
+		    SID			    187
+		    Ports		    [2, 1]
+		    Position		    [250, 292, 280, 323]
+		    ShowName		    off
+		    Inputs		    "*/"
+		    InputSameDT		    off
+		    OutDataTypeMode	    "uint8"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^-10"
+		    OutDataTypeStr	    "uint8"
+		    RndMeth		    "Ceiling"
+		    SaturateOnIntegerOverflow off
+		    }
+		    Block {
+		    BlockType		    ForIterator
+		    Name		    "For Iterator"
+		    SID			    188
+		    Ports		    [0, 1]
+		    Position		    [35, 195, 80, 225]
+		    ShowName		    off
+		    IterationLimit	    "160"
+		    }
+		    Block {
+		    BlockType		    Selector
+		    Name		    "Selector1"
+		    SID			    189
+		    Ports		    [2, 1]
+		    Position		    [400, 244, 445, 331]
+		    ShowName		    off
+		    InputPortWidth	    "32"
+		    IndexOptions	    "Index vector (port)"
+		    Indices		    "[1 3]"
+		    OutputSizes		    "1"
+		    }
+		    Block {
+		    BlockType		    Selector
+		    Name		    "Selector2"
+		    SID			    190
+		    Ports		    [2, 1]
+		    Position		    [400, 140, 445, 235]
+		    ShowName		    off
+		    InputPortWidth	    "160"
+		    IndexOptions	    "Index vector (port)"
+		    Indices		    "[1 3]"
+		    OutputSizes		    "1"
+		    }
+		    Block {
+		    BlockType		    Switch
+		    Name		    "Switch"
+		    SID			    191
+		    Position		    [600, 173, 635, 277]
+		    ShowName		    off
+		    Criteria		    "u2 ~= 0"
+		    InputSameDT		    off
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    SaturateOnIntegerOverflow off
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "BALd_flg_CellBalCmdRaw"
+		    SID			    192
+		    Position		    [1055, 218, 1085, 232]
+		    IconDisplay		    "Port number"
+		    }
+		    Line {
+		    SrcBlock		    "Switch"
+		    SrcPort		    1
+		    DstBlock		    "Assignment"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "Constant1"
+		    SrcPort		    1
+		    Points		    [35, 0; 0, -55]
+		    DstBlock		    "Switch"
+		    DstPort		    3
+		    }
+		    Line {
+		    SrcBlock		    "Selector2"
+		    SrcPort		    1
+		    DstBlock		    "Switch"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Selector1"
+		    SrcPort		    1
+		    Points		    [85, 0; 0, -65]
+		    DstBlock		    "Switch"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "Divide"
+		    SrcPort		    1
+		    DstBlock		    "Selector1"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "Constant"
+		    SrcPort		    1
+		    DstBlock		    "Divide"
+		    DstPort		    2
+		    }
+		    Line {
+		    Labels		    [0, 0]
+		    SrcBlock		    "BALd_enum_SrcCell"
+		    SrcPort		    1
+		    DstBlock		    "Selector2"
+		    DstPort		    1
+		    }
+		    Line {
+		    Labels		    [0, 0]
+		    SrcBlock		    "BALd_flg_TempAwld"
+		    SrcPort		    1
+		    DstBlock		    "Selector1"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "For Iterator"
+		    SrcPort		    1
+		    Points		    [10, 0]
+		    Branch {
+		    Points		    [0, 145; 690, 0]
+		    DstBlock		    "Assignment"
+		    DstPort		    3
+		    }
+		    Branch {
+		    Points		    [105, 0]
+		    Branch {
+		    Points		    [0, 90]
+		    DstBlock		    "Divide"
+		    DstPort		    1
+		    }
+		    Branch {
+		    DstBlock		    "Selector2"
+		    DstPort		    2
+		    }
+		    }
+		    }
+		    Line {
+		    Name		    "BALd_flg_CellBalCmdRaw"
+		    Labels		    [0, 0]
+		    SrcBlock		    "Assignment"
+		    SrcPort		    1
+		    DstBlock		    "BALd_flg_CellBalCmdRaw"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Constant3"
+		    SrcPort		    1
+		    DstBlock		    "Assignment"
+		    DstPort		    1
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "DeltVoltVerf"
+		  SID			  194
+		  Ports			  [3, 1]
+		  Position		  [495, 253, 785, 397]
+		  BackgroundColor	  "red"
+		  LibraryVersion	  "1.30"
+		  PermitHierarchicalResolution "ExplicitOnly"
+		  TreatAsAtomicUnit	  on
+		  MinAlgLoopOccurrences	  off
+		  PropExecContextOutsideSubsystem off
+		  RTWSystemCode		  "Auto"
+		  FunctionWithSeparateData off
+		  Opaque		  off
+		  RequestExecContextInheritance	off
+		  MaskHideContents	  off
+		  MaskType		  "Stateflow"
+		  MaskDescription	  "Embedded MATLAB block"
+		  MaskDisplay		  "disp('fcn');"
+		  MaskSelfModifiable	  on
+		  MaskIconFrame		  on
+		  MaskIconOpaque	  off
+		  MaskIconRotate	  "none"
+		  MaskPortRotate	  "default"
+		  MaskIconUnits		  "autoscale"
+		  System {
+		    Name		    "DeltVoltVerf"
+		    Location		    [257, 457, 812, 717]
+		    Open		    off
+		    ModelBrowserVisibility  on
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    SIDHighWatermark	    899
+		    Block {
+		    BlockType		    Inport
+		    Name		    "IPTd_v_CellVolt"
+		    SID			    763
+		    Position		    [20, 101, 40, 119]
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "MeanVoltPack"
+		    SID			    30
+		    Position		    [20, 136, 40, 154]
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "IPTd_enum_BalSrcCell"
+		    SID			    763
+		    Position		    [20, 171, 40, 189]
+		    Port		    "3"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Demux
+		    Name		    " Demux "
+		    SID			    897
+		    Ports		    [1, 1]
+		    Position		    [270, 180, 320, 220]
+		    Outputs		    "1"
+		    }
+		    Block {
+		    BlockType		    "S-Function"
+		    Name		    " SFunction "
+		    SID			    896
+		    Tag			    "Stateflow S-Function BAL_lib 3"
+		    Ports		    [3, 2]
+		    Position		    [180, 100, 230, 180]
+		    FunctionName	    "sf_sfun"
+		    PortCounts		    "[3 2]"
+		    EnableBusSupport	    off
+		    Port {
+		    PortNumber		    2
+		    Name		    "BalSrcCell"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    }
+		    Block {
+		    BlockType		    Terminator
+		    Name		    " Terminator "
+		    SID			    899
+		    Position		    [460, 191, 480, 209]
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "BalSrcCell"
+		    SID			    763
+		    Position		    [460, 101, 480, 119]
+		    IconDisplay		    "Port number"
+		    }
+		    Line {
+		    SrcBlock		    " SFunction "
+		    SrcPort		    1
+		    DstBlock		    " Demux "
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "IPTd_v_CellVolt"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "MeanVoltPack"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "IPTd_enum_BalSrcCell"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    3
+		    }
+		    Line {
+		    Name		    "BalSrcCell"
+		    Labels		    [0, 0]
+		    SrcBlock		    " SFunction "
+		    SrcPort		    2
+		    DstBlock		    "BalSrcCell"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    " Demux "
+		    SrcPort		    1
+		    DstBlock		    " Terminator "
+		    DstPort		    1
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From"
+		  SID			  195
+		  Position		  [65, 363, 235, 387]
+		  ShowName		  off
+		  GotoTag		  "BALd_flg_CellBalCmdRawPre"
+		  Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "BALd_flg_CellBalCmdRaw"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Goto
+		  Name			  "Goto"
+		  SID			  196
+		  Position		  [1540, 388, 1715, 412]
+		  ShowName		  off
+		  GotoTag		  "BALd_flg_CellBalCmdRawPre"
+		  TagVisibility		  "local"
+		}
+		Block {
+		  BlockType		  Reshape
+		  Name			  "Reshape1"
+		  SID			  199
+		  Ports			  [1, 1]
+		  Position		  [370, 363, 400, 387]
+		  ShowName		  off
+		  OutputDimensionality	  "Customize"
+		  OutputDimensions	  "[5,32]"
+		}
+		Block {
+		  BlockType		  Reshape
+		  Name			  "Reshape2"
+		  SID			  456
+		  Ports			  [1, 1]
+		  Position		  [865, 313, 895, 337]
+		  ShowName		  off
+		  OutputDimensionality	  "Row vector (2-D)"
+		  OutputDimensions	  "[40,4]"
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "TempAlwd"
+		  SID			  201
+		  Ports			  [2, 1]
+		  Position		  [500, 430, 785, 525]
+		  MinAlgLoopOccurrences	  off
+		  PropExecContextOutsideSubsystem off
+		  RTWSystemCode		  "Auto"
+		  FunctionWithSeparateData off
+		  Opaque		  off
+		  RequestExecContextInheritance	off
+		  MaskHideContents	  off
+		  Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "BALd_flg_TempAwld"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		  System {
+		    Name		    "TempAlwd"
+		    Location		    [202, 82, 1902, 1027]
+		    Open		    off
+		    ModelBrowserVisibility  on
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "106"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "IPTd_t_MdlTemp"
+		    SID			    203
+		    Position		    [25, 103, 55, 117]
+		    IconDisplay		    "Port number"
+		    Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "IPTd_t_MdlTemp"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "IPTd_t_BMUTemp"
+		    SID			    202
+		    Position		    [25, 308, 55, 322]
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "IPTd_t_BMUTemp"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    }
+		    Block {
+		    BlockType		    Sum
+		    Name		    "Add"
+		    SID			    204
+		    Ports		    [2, 1]
+		    Position		    [390, 169, 425, 236]
+		    ShowName		    off
+		    InputSameDT		    off
+		    OutDataTypeMode	    "Inherit via internal rule"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^-10"
+		    OutDataTypeStr	    "Inherit: Inherit via internal rule"
+		    SaturateOnIntegerOverflow off
+		    }
+		    Block {
+		    BlockType		    Assignment
+		    Name		    "Assignment"
+		    SID			    205
+		    Ports		    [3, 1]
+		    Position		    [835, 79, 910, 191]
+		    ShowName		    off
+		    IndexOptions	    "Index vector (port)"
+		    Indices		    "1"
+		    OutputSizes		    "1"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "Constant"
+		    SID			    207
+		    Position		    [245, 180, 275, 210]
+		    ShowName		    off
+		    Value		    "2"
+		    OutDataTypeMode	    "int32"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    OutDataTypeStr	    "int32"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "Constant1"
+		    SID			    208
+		    Position		    [315, 210, 345, 240]
+		    ShowName		    off
+		    Value		    "[1 2]"
+		    OutDataTypeMode	    "uint8"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    OutDataTypeStr	    "uint8"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "Constant3"
+		    SID			    210
+		    Position		    [645, 87, 750, 113]
+		    ShowName		    off
+		    Value		    "zeros(1,32)"
+		    OutDataTypeMode	    "Inherit via back propagation"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    OutDataTypeStr	    "Inherit: Inherit via back propagation"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "Constant4"
+		    SID			    211
+		    Position		    [105, 165, 135, 195]
+		    ShowName		    off
+		    OutDataTypeMode	    "int32"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    OutDataTypeStr	    "int32"
+		    }
+		    Block {
+		    BlockType		    ForIterator
+		    Name		    "For Iterator"
+		    SID			    214
+		    Ports		    [0, 1]
+		    Position		    [15, 140, 60, 170]
+		    ShowName		    off
+		    IterationLimit	    "32"
+		    }
+		    Block {
+		    BlockType		    Logic
+		    Name		    "Logical\nOperator"
+		    SID			    215
+		    Ports		    [2, 1]
+		    Position		    [1215, 102, 1250, 233]
+		    ShowName		    off
+		    Operator		    "OR"
+		    AllPortsSameDT	    off
+		    OutDataTypeMode	    "boolean"
+		    LogicDataType	    "fixdt(0, 8)"
+		    OutDataTypeStr	    "boolean"
+		    }
+		    Block {
+		    BlockType		    Logic
+		    Name		    "Logical\nOperator1"
+		    SID			    510
+		    Ports		    [1, 1]
+		    Position		    [1355, 154, 1385, 186]
+		    ShowName		    off
+		    Operator		    "NOT"
+		    AllPortsSameDT	    off
+		    OutDataTypeMode	    "boolean"
+		    LogicDataType	    "fixdt(0, 8)"
+		    OutDataTypeStr	    "boolean"
+		    Port {
+		    PortNumber		    1
+		    Name		    "BALd_flg_TempAwld"
+		    MustResolveToSignalObject on
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    }
+		    Block {
+		    BlockType		    MinMax
+		    Name		    "MinMax"
+		    SID			    216
+		    Ports		    [1, 1]
+		    Position		    [645, 120, 675, 150]
+		    ShowName		    off
+		    Function		    "max"
+		    InputSameDT		    off
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    SaturateOnIntegerOverflow off
+		    }
+		    Block {
+		    BlockType		    Product
+		    Name		    "Product"
+		    SID			    217
+		    Ports		    [2, 1]
+		    Position		    [315, 159, 345, 206]
+		    ShowName		    off
+		    InputSameDT		    off
+		    OutDataTypeMode	    "int32"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    OutDataTypeStr	    "int32"
+		    SaturateOnIntegerOverflow off
+		    }
+		    Block {
+		    BlockType		    Selector
+		    Name		    "Selector"
+		    SID			    220
+		    Ports		    [2, 1]
+		    Position		    [530, 89, 565, 176]
+		    ShowName		    off
+		    InputPortWidth	    "64"
+		    IndexOptions	    "Index vector (port)"
+		    Indices		    "[1 3]"
+		    OutputSizes		    "1"
+		    }
+		    Block {
+		    BlockType		    Sum
+		    Name		    "Subtract"
+		    SID			    222
+		    Ports		    [2, 1]
+		    Position		    [200, 143, 230, 192]
+		    ShowName		    off
+		    Inputs		    "+-"
+		    InputSameDT		    off
+		    OutDataTypeMode	    "Inherit via internal rule"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^-10"
+		    OutDataTypeStr	    "Inherit: Inherit via internal rule"
+		    SaturateOnIntegerOverflow off
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "hysteresis"
+		    SID			    458
+		    Ports		    [1, 1]
+		    Position		    [210, 295, 355, 335]
+		    BackgroundColor	    "cyan"
+		    ShowName		    off
+		    AttributesFormatString  "[UPPER_LIMIT=%<upper_limit>]\\n[LOWER_LIMIT=%<lower_limit>]"
+		    LibraryVersion	    "1.158"
+		    SourceBlock		    "Defined_Functionality/hysteresis"
+		    SourceType		    "hysterisis"
+		    ShowPortLabels	    "FromPortIcon"
+		    SystemSampleTime	    "-1"
+		    FunctionWithSeparateData off
+		    RTWMemSecFuncInitTerm   "Inherit from model"
+		    RTWMemSecFuncExecute    "Inherit from model"
+		    RTWMemSecDataConstants  "Inherit from model"
+		    RTWMemSecDataInternal   "Inherit from model"
+		    RTWMemSecDataParameters "Inherit from model"
+		    upper_limit		    "BALc_t_BalBMUTempOff"
+		    lower_limit		    "BALc_t_BalBMUTempOn"
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "hysteresis1"
+		    SID			    459
+		    Ports		    [1, 1]
+		    Position		    [990, 115, 1135, 155]
+		    BackgroundColor	    "cyan"
+		    ShowName		    off
+		    AttributesFormatString  "[UPPER_LIMIT=%<upper_limit>]\\n[LOWER_LIMIT=%<lower_limit>]"
+		    LibraryVersion	    "1.158"
+		    SourceBlock		    "Defined_Functionality/hysteresis"
+		    SourceType		    "hysterisis"
+		    ShowPortLabels	    "FromPortIcon"
+		    SystemSampleTime	    "-1"
+		    FunctionWithSeparateData off
+		    RTWMemSecFuncInitTerm   "Inherit from model"
+		    RTWMemSecFuncExecute    "Inherit from model"
+		    RTWMemSecDataConstants  "Inherit from model"
+		    RTWMemSecDataInternal   "Inherit from model"
+		    RTWMemSecDataParameters "Inherit from model"
+		    upper_limit		    "BALc_t_BalMdlTempOff"
+		    lower_limit		    "BALc_t_BalMdlTempOn"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "BALd_flg_TempAwld"
+		    SID			    223
+		    Position		    [1525, 163, 1555, 177]
+		    IconDisplay		    "Port number"
+		    }
+		    Line {
+		    Name		    "BALd_flg_TempAwld"
+		    Labels		    [0, 0]
+		    SrcBlock		    "Logical\nOperator1"
+		    SrcPort		    1
+		    DstBlock		    "BALd_flg_TempAwld"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "hysteresis1"
+		    SrcPort		    1
+		    DstBlock		    "Logical\nOperator"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Constant4"
+		    SrcPort		    1
+		    DstBlock		    "Subtract"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "Subtract"
+		    SrcPort		    1
+		    DstBlock		    "Product"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Logical\nOperator"
+		    SrcPort		    1
+		    DstBlock		    "Logical\nOperator1"
+		    DstPort		    1
+		    }
+		    Line {
+		    Labels		    [1, 0]
+		    SrcBlock		    "hysteresis"
+		    SrcPort		    1
+		    Points		    [840, 0]
+		    DstBlock		    "Logical\nOperator"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "Constant3"
+		    SrcPort		    1
+		    DstBlock		    "Assignment"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Assignment"
+		    SrcPort		    1
+		    DstBlock		    "hysteresis1"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "MinMax"
+		    SrcPort		    1
+		    DstBlock		    "Assignment"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "Selector"
+		    SrcPort		    1
+		    DstBlock		    "MinMax"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Add"
+		    SrcPort		    1
+		    Points		    [65, 0; 0, -50]
+		    DstBlock		    "Selector"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "Constant1"
+		    SrcPort		    1
+		    Points		    [25, 0]
+		    DstBlock		    "Add"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "Product"
+		    SrcPort		    1
+		    DstBlock		    "Add"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Constant"
+		    SrcPort		    1
+		    DstBlock		    "Product"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "For Iterator"
+		    SrcPort		    1
+		    Points		    [30, 0]
+		    Branch {
+		    DstBlock		    "Subtract"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [0, 100; 705, 0; 0, -85]
+		    DstBlock		    "Assignment"
+		    DstPort		    3
+		    }
+		    }
+		    Line {
+		    Labels		    [0, 0]
+		    SrcBlock		    "IPTd_t_MdlTemp"
+		    SrcPort		    1
+		    DstBlock		    "Selector"
+		    DstPort		    1
+		    }
+		    Line {
+		    Labels		    [0, 0; 0, 0]
+		    SrcBlock		    "IPTd_t_BMUTemp"
+		    SrcPort		    1
+		    DstBlock		    "hysteresis"
+		    DstPort		    1
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  UnitDelay
+		  Name			  "Unit Delay"
+		  SID			  224
+		  Position		  [1335, 383, 1370, 417]
+		  ShowName		  off
+		  SampleTime		  "-1"
+		  Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "BALd_flg_CellBalCmdRaw"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "BALd_flg_CellBalCmdRaw"
+		  SID			  225
+		  Position		  [1540, 348, 1570, 362]
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "From"
+		  SrcPort		  1
+		  DstBlock		  "Reshape1"
+		  DstPort		  1
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "Unit Delay"
+		  SrcPort		  1
+		  DstBlock		  "Goto"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Reshape2"
+		  SrcPort		  1
+		  DstBlock		  "CellBalAsign"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Reshape1"
+		  SrcPort		  1
+		  DstBlock		  "DeltVoltVerf"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "DeltVoltVerf"
+		  SrcPort		  1
+		  DstBlock		  "Reshape2"
+		  DstPort		  1
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "TempAlwd"
+		  SrcPort		  1
+		  Points		  [190, 0]
+		  DstBlock		  "CellBalAsign"
+		  DstPort		  2
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "IPTd_t_MdlTemp"
+		  SrcPort		  1
+		  DstBlock		  "TempAlwd"
+		  DstPort		  1
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "IPTd_t_BMUTemp"
+		  SrcPort		  1
+		  DstBlock		  "TempAlwd"
+		  DstPort		  2
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "BALd_v_CellVolt_mean"
+		  SrcPort		  1
+		  DstBlock		  "DeltVoltVerf"
+		  DstPort		  2
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "CellBalAsign"
+		  SrcPort		  1
+		  Points		  [15, 0]
+		  Branch {
+		    DstBlock		    "BALd_flg_CellBalCmdRaw"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [0, 45]
+		    DstBlock		    "Unit Delay"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "IPTd_v_CellVolt"
+		  SrcPort		  1
+		  DstBlock		  "DeltVoltVerf"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "CellVoltMeanCalc"
+	      SID		      462
+	      Ports		      [1, 1]
+	      Position		      [370, 157, 590, 203]
+	      LibraryVersion	      "1.762"
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      Port {
+		PortNumber		1
+		Name			"BALd_v_CellVolt_mean"
+		PropagatedSignals	"BALd_v_CellVolt_mean"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      System {
+		Name			"CellVoltMeanCalc"
+		Location		[202, 82, 1902, 1044]
+		Open			off
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"281"
+		Block {
+		  BlockType		  Inport
+		  Name			  "IPTd_v_CellVolt"
+		  SID			  463
+		  Position		  [25, 143, 55, 157]
+		  IconDisplay		  "Port number"
+		  Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "IPTd_v_CellVolt"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant2"
+		  SID			  507
+		  Position		  [140, 179, 290, 201]
+		  BackgroundColor	  "green"
+		  ShowName		  off
+		  Value			  "PACK_Const_CellNumOfPack"
+		  OutDataTypeMode	  "uint8"
+		  OutDataTypeStr	  "uint8"
+		}
+		Block {
+		  BlockType		  Product
+		  Name			  "Divide"
+		  SID			  508
+		  Ports			  [2, 1]
+		  Position		  [340, 130, 365, 210]
+		  ShowName		  off
+		  Inputs		  "*/"
+		  InputSameDT		  off
+		  OutDataTypeMode	  "Inherit via internal rule"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^-10"
+		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  RndMeth		  "Floor"
+		  SaturateOnIntegerOverflow off
+		  Port {
+		    PortNumber		    1
+		    Name		    "BALd_v_CellVolt_mean"
+		    MustResolveToSignalObject on
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "Sum of\nElements"
+		  SID			  509
+		  Ports			  [1, 1]
+		  Position		  [160, 135, 190, 165]
+		  ShowName		  off
+		  Inputs		  "+"
+		  InputSameDT		  off
+		  OutDataTypeMode	  "Inherit via internal rule"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^-10"
+		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "BALd_v_CellVolt_mean"
+		  SID			  506
+		  Position		  [530, 163, 560, 177]
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  Name			  "BALd_v_CellVolt_mean"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Divide"
+		  SrcPort		  1
+		  DstBlock		  "BALd_v_CellVolt_mean"
+		  DstPort		  1
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "IPTd_v_CellVolt"
+		  SrcPort		  1
+		  DstBlock		  "Sum of\nElements"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Constant2"
+		  SrcPort		  1
+		  DstBlock		  "Divide"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Sum of\nElements"
+		  SrcPort		  1
+		  DstBlock		  "Divide"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant1"
+	      SID		      226
+	      Position		      [1175, 268, 1260, 292]
+	      BackgroundColor	      "green"
+	      ShowName		      off
+	      Value		      "zeros(1,160)"
+	      OutDataTypeMode	      "boolean"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	      OutDataTypeStr	      "boolean"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant3"
+	      SID		      228
+	      Position		      [1325, 342, 1380, 368]
+	      ShowName		      off
+	      Value		      "0"
+	      OutDataTypeMode	      "boolean"
+	      OutDataTypeStr	      "boolean"
+	      Port {
+		PortNumber		1
+		Name			"BALd_iflt_BalSwthAnml_warn"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From1"
+	      SID		      461
+	      Position		      [570, 40, 720, 60]
+	      ShowName		      off
+	      GotoTag		      "BALd_flg_CellBalAlwd"
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From3"
+	      SID		      230
+	      Position		      [75, 365, 225, 385]
+	      ShowName		      off
+	      GotoTag		      "BALd_v_CellVolt_mean"
+	    }
+	    Block {
+	      BlockType		      Goto
+	      Name		      "Goto1"
+	      SID		      460
+	      Position		      [1600, 425, 1740, 445]
+	      ShowName		      off
+	      GotoTag		      "BALd_flg_CellBalAlwd"
+	      TagVisibility	      "local"
+	    }
+	    Block {
+	      BlockType		      Goto
+	      Name		      "Goto2"
+	      SID		      231
+	      Position		      [650, 145, 790, 165]
+	      ShowName		      off
+	      GotoTag		      "BALd_v_CellVolt_mean"
+	      TagVisibility	      "local"
+	    }
+	    Block {
+	      BlockType		      Switch
+	      Name		      "Switch"
+	      SID		      234
+	      Position		      [1330, 190, 1365, 300]
+	      ShowName		      off
+	      Criteria		      "u2 ~= 0"
+	      InputSameDT	      off
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	      SaturateOnIntegerOverflow	off
+	      Port {
+		PortNumber		1
+		Name			"BALd_flg_CellBalCmd"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BALd_flg_CellBalCmd"
+	      SID		      235
+	      Position		      [1585, 238, 1615, 252]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BALd_iflt_BalSwthAnml_warn"
+	      SID		      236
+	      Position		      [1590, 348, 1620, 362]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	      InitialOutput	      "0"
+	    }
+	    Line {
+	      SrcBlock		      "From1"
+	      SrcPort		      1
+	      Points		      [210, 0]
+	      DstBlock		      "CellBalCmd"
+	      DstPort		      enable
+	    }
+	    Line {
+	      SrcBlock		      "CellBalCmd"
+	      SrcPort		      1
+	      DstBlock		      "Switch"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Constant1"
+	      SrcPort		      1
+	      DstBlock		      "Switch"
+	      DstPort		      3
+	    }
+	    Line {
+	      Name		      "BALd_v_CellVolt_mean"
+	      Labels		      [0, 0]
+	      SrcBlock		      "CellVoltMeanCalc"
+	      SrcPort		      1
+	      Points		      [20, 0]
+	      Branch {
+		Points			[0, -25]
+		DstBlock		"Goto2"
+		DstPort			1
+	      }
+	      Branch {
+		DstBlock		"CellBalCmd"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      Name		      "BALd_iflt_BalSwthAnml_warn"
+	      Labels		      [0, 0]
+	      SrcBlock		      "Constant3"
+	      SrcPort		      1
+	      DstBlock		      "BALd_iflt_BalSwthAnml_warn"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "IPTd_v_CellVolt"
+	      SrcPort		      1
+	      Points		      [105, 0]
+	      Branch {
+		Points			[0, 55]
+		DstBlock		"CellVoltMeanCalc"
+		DstPort			1
+	      }
+	      Branch {
+		DstBlock		"CellBalCmd"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      Name		      "BALd_flg_CellBalCmd"
+	      Labels		      [0, 0]
+	      SrcBlock		      "Switch"
+	      SrcPort		      1
+	      DstBlock		      "BALd_flg_CellBalCmd"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "IPTd_t_MdlTemp"
+	      SrcPort		      1
+	      DstBlock		      "CellBalCmd"
+	      DstPort		      3
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "IPTd_t_BMUTemp"
+	      SrcPort		      1
+	      DstBlock		      "CellBalCmd"
+	      DstPort		      4
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "BattBalAlwd"
+	      SrcPort		      1
+	      Points		      [50, 0]
+	      Branch {
+		DstBlock		"Goto1"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, -190]
+		DstBlock		"Switch"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "From3"
+	      SrcPort		      1
+	      DstBlock		      "BattBalAlwd"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "DEMd_enum_FaultLev"
+	      SrcPort		      1
+	      DstBlock		      "BattBalAlwd"
+	      DstPort		      4
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "SCMd_enum_ChaSt"
+	      SrcPort		      1
+	      DstBlock		      "BattBalAlwd"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "FCMd_enum_ChaSt"
+	      SrcPort		      1
+	      DstBlock		      "BattBalAlwd"
+	      DstPort		      3
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator5"
+	  SID			  258
+	  Ports			  [1, 1]
+	  Position		  [780, 264, 800, 336]
+	  ShowName		  off
+	  Inputs		  "1"
+	  DisplayOption		  "bar"
+	  Port {
+	    PortNumber		    1
+	    Name		    "BALd_iflt_FaultDiagnostic"
+	    PropagatedSignals	    "BALd_iflt_BalSwthAnml_warn"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "BALd_flg_CellBalCmd"
+	  SID			  248
+	  Position		  [935, 178, 965, 192]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "BALd_iflt_FaultDiagnostic"
+	  SID			  249
+	  Position		  [940, 293, 970, 307]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Line {
+	  Name			  "BALd_iflt_FaultDiagnostic"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nCreator5"
+	  SrcPort		  1
+	  DstBlock		  "BALd_iflt_FaultDiagnostic"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "BatteryBAL"
+	  SrcPort		  2
+	  DstBlock		  "Bus\nCreator5"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "IPTd_t_BMUTemp"
+	  SrcPort		  1
+	  DstBlock		  "BatteryBAL"
+	  DstPort		  3
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "BatteryBAL"
+	  SrcPort		  1
+	  DstBlock		  "BALd_flg_CellBalCmd"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "DEMd_enum_FaultLev"
+	  SrcPort		  1
+	  DstBlock		  "BatteryBAL"
+	  DstPort		  6
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "IPTd_t_MdlTemp"
+	  SrcPort		  1
+	  DstBlock		  "BatteryBAL"
+	  DstPort		  2
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "IPTd_v_CellVolt"
+	  SrcPort		  1
+	  DstBlock		  "BatteryBAL"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "SCMd_enum_ChaSt"
+	  SrcPort		  1
+	  DstBlock		  "BatteryBAL"
+	  DstPort		  4
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCMd_enum_ChaSt"
+	  SrcPort		  1
+	  DstBlock		  "BatteryBAL"
+	  DstPort		  5
+	}
+	Annotation {
+	  Name			  "$Author:Qiao Zhenmei$\n$Date:2015/09/18$"
+	  Position		  [591, 59]
+	}
+      }
+    }
+  }
+}
+# Finite State Machines
+#
+#    Stateflow Version 7.1 (R2009a) dated Jul 17 2009, 10:24:20
+#
+#
+
+
+Stateflow {
+  machine {
+    id			    1
+    name		    "BAL_lib"
+    created		    "18-Mar-2015 11:18:59"
+    isLibrary		    1
+    firstTarget		    15
+    sfVersion		    71014000.00001
+  }
+  chart {
+    id			    2
+    name		    "BAL/BatteryBAL/CellBalCmd/DeltVoltVerf"
+    windowPosition	    [576.359 -121.431 200.25 189.75]
+    viewLimits		    [0 156.75 0 153.75]
+    screen		    [1 1 1920 1080 1.333333333333333]
+    treeNode		    [0 3 0 0]
+    firstTransition	    5
+    firstJunction	    4
+    viewObj		    2
+    machine		    1
+    subviewS {
+    }
+    ssIdHighWaterMark	    24
+    decomposition	    CLUSTER_CHART
+    type		    EML_CHART
+    firstData		    6
+    chartFileNumber	    3
+    disableImplicitCasting  1
+    actionLanguage	    1
+    eml {
+      name		      "fcn"
+    }
+  }
+  state {
+    id			    3
+    labelString		    "eML_blk_kernel()"
+    position		    [18 64.5 118 66]
+    fontSize		    12
+    chart		    2
+    treeNode		    [2 0 0 0]
+    superState		    SUBCHART
+    subviewer		    2
+    ssIdNumber		    1
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+    eml {
+      isEML		      1
+      script		      "function BalSrcCell  = fcn(IPTd_v_CellVolt,MeanVoltPack, IPTd_enum_BalSrcCell,BALc_v_BalOffVoltDi"
+      "f_limit, BALc_v_BalOnVoltDif_limit, BALc_v_RepcBalOffVoltDif_limit, BALc_v_RepcBalOnVoltDif_limit)\n\n%#initiali"
+      "zation\nBalSrcCell=IPTd_enum_BalSrcCell;\nPrstBalSrcCell=IPTd_enum_BalSrcCell;\nBALt_num_BalCellNum=sum(PrstBalS"
+      "rcCell,1);\nMinBalDeltVolt=[4 4 4 4];\nBalBrekCell=0;\n\n\n%calculate voltage difference\nVoltDif=reshape(IPTd_v"
+      "_CellVolt,5,32);\nVoltDif=VoltDif-MeanVoltPack;\n\n%%\n[DeltVolt CellDim]=sort(VoltDif);\n%To determine if the b"
+      "alancing cells should be closed.\nfor i=1:32;\n    for j=5:-1:1;\n        if PrstBalSrcCell(CellDim(j,i),i)==1;\n"
+      "          if VoltDif(CellDim(j,i),i)<=BALc_v_BalOffVoltDif_limit;\n               BalSrcCell(CellDim(j,i),i)=0;\n"
+      "               BALt_num_BalCellNum(i)=BALt_num_BalCellNum(i)-1;\n          else\n              continue;\n      "
+      "    end\n        else\n            continue;\n        end\n    end\nend\n%To determine if the unbalancing cells "
+      "should be opened.\nfor k=1:32;\n    for m=5:-1:1;\n        if BALt_num_BalCellNum(1,k)<3;\n            if PrstBa"
+      "lSrcCell(CellDim(m,k),k)==0;\n               if VoltDif(CellDim(m,k),k)>=BALc_v_BalOnVoltDif_limit;\n           "
+      "       BalSrcCell(CellDim(m,k),k) =1;\n                  BALt_num_BalCellNum(k)=BALt_num_BalCellNum(k)+1; \n    "
+      "           else\n                   continue;                   \n               end\n            else\n        "
+      "        continue;\n            end\n        else\n            if PrstBalSrcCell(CellDim(m,k),k)==0;\n           "
+      "     if VoltDif(CellDim(m,k),k)>=BALc_v_RepcBalOnVoltDif_limit;\n%To caculate the balancing cells minimum voltag"
+      "e difference.\n                    for jj=1:5;\n                        if PrstBalSrcCell(jj,k)==1&&VoltDif(jj,k"
+      ")<MinBalDeltVolt(1,k);\n                           MinBalDeltVolt(1,k)=VoltDif(jj,k);\n                         "
+      "  BalBrekCell=jj;\n                        else\n                        continue;\n                        end\n"
+      "                    end\n %If the balancing cells minimum voltage difference<0.015V,replace it.\n               "
+      "     if MinBalDeltVolt(1,k)<BALc_v_RepcBalOffVoltDif_limit;\n                   BalSrcCell(CellDim(m,k),k)=1;\n "
+      "                  BalSrcCell(BalBrekCell,k)=0;\n                    else\n                       break\n        "
+      "            end\n                else\n                    break\n                end\n            else\n       "
+      "         continue\n            end\n        end\n    end\nend\n                    \n             "
+      editorLayout	      "100 M4x1[491 586 1936 1056]"
+    }
+  }
+  junction {
+    id			    4
+    position		    [23.5747 49.5747 7]
+    chart		    2
+    linkNode		    [2 0 0]
+    subviewer		    2
+    ssIdNumber		    3
+    type		    CONNECTIVE_JUNCTION
+  }
+  transition {
+    id			    5
+    labelString		    "{eML_blk_kernel();}"
+    labelPosition	    [32.125 19.875 102.544 14.964]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 23.5747 14.625 0 0]
+    }
+    dst {
+      id		      4
+      intersection	      [7 0 -1 -1 23.5747 42.5747 0 0]
+    }
+    midPoint		    [23.5747 24.9468]
+    chart		    2
+    linkNode		    [2 0 0]
+    dataLimits		    [23.575 23.575 14.625 34.575]
+    subviewer		    2
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    2
+  }
+  data {
+    id			    6
+    ssIdNumber		    4
+    name		    "IPTd_v_CellVolt"
+    linkNode		    [2 0 7]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"[1 160]"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    7
+    ssIdNumber		    18
+    name		    "MeanVoltPack"
+    linkNode		    [2 6 8]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    8
+    ssIdNumber		    5
+    name		    "BalSrcCell"
+    linkNode		    [2 7 9]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"[5 32]"
+      }
+      type {
+	primitive		SF_BOOLEAN_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "boolean"
+  }
+  data {
+    id			    9
+    ssIdNumber		    6
+    name		    "IPTd_enum_BalSrcCell"
+    linkNode		    [2 8 10]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"[5 32]"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    10
+    ssIdNumber		    21
+    name		    "BALc_v_BalOffVoltDif_limit"
+    linkNode		    [2 9 11]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    11
+    ssIdNumber		    22
+    name		    "BALc_v_BalOnVoltDif_limit"
+    linkNode		    [2 10 12]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 1
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    12
+    ssIdNumber		    23
+    name		    "BALc_v_RepcBalOffVoltDif_limit"
+    linkNode		    [2 11 13]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 2
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    13
+    ssIdNumber		    24
+    name		    "BALc_v_RepcBalOnVoltDif_limit"
+    linkNode		    [2 12 0]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 3
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  instance {
+    id			    14
+    name		    "BAL/BatteryBAL/CellBalCmd/DeltVoltVerf"
+    machine		    1
+    chart		    2
+  }
+  target {
+    id			    15
+    name		    "sfun"
+    description		    "Default Simulink S-Function Target."
+    machine		    1
+    linkNode		    [1 0 0]
+  }
+}
