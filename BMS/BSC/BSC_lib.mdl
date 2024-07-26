@@ -1,0 +1,5820 @@
+Library {
+  Name			  "BSC_lib"
+  Version		  7.4
+  MdlSubVersion		  0
+  Description		  "$Author:Zhao XiangRi$\n$Date:2015/04/15$\n$Revision:1.0$"
+  SavedCharacterEncoding  "GBK"
+  LibraryType		  "BlockLibrary"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  MaxMDLFileLineLength	  120
+  Created		  "Fri Oct 10 11:06:31 2014"
+  Creator		  "zhaoxiangri"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "sunsijun"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Thu Nov 26 09:31:05 2015"
+  RTWModifiedTimeStamp	  370431060
+  ModelVersionFormat	  "1.%<AutoIncrement:126>"
+  ConfigurationManager	  "None"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      1
+      Version		      "1.6.0"
+      Array {
+	Type			"Handle"
+	Dimension		9
+	Simulink.SolverCC {
+	  $ObjectID		  2
+	  Version		  "1.6.0"
+	  StartTime		  "0.0"
+	  StopTime		  "Inf"
+	  AbsTol		  "auto"
+	  FixedStep		  "0.01"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  Solver		  "FixedStepDiscrete"
+	  SolverName		  "FixedStepDiscrete"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  3
+	  Version		  "1.6.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  4
+	  Version		  "1.6.0"
+	  BlockReduction	  off
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  off
+	  BufferReuse		  off
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  EnforceIntegerDowncast  on
+	  ExpressionFolding	  off
+	  BooleansAsBitfields	  off
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  2147483647
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  off
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode on
+	  LifeSpan		  "Inf"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  5
+	  Version		  "1.6.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Use local settings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  StrictBusMsg		  "Warning"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  6
+	  Version		  "1.6.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdIntDivRoundTo	  "Zero"
+	  ProdEndianess		  "BigEndian"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "Generic->Custom"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Zero"
+	  TargetEndianess	  "BigEndian"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Generic->Custom"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  7
+	  Version		  "1.6.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  8
+	  Version		  "1.6.0"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  9
+	  Version		  "1.6.0"
+	  SystemTargetFile	  "ert.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  TemplateMakefile	  "ert_default_tmf"
+	  Description		  "Real-Time Workshop Embedded Coder"
+	  GenerateReport	  on
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ProcessScript		  "ert_make_rtw_hook"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport on
+	  LaunchReport		  on
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      10
+	      Version		      "1.6.0"
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses off
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      SimulinkBlockComments   on
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.ERTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      11
+	      Version		      "1.6.0"
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      TargetFunctionLibrary   "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   on
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Use local settings"
+	      CombineOutputUpdateFcns on
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   on
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    on
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      off
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   off
+	      SupportNonInlinedSFcns  off
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      PortableWordSizes	      off
+	      ModelStepFunctionPrototypeControlCompliant on
+	      CPPClassGenCompliant    on
+	      AutosarCompliant	      off
+	      GenerateErtSFunction    off
+	      GenerateASAP2	      off
+	      ExtMode		      off
+	      ExtModeTransport	      0
+	      ExtModeStaticAlloc      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTesting	      off
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      InlinedParameterPlacement	"Hierarchical"
+	      TargetOS		      "BareBoardExample"
+	      MultiInstanceErrorCode  "Error"
+	      RateGroupingCode	      on
+	      RootIOFormat	      "Individual arguments"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      ERTSrcFileBannerTemplate "ert_code_template.cgt"
+	      ERTHdrFileBannerTemplate "ert_code_template.cgt"
+	      ERTDataSrcFileTemplate  "ert_code_template.cgt"
+	      ERTDataHdrFileTemplate  "ert_code_template.cgt"
+	      ERTCustomFileTemplate   "example_file_process.tlc"
+	      ModuleNamingRule	      "Unspecified"
+	      SignalDisplayLevel      10
+	      ParamTuneLevel	      10
+	      GlobalDataDefinition    "Auto"
+	      DataDefinitionFile      "global.c"
+	      GlobalDataReference     "Auto"
+	      DataReferenceFile	      "global.h"
+	      GRTInterface	      off
+	      PreserveExpressionOrder off
+	      PreserveIfCondition     off
+	      ConvertIfToSwitch	      off
+	      PreserveExternInFcnDecls on
+	      EnableUserReplacementTypes off
+	      Array {
+		Type			"Struct"
+		Dimension		1
+		MATStruct {
+		  double		  ""
+		  single		  ""
+		  int32			  ""
+		  int16			  ""
+		  int8			  ""
+		  uint32		  ""
+		  uint16		  ""
+		  uint8			  ""
+		  boolean		  ""
+		  int			  ""
+		  uint			  ""
+		  char			  ""
+		}
+		PropName		"ReplacementTypes"
+	      }
+	      MemSecPackage	      "--- None ---"
+	      MemSecDataConstants     "Default"
+	      MemSecDataIO	      "Default"
+	      MemSecDataInternal      "Default"
+	      MemSecDataParameters    "Default"
+	      MemSecFuncInitTerm      "Default"
+	      MemSecFuncExecute	      "Default"
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	hdlcoderui.hdlcc {
+	  $ObjectID		  12
+	  Version		  "1.6.0"
+	  Description		  "HDL Coder custom configuration component"
+	  Name			  "HDL Coder"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    ""
+	    PropName		    "HDLConfigFile"
+	  }
+	  HDLCActiveTab		  "0"
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition    " [ 520, 225, 1400, 855 ] "
+    }
+    PropName		    "ConfigurationSets"
+  }
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      BusCreator
+      Inputs		      "4"
+      DisplayOption	      "none"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      DataType		      "auto"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchByCopyingInsideSignal off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      DataType		      "auto"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      "S-Function"
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+      SFunctionDeploymentMode off
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Terminator
+    }
+  }
+  System {
+    Name		    "BSC_lib"
+    Location		    [2, 82, 1902, 1027]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    114
+    Block {
+      BlockType		      SubSystem
+      Name		      "BSC"
+      SID		      45
+      Ports		      [10, 17]
+      Position		      [245, 134, 530, 766]
+      BackgroundColor	      "green"
+      LibraryVersion	      "*1.125"
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      Port {
+	PortNumber		16
+	PropagatedSignals	"BSC_trig_OPT"
+	ShowPropagatedSignals	"on"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		17
+	PropagatedSignals	"BSC_trig_MCC"
+	ShowPropagatedSignals	"on"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      System {
+	Name			"BSC"
+	Location		[202, 82, 1902, 1027]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"84"
+	Block {
+	  BlockType		  Inport
+	  Name			  "MCCd_enum_BMUSt"
+	  SID			  48
+	  Position		  [195, 273, 225, 287]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "MCCd_enum_BMUSt"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "IPTd_flg_KL15"
+	  SID			  49
+	  Position		  [180, 358, 210, 372]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "IPTd_flg_KL15"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "IPTd_flg_VehHVCnctCmd"
+	  SID			  50
+	  Position		  [180, 443, 210, 457]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "IPTd_flg_VehHVCnctCmd"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "IPTd_flg_SlowChaCnctSt"
+	  SID			  51
+	  Position		  [180, 528, 210, 542]
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "IPTd_flg_SlowChaCnctSt"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "IPTd_flg_FastChaCnctSt"
+	  SID			  52
+	  Position		  [180, 613, 210, 627]
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "IPTd_flg_FastChaCnctSt"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "IPTd_flg_ServSt"
+	  SID			  53
+	  Position		  [180, 698, 210, 712]
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "IPTd_flg_ServSt"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "CTCd_enum_CtrSt"
+	  SID			  54
+	  Position		  [180, 783, 210, 797]
+	  Port			  "7"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "CTCd_enum_CtrSt"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "FCMd_enum_ChaSt"
+	  SID			  55
+	  Position		  [180, 868, 210, 882]
+	  Port			  "8"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "FCMd_enum_ChaSt"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "SCMd_enum_ChaSt"
+	  SID			  56
+	  Position		  [180, 953, 210, 967]
+	  Port			  "9"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "SCMd_enum_ChaSt"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "IPTd_flg_VehShutBCUCmd"
+	  SID			  57
+	  Position		  [180, 1038, 210, 1052]
+	  Port			  "10"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "IPTd_flg_VehShutBCUCmd"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "BSC"
+	  SID			  58
+	  Description		  "$Author:Zhao XiangRi$\n$Date:2015/04/02$    \n$Revision:1.0$       "
+	  Ports			  [10, 21]
+	  Position		  [395, 228, 805, 1092]
+	  LibraryVersion	  "1.52"
+	  PermitHierarchicalResolution "ExplicitOnly"
+	  TreatAsAtomicUnit	  on
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Use subsystem name"
+	  RTWFileNameOpts	  "Use function name"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskType		  "Stateflow"
+	  MaskDescription	  "Stateflow diagram"
+	  MaskDisplay		  "plot(sf('Private','sfblk','xIcon'),sf('Private','sfblk','yIcon'));text(0.5,0,sf('Private', 'sfblk',"
+	  " 'tIcon'),'HorizontalAl','Center','VerticalAl','Bottom');"
+	  MaskSelfModifiable	  on
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  off
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "autoscale"
+	  Port {
+	    PortNumber		    1
+	    Name		    "BSCd_flg_Timer2Test"
+	    PropagatedSignals	    "BSCd_flg_Timer2Test"
+	    MustResolveToSignalObject on
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    2
+	    Name		    "BSCd_flg_Timer4Test"
+	    PropagatedSignals	    "BSCd_flg_Timer4Test"
+	    MustResolveToSignalObject on
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    3
+	    Name		    "BSCd_num_Timer2Ticks"
+	    PropagatedSignals	    "BSCd_num_Timer2Ticks"
+	    MustResolveToSignalObject on
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    4
+	    Name		    "BSCd_num_Timer4Ticks"
+	    PropagatedSignals	    "BSCd_num_Timer4Ticks"
+	    MustResolveToSignalObject on
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    5
+	    Name		    "BSCd_enum_BCUSt"
+	    PropagatedSignals	    "BSCd_enum_BCUSt"
+	    MustResolveToSignalObject on
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    6
+	    Name		    "BSCd_flg_BCUShutdown"
+	    PropagatedSignals	    "BSCd_flg_BCUShutdown"
+	    MustResolveToSignalObject on
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    7
+	    Name		    "BSCd_iflt_BCUFault"
+	    PropagatedSignals	    "BSCd_iflt_BCUFault"
+	    MustResolveToSignalObject on
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    8
+	    PropagatedSignals	    "BSC_trig_IPT"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    9
+	    PropagatedSignals	    "BSC_trig_IPT_FCM"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    10
+	    PropagatedSignals	    "BSC_trig_CTC"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    11
+	    PropagatedSignals	    "BSC_trig_BTM"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    12
+	    PropagatedSignals	    "BSC_trig_COR"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    13
+	    PropagatedSignals	    "BSC_trig_EHP"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    14
+	    PropagatedSignals	    "BSC_trig_BAL"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    15
+	    PropagatedSignals	    "BSC_trig_BPN"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    16
+	    PropagatedSignals	    "BSC_trig_DEM"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    17
+	    PropagatedSignals	    "BSC_trig_FCM"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    18
+	    PropagatedSignals	    "BSC_trig_OPT_FCM"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    19
+	    PropagatedSignals	    "BSC_trig_SCM"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    20
+	    PropagatedSignals	    "BSC_trig_OPT"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    21
+	    PropagatedSignals	    "BSC_trig_MCC"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  System {
+	    Name		    "BSC"
+	    Location		    [-4, -4, 1924, 1054]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    419
+	    Block {
+	      BlockType		      Inport
+	      Name		      "MCCd_enum_BMUSt"
+	      SID		      1
+	      Position		      [20, 101, 40, 119]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "IPTd_flg_KL15"
+	      SID		      1
+	      Position		      [20, 136, 40, 154]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "IPTd_flg_VehHVCnctCmd"
+	      SID		      1
+	      Position		      [20, 171, 40, 189]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "IPTd_flg_SlowChaCnctSt"
+	      SID		      1
+	      Position		      [20, 206, 40, 224]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "IPTd_flg_FastChaCnctSt"
+	      SID		      122
+	      Position		      [20, 246, 40, 264]
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "IPTd_flg_ServSt"
+	      SID		      1
+	      Position		      [20, 281, 40, 299]
+	      Port		      "6"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "CTCd_enum_CtrSt"
+	      SID		      1
+	      Position		      [20, 316, 40, 334]
+	      Port		      "7"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "FCMd_enum_ChaSt"
+	      SID		      1
+	      Position		      [20, 351, 40, 369]
+	      Port		      "8"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "SCMd_enum_ChaSt"
+	      SID		      121
+	      Position		      [20, 386, 40, 404]
+	      Port		      "9"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "IPTd_flg_VehShutBCUCmd"
+	      SID		      1
+	      Position		      [20, 426, 40, 444]
+	      Port		      "10"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Demux
+	      Name		      " Demux "
+	      SID		      417
+	      Ports		      [1, 14]
+	      Position		      [270, 820, 320, 1120]
+	      Outputs		      "14"
+	      Port {
+		PortNumber		1
+		Name			"BSC_trig_IPT"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		2
+		Name			"BSC_trig_IPT_FCM"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		3
+		Name			"BSC_trig_CTC"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		4
+		Name			"BSC_trig_BTM"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		5
+		Name			"BSC_trig_COR"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		6
+		Name			"BSC_trig_EHP"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		7
+		Name			"BSC_trig_BAL"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		8
+		Name			"BSC_trig_BPN"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		9
+		Name			"BSC_trig_DEM"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		10
+		Name			"BSC_trig_FCM"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		11
+		Name			"BSC_trig_OPT_FCM"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		12
+		Name			"BSC_trig_SCM"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		13
+		Name			"BSC_trig_OPT"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		14
+		Name			"BSC_trig_MCC"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      " SFunction "
+	      SID		      416
+	      Tag		      "Stateflow S-Function BSC_lib 9"
+	      Ports		      [10, 8]
+	      Position		      [180, 110, 230, 330]
+	      FunctionName	      "sf_sfun"
+	      PortCounts	      "[10 8]"
+	      EnableBusSupport	      off
+	      Port {
+		PortNumber		2
+		Name			"BSCd_flg_Timer2Test"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		3
+		Name			"BSCd_flg_Timer4Test"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		4
+		Name			"BSCd_num_Timer2Ticks"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		5
+		Name			"BSCd_num_Timer4Ticks"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		6
+		Name			"BSCd_enum_BCUSt"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		7
+		Name			"BSCd_flg_BCUShutdown"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		8
+		Name			"BSCd_iflt_BCUFault"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BSCd_flg_Timer2Test"
+	      SID		      339
+	      Position		      [460, 101, 480, 119]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BSCd_flg_Timer4Test"
+	      SID		      338
+	      Position		      [460, 136, 480, 154]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BSCd_num_Timer2Ticks"
+	      SID		      351
+	      Position		      [460, 171, 480, 189]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BSCd_num_Timer4Ticks"
+	      SID		      350
+	      Position		      [460, 206, 480, 224]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BSCd_enum_BCUSt"
+	      SID		      1
+	      Position		      [460, 246, 480, 264]
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BSCd_flg_BCUShutdown"
+	      SID		      123
+	      Position		      [460, 281, 480, 299]
+	      Port		      "6"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BSCd_iflt_BCUFault"
+	      SID		      175
+	      Position		      [460, 316, 480, 334]
+	      Port		      "7"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BSC_trig_IPT"
+	      SID		      1
+	      Position		      [460, 351, 480, 369]
+	      Port		      "8"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BSC_trig_IPT_FCM"
+	      SID		      294
+	      Position		      [460, 386, 480, 404]
+	      Port		      "9"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BSC_trig_CTC"
+	      SID		      1
+	      Position		      [460, 426, 480, 444]
+	      Port		      "10"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BSC_trig_BTM"
+	      SID		      1
+	      Position		      [460, 461, 480, 479]
+	      Port		      "11"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BSC_trig_COR"
+	      SID		      1
+	      Position		      [460, 496, 480, 514]
+	      Port		      "12"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BSC_trig_EHP"
+	      SID		      1
+	      Position		      [460, 531, 480, 549]
+	      Port		      "13"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BSC_trig_BAL"
+	      SID		      1
+	      Position		      [460, 566, 480, 584]
+	      Port		      "14"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BSC_trig_BPN"
+	      SID		      1
+	      Position		      [460, 606, 480, 624]
+	      Port		      "15"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BSC_trig_DEM"
+	      SID		      1
+	      Position		      [460, 641, 480, 659]
+	      Port		      "16"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BSC_trig_FCM"
+	      SID		      1
+	      Position		      [460, 676, 480, 694]
+	      Port		      "17"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BSC_trig_OPT_FCM"
+	      SID		      295
+	      Position		      [460, 711, 480, 729]
+	      Port		      "18"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BSC_trig_SCM"
+	      SID		      120
+	      Position		      [460, 746, 480, 764]
+	      Port		      "19"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BSC_trig_OPT"
+	      SID		      1
+	      Position		      [460, 786, 480, 804]
+	      Port		      "20"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BSC_trig_MCC"
+	      SID		      1
+	      Position		      [460, 821, 480, 839]
+	      Port		      "21"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      " SFunction "
+	      SrcPort		      1
+	      DstBlock		      " Demux "
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "MCCd_enum_BMUSt"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "IPTd_flg_KL15"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "IPTd_flg_VehHVCnctCmd"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "IPTd_flg_SlowChaCnctSt"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      4
+	    }
+	    Line {
+	      SrcBlock		      "IPTd_flg_FastChaCnctSt"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      5
+	    }
+	    Line {
+	      SrcBlock		      "IPTd_flg_ServSt"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      6
+	    }
+	    Line {
+	      SrcBlock		      "CTCd_enum_CtrSt"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      7
+	    }
+	    Line {
+	      SrcBlock		      "FCMd_enum_ChaSt"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      8
+	    }
+	    Line {
+	      SrcBlock		      "SCMd_enum_ChaSt"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      9
+	    }
+	    Line {
+	      SrcBlock		      "IPTd_flg_VehShutBCUCmd"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      10
+	    }
+	    Line {
+	      Name		      "BSCd_flg_Timer2Test"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      2
+	      DstBlock		      "BSCd_flg_Timer2Test"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "BSCd_flg_Timer4Test"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      3
+	      DstBlock		      "BSCd_flg_Timer4Test"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "BSCd_num_Timer2Ticks"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      4
+	      DstBlock		      "BSCd_num_Timer2Ticks"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "BSCd_num_Timer4Ticks"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      5
+	      DstBlock		      "BSCd_num_Timer4Ticks"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "BSCd_enum_BCUSt"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      6
+	      DstBlock		      "BSCd_enum_BCUSt"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "BSCd_flg_BCUShutdown"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      7
+	      DstBlock		      "BSCd_flg_BCUShutdown"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "BSCd_iflt_BCUFault"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      8
+	      DstBlock		      "BSCd_iflt_BCUFault"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "BSC_trig_IPT"
+	      Labels		      [0, 0]
+	      SrcBlock		      " Demux "
+	      SrcPort		      1
+	      DstBlock		      "BSC_trig_IPT"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "BSC_trig_IPT_FCM"
+	      Labels		      [0, 0]
+	      SrcBlock		      " Demux "
+	      SrcPort		      2
+	      DstBlock		      "BSC_trig_IPT_FCM"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "BSC_trig_CTC"
+	      Labels		      [0, 0]
+	      SrcBlock		      " Demux "
+	      SrcPort		      3
+	      DstBlock		      "BSC_trig_CTC"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "BSC_trig_BTM"
+	      Labels		      [0, 0]
+	      SrcBlock		      " Demux "
+	      SrcPort		      4
+	      DstBlock		      "BSC_trig_BTM"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "BSC_trig_COR"
+	      Labels		      [0, 0]
+	      SrcBlock		      " Demux "
+	      SrcPort		      5
+	      DstBlock		      "BSC_trig_COR"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "BSC_trig_EHP"
+	      Labels		      [0, 0]
+	      SrcBlock		      " Demux "
+	      SrcPort		      6
+	      DstBlock		      "BSC_trig_EHP"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "BSC_trig_BAL"
+	      Labels		      [0, 0]
+	      SrcBlock		      " Demux "
+	      SrcPort		      7
+	      DstBlock		      "BSC_trig_BAL"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "BSC_trig_BPN"
+	      Labels		      [0, 0]
+	      SrcBlock		      " Demux "
+	      SrcPort		      8
+	      DstBlock		      "BSC_trig_BPN"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "BSC_trig_DEM"
+	      Labels		      [0, 0]
+	      SrcBlock		      " Demux "
+	      SrcPort		      9
+	      DstBlock		      "BSC_trig_DEM"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "BSC_trig_FCM"
+	      Labels		      [0, 0]
+	      SrcBlock		      " Demux "
+	      SrcPort		      10
+	      DstBlock		      "BSC_trig_FCM"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "BSC_trig_OPT_FCM"
+	      Labels		      [0, 0]
+	      SrcBlock		      " Demux "
+	      SrcPort		      11
+	      DstBlock		      "BSC_trig_OPT_FCM"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "BSC_trig_SCM"
+	      Labels		      [0, 0]
+	      SrcBlock		      " Demux "
+	      SrcPort		      12
+	      DstBlock		      "BSC_trig_SCM"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "BSC_trig_OPT"
+	      Labels		      [0, 0]
+	      SrcBlock		      " Demux "
+	      SrcPort		      13
+	      DstBlock		      "BSC_trig_OPT"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "BSC_trig_MCC"
+	      Labels		      [0, 0]
+	      SrcBlock		      " Demux "
+	      SrcPort		      14
+	      DstBlock		      "BSC_trig_MCC"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator5"
+	  SID			  90
+	  Ports			  [1, 1]
+	  Position		  [960, 478, 985, 522]
+	  ShowName		  off
+	  Inputs		  "1"
+	  DisplayOption		  "bar"
+	  Port {
+	    PortNumber		    1
+	    Name		    "BSCd_iflt_FaultDiagnostic"
+	    PropagatedSignals	    "BSCd_iflt_BCUFault"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator1"
+	  SID			  112
+	  Position		  [1160, 290, 1180, 310]
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator13"
+	  SID			  111
+	  Position		  [1160, 250, 1180, 270]
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator2"
+	  SID			  113
+	  Position		  [1160, 330, 1180, 350]
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator3"
+	  SID			  114
+	  Position		  [1160, 370, 1180, 390]
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "BSCd_enum_BCUSt"
+	  SID			  61
+	  Position		  [1160, 413, 1190, 427]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "BSCd_flg_BCUShutdown"
+	  SID			  62
+	  Position		  [1160, 453, 1190, 467]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "BSCd_iflt_FaultDiagnostic"
+	  SID			  91
+	  Position		  [1160, 493, 1190, 507]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "BSC_trig_IPT"
+	  SID			  64
+	  Position		  [1160, 533, 1190, 547]
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "BSC_trig_IPT_FCM"
+	  SID			  105
+	  Position		  [1160, 573, 1190, 587]
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "BSC_trig_CTC"
+	  SID			  65
+	  Position		  [1160, 613, 1190, 627]
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "BSC_trig_BTM"
+	  SID			  66
+	  Position		  [1160, 653, 1190, 667]
+	  Port			  "7"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "BSC_trig_COR"
+	  SID			  67
+	  Position		  [1160, 693, 1190, 707]
+	  Port			  "8"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "BSC_trig_EHP"
+	  SID			  68
+	  Position		  [1160, 733, 1190, 747]
+	  Port			  "9"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "BSC_trig_BAL"
+	  SID			  69
+	  Position		  [1160, 773, 1190, 787]
+	  Port			  "10"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "BSC_trig_BPN"
+	  SID			  70
+	  Position		  [1160, 813, 1190, 827]
+	  Port			  "11"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "BSC_trig_DEM"
+	  SID			  71
+	  Position		  [1160, 853, 1190, 867]
+	  Port			  "12"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "BSC_trig_FCM"
+	  SID			  72
+	  Position		  [1160, 893, 1190, 907]
+	  Port			  "13"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "BSC_trig_OPT_FCM"
+	  SID			  106
+	  Position		  [1160, 933, 1190, 947]
+	  Port			  "14"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "BSC_trig_SCM"
+	  SID			  73
+	  Position		  [1160, 973, 1190, 987]
+	  Port			  "15"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "BSC_trig_OPT"
+	  SID			  74
+	  Position		  [1160, 1013, 1190, 1027]
+	  Port			  "16"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "BSC_trig_MCC"
+	  SID			  75
+	  Position		  [1160, 1053, 1190, 1067]
+	  Port			  "17"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Line {
+	  Name			  "BSCd_num_Timer4Ticks"
+	  Labels		  [0, 0]
+	  SrcBlock		  "BSC"
+	  SrcPort		  4
+	  DstBlock		  "Terminator3"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "BSCd_num_Timer2Ticks"
+	  Labels		  [0, 0]
+	  SrcBlock		  "BSC"
+	  SrcPort		  3
+	  DstBlock		  "Terminator2"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "BSCd_flg_Timer4Test"
+	  Labels		  [0, 0]
+	  SrcBlock		  "BSC"
+	  SrcPort		  2
+	  DstBlock		  "Terminator1"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "BSCd_flg_Timer2Test"
+	  Labels		  [0, 0]
+	  SrcBlock		  "BSC"
+	  SrcPort		  1
+	  DstBlock		  "Terminator13"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "BSC"
+	  SrcPort		  18
+	  DstBlock		  "BSC_trig_OPT_FCM"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "BSC"
+	  SrcPort		  9
+	  DstBlock		  "BSC_trig_IPT_FCM"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "SCMd_enum_ChaSt"
+	  SrcPort		  1
+	  DstBlock		  "BSC"
+	  DstPort		  9
+	}
+	Line {
+	  Name			  "BSCd_iflt_BCUFault"
+	  Labels		  [0, 0]
+	  SrcBlock		  "BSC"
+	  SrcPort		  7
+	  DstBlock		  "Bus\nCreator5"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "MCCd_enum_BMUSt"
+	  SrcPort		  1
+	  DstBlock		  "BSC"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "IPTd_flg_KL15"
+	  SrcPort		  1
+	  DstBlock		  "BSC"
+	  DstPort		  2
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "IPTd_flg_VehHVCnctCmd"
+	  SrcPort		  1
+	  DstBlock		  "BSC"
+	  DstPort		  3
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "IPTd_flg_SlowChaCnctSt"
+	  SrcPort		  1
+	  DstBlock		  "BSC"
+	  DstPort		  4
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "IPTd_flg_FastChaCnctSt"
+	  SrcPort		  1
+	  DstBlock		  "BSC"
+	  DstPort		  5
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "IPTd_flg_ServSt"
+	  SrcPort		  1
+	  DstBlock		  "BSC"
+	  DstPort		  6
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "CTCd_enum_CtrSt"
+	  SrcPort		  1
+	  DstBlock		  "BSC"
+	  DstPort		  7
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCMd_enum_ChaSt"
+	  SrcPort		  1
+	  DstBlock		  "BSC"
+	  DstPort		  8
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "IPTd_flg_VehShutBCUCmd"
+	  SrcPort		  1
+	  DstBlock		  "BSC"
+	  DstPort		  10
+	}
+	Line {
+	  Name			  "BSCd_enum_BCUSt"
+	  Labels		  [0, 0]
+	  SrcBlock		  "BSC"
+	  SrcPort		  5
+	  DstBlock		  "BSCd_enum_BCUSt"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "BSCd_flg_BCUShutdown"
+	  Labels		  [0, 0]
+	  SrcBlock		  "BSC"
+	  SrcPort		  6
+	  DstBlock		  "BSCd_flg_BCUShutdown"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "BSC"
+	  SrcPort		  8
+	  DstBlock		  "BSC_trig_IPT"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "BSC"
+	  SrcPort		  10
+	  DstBlock		  "BSC_trig_CTC"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "BSC"
+	  SrcPort		  11
+	  DstBlock		  "BSC_trig_BTM"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "BSC"
+	  SrcPort		  12
+	  DstBlock		  "BSC_trig_COR"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "BSC"
+	  SrcPort		  13
+	  DstBlock		  "BSC_trig_EHP"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "BSC"
+	  SrcPort		  14
+	  DstBlock		  "BSC_trig_BAL"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "BSC"
+	  SrcPort		  15
+	  DstBlock		  "BSC_trig_BPN"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "BSC"
+	  SrcPort		  16
+	  DstBlock		  "BSC_trig_DEM"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "BSC"
+	  SrcPort		  17
+	  DstBlock		  "BSC_trig_FCM"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "BSC"
+	  SrcPort		  19
+	  DstBlock		  "BSC_trig_SCM"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "BSC"
+	  SrcPort		  20
+	  DstBlock		  "BSC_trig_OPT"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "BSC"
+	  SrcPort		  21
+	  DstBlock		  "BSC_trig_MCC"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "BSCd_iflt_FaultDiagnostic"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nCreator5"
+	  SrcPort		  1
+	  DstBlock		  "BSCd_iflt_FaultDiagnostic"
+	  DstPort		  1
+	}
+	Annotation {
+	  Name			  "  "
+	  Position		  [1364, 519]
+	}
+	Annotation {
+	  Position		  [607, 497]
+	}
+	Annotation {
+	  Position		  [589, 496]
+	}
+	Annotation {
+	  Name			  "$Author:Zhao XiangRi$\n$Date:2015/06/27$\n$Revision:1.0$"
+	  Position		  [821, 89]
+	}
+      }
+    }
+  }
+}
+# Finite State Machines
+#
+#    Stateflow Version 7.1 (R2009a) dated Jul 17 2009, 10:24:20
+#
+#
+
+
+Stateflow {
+  machine {
+    id			    1
+    name		    "BSC_lib"
+    created		    "10-Oct-2014 11:06:37"
+    isLibrary		    1
+    firstTarget		    204
+    sfVersion		    71014000.00001
+  }
+  chart {
+    id			    2
+    name		    "BSC/BSC"
+    description		    "$Author:Zhao XiangRi$\n$Date:2015/03/26$\n$Revision:1.0$"
+    windowPosition	    [48.75 -15 1440 727.5]
+    viewLimits		    [1622.627 2259.356 248.162 563.448]
+    zoomFactor		    0.456
+    screen		    [1 1 1920 1080 1.333333333333333]
+    treeNode		    [0 3 0 0]
+    firstTransition	    81
+    firstJunction	    58
+    viewObj		    2
+    machine		    1
+    subviewS {
+      x1		      443.754
+      zoomFactor	      0.833
+    }
+    ssIdHighWaterMark	    665
+    decomposition	    CLUSTER_CHART
+    firstEvent		    148
+    firstData		    162
+    chartFileNumber	    9
+    userSpecifiedStateTransitionExecutionOrder 1
+    disableImplicitCasting  1
+    actionLanguage	    1
+  }
+  state {
+    id			    3
+    labelString		    "Selftest\nen:\nBSCd_enum_BCUSt=BCU_Selftest_St;\nBSCd_flg_BCUShutdown=0;\nBSCd_iflt_BCUFault=0;\n"
+    "du:\nTimer.T1.Run(BSCc_tm_Selftest_max);\nBSC_trig_IPT;\nBSC_trig_MCC;\nBSC_trig_OPT;\nex:\nTimer.T1.Clear();"
+    position		    [649.2335 116.8439 321.5415 223.6873]
+    fontSize		    12
+    chart		    2
+    treeNode		    [2 0 0 12]
+    superState		    GROUPED
+    visible		    0
+    subviewer		    2
+    ssIdNumber		    263
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    4
+    labelString		    "Idle\nen:\nBSCd_enum_BCUSt=BCU_Idle_St;\ndu:\nTimer.T2.Run(BSCc_tm_Idle_min);\nBSC_trig_IPT;\nBS"
+    "C_trig_MCC;\nBSC_trig_COR;\nBSC_trig_EHP;\nBSC_trig_CTC;\nBSC_trig_BTM;\nBSC_trig_BPN;\nBSC_trig_DEM;\nBSC_trig_OP"
+    "T;\nex:\nTimer.T2.Clear();"
+    position		    [650.7951 371.953 523.3253 350.4543]
+    fontSize		    12
+    chart		    2
+    treeNode		    [2 0 11 6]
+    visible		    0
+    subviewer		    2
+    ssIdNumber		    290
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    5
+    labelString		    "Drive\nen:\nBSCd_enum_BCUSt=BCU_Drive_St ;\ndu:\nBSC_trig_IPT;\nBSC_trig_MCC;\nBSC_trig_COR;\nBS"
+    "C_trig_EHP;\nBSC_trig_CTC;\nBSC_trig_BTM;\nBSC_trig_BPN;\nBSC_trig_DEM;\nBSC_trig_OPT;"
+    position		    [543.6087 846.5987 333.0024 255.6729]
+    fontSize		    12
+    chart		    2
+    treeNode		    [2 0 7 10]
+    superState		    GROUPED
+    visible		    0
+    subviewer		    2
+    ssIdNumber		    278
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    6
+    labelString		    "FastCharge\nen:\nBSCd_enum_BCUSt=BCU_FastCharge_St;\ndu:\nBSC_trig_IPT;\nBSC_trig_IPT_FCM;\nBSC_"
+    "trig_MCC;\nBSC_trig_COR;\nBSC_trig_EHP;\nBSC_trig_CTC;\nBSC_trig_BTM;\nBSC_trig_BPN;\nBSC_trig_DEM;\nBSC_trig_FCM;"
+    "\nBSC_trig_BAL;\nBSC_trig_OPT;\nBSC_trig_OPT_FCM;"
+    position		    [915.3585 843.6925 365.846 262.1418]
+    fontSize		    12
+    chart		    2
+    treeNode		    [2 0 4 7]
+    visible		    0
+    subviewer		    2
+    ssIdNumber		    295
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    7
+    labelString		    "SlowCharge\nen:\nBSCd_enum_BCUSt=BCU_SlowCharge_St;\ndu:\nBSC_trig_IPT;\nBSC_trig_MCC;\nBSC_trig"
+    "_COR;\nBSC_trig_EHP;\nBSC_trig_CTC;\nBSC_trig_BTM;\nBSC_trig_BPN;\nBSC_trig_DEM;\nBSC_trig_SCM;\nBSC_trig_BAL;\nBS"
+    "C_trig_OPT;"
+    position		    [1324.046 846.1299 328.1897 261.4855]
+    fontSize		    12
+    chart		    2
+    treeNode		    [2 0 6 5]
+    visible		    0
+    subviewer		    2
+    ssIdNumber		    300
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    8
+    labelString		    "Shutdown\nBSCd_enum_BCUSt=BCU_Shutdown_St;\nBSCd_flg_BCUShutdown=1;"
+    position		    [671.7608 1704.9385 496.2187 110.4312]
+    fontSize		    12
+    chart		    2
+    treeNode		    [2 0 9 0]
+    superState		    GROUPED
+    visible		    0
+    subviewer		    2
+    ssIdNumber		    312
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    9
+    labelString		    "Powerlatch\nen:\nBSCd_enum_BCUSt=BCU_Powerlatch_St;\ndu:\nTimer.T2.Run(BSCc_tm_PowerlatchWait);\n"
+    "Timer.T4.Run(BSCc_tm_PowerlatchWait_max);\nBSC_trig_IPT;\nBSC_trig_MCC;\nBSC_trig_OPT;\nBSCd_flg_Timer4Test = Time"
+    "r.T4.Timeout; %Added by Sun Sijun for test.\nBSCd_flg_Timer2Test = Timer.T2.Timeout;\nex:\nTimer.T2.Clear();\nTime"
+    "r.T4.Clear();"
+    position		    [665.1525 1314.5677 516.0889 295.3944]
+    fontSize		    12
+    chart		    2
+    treeNode		    [2 0 10 8]
+    superState		    GROUPED
+    visible		    0
+    subviewer		    2
+    ssIdNumber		    280
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    10
+    labelString		    "Service\nen:\nBSCd_enum_BCUSt=BCU_Service_St;\ndu:\nBSC_trig_IPT;\nBSC_trig_CTC;\nBSC_trig_OPT;"
+    position		    [1734.603 858.4993 319.596 248.8292]
+    fontSize		    12
+    chart		    2
+    treeNode		    [2 0 5 9]
+    visible		    0
+    subviewer		    2
+    ssIdNumber		    474
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    11
+    labelString		    "Fault\nen:\nBSCd_enum_BCUSt=BCU_Fault_St;\ndu:\nTimer.T3.Run(BSCc_tm_Fault_min);\nBSC_trig_IPT;\n"
+    "BSC_trig_DEM;\nBSC_trig_OPT;\nBSCd_iflt_BCUFault=1;\nex:\nTimer.T3.Clear();"
+    position		    [1638.5449 296.6717 258.7002 218.2667]
+    fontSize		    12
+    chart		    2
+    treeNode		    [2 0 12 4]
+    subviewer		    2
+    ssIdNumber		    488
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    12
+    description		    "$Author:Zhao XiangRi$"
+    labelString		    "Timer"
+    position		    [1408.8073 132.3281 120.7501 38.9999]
+    fontSize		    10
+    chart		    2
+    treeNode		    [2 13 3 11]
+    superState		    SUBCHART
+    visible		    0
+    subviewer		    2
+    subviewS {
+      x1		      -7.005
+      y1		      26.785
+      zoomFactor	      0.467
+      pos		      [35 35 193.375 306.5]
+      fontSize		      8
+    }
+    ssIdNumber		    509
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    13
+    description		    "$Author:Zhao XiangRi$"
+    labelString		    "T1"
+    position		    [59.125 64.625 121 51]
+    fontSize		    8
+    chart		    2
+    treeNode		    [12 14 0 16]
+    superState		    SUBCHART
+    visible		    0
+    subviewer		    12
+    subviewS {
+      x1		      12.887
+      y1		      65.801
+      zoomFactor	      0.234
+      pos		      [70 70 212.555 153.414]
+      fontSize		      8
+    }
+    ssIdNumber		    510
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+    firstData		    128
+  }
+  state {
+    id			    14
+    description		    "$Author:Zhao XiangRi$"
+    labelString		    "Run(Limit)"
+    position		    [125.5859 108.461 100.0781 28.8281]
+    fontSize		    8
+    chart		    2
+    treeNode		    [13 0 0 15]
+    firstTransition	    82
+    firstJunction	    25
+    superState		    SUBCHART
+    visible		    0
+    subviewer		    13
+    subviewS {
+      x1		      -6.15
+      y1		      27.868
+      zoomFactor	      0.41
+      pos		      [35 35 373.083 269.25]
+      fontSize		      8
+    }
+    ssIdNumber		    515
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+    firstData		    132
+  }
+  state {
+    id			    15
+    description		    "$Author:Zhao XiangRi$"
+    labelString		    "Clear"
+    position		    [127.5703 145.211 100.0781 28.8281]
+    fontSize		    8
+    chart		    2
+    treeNode		    [13 0 14 0]
+    firstTransition	    88
+    firstJunction	    30
+    superState		    SUBCHART
+    visible		    0
+    subviewer		    13
+    subviewS {
+      x1		      20
+      y1		      20
+      pos		      [35 35 177.958 72.125]
+      fontSize		      8
+    }
+    ssIdNumber		    528
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    16
+    description		    "$Author:Zhao XiangRi$"
+    labelString		    "T2"
+    position		    [59 132.5 121 51]
+    fontSize		    8
+    chart		    2
+    treeNode		    [12 17 13 19]
+    superState		    SUBCHART
+    visible		    0
+    subviewer		    12
+    subviewS {
+      x1		      -3.51
+      y1		      30.801
+      zoomFactor	      0.234
+      pos		      [35 35 212.555 153.414]
+      fontSize		      8
+    }
+    ssIdNumber		    533
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+    firstData		    133
+  }
+  state {
+    id			    17
+    description		    "$Author:Zhao XiangRi$"
+    labelString		    "Run(Limit)"
+    position		    [90.5859 73.461 100.0781 28.8281]
+    fontSize		    8
+    chart		    2
+    treeNode		    [16 0 0 18]
+    firstTransition	    90
+    firstJunction	    32
+    superState		    SUBCHART
+    subgrouped		    1
+    visible		    0
+    subviewer		    16
+    subviewS {
+      x1		      -5.16
+      y1		      29.053
+      zoomFactor	      0.344
+      pos		      [35 35 308.833 226]
+      fontSize		      8
+    }
+    ssIdNumber		    538
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+    firstData		    137
+  }
+  state {
+    id			    18
+    description		    "$Author:Zhao XiangRi$"
+    labelString		    "Clear"
+    position		    [92.5703 110.211 100.0781 28.8281]
+    fontSize		    8
+    chart		    2
+    treeNode		    [16 0 17 0]
+    firstTransition	    96
+    firstJunction	    37
+    superState		    SUBCHART
+    visible		    0
+    subviewer		    16
+    subviewS {
+      x1		      -3
+      y1		      -1.588
+      zoomFactor	      0.2
+      pos		      [30 30 189.458 75.125]
+      fontSize		      8
+    }
+    ssIdNumber		    551
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    19
+    description		    "$Author:Zhao XiangRi$"
+    labelString		    "T3"
+    position		    [60.625 198.125 121 51]
+    fontSize		    8
+    chart		    2
+    treeNode		    [12 20 16 22]
+    superState		    SUBCHART
+    visible		    0
+    subviewer		    12
+    subviewS {
+      x1		      -15
+      y1		      -15
+      pos		      [35 35 212.555 153.414]
+      fontSize		      8
+    }
+    ssIdNumber		    556
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+    firstData		    138
+  }
+  state {
+    id			    20
+    description		    "$Author:Zhao XiangRi$"
+    labelString		    "Run(Limit)"
+    position		    [90.5859 73.461 100.0781 28.8281]
+    fontSize		    8
+    chart		    2
+    treeNode		    [19 0 0 21]
+    firstTransition	    98
+    firstJunction	    39
+    superState		    SUBCHART
+    visible		    0
+    subviewer		    19
+    subviewS {
+      x1		      24.57
+      y1		      29.71
+      zoomFactor	      0.299
+      pos		      [35 35 396.333 196]
+      fontSize		      8
+    }
+    ssIdNumber		    561
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+    firstData		    142
+  }
+  state {
+    id			    21
+    description		    "$Author:Zhao XiangRi$"
+    labelString		    "Clear"
+    position		    [92.5703 110.211 100.0781 28.8281]
+    fontSize		    8
+    chart		    2
+    treeNode		    [19 0 20 0]
+    firstTransition	    104
+    firstJunction	    44
+    superState		    SUBCHART
+    visible		    0
+    subviewer		    19
+    subviewS {
+      x1		      20
+      y1		      20
+      pos		      [35 35 202.958 77.625]
+      fontSize		      8
+    }
+    ssIdNumber		    574
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    22
+    description		    "$Author:Zhao XiangRi$"
+    labelString		    "T4"
+    position		    [60.75 260 121 51]
+    fontSize		    8
+    chart		    2
+    treeNode		    [12 23 19 0]
+    superState		    SUBCHART
+    visible		    0
+    subviewer		    12
+    subviewS {
+      x1		      -3.51
+      y1		      30.801
+      zoomFactor	      0.234
+      pos		      [35 35 212.555 153.414]
+      fontSize		      8
+    }
+    ssIdNumber		    579
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+    firstData		    143
+  }
+  state {
+    id			    23
+    description		    "$Author:Zhao XiangRi$"
+    labelString		    "Run(Limit)"
+    position		    [90.5859 73.461 100.0781 28.8281]
+    fontSize		    8
+    chart		    2
+    treeNode		    [22 0 0 24]
+    firstTransition	    106
+    firstJunction	    46
+    superState		    SUBCHART
+    visible		    0
+    subviewer		    22
+    subviewS {
+      x1		      24.596
+      y1		      26.221
+      zoomFactor	      0.298
+      pos		      [35 35 395.333 188.5]
+      fontSize		      8
+    }
+    ssIdNumber		    584
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+    firstData		    147
+  }
+  state {
+    id			    24
+    description		    "$Author:Zhao XiangRi$"
+    labelString		    "Clear"
+    position		    [92.5703 110.211 100.0781 28.8281]
+    fontSize		    8
+    chart		    2
+    treeNode		    [22 0 23 0]
+    firstTransition	    112
+    firstJunction	    51
+    superState		    SUBCHART
+    visible		    0
+    subviewer		    22
+    subviewS {
+      x1		      20
+      y1		      20
+      pos		      [35 35 190.042 71.875]
+      fontSize		      8
+    }
+    ssIdNumber		    597
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  junction {
+    id			    25
+    position		    [80.1806 92.3381 7]
+    chart		    2
+    linkNode		    [14 0 26]
+    visible		    0
+    subviewer		    14
+    ssIdNumber		    516
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    26
+    position		    [312.6563 92.3381 7]
+    chart		    2
+    linkNode		    [14 25 27]
+    visible		    0
+    subviewer		    14
+    ssIdNumber		    517
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    27
+    position		    [80.1806 156.5366 7]
+    chart		    2
+    linkNode		    [14 26 28]
+    visible		    0
+    subviewer		    14
+    ssIdNumber		    518
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    28
+    position		    [168.7481 156.5366 7]
+    chart		    2
+    linkNode		    [14 27 29]
+    visible		    0
+    subviewer		    14
+    ssIdNumber		    519
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    29
+    position		    [80.1806 195.6206 7]
+    chart		    2
+    linkNode		    [14 28 0]
+    visible		    0
+    subviewer		    14
+    ssIdNumber		    520
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    30
+    position		    [79.8803 74.4864 7]
+    chart		    2
+    linkNode		    [15 0 31]
+    visible		    0
+    subviewer		    15
+    ssIdNumber		    529
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    31
+    position		    [184.9636 74.4864 7]
+    chart		    2
+    linkNode		    [15 30 0]
+    visible		    0
+    subviewer		    15
+    ssIdNumber		    530
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    32
+    position		    [80.1806 92.3381 7]
+    chart		    2
+    linkNode		    [17 0 33]
+    visible		    0
+    isGrouped		    1
+    subviewer		    17
+    ssIdNumber		    539
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    33
+    position		    [310.0063 92.3381 7]
+    chart		    2
+    linkNode		    [17 32 34]
+    visible		    0
+    isGrouped		    1
+    subviewer		    17
+    ssIdNumber		    540
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    34
+    position		    [80.1806 156.5366 7]
+    chart		    2
+    linkNode		    [17 33 35]
+    visible		    0
+    isGrouped		    1
+    subviewer		    17
+    ssIdNumber		    541
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    35
+    position		    [233.4981 156.5366 7]
+    chart		    2
+    linkNode		    [17 34 36]
+    visible		    0
+    isGrouped		    1
+    subviewer		    17
+    ssIdNumber		    542
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    36
+    position		    [80.1806 196.1206 7]
+    chart		    2
+    linkNode		    [17 35 0]
+    visible		    0
+    isGrouped		    1
+    subviewer		    17
+    ssIdNumber		    543
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    37
+    position		    [74.8803 69.4864 7]
+    chart		    2
+    linkNode		    [18 0 38]
+    visible		    0
+    subviewer		    18
+    ssIdNumber		    552
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    38
+    position		    [195.4636 69.4864 7]
+    chart		    2
+    linkNode		    [18 37 0]
+    visible		    0
+    subviewer		    18
+    ssIdNumber		    553
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    39
+    position		    [80.1806 92.3381 7]
+    chart		    2
+    linkNode		    [20 0 40]
+    visible		    0
+    subviewer		    20
+    ssIdNumber		    562
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    40
+    position		    [355.0063 92.3381 7]
+    chart		    2
+    linkNode		    [20 39 41]
+    visible		    0
+    subviewer		    20
+    ssIdNumber		    563
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    41
+    position		    [80.1806 156.5366 7]
+    chart		    2
+    linkNode		    [20 40 42]
+    visible		    0
+    subviewer		    20
+    ssIdNumber		    564
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    42
+    position		    [257.3731 156.5366 7]
+    chart		    2
+    linkNode		    [20 41 43]
+    visible		    0
+    subviewer		    20
+    ssIdNumber		    565
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    43
+    position		    [80.1806 199.6206 7]
+    chart		    2
+    linkNode		    [20 42 0]
+    visible		    0
+    subviewer		    20
+    ssIdNumber		    566
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    44
+    position		    [79.8803 74.4864 7]
+    chart		    2
+    linkNode		    [21 0 45]
+    visible		    0
+    subviewer		    21
+    ssIdNumber		    575
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    45
+    position		    [218.9636 74.4864 7]
+    chart		    2
+    linkNode		    [21 44 0]
+    visible		    0
+    subviewer		    21
+    ssIdNumber		    576
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    46
+    position		    [80.1806 92.3381 7]
+    chart		    2
+    linkNode		    [23 0 47]
+    visible		    0
+    subviewer		    23
+    ssIdNumber		    585
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    47
+    position		    [354.2563 92.3381 7]
+    chart		    2
+    linkNode		    [23 46 48]
+    visible		    0
+    subviewer		    23
+    ssIdNumber		    586
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    48
+    position		    [80.1806 156.5366 7]
+    chart		    2
+    linkNode		    [23 47 49]
+    visible		    0
+    subviewer		    23
+    ssIdNumber		    587
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    49
+    position		    [256.6231 156.5366 7]
+    chart		    2
+    linkNode		    [23 48 50]
+    visible		    0
+    subviewer		    23
+    ssIdNumber		    588
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    50
+    position		    [80.1806 193.6206 7]
+    chart		    2
+    linkNode		    [23 49 0]
+    visible		    0
+    subviewer		    23
+    ssIdNumber		    589
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    51
+    position		    [79.8803 74.4864 7]
+    chart		    2
+    linkNode		    [24 0 52]
+    visible		    0
+    subviewer		    24
+    ssIdNumber		    598
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    52
+    position		    [199.9636 74.4864 7]
+    chart		    2
+    linkNode		    [24 51 0]
+    visible		    0
+    subviewer		    24
+    ssIdNumber		    599
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    53
+    position		    [2236.4375 453.375 7]
+    chart		    2
+    linkNode		    [2 59 61]
+    subviewer		    2
+    quantum		    [0 0 0 72]
+    ssIdNumber		    606
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    54
+    position		    [2236.4375 1742.5312 7]
+    chart		    2
+    linkNode		    [2 64 0]
+    visible		    0
+    subviewer		    2
+    ssIdNumber		    609
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    55
+    position		    [320.0938 637.048 7]
+    chart		    2
+    linkNode		    [2 61 60]
+    visible		    0
+    subviewer		    2
+    quantum		    [0 73 0 0]
+    ssIdNumber		    614
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    56
+    position		    [320.0938 1391.6417 7]
+    chart		    2
+    linkNode		    [2 62 63]
+    visible		    0
+    subviewer		    2
+    quantum		    [0 116 0 0]
+    ssIdNumber		    616
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    57
+    position		    [256.4063 1525.7663 7]
+    chart		    2
+    linkNode		    [2 63 64]
+    visible		    0
+    subviewer		    2
+    quantum		    [0 67 0 0]
+    ssIdNumber		    619
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    58
+    position		    [256.4063 231.8558 7]
+    chart		    2
+    linkNode		    [2 0 59]
+    visible		    0
+    subviewer		    2
+    quantum		    [0 119 0 0]
+    ssIdNumber		    621
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    59
+    position		    [1710.4846 246.0938 7]
+    chart		    2
+    linkNode		    [2 58 53]
+    subviewer		    2
+    quantum		    [0 0 120 71]
+    ssIdNumber		    625
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    60
+    position		    [1475.8716 647.9077 7]
+    chart		    2
+    linkNode		    [2 55 62]
+    visible		    0
+    subviewer		    2
+    quantum		    [0 0 121 65]
+    ssIdNumber		    627
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    61
+    position		    [1824.3091 565.4077 7]
+    chart		    2
+    linkNode		    [2 53 55]
+    subviewer		    2
+    quantum		    [0 0 122 78]
+    ssIdNumber		    629
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    62
+    position		    [1435.9375 1369.277 7]
+    chart		    2
+    linkNode		    [2 60 56]
+    visible		    0
+    subviewer		    2
+    quantum		    [77 0 0 123]
+    ssIdNumber		    632
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    63
+    position		    [1817.5 1400.2145 7]
+    chart		    2
+    linkNode		    [2 56 57]
+    visible		    0
+    subviewer		    2
+    quantum		    [70 0 0 124]
+    ssIdNumber		    634
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    64
+    position		    [1817.5 1741.9333 7]
+    chart		    2
+    linkNode		    [2 57 54]
+    visible		    0
+    subviewer		    2
+    quantum		    [0 0 0 79]
+    ssIdNumber		    646
+    type		    CONNECTIVE_JUNCTION
+  }
+  transition {
+    id			    65
+    labelString		    "[IPTd_flg_SlowChaCnctSt==1&&...\nIPTd_flg_FastChaCnctSt==0&&...\nIPTd_flg_VehHVCnctCmd==0&&...\n"
+    "IPTd_flg_ServSt==0]"
+    labelPosition	    [1185.221 573.72 183.202 55.289]
+    fontSize		    12
+    src {
+      id		      4
+      intersection	      [2 1 0 0.7874 1174.1203 647.9077 0 -74.4844]
+    }
+    dst {
+      id		      60
+      intersection	      [0 -1 0 -1 1468.8716 647.9077 0 101.1981]
+    }
+    midPoint		    [1323.6429 647.9077]
+    chart		    2
+    linkNode		    [2 117 121]
+    dataLimits		    [1174.12 1460.872 647.908 647.908]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      DST_STICK
+      arcClockDir	      COUNTER_CLOCKWISE
+    }
+    executionOrder	    3
+    ssIdNumber		    304
+  }
+  transition {
+    id			    66
+    labelString		    "[IPTd_flg_KL15==0&&...\nCTCd_enum_CtrSt==CTC_DefaultOffline_St]"
+    labelPosition	    [739.275 1161.081 236.522 27.986]
+    fontSize		    12
+    src {
+      id		      5
+      intersection	      [3 -0 1 0.4177 737.516 1102.2716 0 -28.9526]
+    }
+    dst {
+      id		      9
+      intersection	      [1 0 -1 0.1402 737.516 1314.5677 0 30.5704]
+    }
+    midPoint		    [737.516 1208.7741]
+    chart		    2
+    linkNode		    [2 76 69]
+    dataLimits		    [737.516 737.516 1102.272 1306.568]
+    subviewer		    2
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    281
+  }
+  transition {
+    id			    67
+    labelString		    "[IPTd_flg_KL15==1||...\nIPTd_flg_FastChaCnctSt==1||...\nIPTd_flg_SlowChaCnctSt==1]"
+    labelPosition	    [385.568 1473.62 167.137 41.638]
+    fontSize		    12
+    src {
+      id		      9
+      intersection	      [4 -1 0 0.285 665.1525 1525.7663 0 -370.8074]
+    }
+    dst {
+      id		      57
+      intersection	      [0 1 0 -1 263.4063 1525.7663 0 194.8065]
+    }
+    midPoint		    [459.8065 1525.7663]
+    chart		    2
+    linkNode		    [2 125 126]
+    dataLimits		    [271.406 665.152 1525.766 1525.766]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      DST_STICK
+      midPointSticky	      1
+    }
+    executionOrder	    1
+    ssIdNumber		    316
+  }
+  transition {
+    id			    68
+    labelString		    "[MCCd_enum_BMUSt==BMU_Shutdown_St&&...\n(IPTd_flg_VehShutBCUCmd==1||Timer.T2.Timeout==1)]"
+    labelPosition	    [988.913 1641.278 295.31 27.986]
+    fontSize		    12
+    src {
+      id		      9
+      intersection	      [3 0 1 0.3844 982.8403 1609.9621 0 -62.9796]
+    }
+    dst {
+      id		      8
+      intersection	      [1 -0 -1 0.6269 982.8403 1704.9385 0 62.9796]
+    }
+    midPoint		    [982.8403 1655.2543]
+    chart		    2
+    linkNode		    [2 126 79]
+    dataLimits		    [982.84 982.84 1609.962 1696.939]
+    subviewer		    2
+    drawStyle		    SMART
+    executionOrder	    2
+    ssIdNumber		    313
+  }
+  transition {
+    id			    69
+    labelString		    "[IPTd_flg_FastChaCnctSt==0&&...\nCTCd_enum_CtrSt==CTC_DefaultOffline_St&&...\nFCMd_enum_ChaSt==F"
+    "CM_ChaFinished_St]"
+    labelPosition	    [1025.717 1185.158 259.08 41.638]
+    fontSize		    12
+    src {
+      id		      6
+      intersection	      [3 -0 1 0.7686 1000.0153 1105.8343 0 81.3039]
+    }
+    dst {
+      id		      9
+      intersection	      [1 0 -1 0.6488 1000.0153 1314.5677 0 -81.3039]
+    }
+    midPoint		    [1000.0153 1210.478]
+    chart		    2
+    linkNode		    [2 66 70]
+    dataLimits		    [1000.015 1000.015 1105.834 1306.568]
+    subviewer		    2
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    297
+  }
+  transition {
+    id			    70
+    labelString		    "[IPTd_flg_ServSt==0&&...\nCTCd_enum_CtrSt==CTC_DefaultOffline_St]"
+    labelPosition	    [1822.157 1158.225 236.522 27.986]
+    fontSize		    12
+    src {
+      id		      10
+      intersection	      [3 0 1 0.7406 1817.5 1107.3285 0 53.8962]
+    }
+    dst {
+      id		      63
+      intersection	      [0 0 -1 -1 1817.5 1393.2145 0 -149.5114]
+    }
+    midPoint		    [1817.5 1252.2257]
+    chart		    2
+    linkNode		    [2 69 77]
+    dataLimits		    [1817.5 1817.5 1107.329 1385.215]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      DST_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    305
+  }
+  transition {
+    id			    71
+    labelString		    "[(Timer.T1.Timeout==1)&&(MCCd_enum_BMUSt!=BMU_Run_St)]"
+    labelPosition	    [1160.555 231.629 347.605 14.334]
+    fontSize		    12
+    src {
+      id		      3
+      intersection	      [2 1 0 0.5778 970.775 246.0938 0 -91.6251]
+    }
+    dst {
+      id		      59
+      intersection	      [0 -1 0 -1 1703.4846 246.0938 0 88.08]
+    }
+    midPoint		    [1348.7976 246.0938]
+    chart		    2
+    linkNode		    [2 119 118]
+    dataLimits		    [970.775 1695.485 246.094 246.094]
+    subviewer		    2
+    drawStyle		    SMART
+    executionOrder	    2
+    ssIdNumber		    490
+  }
+  transition {
+    id			    72
+    labelString		    "[Timer.T3.Timeout==1&&...\nIPTd_flg_KL15==0&&...\nIPTd_flg_FastChaCnctSt==0&&...\nIPTd_flg_SlowC"
+    "haCnctSt==0&&...\nIPTd_flg_ServSt==0]"
+    labelPosition	    [1931.749 369.873 178.758 68.941]
+    fontSize		    12
+    src {
+      id		      11
+      intersection	      [2 1 0 0.7179 1897.2451 453.375 0 -174.3356]
+    }
+    dst {
+      id		      53
+      intersection	      [0 -1 0 -1 2229.4375 453.375 0 520.4912]
+    }
+    midPoint		    [2066.3022 453.375]
+    chart		    2
+    linkNode		    [2 80 115]
+    dataLimits		    [1897.245 2221.438 453.375 453.375]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      DST_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    495
+  }
+  transition {
+    id			    73
+    labelString		    "[Timer.T2.Timeout==1&&...\nIPTd_flg_KL15==0&&...\nIPTd_flg_FastChaCnctSt==0&&...\nIPTd_flg_SlowC"
+    "haCnctSt==0&&...\nIPTd_flg_ServSt==0]"
+    labelPosition	    [382.688 548.673 178.758 68.941]
+    fontSize		    12
+    src {
+      id		      4
+      intersection	      [4 -1 0 0.2436 650.7951 637.048 0 297.526]
+    }
+    dst {
+      id		      55
+      intersection	      [0 1 0 -1 327.0938 637.048 0 -307.7549]
+    }
+    midPoint		    [486.1681 637.048]
+    chart		    2
+    linkNode		    [2 122 117]
+    dataLimits		    [335.094 650.795 637.048 637.048]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      DST_STICK
+      midPointSticky	      1
+    }
+    executionOrder	    2
+    ssIdNumber		    494
+  }
+  transition {
+    id			    74
+    labelString		    "[MCCd_enum_BMUSt==BMU_Run_St]"
+    labelPosition	    [804.911 350.637 206.444 14.334]
+    fontSize		    12
+    src {
+      id		      3
+      intersection	      [3 -0 1 0.5484 794.4416 340.5312 0 0]
+    }
+    dst {
+      id		      4
+      intersection	      [1 0 -1 0.2745 794.4416 371.953 0 0]
+    }
+    midPoint		    [794.4399 352.6645]
+    chart		    2
+    linkNode		    [2 127 80]
+    dataLimits		    [794.44 794.442 340.531 363.953]
+    subviewer		    2
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    274
+  }
+  transition {
+    id			    75
+    labelString		    "[IPTd_flg_VehHVCnctCmd==1&&...\nIPTd_flg_FastChaCnctSt==0&&...\nIPTd_flg_SlowChaCnctSt==0&&...\n"
+    "IPTd_flg_ServSt==0]"
+    labelPosition	    [551.125 770.165 186.62 55.289]
+    fontSize		    12
+    src {
+      id		      4
+      intersection	      [3 0 1 0.8429 732.9872 722.4073 0 0]
+    }
+    dst {
+      id		      5
+      intersection	      [1 -0 -1 0.5687 732.9872 846.5987 0 0]
+    }
+    midPoint		    [732.9958 782.9421]
+    chart		    2
+    linkNode		    [2 121 76]
+    dataLimits		    [732.987 732.996 722.407 838.599]
+    subviewer		    2
+    drawStyle		    SMART
+    executionOrder	    4
+    ssIdNumber		    292
+  }
+  transition {
+    id			    76
+    labelString		    "[IPTd_flg_FastChaCnctSt==1&&...\nIPTd_flg_VehHVCnctCmd==0&&...\nIPTd_flg_SlowChaCnctSt==0&&...\n"
+    "IPTd_flg_ServSt==0]"
+    labelPosition	    [993.972 748.406 183.202 55.289]
+    fontSize		    12
+    src {
+      id		      4
+      intersection	      [3 0 1 0.3523 989.7716 722.4073 0 113.0628]
+    }
+    dst {
+      id		      6
+      intersection	      [1 -0 -1 0.2034 989.7716 843.6925 0 -113.0628]
+    }
+    midPoint		    [989.7536 781.4258]
+    chart		    2
+    linkNode		    [2 75 66]
+    dataLimits		    [989.754 989.772 722.407 835.693]
+    subviewer		    2
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    303
+  }
+  transition {
+    id			    77
+    labelString		    "[IPTd_flg_SlowChaCnctSt==0&&...\nCTCd_enum_CtrSt==CTC_DefaultOffline_St&&...\nSCMd_enum_ChaSt==S"
+    "CM_NoCharge_St]"
+    labelPosition	    [1443.579 1160.408 259.08 41.638]
+    fontSize		    12
+    src {
+      id		      7
+      intersection	      [3 0 1 0.6591 1435.9375 1107.6153 0 -89.6727]
+    }
+    dst {
+      id		      62
+      intersection	      [0 0 -1 -1 1435.9375 1362.277 0 105.7396]
+    }
+    midPoint		    [1435.9375 1236.2216]
+    chart		    2
+    linkNode		    [2 70 123]
+    dataLimits		    [1435.938 1435.938 1107.615 1354.277]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      DST_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    475
+  }
+  transition {
+    id			    78
+    labelString		    "[IPTd_flg_ServSt==1&&...\nIPTd_flg_FastChaCnctSt==0&&...\nIPTd_flg_SlowChaCnctSt==0&&...\nIPTd_f"
+    "lg_VehHVCnctCmd==0]"
+    labelPosition	    [1200.057 499.812 178.758 55.289]
+    fontSize		    12
+    src {
+      id		      4
+      intersection	      [2 1 0 0.552 1174.1203 565.4077 0 -128.4844]
+    }
+    dst {
+      id		      61
+      intersection	      [0 -1 0 -1 1817.3091 565.4077 0 71.6274]
+    }
+    midPoint		    [1505.4364 565.4077]
+    chart		    2
+    linkNode		    [2 115 122]
+    dataLimits		    [1174.12 1809.309 565.408 565.408]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      DST_STICK
+      midPointSticky	      1
+    }
+    executionOrder	    5
+    ssIdNumber		    476
+  }
+  transition {
+    id			    79
+    labelPosition	    [1425.098 1741.933 7.178 14.334]
+    fontSize		    12
+    src {
+      id		      64
+      intersection	      [0 -1 0 -1 1810.5 1741.9333 0 0]
+    }
+    dst {
+      id		      8
+      intersection	      [2 1 0 0.335 1167.9795 1741.9333 0 0]
+    }
+    midPoint		    [1479.5326 1741.9333]
+    chart		    2
+    linkNode		    [2 68 114]
+    dataLimits		    [1175.979 1810.5 1741.933 1741.933]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      SRC_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    649
+  }
+  transition {
+    id			    80
+    labelString		    "[(IPTd_flg_FastChaCnctSt==1&&IPTd_flg_SlowChaCnctSt==1)||...\n(IPTd_flg_FastChaCnctSt==1&&IPTd_f"
+    "lg_VehHVCnctCmd==1)||...\n(IPTd_flg_FastChaCnctSt==1&&IPTd_flg_ServSt==1)||...\n(IPTd_flg_SlowChaCnctSt==1&&IPTd_f"
+    "lg_VehHVCnctCmd==1)||...\n(IPTd_flg_SlowChaCnctSt==1&&IPTd_flg_ServSt==1)||...\n(IPTd_flg_VehHVCnctCmd==1&&IPTd_fl"
+    "g_ServSt==1)]"
+    labelPosition	    [1230.919 334.721 349.656 82.593]
+    fontSize		    12
+    src {
+      id		      4
+      intersection	      [2 1 0 0.1318 1174.1204 418.1371 0 37.1635]
+    }
+    dst {
+      id		      11
+      intersection	      [4 -1 -0 0.4435 1638.5449 418.1371 0 -37.1635]
+    }
+    midPoint		    [1412.1682 418.1372]
+    chart		    2
+    linkNode		    [2 74 72]
+    dataLimits		    [1174.12 1630.545 418.137 418.137]
+    stampAngle		    NaN
+    subviewer		    2
+    drawStyle		    SMART
+    executionOrder	    6
+    ssIdNumber		    489
+  }
+  transition {
+    id			    81
+    labelPosition	    [762.192 62.899 7.178 14.334]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 755.3422 40.9687 0 0]
+    }
+    dst {
+      id		      3
+      intersection	      [1 0 -1 0.33 755.3422 116.8439 0 0]
+    }
+    midPoint		    [755.3422 76.2951]
+    chart		    2
+    linkNode		    [2 0 119]
+    dataLimits		    [755.342 755.342 40.969 108.844]
+    subviewer		    2
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    504
+  }
+  transition {
+    id			    82
+    labelPosition	    [70.25 72.5 5.62 11.224]
+    fontSize		    8
+    src {
+      intersection	      [0 0.7071 0.7071 0 54.0177 66.1751 0 0]
+    }
+    dst {
+      id		      25
+      intersection	      [1 -0.7071 -0.7071 0 75.2309 87.3883 0 0]
+    }
+    midPoint		    [62.0727 74.2301]
+    chart		    2
+    linkNode		    [14 0 83]
+    visible		    0
+    dataLimits		    [54.018 75.231 66.175 87.388]
+    subviewer		    14
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    521
+  }
+  transition {
+    id			    83
+    labelString		    "[Init != 1]\n{TimeTicks = 0;TimeLimit = Limit/10;Init = 1;}"
+    labelPosition	    [96.431 69.911 163.605 21.2]
+    fontSize		    8
+    src {
+      id		      25
+      intersection	      [2 1 0 0 87.1806 92.3381 0 0]
+    }
+    dst {
+      id		      26
+      intersection	      [4 -1 0 0 305.6563 92.3381 0 0]
+    }
+    midPoint		    [192.4185 92.3381]
+    chart		    2
+    linkNode		    [14 82 84]
+    visible		    0
+    dataLimits		    [87.181 305.656 89.938 94.738]
+    subviewer		    14
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    522
+  }
+  transition {
+    id			    84
+    labelPosition	    [235.976 109.03 5.62 11.224]
+    fontSize		    8
+    src {
+      id		      26
+      intersection	      [4 -0.9502 0.3116 0 306.0048 94.5193 0 0]
+    }
+    dst {
+      id		      25
+      intersection	      [2 0.9502 0.3116 0 86.8321 94.5193 0 0]
+    }
+    midPoint		    [196.4185 117.9683]
+    chart		    2
+    linkNode		    [14 83 85]
+    visible		    0
+    dataLimits		    [86.832 306.005 94.519 117.966]
+    stampAngle		    -0.3169
+    subviewer		    14
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    523
+  }
+  transition {
+    id			    85
+    labelString		    "{TimeTicks++;}"
+    labelPosition	    [86.842 129.08 55.576 11.224]
+    fontSize		    8
+    src {
+      id		      25
+      intersection	      [3 0 1 0 80.1806 99.3381 0 0]
+    }
+    dst {
+      id		      27
+      intersection	      [1 0 -1 0 80.1806 149.5366 0 0]
+    }
+    midPoint		    [80.1806 121.2679]
+    chart		    2
+    linkNode		    [14 84 86]
+    visible		    0
+    dataLimits		    [77.781 82.581 99.338 149.537]
+    subviewer		    14
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    2
+    ssIdNumber		    524
+  }
+  transition {
+    id			    86
+    labelString		    "[TimeTicks >= TimeLimit]{Timeout = 1;}"
+    labelPosition	    [93.593 171.713 143.623 11.224]
+    fontSize		    8
+    src {
+      id		      27
+      intersection	      [2 1 0 0 87.1806 156.5366 0 0]
+    }
+    dst {
+      id		      28
+      intersection	      [4 -1 0 0 161.7481 156.5366 0 0]
+    }
+    midPoint		    [121.8246 156.5366]
+    chart		    2
+    linkNode		    [14 85 87]
+    visible		    0
+    dataLimits		    [87.181 161.748 154.137 158.937]
+    subviewer		    14
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    525
+  }
+  transition {
+    id			    87
+    labelPosition	    [84.448 179.135 5.62 11.224]
+    fontSize		    8
+    src {
+      id		      27
+      intersection	      [3 0 1 0 80.1806 163.5366 0 0]
+    }
+    dst {
+      id		      29
+      intersection	      [1 0 -1 0 80.1806 188.6206 0 0]
+    }
+    midPoint		    [80.1806 172.3632]
+    chart		    2
+    linkNode		    [14 86 0]
+    visible		    0
+    dataLimits		    [77.781 82.581 163.537 188.621]
+    subviewer		    14
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    2
+    ssIdNumber		    526
+  }
+  transition {
+    id			    88
+    labelPosition	    [63.374 68.723 4.371 8.729]
+    fontSize		    6
+    src {
+      intersection	      [0 1 0 0 47.3333 74.4864 0 0]
+    }
+    dst {
+      id		      30
+      intersection	      [4 -1 -0 0 72.8803 74.4864 0 0]
+    }
+    midPoint		    [56.4015 74.4864]
+    chart		    2
+    linkNode		    [15 0 89]
+    visible		    0
+    dataLimits		    [47.333 72.88 72.086 76.886]
+    subviewer		    15
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    531
+  }
+  transition {
+    id			    89
+    labelString		    "{Timeout = 0;Init = 0;}"
+    labelPosition	    [98.901 89.798 79.305 11.224]
+    fontSize		    8
+    src {
+      id		      30
+      intersection	      [2 1 0 0 86.8803 74.4864 0 0]
+    }
+    dst {
+      id		      31
+      intersection	      [4 -1 0 0 177.9636 74.4864 0 0]
+    }
+    midPoint		    [128.422 74.4864]
+    chart		    2
+    linkNode		    [15 88 0]
+    visible		    0
+    dataLimits		    [86.88 177.964 72.086 76.886]
+    subviewer		    15
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    532
+  }
+  transition {
+    id			    90
+    labelPosition	    [69.189 69.205 5.62 11.224]
+    fontSize		    8
+    src {
+      intersection	      [0 0.7071 0.7071 0 54.0177 66.1751 0 0]
+    }
+    dst {
+      id		      32
+      intersection	      [4 -0.7071 -0.7071 0 75.2309 87.3884 0 0]
+    }
+    midPoint		    [62.0726 74.2301]
+    chart		    2
+    linkNode		    [17 0 91]
+    visible		    0
+    isGrouped		    1
+    dataLimits		    [54.018 75.231 66.175 87.388]
+    subviewer		    17
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    544
+  }
+  transition {
+    id			    91
+    labelString		    "[Init != 1]{TimeTicks = 0;TimeLimit = Limit /10;Init = 1;}"
+    labelPosition	    [93.536 78.905 197.95 11.224]
+    fontSize		    8
+    src {
+      id		      32
+      intersection	      [2 1 0 0 87.1806 92.3381 0 0]
+    }
+    dst {
+      id		      33
+      intersection	      [4 -1 0 0 303.0063 92.3381 0 0]
+    }
+    midPoint		    [195.5246 92.3381]
+    chart		    2
+    linkNode		    [17 90 92]
+    visible		    0
+    isGrouped		    1
+    dataLimits		    [87.181 303.006 89.938 94.738]
+    subviewer		    17
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    545
+  }
+  transition {
+    id			    92
+    labelPosition	    [248.616 105.742 5.62 11.224]
+    fontSize		    8
+    src {
+      id		      33
+      intersection	      [4 -0.9497 0.3132 0 303.3585 94.5307 0 0]
+    }
+    dst {
+      id		      32
+      intersection	      [2 0.9497 0.3132 0 86.8284 94.5307 0 0]
+    }
+    midPoint		    [195.0934 117.8372]
+    chart		    2
+    linkNode		    [17 91 93]
+    visible		    0
+    isGrouped		    1
+    dataLimits		    [86.828 303.358 94.531 117.835]
+    stampAngle		    -0.3186
+    subviewer		    17
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    546
+  }
+  transition {
+    id			    93
+    labelString		    "{TimeTicks++;\nBSCd_num_Timer2Ticks=TimeTicks;}% Added by SSJ"
+    labelPosition	    [79.56 122.45 199.199 21.2]
+    fontSize		    8
+    src {
+      id		      32
+      intersection	      [3 0 1 0 80.1806 99.3381 0 0]
+    }
+    dst {
+      id		      34
+      intersection	      [1 0 -1 0 80.1806 149.5366 0 0]
+    }
+    midPoint		    [80.1806 121.2679]
+    chart		    2
+    linkNode		    [17 92 94]
+    visible		    0
+    isGrouped		    1
+    dataLimits		    [77.781 82.581 99.338 149.537]
+    subviewer		    17
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    2
+    ssIdNumber		    547
+  }
+  transition {
+    id			    94
+    labelString		    "[TimeTicks >= TimeLimit]{Timeout = 1;}"
+    labelPosition	    [96.712 171.713 143.623 11.224]
+    fontSize		    8
+    src {
+      id		      34
+      intersection	      [2 1 0 0 87.1806 156.5366 0 0]
+    }
+    dst {
+      id		      35
+      intersection	      [4 -1 0 0 226.4981 156.5366 0 0]
+    }
+    midPoint		    [155.6073 156.5366]
+    chart		    2
+    linkNode		    [17 93 95]
+    visible		    0
+    isGrouped		    1
+    dataLimits		    [87.181 226.498 154.137 158.937]
+    subviewer		    17
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    548
+  }
+  transition {
+    id			    95
+    labelPosition	    [84.448 179.418 5.62 11.224]
+    fontSize		    8
+    src {
+      id		      34
+      intersection	      [3 0 1 0 80.1806 163.5366 0 0]
+    }
+    dst {
+      id		      36
+      intersection	      [1 0 -1 0 80.1806 189.1206 0 0]
+    }
+    midPoint		    [80.1806 172.6241]
+    chart		    2
+    linkNode		    [17 94 0]
+    visible		    0
+    isGrouped		    1
+    dataLimits		    [77.781 82.581 163.537 189.121]
+    subviewer		    17
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    2
+    ssIdNumber		    549
+  }
+  transition {
+    id			    96
+    labelPosition	    [58.808 63.723 4.371 8.729]
+    fontSize		    6
+    src {
+      intersection	      [0 1 0 0 43.3333 69.4864 0 0]
+    }
+    dst {
+      id		      37
+      intersection	      [4 -1 -0 0 67.8803 69.4864 0 0]
+    }
+    midPoint		    [51.8797 69.4864]
+    chart		    2
+    linkNode		    [18 0 97]
+    visible		    0
+    dataLimits		    [43.333 67.88 67.086 71.886]
+    subviewer		    18
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    554
+  }
+  transition {
+    id			    97
+    labelString		    "{Timeout = 0;\nInit = 0;}"
+    labelPosition	    [101.017 74.48 49.331 21.2]
+    fontSize		    8
+    src {
+      id		      37
+      intersection	      [2 1 0 0 81.8803 69.4864 0 0]
+    }
+    dst {
+      id		      38
+      intersection	      [4 -1 0 0 188.4636 69.4864 0 0]
+    }
+    midPoint		    [131.172 69.4864]
+    chart		    2
+    linkNode		    [18 96 0]
+    visible		    0
+    dataLimits		    [81.88 188.464 67.086 71.886]
+    subviewer		    18
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    555
+  }
+  transition {
+    id			    98
+    labelPosition	    [69.189 69.205 4.371 8.729]
+    fontSize		    6
+    src {
+      intersection	      [0 0.7071 0.7071 0 54.0177 66.1751 0 0]
+    }
+    dst {
+      id		      39
+      intersection	      [4 -0.7071 -0.7071 0 75.2309 87.3884 0 0]
+    }
+    midPoint		    [62.0726 74.2301]
+    chart		    2
+    linkNode		    [20 0 99]
+    visible		    0
+    dataLimits		    [54.018 75.231 66.175 87.388]
+    subviewer		    20
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    567
+  }
+  transition {
+    id			    99
+    labelString		    "[Init != 1]{TimeTicks = 0;TimeLimit = Limit/10;Init = 1;}"
+    labelPosition	    [104.288 82.405 195.452 11.224]
+    fontSize		    8
+    src {
+      id		      39
+      intersection	      [2 1 0 0 87.1806 92.3381 0 0]
+    }
+    dst {
+      id		      40
+      intersection	      [4 -1 0 0 348.0063 92.3381 0 0]
+    }
+    midPoint		    [219.0029 92.3381]
+    chart		    2
+    linkNode		    [20 98 100]
+    visible		    0
+    dataLimits		    [87.181 348.006 89.938 94.738]
+    subviewer		    20
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    568
+  }
+  transition {
+    id			    100
+    labelPosition	    [197.302 127.218 5.62 11.224]
+    fontSize		    8
+    src {
+      id		      40
+      intersection	      [4 -0.9497 0.3132 0 348.3585 94.5307 0 0]
+    }
+    dst {
+      id		      39
+      intersection	      [2 0.9497 0.3132 0 86.8284 94.5307 0 0]
+    }
+    midPoint		    [217.5934 122.4006]
+    chart		    2
+    linkNode		    [20 99 101]
+    visible		    0
+    dataLimits		    [86.828 348.358 94.531 122.393]
+    stampAngle		    -0.3186
+    subviewer		    20
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    569
+  }
+  transition {
+    id			    101
+    labelString		    "{TimeTicks++;}"
+    labelPosition	    [85.967 134.705 55.576 11.224]
+    fontSize		    8
+    src {
+      id		      39
+      intersection	      [3 0 1 0 80.1806 99.3381 0 0]
+    }
+    dst {
+      id		      41
+      intersection	      [1 0 -1 0 80.1806 149.5366 0 0]
+    }
+    midPoint		    [80.1806 121.2679]
+    chart		    2
+    linkNode		    [20 100 102]
+    visible		    0
+    dataLimits		    [77.781 82.581 99.338 149.537]
+    subviewer		    20
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    2
+    ssIdNumber		    570
+  }
+  transition {
+    id			    102
+    labelString		    "[TimeTicks >= TimeLimit]{Timeout = 1;}"
+    labelPosition	    [97.75 171.713 143.623 11.224]
+    fontSize		    8
+    src {
+      id		      41
+      intersection	      [2 1 0 0 87.1806 156.5366 0 0]
+    }
+    dst {
+      id		      42
+      intersection	      [4 -1 0 0 250.3731 156.5366 0 0]
+    }
+    midPoint		    [168.0638 156.5366]
+    chart		    2
+    linkNode		    [20 101 103]
+    visible		    0
+    dataLimits		    [87.181 250.373 154.137 158.937]
+    subviewer		    20
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    571
+  }
+  transition {
+    id			    103
+    labelPosition	    [84.448 181.396 5.62 11.224]
+    fontSize		    8
+    src {
+      id		      41
+      intersection	      [3 0 1 0 80.1806 163.5366 0 0]
+    }
+    dst {
+      id		      43
+      intersection	      [1 0 -1 0 80.1806 192.6206 0 0]
+    }
+    midPoint		    [80.1806 174.4502]
+    chart		    2
+    linkNode		    [20 102 0]
+    visible		    0
+    dataLimits		    [77.781 82.581 163.537 192.621]
+    subviewer		    20
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    2
+    ssIdNumber		    572
+  }
+  transition {
+    id			    104
+    labelPosition	    [62.069 68.723 4.371 8.729]
+    fontSize		    6
+    src {
+      intersection	      [0 1 0 0 44.3333 74.4864 0 0]
+    }
+    dst {
+      id		      44
+      intersection	      [4 -1 -0 0 72.8803 74.4864 0 0]
+    }
+    midPoint		    [54.9667 74.4864]
+    chart		    2
+    linkNode		    [21 0 105]
+    visible		    0
+    dataLimits		    [44.333 72.88 72.086 76.886]
+    subviewer		    21
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    577
+  }
+  transition {
+    id			    105
+    labelString		    "{Timeout = 0;Init = 0;}"
+    labelPosition	    [102.202 85.63 79.305 11.224]
+    fontSize		    8
+    src {
+      id		      44
+      intersection	      [2 1 0 0 86.8803 74.4864 0 0]
+    }
+    dst {
+      id		      45
+      intersection	      [4 -1 0 0 211.9636 74.4864 0 0]
+    }
+    midPoint		    [147.8805 74.4864]
+    chart		    2
+    linkNode		    [21 104 0]
+    visible		    0
+    dataLimits		    [86.88 211.964 72.086 76.886]
+    subviewer		    21
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    578
+  }
+  transition {
+    id			    106
+    labelPosition	    [69.189 69.205 5.62 11.224]
+    fontSize		    8
+    src {
+      intersection	      [0 0.7071 0.7071 0 54.0177 66.1751 0 0]
+    }
+    dst {
+      id		      46
+      intersection	      [4 -0.7071 -0.7071 0 75.2309 87.3884 0 0]
+    }
+    midPoint		    [62.0726 74.2301]
+    chart		    2
+    linkNode		    [23 0 107]
+    visible		    0
+    dataLimits		    [54.018 75.231 66.175 87.388]
+    subviewer		    23
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    590
+  }
+  transition {
+    id			    107
+    labelString		    "[Init != 1]{TimeTicks = 0;TimeLimit = Limit/10 ;Init = 1;}"
+    labelPosition	    [108.288 82.907 197.95 11.224]
+    fontSize		    8
+    src {
+      id		      46
+      intersection	      [2 1 0 0 87.1806 92.3381 0 0]
+    }
+    dst {
+      id		      47
+      intersection	      [4 -1 0 0 347.2563 92.3381 0 0]
+    }
+    midPoint		    [218.6116 92.3381]
+    chart		    2
+    linkNode		    [23 106 108]
+    visible		    0
+    dataLimits		    [87.181 347.256 89.938 94.738]
+    subviewer		    23
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    591
+  }
+  transition {
+    id			    108
+    labelPosition	    [197.1 125.497 5.62 11.224]
+    fontSize		    8
+    src {
+      id		      47
+      intersection	      [4 -0.9553 0.2958 0 347.5695 94.4086 0 0]
+    }
+    dst {
+      id		      46
+      intersection	      [2 0.9553 0.2958 0 86.8674 94.4086 0 0]
+    }
+    midPoint		    [217.2184 120.6054]
+    chart		    2
+    linkNode		    [23 107 109]
+    visible		    0
+    dataLimits		    [86.867 347.569 94.409 120.598]
+    stampAngle		    -0.3003
+    subviewer		    23
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    592
+  }
+  transition {
+    id			    109
+    labelString		    "{TimeTicks++;...\nBSCd_num_Timer4Ticks=TimeTicks;}% Added by SSJ"
+    labelPosition	    [84.477 116.825 199.199 21.2]
+    fontSize		    8
+    src {
+      id		      46
+      intersection	      [3 0 1 0 80.1806 99.3381 0 0]
+    }
+    dst {
+      id		      48
+      intersection	      [1 0 -1 0 80.1806 149.5366 0 0]
+    }
+    midPoint		    [80.1806 121.2679]
+    chart		    2
+    linkNode		    [23 108 110]
+    visible		    0
+    dataLimits		    [77.781 82.581 99.338 149.537]
+    subviewer		    23
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    2
+    ssIdNumber		    593
+  }
+  transition {
+    id			    110
+    labelString		    "[TimeTicks >= TimeLimit]{Timeout = 1;}"
+    labelPosition	    [103.092 175.088 143.623 11.224]
+    fontSize		    8
+    src {
+      id		      48
+      intersection	      [2 1 0 0 87.1806 156.5366 0 0]
+    }
+    dst {
+      id		      49
+      intersection	      [4 -1 0 0 249.6231 156.5366 0 0]
+    }
+    midPoint		    [167.6725 156.5366]
+    chart		    2
+    linkNode		    [23 109 111]
+    visible		    0
+    dataLimits		    [87.181 249.623 154.137 158.937]
+    subviewer		    23
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    594
+  }
+  transition {
+    id			    111
+    labelPosition	    [84.448 178.005 5.62 11.224]
+    fontSize		    8
+    src {
+      id		      48
+      intersection	      [3 0 1 0 80.1806 163.5366 0 0]
+    }
+    dst {
+      id		      50
+      intersection	      [1 0 -1 0 80.1806 186.6206 0 0]
+    }
+    midPoint		    [80.1806 171.3197]
+    chart		    2
+    linkNode		    [23 110 0]
+    visible		    0
+    dataLimits		    [77.781 82.581 163.537 186.621]
+    subviewer		    23
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    2
+    ssIdNumber		    595
+  }
+  transition {
+    id			    112
+    labelPosition	    [62.721 68.723 4.371 8.729]
+    fontSize		    6
+    src {
+      intersection	      [0 1 0 0 45.8333 74.4864 0 0]
+    }
+    dst {
+      id		      51
+      intersection	      [4 -1 -0 0 72.8803 74.4864 0 0]
+    }
+    midPoint		    [55.6841 74.4864]
+    chart		    2
+    linkNode		    [24 0 113]
+    visible		    0
+    dataLimits		    [45.833 72.88 72.086 76.886]
+    subviewer		    24
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    600
+  }
+  transition {
+    id			    113
+    labelString		    "{Timeout = 0;Init = 0;}"
+    labelPosition	    [103.293 89.13 79.305 11.224]
+    fontSize		    8
+    src {
+      id		      51
+      intersection	      [2 1 0 0 86.8803 74.4864 0 0]
+    }
+    dst {
+      id		      52
+      intersection	      [4 -1 0 0 192.9636 74.4864 0 0]
+    }
+    midPoint		    [135.922 74.4864]
+    chart		    2
+    linkNode		    [24 112 0]
+    visible		    0
+    dataLimits		    [86.88 192.964 72.086 76.886]
+    subviewer		    24
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    601
+  }
+  transition {
+    id			    114
+    labelPosition	    [1989.066 1742.177 7.178 14.334]
+    fontSize		    12
+    src {
+      id		      54
+      intersection	      [0 -1 -0.0014 -1 2229.4375 1742.5212 0 0]
+    }
+    dst {
+      id		      64
+      intersection	      [0 1 0.0014 -1 1824.5 1741.9432 0 0]
+    }
+    midPoint		    [2022.4265 1742.2257]
+    chart		    2
+    linkNode		    [2 79 0]
+    dataLimits		    [1832.5 2229.438 1741.954 1742.521]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      arcClockDir	      COUNTER_CLOCKWISE
+    }
+    executionOrder	    1
+    ssIdNumber		    610
+  }
+  transition {
+    id			    115
+    labelPosition	    [2236.437 1230.859 7.178 14.334]
+    fontSize		    12
+    src {
+      id		      53
+      intersection	      [0 0 1 -1 2236.4375 460.375 0 0]
+    }
+    dst {
+      id		      54
+      intersection	      [0 0 -1 -1 2236.4375 1735.5312 0 0]
+    }
+    midPoint		    [2236.4375 1121.4132]
+    chart		    2
+    linkNode		    [2 72 78]
+    dataLimits		    [2236.438 2236.438 460.375 1727.531]
+    subviewer		    2
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    611
+  }
+  transition {
+    id			    116
+    labelPosition	    [526.342 1391.642 7.178 14.334]
+    fontSize		    12
+    src {
+      id		      56
+      intersection	      [0 1 0 -1 327.0938 1391.6417 0 0]
+    }
+    dst {
+      id		      9
+      intersection	      [4 -1 0 0.7391 665.1525 1391.6417 0 0]
+    }
+    midPoint		    [499.2115 1391.6417]
+    chart		    2
+    linkNode		    [2 123 124]
+    dataLimits		    [327.094 657.153 1391.642 1391.642]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      SRC_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    617
+  }
+  transition {
+    id			    117
+    labelPosition	    [320.094 1088.732 7.178 14.334]
+    fontSize		    12
+    src {
+      id		      55
+      intersection	      [0 0 1 -1 320.0938 644.048 0 0]
+    }
+    dst {
+      id		      56
+      intersection	      [0 0 -1 -1 320.0938 1384.6417 0 0]
+    }
+    midPoint		    [320.0938 1026.184]
+    chart		    2
+    linkNode		    [2 73 65]
+    dataLimits		    [320.094 320.094 644.048 1376.642]
+    subviewer		    2
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    618
+  }
+  transition {
+    id			    118
+    labelPosition	    [256.406 744.974 7.178 14.334]
+    fontSize		    12
+    src {
+      id		      57
+      intersection	      [0 0 -1 -1 256.4063 1518.7663 0 0]
+    }
+    dst {
+      id		      58
+      intersection	      [0 0 1 -1 256.4063 238.8558 0 0]
+    }
+    midPoint		    [256.4063 855.2476]
+    chart		    2
+    linkNode		    [2 71 120]
+    dataLimits		    [256.406 256.406 246.856 1518.766]
+    subviewer		    2
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    623
+  }
+  transition {
+    id			    119
+    labelPosition	    [492.56 231.856 7.178 14.334]
+    fontSize		    12
+    src {
+      id		      58
+      intersection	      [0 1 0 -1 263.4063 231.8558 0 0]
+    }
+    dst {
+      id		      3
+      intersection	      [4 -1 0 0.4858 649.2335 231.8558 0 0]
+    }
+    midPoint		    [460.4467 231.8558]
+    chart		    2
+    linkNode		    [2 81 71]
+    dataLimits		    [263.406 641.234 231.856 231.856]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      SRC_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    624
+  }
+  transition {
+    id			    120
+    labelPosition	    [1710.485 266.345 7.178 14.334]
+    fontSize		    12
+    src {
+      id		      59
+      intersection	      [0 0 1 -1 1710.4846 253.0938 0 0]
+    }
+    dst {
+      id		      11
+      intersection	      [1 0 -1 0.2781 1710.4846 296.6717 0 0]
+    }
+    midPoint		    [1710.4846 271.5694]
+    chart		    2
+    linkNode		    [2 118 127]
+    dataLimits		    [1710.485 1710.485 253.094 288.672]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      SRC_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    626
+  }
+  transition {
+    id			    121
+    labelPosition	    [1475.872 765.605 7.178 14.334]
+    fontSize		    12
+    src {
+      id		      60
+      intersection	      [0 0 1 -1 1475.8716 654.9077 0 0]
+    }
+    dst {
+      id		      7
+      intersection	      [1 0 -1 0.4626 1475.8716 846.1299 0 0]
+    }
+    midPoint		    [1475.8716 750.4151]
+    chart		    2
+    linkNode		    [2 65 75]
+    dataLimits		    [1475.872 1475.872 654.908 838.13]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      SRC_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    628
+  }
+  transition {
+    id			    122
+    labelPosition	    [1824.309 741.267 7.178 14.334]
+    fontSize		    12
+    src {
+      id		      61
+      intersection	      [0 0 1 -1 1824.3091 572.4077 0 0]
+    }
+    dst {
+      id		      10
+      intersection	      [1 0 -1 0.2807 1824.3091 858.4993 0 0]
+    }
+    midPoint		    [1824.3091 717.4122]
+    chart		    2
+    linkNode		    [2 78 73]
+    dataLimits		    [1824.309 1824.309 572.408 850.499]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      SRC_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    631
+  }
+  transition {
+    id			    123
+    labelPosition	    [1283.864 1369.277 7.178 14.334]
+    fontSize		    12
+    src {
+      id		      62
+      intersection	      [0 -1 0 -1 1428.9375 1369.277 0 0]
+    }
+    dst {
+      id		      9
+      intersection	      [2 1 0 0.1852 1181.2414 1369.277 0 0]
+    }
+    midPoint		    [1303.9655 1369.277]
+    chart		    2
+    linkNode		    [2 77 116]
+    dataLimits		    [1189.241 1428.938 1369.277 1369.277]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      SRC_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    633
+  }
+  transition {
+    id			    124
+    labelString		    "[IPTd_flg_KL15==1]"
+    labelPosition	    [1540.035 1378.026 104.931 14.334]
+    fontSize		    12
+    src {
+      id		      63
+      intersection	      [0 -1 0 -1 1810.5 1400.2145 0 0]
+    }
+    dst {
+      id		      9
+      intersection	      [2 1 0 0.2899 1181.2414 1400.2145 0 0]
+    }
+    midPoint		    [1486.4519 1400.2145]
+    chart		    2
+    linkNode		    [2 116 125]
+    dataLimits		    [1189.241 1810.5 1400.215 1400.215]
+    subviewer		    2
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    635
+  }
+  transition {
+    id			    125
+    labelString		    "[IPTd_flg_KL15==0]"
+    labelPosition	    [1823.281 1556.151 104.931 14.334]
+    fontSize		    12
+    src {
+      id		      63
+      intersection	      [0 0 1 -1 1817.5 1407.2145 0 0]
+    }
+    dst {
+      id		      64
+      intersection	      [0 0 -1 -1 1817.5 1734.9333 0 0]
+    }
+    midPoint		    [1817.5 1573.9375]
+    chart		    2
+    linkNode		    [2 124 67]
+    dataLimits		    [1817.5 1817.5 1407.215 1726.933]
+    subviewer		    2
+    drawStyle		    SMART
+    executionOrder	    2
+    ssIdNumber		    648
+  }
+  transition {
+    id			    126
+    labelString		    "[Timer.T4.Timeout==1]"
+    labelPosition	    [791.767 1633.144 119.628 14.334]
+    fontSize		    12
+    src {
+      id		      9
+      intersection	      [3 0 1 0.7985 769.1189 1609.9621 0 149.8329]
+    }
+    dst {
+      id		      8
+      intersection	      [1 -0 -1 0.1962 769.1189 1704.9385 0 -150.7704]
+    }
+    midPoint		    [769.1189 1655.2543]
+    chart		    2
+    linkNode		    [2 67 68]
+    dataLimits		    [769.119 769.119 1609.962 1696.939]
+    stampAngle		    NaN
+    subviewer		    2
+    drawStyle		    SMART
+    executionOrder	    3
+    ssIdNumber		    650
+  }
+  transition {
+    id			    127
+    labelString		    "[BSCc_flg_FaultTest]"
+    labelPosition	    [1312.005 302.211 111.767 14.334]
+    fontSize		    12
+    src {
+      id		      11
+      intersection	      [4 -1 0 0.9016 1638.5449 318.1401 0 22.3824]
+    }
+    dst {
+      id		      3
+      intersection	      [2 1 -0 0.8999 970.775 318.1401 0 -22.3824]
+    }
+    midPoint		    [1294.4039 318.1488]
+    chart		    2
+    linkNode		    [2 120 74]
+    dataLimits		    [978.775 1638.545 318.14 318.149]
+    stampAngle		    NaN
+    subviewer		    2
+    drawStyle		    SMART
+    executionOrder	    2
+    ssIdNumber		    656
+  }
+  data {
+    id			    128
+    ssIdNumber		    511
+    name		    "Timeout"
+    linkNode		    [13 0 129]
+    scope		    LOCAL_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "boolean"
+  }
+  data {
+    id			    129
+    ssIdNumber		    512
+    name		    "TimeLimit"
+    linkNode		    [13 128 130]
+    scope		    LOCAL_DATA
+    paramIndexForInitFromWorkspace 7
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT16_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint16"
+  }
+  data {
+    id			    130
+    ssIdNumber		    513
+    name		    "TimeTicks"
+    linkNode		    [13 129 131]
+    scope		    LOCAL_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT16_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint16"
+  }
+  data {
+    id			    131
+    ssIdNumber		    514
+    name		    "Init"
+    linkNode		    [13 130 0]
+    scope		    LOCAL_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "boolean"
+  }
+  data {
+    id			    132
+    ssIdNumber		    527
+    name		    "Limit"
+    linkNode		    [14 0 0]
+    scope		    FUNCTION_INPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT16_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint16"
+  }
+  data {
+    id			    133
+    ssIdNumber		    534
+    name		    "Timeout"
+    linkNode		    [16 0 134]
+    scope		    LOCAL_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "boolean"
+  }
+  data {
+    id			    134
+    ssIdNumber		    535
+    name		    "TimeLimit"
+    linkNode		    [16 133 135]
+    scope		    LOCAL_DATA
+    paramIndexForInitFromWorkspace 7
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT16_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint16"
+  }
+  data {
+    id			    135
+    ssIdNumber		    536
+    name		    "TimeTicks"
+    linkNode		    [16 134 136]
+    scope		    LOCAL_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT16_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint16"
+  }
+  data {
+    id			    136
+    ssIdNumber		    537
+    name		    "Init"
+    linkNode		    [16 135 0]
+    scope		    LOCAL_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "boolean"
+  }
+  data {
+    id			    137
+    ssIdNumber		    550
+    name		    "Limit"
+    linkNode		    [17 0 0]
+    scope		    FUNCTION_INPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT16_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint16"
+  }
+  data {
+    id			    138
+    ssIdNumber		    557
+    name		    "Timeout"
+    linkNode		    [19 0 139]
+    scope		    LOCAL_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "boolean"
+  }
+  data {
+    id			    139
+    ssIdNumber		    558
+    name		    "TimeLimit"
+    linkNode		    [19 138 140]
+    scope		    LOCAL_DATA
+    paramIndexForInitFromWorkspace 7
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT16_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint16"
+  }
+  data {
+    id			    140
+    ssIdNumber		    559
+    name		    "TimeTicks"
+    linkNode		    [19 139 141]
+    scope		    LOCAL_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT16_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint16"
+  }
+  data {
+    id			    141
+    ssIdNumber		    560
+    name		    "Init"
+    linkNode		    [19 140 0]
+    scope		    LOCAL_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "boolean"
+  }
+  data {
+    id			    142
+    ssIdNumber		    573
+    name		    "Limit"
+    linkNode		    [20 0 0]
+    scope		    FUNCTION_INPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT16_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint16"
+  }
+  data {
+    id			    143
+    ssIdNumber		    580
+    name		    "Timeout"
+    linkNode		    [22 0 144]
+    scope		    LOCAL_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "boolean"
+  }
+  data {
+    id			    144
+    ssIdNumber		    581
+    name		    "TimeLimit"
+    linkNode		    [22 143 145]
+    scope		    LOCAL_DATA
+    paramIndexForInitFromWorkspace 7
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT16_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint16"
+  }
+  data {
+    id			    145
+    ssIdNumber		    582
+    name		    "TimeTicks"
+    linkNode		    [22 144 146]
+    scope		    LOCAL_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT16_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint16"
+  }
+  data {
+    id			    146
+    ssIdNumber		    583
+    name		    "Init"
+    linkNode		    [22 145 0]
+    scope		    LOCAL_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "boolean"
+  }
+  data {
+    id			    147
+    ssIdNumber		    596
+    name		    "Limit"
+    linkNode		    [23 0 0]
+    scope		    FUNCTION_INPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT16_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint16"
+  }
+  event {
+    id			    148
+    ssIdNumber		    80
+    name		    "BSC_trig_IPT"
+    linkNode		    [2 0 149]
+    scope		    OUTPUT_EVENT
+    trigger		    FUNCTION_CALL_EVENT
+    machine		    1
+  }
+  event {
+    id			    149
+    ssIdNumber		    643
+    name		    "BSC_trig_IPT_FCM"
+    linkNode		    [2 148 150]
+    scope		    OUTPUT_EVENT
+    trigger		    FUNCTION_CALL_EVENT
+    machine		    1
+  }
+  event {
+    id			    150
+    ssIdNumber		    26
+    name		    "BSC_trig_CTC"
+    linkNode		    [2 149 151]
+    scope		    OUTPUT_EVENT
+    trigger		    FUNCTION_CALL_EVENT
+    machine		    1
+  }
+  event {
+    id			    151
+    ssIdNumber		    33
+    name		    "BSC_trig_BTM"
+    linkNode		    [2 150 152]
+    scope		    OUTPUT_EVENT
+    trigger		    FUNCTION_CALL_EVENT
+    machine		    1
+  }
+  event {
+    id			    152
+    ssIdNumber		    27
+    name		    "BSC_trig_COR"
+    linkNode		    [2 151 153]
+    scope		    OUTPUT_EVENT
+    trigger		    FUNCTION_CALL_EVENT
+    machine		    1
+  }
+  event {
+    id			    153
+    ssIdNumber		    31
+    name		    "BSC_trig_EHP"
+    linkNode		    [2 152 154]
+    scope		    OUTPUT_EVENT
+    trigger		    FUNCTION_CALL_EVENT
+    machine		    1
+  }
+  event {
+    id			    154
+    ssIdNumber		    25
+    name		    "BSC_trig_BAL"
+    linkNode		    [2 153 155]
+    scope		    OUTPUT_EVENT
+    trigger		    FUNCTION_CALL_EVENT
+    machine		    1
+  }
+  event {
+    id			    155
+    ssIdNumber		    75
+    name		    "BSC_trig_BPN"
+    linkNode		    [2 154 156]
+    scope		    OUTPUT_EVENT
+    trigger		    FUNCTION_CALL_EVENT
+    machine		    1
+  }
+  event {
+    id			    156
+    ssIdNumber		    76
+    name		    "BSC_trig_DEM"
+    linkNode		    [2 155 157]
+    scope		    OUTPUT_EVENT
+    trigger		    FUNCTION_CALL_EVENT
+    machine		    1
+  }
+  event {
+    id			    157
+    ssIdNumber		    32
+    name		    "BSC_trig_FCM"
+    linkNode		    [2 156 158]
+    scope		    OUTPUT_EVENT
+    trigger		    FUNCTION_CALL_EVENT
+    machine		    1
+  }
+  event {
+    id			    158
+    ssIdNumber		    642
+    name		    "BSC_trig_OPT_FCM"
+    linkNode		    [2 157 159]
+    scope		    OUTPUT_EVENT
+    trigger		    FUNCTION_CALL_EVENT
+    machine		    1
+  }
+  event {
+    id			    159
+    ssIdNumber		    477
+    name		    "BSC_trig_SCM"
+    linkNode		    [2 158 160]
+    scope		    OUTPUT_EVENT
+    trigger		    FUNCTION_CALL_EVENT
+    machine		    1
+  }
+  event {
+    id			    160
+    ssIdNumber		    28
+    name		    "BSC_trig_OPT"
+    linkNode		    [2 159 161]
+    scope		    OUTPUT_EVENT
+    trigger		    FUNCTION_CALL_EVENT
+    machine		    1
+  }
+  event {
+    id			    161
+    ssIdNumber		    320
+    name		    "BSC_trig_MCC"
+    linkNode		    [2 160 0]
+    scope		    OUTPUT_EVENT
+    trigger		    FUNCTION_CALL_EVENT
+    machine		    1
+  }
+  data {
+    id			    162
+    ssIdNumber		    659
+    name		    "BSCd_flg_Timer2Test"
+    linkNode		    [2 0 163]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "boolean"
+  }
+  data {
+    id			    163
+    ssIdNumber		    660
+    name		    "BSCd_flg_Timer4Test"
+    linkNode		    [2 162 164]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "boolean"
+  }
+  data {
+    id			    164
+    ssIdNumber		    661
+    name		    "BSCd_num_Timer2Ticks"
+    linkNode		    [2 163 165]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT16_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "uint16"
+  }
+  data {
+    id			    165
+    ssIdNumber		    662
+    name		    "BSCd_num_Timer4Ticks"
+    linkNode		    [2 164 166]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT16_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "uint16"
+  }
+  data {
+    id			    166
+    ssIdNumber		    283
+    name		    "MCCd_enum_BMUSt"
+    linkNode		    [2 165 167]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    167
+    ssIdNumber		    282
+    name		    "IPTd_flg_KL15"
+    linkNode		    [2 166 168]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "boolean"
+  }
+  data {
+    id			    168
+    ssIdNumber		    284
+    name		    "IPTd_flg_VehHVCnctCmd"
+    linkNode		    [2 167 169]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "boolean"
+  }
+  data {
+    id			    169
+    ssIdNumber		    285
+    name		    "IPTd_flg_SlowChaCnctSt"
+    linkNode		    [2 168 170]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "boolean"
+  }
+  data {
+    id			    170
+    ssIdNumber		    480
+    name		    "IPTd_flg_FastChaCnctSt"
+    linkNode		    [2 169 171]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "boolean"
+  }
+  data {
+    id			    171
+    ssIdNumber		    307
+    name		    "IPTd_flg_ServSt"
+    linkNode		    [2 170 172]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "boolean"
+  }
+  data {
+    id			    172
+    ssIdNumber		    308
+    name		    "CTCd_enum_CtrSt"
+    linkNode		    [2 171 173]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	primitive		SF_UINT8_TYPE
+	enumType		"<class name>"
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    173
+    ssIdNumber		    309
+    name		    "FCMd_enum_ChaSt"
+    linkNode		    [2 172 174]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	primitive		SF_UINT8_TYPE
+	enumType		"<class name>"
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    174
+    ssIdNumber		    479
+    name		    "SCMd_enum_ChaSt"
+    linkNode		    [2 173 175]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	primitive		SF_UINT8_TYPE
+	enumType		"<class name>"
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    175
+    ssIdNumber		    286
+    name		    "BSCd_enum_BCUSt"
+    linkNode		    [2 174 176]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    176
+    ssIdNumber		    321
+    name		    "IPTd_flg_VehShutBCUCmd"
+    linkNode		    [2 175 177]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "boolean"
+  }
+  data {
+    id			    177
+    ssIdNumber		    452
+    name		    "BCU_FastCharge_St"
+    linkNode		    [2 176 178]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 1
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    178
+    ssIdNumber		    453
+    name		    "BCU_Idle_St"
+    linkNode		    [2 177 179]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 3
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    179
+    ssIdNumber		    454
+    name		    "BCU_Selftest_St"
+    linkNode		    [2 178 180]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 5
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    180
+    ssIdNumber		    455
+    name		    "BCU_SlowCharge_St"
+    linkNode		    [2 179 181]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 8
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    181
+    ssIdNumber		    456
+    name		    "BCU_Shutdown_St"
+    linkNode		    [2 180 182]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 7
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    182
+    ssIdNumber		    457
+    name		    "BCU_Drive_St"
+    linkNode		    [2 181 183]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    183
+    ssIdNumber		    459
+    name		    "BCU_Powerlatch_St"
+    linkNode		    [2 182 184]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 4
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    184
+    ssIdNumber		    460
+    name		    "CTC_DriveOffline_St"
+    linkNode		    [2 183 185]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 18
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    185
+    ssIdNumber		    470
+    name		    "BMU_Run_St"
+    linkNode		    [2 184 186]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 9
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    186
+    ssIdNumber		    478
+    name		    "BCU_Service_St"
+    linkNode		    [2 185 187]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 6
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    187
+    ssIdNumber		    481
+    name		    "BSCd_flg_BCUShutdown"
+    linkNode		    [2 186 188]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "boolean"
+  }
+  data {
+    id			    188
+    ssIdNumber		    482
+    name		    "BSCc_tm_Selftest_max"
+    linkNode		    [2 187 189]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 16
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT16_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint16"
+  }
+  data {
+    id			    189
+    ssIdNumber		    483
+    name		    "BMU_Shutdown_St"
+    linkNode		    [2 188 190]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 10
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    190
+    ssIdNumber		    485
+    name		    "CTC_DefaultOffline_St"
+    linkNode		    [2 189 191]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 17
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    191
+    ssIdNumber		    486
+    name		    "CTC_FastChaOffline_St"
+    linkNode		    [2 190 192]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 19
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    192
+    ssIdNumber		    487
+    name		    "CTC_SlowChaOffline_St"
+    linkNode		    [2 191 193]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 21
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    193
+    ssIdNumber		    496
+    name		    "BCU_Fault_St"
+    linkNode		    [2 192 194]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 2
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    194
+    ssIdNumber		    497
+    name		    "CTC_ServiceOffline_St"
+    linkNode		    [2 193 195]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 20
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    195
+    ssIdNumber		    498
+    name		    "SCM_NoCharge_St"
+    linkNode		    [2 194 196]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 23
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    196
+    ssIdNumber		    499
+    name		    "FCM_ChaFinished_St"
+    linkNode		    [2 195 197]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 22
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    197
+    ssIdNumber		    502
+    name		    "BSCd_iflt_BCUFault"
+    linkNode		    [2 196 198]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "boolean"
+  }
+  data {
+    id			    198
+    ssIdNumber		    507
+    name		    "BSCc_tm_PowerlatchWait"
+    linkNode		    [2 197 199]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 14
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT16_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint16"
+  }
+  data {
+    id			    199
+    ssIdNumber		    636
+    name		    "BSCc_tm_Idle_min"
+    linkNode		    [2 198 200]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 13
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT16_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint16"
+  }
+  data {
+    id			    200
+    ssIdNumber		    637
+    name		    "BSCc_tm_Fault_min"
+    linkNode		    [2 199 201]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 12
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT16_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint16"
+  }
+  data {
+    id			    201
+    ssIdNumber		    654
+    name		    "BSCc_tm_PowerlatchWait_max"
+    linkNode		    [2 200 202]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 15
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT16_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "uint16"
+  }
+  data {
+    id			    202
+    ssIdNumber		    658
+    name		    "BSCc_flg_FaultTest"
+    linkNode		    [2 201 0]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 11
+    machine		    1
+    props {
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "boolean"
+  }
+  instance {
+    id			    203
+    name		    "BSC/BSC"
+    machine		    1
+    chart		    2
+  }
+  target {
+    id			    204
+    name		    "sfun"
+    description		    "Default Simulink S-Function Target."
+    machine		    1
+    linkNode		    [1 0 205]
+  }
+  target {
+    id			    205
+    name		    "rtw"
+    machine		    1
+    linkNode		    [1 204 0]
+  }
+}
