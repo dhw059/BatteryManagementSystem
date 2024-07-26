@@ -1,0 +1,5175 @@
+Library {
+  Name			  "BTM_lib"
+  Version		  7.4
+  MdlSubVersion		  0
+  SavedCharacterEncoding  "GBK"
+  LibraryType		  "BlockLibrary"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  MaxMDLFileLineLength	  120
+  Created		  "Thu Mar 19 13:16:58 2015"
+  Creator		  "zhangyunyun"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "sunsijun"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Mon Nov 02 16:26:23 2015"
+  RTWModifiedTimeStamp	  368382379
+  ModelVersionFormat	  "1.%<AutoIncrement:24>"
+  ConfigurationManager	  "None"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      1
+      Version		      "1.6.0"
+      Array {
+	Type			"Handle"
+	Dimension		9
+	Simulink.SolverCC {
+	  $ObjectID		  2
+	  Version		  "1.6.0"
+	  StartTime		  "0.0"
+	  StopTime		  "10.0"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  Solver		  "ode45"
+	  SolverName		  "ode45"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  3
+	  Version		  "1.6.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  4
+	  Version		  "1.6.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    7
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  EnforceIntegerDowncast  on
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  2147483647
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  5
+	  Version		  "1.6.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Use local settings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  StrictBusMsg		  "Warning"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  6
+	  Version		  "1.6.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  7
+	  Version		  "1.6.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  8
+	  Version		  "1.6.0"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  9
+	  Version		  "1.6.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    6
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      10
+	      Version		      "1.6.0"
+	      Array {
+		Type			"Cell"
+		Dimension		19
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"SFDataObjDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      SimulinkBlockComments   on
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      11
+	      Version		      "1.6.0"
+	      Array {
+		Type			"Cell"
+		Dimension		17
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"MultiInstanceERTCode"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportNonFinite"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"PortableWordSizes"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      TargetFunctionLibrary   "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      PortableWordSizes	      off
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	hdlcoderui.hdlcc {
+	  $ObjectID		  12
+	  Version		  "1.6.0"
+	  Description		  "HDL Coder custom configuration component"
+	  Name			  "HDL Coder"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    ""
+	    PropName		    "HDLConfigFile"
+	  }
+	  HDLCActiveTab		  "0"
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition    " [ 280, 135, 1160, 765 ] "
+    }
+    PropName		    "ConfigurationSets"
+  }
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      BusCreator
+      Inputs		      "4"
+      DisplayOption	      "none"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "fixdt(1,16,0)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      From
+      IconDisplay	      "Tag"
+      TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ParamMin		      "[]"
+      ParamMax		      "[]"
+      ParameterDataTypeMode   "Same as input"
+      ParameterDataType	      "fixdt(1,16,0)"
+      ParameterScalingMode    "Best Precision: Matrix-wise"
+      ParameterScaling	      "[]"
+      ParamDataTypeStr	      "Inherit: Same as input"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Same as input"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Goto
+      IconDisplay	      "Tag"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      DataType		      "auto"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchByCopyingInsideSignal off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Logic
+      Operator		      "AND"
+      Inputs		      "2"
+      IconShape		      "rectangular"
+      AllPortsSameDT	      on
+      OutDataTypeMode	      "Logical (see Configuration Parameters: Optimization)"
+      LogicDataType	      "uint(8)"
+      OutDataTypeStr	      "Inherit: Logical (see Configuration Parameters: Optimization)"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      MinMax
+      Function		      "min"
+      Inputs		      "1"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      DataType		      "auto"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      RelationalOperator
+      Operator		      ">="
+      InputSameDT	      on
+      LogicOutDataTypeMode    "Logical (see Configuration Parameters: Optimization)"
+      LogicDataType	      "uint(8)"
+      OutDataTypeStr	      "Inherit: Logical (see Configuration Parameters: Optimization)"
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Reshape
+      OutputDimensionality    "1-D array"
+      OutputDimensions	      "[1,1]"
+    }
+    Block {
+      BlockType		      "S-Function"
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+      SFunctionDeploymentMode off
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      AccumDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Terminator
+    }
+    Block {
+      BlockType		      TriggerPort
+      TriggerType	      "rising"
+      StatesWhenEnabling      "inherit"
+      PropagateVarSize	      "During execution"
+      ShowOutputPort	      off
+      OutputDataType	      "auto"
+      SampleTimeType	      "triggered"
+      SampleTime	      "1"
+      ZeroCross		      on
+    }
+  }
+  System {
+    Name		    "BTM_lib"
+    Location		    [-42, 126, 1858, 1071]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "308"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    530
+    Block {
+      BlockType		      SubSystem
+      Name		      "BTM"
+      SID		      173
+      Ports		      [4, 10, 0, 1]
+      Position		      [165, 21, 455, 294]
+      BackgroundColor	      "green"
+      LibraryVersion	      "*1.23"
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"BTM"
+	Location		[202, 82, 1902, 1027]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"91"
+	Block {
+	  BlockType		  Inport
+	  Name			  "IPTd_t_PackOutAirTemp"
+	  SID			  174
+	  Position		  [465, 108, 495, 122]
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "IPTd_t_BCUTemp"
+	  SID			  176
+	  Position		  [465, 183, 495, 197]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "IPTd_t_PCBTemp"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "IPTd_t_BMUTemp"
+	  SID			  175
+	  Position		  [465, 258, 495, 272]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "IPTd_t_BMUTemp"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "IPTd_t_MdlTemp"
+	  SID			  177
+	  Position		  [465, 798, 495, 812]
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	  DataType		  "single"
+	  OutDataTypeStr	  "single"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "IPTd_t_MdlTemp"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  TriggerPort
+	  Name			  "function"
+	  SID			  178
+	  Ports			  []
+	  Position		  [980, 15, 1000, 35]
+	  TriggerType		  "function-call"
+	  StatesWhenEnabling	  "held"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "BTMCalc"
+	  SID			  192
+	  Ports			  [1, 9]
+	  Position		  [785, 601, 1130, 1009]
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "BTMd_t_CellTemp_max"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    2
+	    PropagatedSignals	    "BTMd_enum_MaxTempCellNum"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    3
+	    PropagatedSignals	    "BTMd_enum_MaxTempMdlNum"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    4
+	    PropagatedSignals	    "BTMd_t_MdlTempDif_max"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    5
+	    PropagatedSignals	    "BTMd_t_CellTemp_min"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    6
+	    PropagatedSignals	    "BTMd_enum_MinTempCellNum"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    7
+	    PropagatedSignals	    "BTMd_enum_MinTempMdlNum"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    8
+	    PropagatedSignals	    "BTMd_t_PackTemp"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    9
+	    PropagatedSignals	    "BTMd_t_CellTemp_mean"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  System {
+	    Name		    "BTMCalc"
+	    Location		    [202, 82, 1902, 1044]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "148"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "IPTd_t_MdlTemp"
+	      SID		      193
+	      Position		      [125, 148, 155, 162]
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"IPTd_t_MdlTemp"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant3"
+	      SID		      194
+	      Position		      [315, 427, 480, 453]
+	      ShowName		      off
+	      Value		      "PACK_Const_MdlNumOfPack"
+	      OutDataTypeMode	      "uint16"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	      OutDataTypeStr	      "uint16"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant4"
+	      SID		      195
+	      Position		      [315, 467, 480, 493]
+	      ShowName		      off
+	      Value		      "PACK_Const_TempSnrNumOfMdl"
+	      OutDataTypeMode	      "uint16"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	      OutDataTypeStr	      "uint16"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Divide"
+	      SID		      196
+	      Ports		      [2, 1]
+	      Position		      [610, 360, 645, 495]
+	      ShowName		      off
+	      Inputs		      "*/"
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^-10"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	      Port {
+		PortNumber		1
+		Name			"BTMd_t_PackTemp"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Gain"
+	      SID		      323
+	      Position		      [865, 470, 895, 500]
+	      ShowName		      off
+	      ParameterDataTypeMode   "Inherit via internal rule"
+	      ParameterDataType	      "fixdt(1, 16)"
+	      ParameterScaling	      "2^0"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeMode	      "Inherit via internal rule"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	      Port {
+		PortNumber		1
+		Name			"BTMd_t_CellTemp_mean"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product"
+	      SID		      218
+	      Ports		      [2, 1]
+	      Position		      [540, 421, 575, 499]
+	      ShowName		      off
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum of\nElements"
+	      SID		      219
+	      Ports		      [1, 1]
+	      Position		      [315, 370, 360, 420]
+	      ShowName		      off
+	      Inputs		      "+"
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^-10"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Temp_Parameter_Calculation"
+	      SID		      197
+	      Ports		      [1, 7]
+	      Position		      [310, 22, 645, 288]
+	      LibraryVersion	      "1.762"
+	      TreatAsAtomicUnit	      on
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"BTMd_t_CellTemp_max"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		2
+		PropagatedSignals	"BTMd_enum_MaxTempCellNum"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		3
+		PropagatedSignals	"BTMd_enum_MaxTempMdlNum"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		4
+		PropagatedSignals	"BTMd_t_MdlTempDif_max"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		5
+		PropagatedSignals	"BTMd_t_CellTemp_min"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		6
+		PropagatedSignals	"BTMd_enum_MinTempCellNum"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		7
+		PropagatedSignals	"BTMd_enum_MinTempMdlNum"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      System {
+		Name			"Temp_Parameter_Calculation"
+		Location		[202, 82, 1885, 1010]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"245"
+		Block {
+		  BlockType		  Inport
+		  Name			  "IPTd_t_MdlTemp"
+		  SID			  198
+		  Position		  [20, 73, 50, 87]
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		  Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "IPTd_t_MdlTemp"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "CellTemp_Max"
+		  SID			  206
+		  Ports			  [1, 2]
+		  Position		  [280, 22, 400, 133]
+		  LibraryVersion	  "1.30"
+		  PermitHierarchicalResolution "ExplicitOnly"
+		  MinAlgLoopOccurrences	  off
+		  PropExecContextOutsideSubsystem off
+		  RTWSystemCode		  "Auto"
+		  FunctionWithSeparateData off
+		  Opaque		  off
+		  RequestExecContextInheritance	off
+		  MaskHideContents	  off
+		  MaskType		  "Stateflow"
+		  MaskDescription	  "Embedded MATLAB block"
+		  MaskDisplay		  "disp('max');"
+		  MaskSelfModifiable	  on
+		  MaskIconFrame		  on
+		  MaskIconOpaque	  off
+		  MaskIconRotate	  "none"
+		  MaskPortRotate	  "default"
+		  MaskIconUnits		  "autoscale"
+		  Port {
+		    PortNumber		    1
+		    Name		    "BTMd_t_CellTemp_max"
+		    PropagatedSignals	    "max_temp"
+		    MustResolveToSignalObject on
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		  Port {
+		    PortNumber		    2
+		    Name		    "BTMd_enum_MaxTempCellNum"
+		    PropagatedSignals	    "num"
+		    MustResolveToSignalObject on
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		  System {
+		    Name		    "CellTemp_Max"
+		    Location		    [257, 457, 812, 717]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    SIDHighWatermark	    174
+		    Block {
+		    BlockType		    Inport
+		    Name		    "temps"
+		    SID			    1
+		    Position		    [20, 101, 40, 119]
+		    IconDisplay		    "Port number"
+		    OutDataType		    "sfix(16)"
+		    OutScaling		    "2^0"
+		    }
+		    Block {
+		    BlockType		    Demux
+		    Name		    " Demux "
+		    SID			    172
+		    Ports		    [1, 1]
+		    Position		    [270, 180, 320, 220]
+		    Outputs		    "1"
+		    }
+		    Block {
+		    BlockType		    "S-Function"
+		    Name		    " SFunction "
+		    SID			    171
+		    Tag			    "Stateflow S-Function BTM_lib 13"
+		    Ports		    [1, 3]
+		    Position		    [180, 100, 230, 180]
+		    FunctionName	    "sf_sfun"
+		    PortCounts		    "[1 3]"
+		    EnableBusSupport	    off
+		    Port {
+		    PortNumber		    2
+		    Name		    "max_temp"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    Port {
+		    PortNumber		    3
+		    Name		    "num"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    }
+		    Block {
+		    BlockType		    Terminator
+		    Name		    " Terminator "
+		    SID			    174
+		    Position		    [460, 191, 480, 209]
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "max_temp"
+		    SID			    5
+		    Position		    [460, 101, 480, 119]
+		    IconDisplay		    "Port number"
+		    OutDataType		    "sfix(16)"
+		    OutScaling		    "2^0"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "num"
+		    SID			    10
+		    Position		    [460, 136, 480, 154]
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    }
+		    Line {
+		    SrcBlock		    " SFunction "
+		    SrcPort		    1
+		    DstBlock		    " Demux "
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "temps"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    1
+		    }
+		    Line {
+		    Name		    "max_temp"
+		    Labels		    [0, 0]
+		    SrcBlock		    " SFunction "
+		    SrcPort		    2
+		    DstBlock		    "max_temp"
+		    DstPort		    1
+		    }
+		    Line {
+		    Name		    "num"
+		    Labels		    [0, 0]
+		    SrcBlock		    " SFunction "
+		    SrcPort		    3
+		    DstBlock		    "num"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    " Demux "
+		    SrcPort		    1
+		    DstBlock		    " Terminator "
+		    DstPort		    1
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "CellTemp_Min"
+		  SID			  205
+		  Ports			  [1, 2]
+		  Position		  [280, 257, 395, 368]
+		  LibraryVersion	  "1.30"
+		  PermitHierarchicalResolution "ExplicitOnly"
+		  MinAlgLoopOccurrences	  off
+		  PropExecContextOutsideSubsystem off
+		  RTWSystemCode		  "Auto"
+		  FunctionWithSeparateData off
+		  Opaque		  off
+		  RequestExecContextInheritance	off
+		  MaskHideContents	  off
+		  MaskType		  "Stateflow"
+		  MaskDescription	  "Embedded MATLAB block"
+		  MaskDisplay		  "disp('min');"
+		  MaskSelfModifiable	  on
+		  MaskIconFrame		  on
+		  MaskIconOpaque	  off
+		  MaskIconRotate	  "none"
+		  MaskPortRotate	  "default"
+		  MaskIconUnits		  "autoscale"
+		  Port {
+		    PortNumber		    1
+		    Name		    "BTMd_t_CellTemp_min"
+		    PropagatedSignals	    "min_temp"
+		    MustResolveToSignalObject on
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		  Port {
+		    PortNumber		    2
+		    Name		    "BTMd_enum_MinTempCellNum"
+		    PropagatedSignals	    "num"
+		    MustResolveToSignalObject on
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		  System {
+		    Name		    "CellTemp_Min"
+		    Location		    [257, 457, 812, 717]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    SIDHighWatermark	    174
+		    Block {
+		    BlockType		    Inport
+		    Name		    "temps"
+		    SID			    1
+		    Position		    [20, 101, 40, 119]
+		    IconDisplay		    "Port number"
+		    OutDataType		    "sfix(16)"
+		    OutScaling		    "2^0"
+		    }
+		    Block {
+		    BlockType		    Demux
+		    Name		    " Demux "
+		    SID			    172
+		    Ports		    [1, 1]
+		    Position		    [270, 180, 320, 220]
+		    Outputs		    "1"
+		    }
+		    Block {
+		    BlockType		    "S-Function"
+		    Name		    " SFunction "
+		    SID			    171
+		    Tag			    "Stateflow S-Function BTM_lib 7"
+		    Ports		    [1, 3]
+		    Position		    [180, 100, 230, 180]
+		    FunctionName	    "sf_sfun"
+		    PortCounts		    "[1 3]"
+		    EnableBusSupport	    off
+		    Port {
+		    PortNumber		    2
+		    Name		    "min_temp"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    Port {
+		    PortNumber		    3
+		    Name		    "num"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    }
+		    Block {
+		    BlockType		    Terminator
+		    Name		    " Terminator "
+		    SID			    174
+		    Position		    [460, 191, 480, 209]
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "min_temp"
+		    SID			    5
+		    Position		    [460, 101, 480, 119]
+		    IconDisplay		    "Port number"
+		    OutDataType		    "sfix(16)"
+		    OutScaling		    "2^0"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "num"
+		    SID			    10
+		    Position		    [460, 136, 480, 154]
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    }
+		    Line {
+		    SrcBlock		    " SFunction "
+		    SrcPort		    1
+		    DstBlock		    " Demux "
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "temps"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    1
+		    }
+		    Line {
+		    Name		    "min_temp"
+		    Labels		    [0, 0]
+		    SrcBlock		    " SFunction "
+		    SrcPort		    2
+		    DstBlock		    "min_temp"
+		    DstPort		    1
+		    }
+		    Line {
+		    Name		    "num"
+		    Labels		    [0, 0]
+		    SrcBlock		    " SFunction "
+		    SrcPort		    3
+		    DstBlock		    "num"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    " Demux "
+		    SrcPort		    1
+		    DstBlock		    " Terminator "
+		    DstPort		    1
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant1"
+		  SID			  326
+		  Position		  [695, 380, 725, 400]
+		  ShowName		  off
+		  Value			  "2"
+		  OutDataTypeMode	  "uint8"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		  OutDataTypeStr	  "uint8"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant4"
+		  SID			  319
+		  Position		  [680, 160, 710, 180]
+		  ShowName		  off
+		  Value			  "2"
+		  OutDataTypeMode	  "uint8"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		  OutDataTypeStr	  "uint8"
+		}
+		Block {
+		  BlockType		  Product
+		  Name			  "Divide"
+		  SID			  318
+		  Ports			  [2, 1]
+		  Position		  [745, 147, 775, 178]
+		  ShowName		  off
+		  Inputs		  "*/"
+		  InputSameDT		  off
+		  OutDataTypeMode	  "uint8"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^-10"
+		  OutDataTypeStr	  "uint8"
+		  RndMeth		  "Ceiling"
+		  SaturateOnIntegerOverflow off
+		  Port {
+		    PortNumber		    1
+		    Name		    "BTMd_enum_MaxTempMdlNum"
+		    MustResolveToSignalObject on
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Product
+		  Name			  "Divide1"
+		  SID			  325
+		  Ports			  [2, 1]
+		  Position		  [760, 367, 790, 398]
+		  ShowName		  off
+		  Inputs		  "*/"
+		  InputSameDT		  off
+		  OutDataTypeMode	  "uint8"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^-10"
+		  OutDataTypeStr	  "uint8"
+		  RndMeth		  "Ceiling"
+		  SaturateOnIntegerOverflow off
+		  Port {
+		    PortNumber		    1
+		    Name		    "BTMd_enum_MinTempMdlNum"
+		    MustResolveToSignalObject on
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From16"
+		  SID			  335
+		  Position		  [275, 204, 460, 226]
+		  ShowName		  off
+		  GotoTag		  "BTMd_t_CellTemp_max"
+		}
+		Block {
+		  BlockType		  Goto
+		  Name			  "Goto74"
+		  SID			  336
+		  Position		  [555, 14, 735, 36]
+		  ShowName		  off
+		  GotoTag		  "BTMd_t_CellTemp_max"
+		  TagVisibility		  "local"
+		}
+		Block {
+		  BlockType		  Reshape
+		  Name			  "Reshape"
+		  SID			  207
+		  Ports			  [1, 1]
+		  Position		  [165, 68, 195, 92]
+		  ShowName		  off
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "Subtract"
+		  SID			  208
+		  Ports			  [2, 1]
+		  Position		  [565, 207, 595, 238]
+		  ShowName		  off
+		  Inputs		  "+-"
+		  InputSameDT		  off
+		  OutDataTypeMode	  "Inherit via internal rule"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^-10"
+		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  SaturateOnIntegerOverflow off
+		  Port {
+		    PortNumber		    1
+		    Name		    "BTMd_t_MdlTempDif_max"
+		    MustResolveToSignalObject on
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "BTMd_t_CellTemp_max"
+		  SID			  211
+		  Position		  [975, 43, 1005, 57]
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "BTMd_enum_MaxTempCellNum"
+		  SID			  214
+		  Position		  [975, 98, 1005, 112]
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "BTMd_enum_MaxTempMdlNum"
+		  SID			  320
+		  Position		  [975, 158, 1005, 172]
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "BTMd_t_MdlTempDif_max"
+		  SID			  213
+		  Position		  [975, 218, 1005, 232]
+		  Port			  "4"
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "BTMd_t_CellTemp_min"
+		  SID			  212
+		  Position		  [975, 278, 1005, 292]
+		  Port			  "5"
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "BTMd_enum_MinTempCellNum"
+		  SID			  215
+		  Position		  [975, 333, 1005, 347]
+		  Port			  "6"
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "BTMd_enum_MinTempMdlNum"
+		  SID			  327
+		  Position		  [975, 378, 1005, 392]
+		  Port			  "7"
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Line {
+		  SrcBlock		  "From16"
+		  SrcPort		  1
+		  DstBlock		  "Subtract"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "BTMd_enum_MinTempMdlNum"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Divide1"
+		  SrcPort		  1
+		  DstBlock		  "BTMd_enum_MinTempMdlNum"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Constant1"
+		  SrcPort		  1
+		  DstBlock		  "Divide1"
+		  DstPort		  2
+		}
+		Line {
+		  Name			  "BTMd_enum_MaxTempMdlNum"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Divide"
+		  SrcPort		  1
+		  DstBlock		  "BTMd_enum_MaxTempMdlNum"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Constant4"
+		  SrcPort		  1
+		  DstBlock		  "Divide"
+		  DstPort		  2
+		}
+		Line {
+		  Name			  "BTMd_enum_MinTempCellNum"
+		  Labels		  [0, 0]
+		  SrcBlock		  "CellTemp_Min"
+		  SrcPort		  2
+		  Points		  [255, 0]
+		  Branch {
+		    Points		    [0, 35]
+		    DstBlock		    "Divide1"
+		    DstPort		    1
+		  }
+		  Branch {
+		    DstBlock		    "BTMd_enum_MinTempCellNum"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  Name			  "BTMd_t_MdlTempDif_max"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Subtract"
+		  SrcPort		  1
+		  DstBlock		  "BTMd_t_MdlTempDif_max"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "BTMd_t_CellTemp_min"
+		  Labels		  [0, 0]
+		  SrcBlock		  "CellTemp_Min"
+		  SrcPort		  1
+		  Points		  [45, 0]
+		  Branch {
+		    Points		    [0, -55]
+		    DstBlock		    "Subtract"
+		    DstPort		    2
+		  }
+		  Branch {
+		    DstBlock		    "BTMd_t_CellTemp_min"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "Reshape"
+		  SrcPort		  1
+		  Points		  [30, 0]
+		  Branch {
+		    Points		    [0, 235]
+		    DstBlock		    "CellTemp_Min"
+		    DstPort		    1
+		  }
+		  Branch {
+		    DstBlock		    "CellTemp_Max"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "IPTd_t_MdlTemp"
+		  SrcPort		  1
+		  DstBlock		  "Reshape"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "BTMd_enum_MaxTempCellNum"
+		  Labels		  [0, 0]
+		  SrcBlock		  "CellTemp_Max"
+		  SrcPort		  2
+		  Points		  [245, 0]
+		  Branch {
+		    Points		    [0, 50]
+		    DstBlock		    "Divide"
+		    DstPort		    1
+		  }
+		  Branch {
+		    DstBlock		    "BTMd_enum_MaxTempCellNum"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  Name			  "BTMd_t_CellTemp_max"
+		  Labels		  [0, 0]
+		  SrcBlock		  "CellTemp_Max"
+		  SrcPort		  1
+		  Points		  [135, 0]
+		  Branch {
+		    DstBlock		    "BTMd_t_CellTemp_max"
+		    DstPort		    1
+		  }
+		  Branch {
+		    DstBlock		    "Goto74"
+		    DstPort		    1
+		  }
+		}
+		Annotation {
+		  Position		  [466, 221]
+		}
+		Annotation {
+		  Position		  [397, 225]
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BTMd_t_CellTemp_max"
+	      SID		      221
+	      Position		      [1055, 28, 1085, 42]
+	      IconDisplay	      "Port number"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BTMd_enum_MaxTempCellNum"
+	      SID		      224
+	      Position		      [1055, 68, 1085, 82]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BTMd_enum_MaxTempMdlNum"
+	      SID		      321
+	      Position		      [1055, 108, 1085, 122]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BTMd_t_MdlDifTemp_max"
+	      SID		      222
+	      Position		      [1055, 148, 1085, 162]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BTMd_t_CellTemp_min"
+	      SID		      220
+	      Position		      [1055, 188, 1085, 202]
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BTMd_enum_MinTempCellNum"
+	      SID		      227
+	      Position		      [1055, 228, 1085, 242]
+	      Port		      "6"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BTMd_enum_MinTempMdlNum"
+	      SID		      328
+	      Position		      [1055, 268, 1085, 282]
+	      Port		      "7"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BTMd_t_PackTemp"
+	      SID		      223
+	      Position		      [1055, 423, 1085, 437]
+	      Port		      "8"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BTMd_t_CellTemp_mean"
+	      SID		      324
+	      Position		      [1055, 478, 1085, 492]
+	      Port		      "9"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "Temp_Parameter_Calculation"
+	      SrcPort		      7
+	      DstBlock		      "BTMd_enum_MinTempMdlNum"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "BTMd_t_CellTemp_mean"
+	      Labels		      [0, 0]
+	      SrcBlock		      "Gain"
+	      SrcPort		      1
+	      DstBlock		      "BTMd_t_CellTemp_mean"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "Temp_Parameter_Calculation"
+	      SrcPort		      3
+	      DstBlock		      "BTMd_enum_MaxTempMdlNum"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "Temp_Parameter_Calculation"
+	      SrcPort		      6
+	      DstBlock		      "BTMd_enum_MinTempCellNum"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Product"
+	      SrcPort		      1
+	      DstBlock		      "Divide"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Sum of\nElements"
+	      SrcPort		      1
+	      DstBlock		      "Divide"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "Temp_Parameter_Calculation"
+	      SrcPort		      4
+	      DstBlock		      "BTMd_t_MdlDifTemp_max"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "Temp_Parameter_Calculation"
+	      SrcPort		      5
+	      DstBlock		      "BTMd_t_CellTemp_min"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "Temp_Parameter_Calculation"
+	      SrcPort		      1
+	      DstBlock		      "BTMd_t_CellTemp_max"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "BTMd_t_PackTemp"
+	      Labels		      [0, 0]
+	      SrcBlock		      "Divide"
+	      SrcPort		      1
+	      Points		      [160, 0]
+	      Branch {
+		Points			[0, 55]
+		DstBlock		"Gain"
+		DstPort			1
+	      }
+	      Branch {
+		DstBlock		"BTMd_t_PackTemp"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "IPTd_t_MdlTemp"
+	      SrcPort		      1
+	      Points		      [100, 0]
+	      Branch {
+		Points			[0, 240]
+		DstBlock		"Sum of\nElements"
+		DstPort			1
+	      }
+	      Branch {
+		DstBlock		"Temp_Parameter_Calculation"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "Temp_Parameter_Calculation"
+	      SrcPort		      2
+	      DstBlock		      "BTMd_enum_MaxTempCellNum"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Constant3"
+	      SrcPort		      1
+	      DstBlock		      "Product"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Constant4"
+	      SrcPort		      1
+	      DstBlock		      "Product"
+	      DstPort		      2
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "BTMOBD"
+	  SID			  228
+	  Ports			  [6, 15]
+	  Position		  [785, 74, 1135, 526]
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "BTMd_iflt_MdlTempUnder_fatal"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    2
+	    PropagatedSignals	    "BTMd_iflt_MdlTempUnder_fault"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    3
+	    PropagatedSignals	    "BTMd_iflt_MdlTempUnder_warn"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    4
+	    PropagatedSignals	    "BTMd_iflt_MdlTempOver_fatal"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    5
+	    PropagatedSignals	    "BTMd_iflt_MdlTempOver_fault"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    6
+	    PropagatedSignals	    "BTMd_iflt_MdlTempOver_warn"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    7
+	    PropagatedSignals	    "BTMd_iflt_MdlTempDifOver_fatal"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    8
+	    PropagatedSignals	    "BTMd_iflt_MdlTempDifOver_fault"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    9
+	    PropagatedSignals	    "BTMd_iflt_MdlTempDifOver_warn"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    10
+	    PropagatedSignals	    "BTMd_iflt_BCUMaxTempOver_fatal"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    11
+	    PropagatedSignals	    "BTMd_iflt_BCUMaxTempOver_fault"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    12
+	    PropagatedSignals	    "BTMd_iflt_BCUMaxTempOver_warn"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    13
+	    PropagatedSignals	    "BTMd_iflt_BMUMaxTempOver_fatal"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    14
+	    PropagatedSignals	    "BTMd_iflt_BMUMaxTempOver_fault"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    15
+	    PropagatedSignals	    "BTMd_iflt_BMUMaxTempOver_warn"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  System {
+	    Name		    "BTMOBD"
+	    Location		    [202, 82, 1902, 1027]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "125"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "IPTd_t_PackOutAirTemp"
+	      SID		      229
+	      Position		      [445, 43, 475, 57]
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "IPTd_t_BCUTemp"
+	      SID		      230
+	      Position		      [440, 173, 470, 187]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"IPTd_t_PCBTemp"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "IPTd_t_BMUTemp"
+	      SID		      234
+	      Position		      [440, 308, 470, 322]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"IPTd_t_BMUTemp"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "BTMd_t_CellTemp_min"
+	      SID		      231
+	      Position		      [440, 428, 470, 442]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"BTMd_t_CellTemp_min"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "BTMd_t_MdlTempDif_max"
+	      SID		      233
+	      Position		      [440, 548, 470, 562]
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"BTMd_t_MdlTempDif_max"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "BTMd_t_CellTemp_max"
+	      SID		      232
+	      Position		      [440, 663, 470, 677]
+	      Port		      "6"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"BTMd_t_CellTemp_max"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "AirOutTempDiag"
+	      SID		      338
+	      Ports		      [1]
+	      Position		      [615, 16, 930, 84]
+	      LibraryVersion	      "1.762"
+	      TreatAsAtomicUnit	      on
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      System {
+		Name			"AirOutTempDiag"
+		Location		[202, 82, 1902, 1044]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"236"
+		Block {
+		  BlockType		  Inport
+		  Name			  "IPTd_t_PackOutAirTemp"
+		  SID			  341
+		  Position		  [125, 88, 155, 102]
+		  IconDisplay		  "Port number"
+		  Port {
+		    PortNumber		    1
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant4"
+		  SID			  342
+		  Position		  [310, 168, 480, 192]
+		  BackgroundColor	  "green"
+		  ShowName		  off
+		  Value			  "BTMc_t_AirOutMaxTemp_warn"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant5"
+		  SID			  343
+		  Position		  [305, 108, 480, 132]
+		  BackgroundColor	  "green"
+		  ShowName		  off
+		  Value			  "BTMc_t_AirOutMaxTemp_fault"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator4"
+		  SID			  344
+		  Ports			  [2, 1]
+		  Position		  [550, 141, 580, 194]
+		  ShowName		  off
+		  InputSameDT		  off
+		  LogicOutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator5"
+		  SID			  345
+		  Ports			  [2, 1]
+		  Position		  [550, 81, 580, 134]
+		  ShowName		  off
+		  InputSameDT		  off
+		  LogicOutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  Terminator
+		  Name			  "Terminator"
+		  SID			  346
+		  Position		  [695, 100, 715, 120]
+		  ShowName		  off
+		}
+		Block {
+		  BlockType		  Terminator
+		  Name			  "Terminator1"
+		  SID			  347
+		  Position		  [695, 160, 715, 180]
+		  ShowName		  off
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "IPTd_t_PackOutAirTemp"
+		  SrcPort		  1
+		  Points		  [120, 0]
+		  Branch {
+		    DstBlock		    "Relational\nOperator5"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [0, 60]
+		    DstBlock		    "Relational\nOperator4"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "Constant5"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator5"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Constant4"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator4"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator4"
+		  SrcPort		  1
+		  DstBlock		  "Terminator1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator5"
+		  SrcPort		  1
+		  DstBlock		  "Terminator"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "BCUTempDiag"
+	      SID		      348
+	      Ports		      [1, 3]
+	      Position		      [615, 119, 935, 241]
+	      LibraryVersion	      "1.762"
+	      TreatAsAtomicUnit	      on
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      System {
+		Name			"BCUTempDiag"
+		Location		[202, 74, 1918, 1019]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"221"
+		Block {
+		  BlockType		  Inport
+		  Name			  "IPTd_t_BCUTemp"
+		  SID			  356
+		  Position		  [40, 53, 70, 67]
+		  IconDisplay		  "Port number"
+		  Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "IPTd_t_PCBTemp"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant10"
+		  SID			  357
+		  Position		  [205, 180, 360, 200]
+		  BackgroundColor	  "green"
+		  ShowName		  off
+		  Value			  "BTMc_t_BCUTempOver_fault"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant11"
+		  SID			  358
+		  Position		  [200, 274, 360, 296]
+		  BackgroundColor	  "green"
+		  ShowName		  off
+		  Value			  "BTMc_t_BCUTempOver_warn"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant24"
+		  SID			  359
+		  Position		  [205, 65, 360, 85]
+		  BackgroundColor	  "green"
+		  ShowName		  off
+		  Value			  "BTMc_t_BCUTempOver_fatal"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant25"
+		  SID			  360
+		  Position		  [205, 125, 360, 145]
+		  BackgroundColor	  "green"
+		  ShowName		  off
+		  Value			  "BTMc_t_BCUTempOver_fatal"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant27"
+		  SID			  361
+		  Position		  [205, 230, 360, 250]
+		  BackgroundColor	  "green"
+		  ShowName		  off
+		  Value			  "BTMc_t_BCUTempOver_fault"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator2"
+		  SID			  362
+		  Ports			  [2, 1]
+		  Position		  [465, 227, 495, 258]
+		  ShowName		  off
+		  AllPortsSameDT	  off
+		  OutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		  Port {
+		    PortNumber		    1
+		    Name		    "BTMd_iflt_BCUMaxTempOver_warn"
+		    MustResolveToSignalObject on
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator8"
+		  SID			  363
+		  Ports			  [2, 1]
+		  Position		  [465, 122, 495, 153]
+		  ShowName		  off
+		  AllPortsSameDT	  off
+		  OutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		  Port {
+		    PortNumber		    1
+		    Name		    "BTMd_iflt_BCUMaxTempOver_fault"
+		    MustResolveToSignalObject on
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator1"
+		  SID			  364
+		  Ports			  [2, 1]
+		  Position		  [395, 167, 425, 198]
+		  ShowName		  off
+		  InputSameDT		  off
+		  LogicOutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator16"
+		  SID			  365
+		  Ports			  [2, 1]
+		  Position		  [395, 112, 425, 143]
+		  ShowName		  off
+		  Operator		  "<"
+		  InputSameDT		  off
+		  LogicOutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator17"
+		  SID			  366
+		  Ports			  [2, 1]
+		  Position		  [395, 52, 425, 83]
+		  ShowName		  off
+		  InputSameDT		  off
+		  LogicOutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		  Port {
+		    PortNumber		    1
+		    Name		    "BTMd_iflt_BCUMaxTempOver_fatal"
+		    MustResolveToSignalObject on
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator25"
+		  SID			  367
+		  Ports			  [2, 1]
+		  Position		  [395, 217, 425, 248]
+		  ShowName		  off
+		  Operator		  "<"
+		  InputSameDT		  off
+		  LogicOutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator26"
+		  SID			  368
+		  Ports			  [2, 1]
+		  Position		  [395, 262, 425, 293]
+		  ShowName		  off
+		  InputSameDT		  off
+		  LogicOutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "BTMd_iflt_BCUMaxTempOver_fatal"
+		  SID			  369
+		  Position		  [675, 63, 705, 77]
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "BTMd_iflt_BCUMaxTempOver_fault"
+		  SID			  370
+		  Position		  [675, 133, 705, 147]
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "BTMd_iflt_BCUMaxTempOver_warn"
+		  SID			  371
+		  Position		  [675, 238, 705, 252]
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "IPTd_t_BCUTemp"
+		  SrcPort		  1
+		  Points		  [110, 0]
+		  Branch {
+		    Points		    [0, 60]
+		    Branch {
+		    Points		    [0, 55]
+		    Branch {
+		    Points		    [0, 50]
+		    Branch {
+		    Points		    [0, 45]
+		    DstBlock		    "Relational\nOperator26"
+		    DstPort		    1
+		    }
+		    Branch {
+		    DstBlock		    "Relational\nOperator25"
+		    DstPort		    1
+		    }
+		    }
+		    Branch {
+		    DstBlock		    "Relational\nOperator1"
+		    DstPort		    1
+		    }
+		    }
+		    Branch {
+		    DstBlock		    "Relational\nOperator16"
+		    DstPort		    1
+		    }
+		  }
+		  Branch {
+		    DstBlock		    "Relational\nOperator17"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "Constant24"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator17"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Constant27"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator25"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Constant10"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator1"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Constant25"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator16"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator26"
+		  SrcPort		  1
+		  Points		  [20, 0]
+		  DstBlock		  "Logical\nOperator2"
+		  DstPort		  2
+		}
+		Line {
+		  Name			  "BTMd_iflt_BCUMaxTempOver_fatal"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Relational\nOperator17"
+		  SrcPort		  1
+		  DstBlock		  "BTMd_iflt_BCUMaxTempOver_fatal"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "BTMd_iflt_BCUMaxTempOver_fault"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Logical\nOperator8"
+		  SrcPort		  1
+		  DstBlock		  "BTMd_iflt_BCUMaxTempOver_fault"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator1"
+		  SrcPort		  1
+		  Points		  [10, 0; 0, -40]
+		  DstBlock		  "Logical\nOperator8"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator16"
+		  SrcPort		  1
+		  DstBlock		  "Logical\nOperator8"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "BTMd_iflt_BCUMaxTempOver_warn"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Logical\nOperator2"
+		  SrcPort		  1
+		  DstBlock		  "BTMd_iflt_BCUMaxTempOver_warn"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator25"
+		  SrcPort		  1
+		  DstBlock		  "Logical\nOperator2"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Constant11"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator26"
+		  DstPort		  2
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "BMUTempDiag"
+	      SID		      372
+	      Ports		      [1, 3]
+	      Position		      [615, 270, 935, 360]
+	      LibraryVersion	      "1.762"
+	      TreatAsAtomicUnit	      on
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      System {
+		Name			"BMUTempDiag"
+		Location		[202, 74, 1918, 1019]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"219"
+		Block {
+		  BlockType		  Inport
+		  Name			  "IPTd_t_BMUTemp"
+		  SID			  389
+		  Position		  [30, 53, 60, 67]
+		  IconDisplay		  "Port number"
+		  Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "IPTd_t_BMUTemp"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant28"
+		  SID			  390
+		  Position		  [210, 125, 365, 145]
+		  BackgroundColor	  "green"
+		  ShowName		  off
+		  Value			  "BTMc_t_BMUTempOver_fatal"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant6"
+		  SID			  391
+		  Position		  [210, 170, 365, 190]
+		  BackgroundColor	  "green"
+		  ShowName		  off
+		  Value			  "BTMc_t_BMUTempOver_fault"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant7"
+		  SID			  392
+		  Position		  [210, 65, 365, 85]
+		  BackgroundColor	  "green"
+		  ShowName		  off
+		  Value			  "BTMc_t_BMUTempOver_fatal"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant8"
+		  SID			  393
+		  Position		  [210, 270, 365, 290]
+		  BackgroundColor	  "green"
+		  ShowName		  off
+		  Value			  "BTMc_t_BMUTempOver_warn"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant9"
+		  SID			  394
+		  Position		  [210, 220, 365, 240]
+		  BackgroundColor	  "green"
+		  ShowName		  off
+		  Value			  "BTMc_t_BMUTempOver_fault"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator10"
+		  SID			  395
+		  Ports			  [2, 1]
+		  Position		  [475, 122, 505, 153]
+		  ShowName		  off
+		  AllPortsSameDT	  off
+		  OutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		  Port {
+		    PortNumber		    1
+		    Name		    "BTMd_iflt_BMUMaxTempOver_fault"
+		    MustResolveToSignalObject on
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator9"
+		  SID			  396
+		  Ports			  [2, 1]
+		  Position		  [475, 217, 505, 248]
+		  ShowName		  off
+		  AllPortsSameDT	  off
+		  OutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		  Port {
+		    PortNumber		    1
+		    Name		    "BTMd_iflt_BMUMaxTempOver_warn"
+		    MustResolveToSignalObject on
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  MinMax
+		  Name			  "MinMax"
+		  SID			  397
+		  Ports			  [1, 1]
+		  Position		  [125, 45, 155, 75]
+		  ShowName		  off
+		  Function		  "max"
+		  InputSameDT		  off
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator27"
+		  SID			  398
+		  Ports			  [2, 1]
+		  Position		  [405, 52, 435, 83]
+		  ShowName		  off
+		  InputSameDT		  off
+		  LogicOutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		  Port {
+		    PortNumber		    1
+		    Name		    "BTMd_iflt_BMUMaxTempOver_fatal"
+		    MustResolveToSignalObject on
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator28"
+		  SID			  399
+		  Ports			  [2, 1]
+		  Position		  [405, 207, 435, 238]
+		  ShowName		  off
+		  Operator		  "<"
+		  InputSameDT		  off
+		  LogicOutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator29"
+		  SID			  400
+		  Ports			  [2, 1]
+		  Position		  [405, 257, 435, 288]
+		  ShowName		  off
+		  InputSameDT		  off
+		  LogicOutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator6"
+		  SID			  401
+		  Ports			  [2, 1]
+		  Position		  [405, 157, 435, 188]
+		  ShowName		  off
+		  InputSameDT		  off
+		  LogicOutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator7"
+		  SID			  402
+		  Ports			  [2, 1]
+		  Position		  [405, 112, 435, 143]
+		  ShowName		  off
+		  Operator		  "<"
+		  InputSameDT		  off
+		  LogicOutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "BTMd_iflt_BMUMaxTempOver_fatal"
+		  SID			  403
+		  Position		  [680, 63, 710, 77]
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "BTMd_iflt_BMUMaxTempOver_fault"
+		  SID			  404
+		  Position		  [680, 133, 710, 147]
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "BTMd_iflt_BMUMaxTempOver_warn"
+		  SID			  405
+		  Position		  [680, 228, 710, 242]
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Line {
+		  SrcBlock		  "MinMax"
+		  SrcPort		  1
+		  Points		  [5, 0]
+		  Branch {
+		    Points		    [0, 60]
+		    Branch {
+		    Points		    [0, 45]
+		    Branch {
+		    Points		    [0, 50]
+		    Branch {
+		    Points		    [0, 50]
+		    DstBlock		    "Relational\nOperator29"
+		    DstPort		    1
+		    }
+		    Branch {
+		    DstBlock		    "Relational\nOperator28"
+		    DstPort		    1
+		    }
+		    }
+		    Branch {
+		    DstBlock		    "Relational\nOperator6"
+		    DstPort		    1
+		    }
+		    }
+		    Branch {
+		    DstBlock		    "Relational\nOperator7"
+		    DstPort		    1
+		    }
+		  }
+		  Branch {
+		    DstBlock		    "Relational\nOperator27"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "IPTd_t_BMUTemp"
+		  SrcPort		  1
+		  DstBlock		  "MinMax"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Constant7"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator27"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Constant9"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator28"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Constant6"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator6"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Constant28"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator7"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator29"
+		  SrcPort		  1
+		  Points		  [20, 0]
+		  DstBlock		  "Logical\nOperator9"
+		  DstPort		  2
+		}
+		Line {
+		  Name			  "BTMd_iflt_BMUMaxTempOver_fatal"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Relational\nOperator27"
+		  SrcPort		  1
+		  DstBlock		  "BTMd_iflt_BMUMaxTempOver_fatal"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "BTMd_iflt_BMUMaxTempOver_fault"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Logical\nOperator10"
+		  SrcPort		  1
+		  DstBlock		  "BTMd_iflt_BMUMaxTempOver_fault"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator6"
+		  SrcPort		  1
+		  Points		  [10, 0; 0, -30]
+		  DstBlock		  "Logical\nOperator10"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator7"
+		  SrcPort		  1
+		  DstBlock		  "Logical\nOperator10"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "BTMd_iflt_BMUMaxTempOver_warn"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Logical\nOperator9"
+		  SrcPort		  1
+		  DstBlock		  "BTMd_iflt_BMUMaxTempOver_warn"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator28"
+		  SrcPort		  1
+		  DstBlock		  "Logical\nOperator9"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Constant8"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator29"
+		  DstPort		  2
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "CellTempMaxDiag"
+	      SID		      461
+	      Ports		      [1, 3]
+	      Position		      [615, 622, 935, 718]
+	      LibraryVersion	      "1.762"
+	      TreatAsAtomicUnit	      on
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      System {
+		Name			"CellTempMaxDiag"
+		Location		[2, 82, 1702, 1034]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"236"
+		Block {
+		  BlockType		  Inport
+		  Name			  "BTMd_t_CellTemp_max"
+		  SID			  478
+		  Position		  [85, 53, 115, 67]
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant15"
+		  SID			  479
+		  Position		  [205, 154, 365, 176]
+		  BackgroundColor	  "green"
+		  ShowName		  off
+		  Value			  "BTMc_t_MdlTempOver_fault"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant16"
+		  SID			  480
+		  Position		  [205, 204, 365, 226]
+		  BackgroundColor	  "green"
+		  ShowName		  off
+		  Value			  "BTMc_t_MdlTempOver_fault"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant17"
+		  SID			  481
+		  Position		  [205, 65, 365, 85]
+		  BackgroundColor	  "green"
+		  ShowName		  off
+		  Value			  "BTMc_t_MdlTempOver_fatal"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant18"
+		  SID			  482
+		  Position		  [200, 244, 365, 266]
+		  BackgroundColor	  "green"
+		  ShowName		  off
+		  Value			  "BTMc_t_MdlTempOver_warn"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant19"
+		  SID			  483
+		  Position		  [205, 105, 365, 125]
+		  BackgroundColor	  "green"
+		  ShowName		  off
+		  Value			  "BTMc_t_MdlTempOver_fatal"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator5"
+		  SID			  484
+		  Ports			  [2, 1]
+		  Position		  [470, 202, 500, 233]
+		  ShowName		  off
+		  AllPortsSameDT	  off
+		  OutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		  Port {
+		    PortNumber		    1
+		    Name		    "BTMd_iflt_MdlTempOver_warn"
+		    MustResolveToSignalObject on
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator6"
+		  SID			  485
+		  Ports			  [2, 1]
+		  Position		  [470, 102, 500, 133]
+		  ShowName		  off
+		  AllPortsSameDT	  off
+		  OutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		  Port {
+		    PortNumber		    1
+		    Name		    "BTMd_iflt_MdlTempOver_fault"
+		    MustResolveToSignalObject on
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator18"
+		  SID			  486
+		  Ports			  [2, 1]
+		  Position		  [400, 142, 430, 173]
+		  ShowName		  off
+		  InputSameDT		  off
+		  LogicOutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator19"
+		  SID			  487
+		  Ports			  [2, 1]
+		  Position		  [400, 92, 430, 123]
+		  ShowName		  off
+		  Operator		  "<"
+		  InputSameDT		  off
+		  LogicOutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator20"
+		  SID			  488
+		  Ports			  [2, 1]
+		  Position		  [400, 52, 430, 83]
+		  ShowName		  off
+		  InputSameDT		  off
+		  LogicOutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		  Port {
+		    PortNumber		    1
+		    Name		    "BTMd_iflt_MdlTempOver_fatal"
+		    MustResolveToSignalObject on
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator21"
+		  SID			  489
+		  Ports			  [2, 1]
+		  Position		  [400, 192, 430, 223]
+		  ShowName		  off
+		  Operator		  "<"
+		  InputSameDT		  off
+		  LogicOutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator22"
+		  SID			  490
+		  Ports			  [2, 1]
+		  Position		  [400, 232, 430, 263]
+		  ShowName		  off
+		  InputSameDT		  off
+		  LogicOutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "BTMd_iflt_MdlTempOver_fatal"
+		  SID			  491
+		  Position		  [710, 63, 740, 77]
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "BTMd_iflt_MdlTempOver_fault"
+		  SID			  492
+		  Position		  [710, 113, 740, 127]
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "BTMd_iflt_MdlTempOver_warn"
+		  SID			  493
+		  Position		  [715, 213, 745, 227]
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Line {
+		  SrcBlock		  "BTMd_t_CellTemp_max"
+		  SrcPort		  1
+		  Points		  [65, 0]
+		  Branch {
+		    Points		    [0, 40]
+		    Branch {
+		    Points		    [0, 50]
+		    Branch {
+		    Points		    [0, 50]
+		    Branch {
+		    Points		    [0, 40]
+		    DstBlock		    "Relational\nOperator22"
+		    DstPort		    1
+		    }
+		    Branch {
+		    DstBlock		    "Relational\nOperator21"
+		    DstPort		    1
+		    }
+		    }
+		    Branch {
+		    DstBlock		    "Relational\nOperator18"
+		    DstPort		    1
+		    }
+		    }
+		    Branch {
+		    DstBlock		    "Relational\nOperator19"
+		    DstPort		    1
+		    }
+		  }
+		  Branch {
+		    DstBlock		    "Relational\nOperator20"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "Constant17"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator20"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Constant16"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator21"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Constant15"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator18"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Constant19"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator19"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator22"
+		  SrcPort		  1
+		  Points		  [20, 0]
+		  DstBlock		  "Logical\nOperator5"
+		  DstPort		  2
+		}
+		Line {
+		  Name			  "BTMd_iflt_MdlTempOver_fatal"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Relational\nOperator20"
+		  SrcPort		  1
+		  DstBlock		  "BTMd_iflt_MdlTempOver_fatal"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "BTMd_iflt_MdlTempOver_fault"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Logical\nOperator6"
+		  SrcPort		  1
+		  DstBlock		  "BTMd_iflt_MdlTempOver_fault"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator18"
+		  SrcPort		  1
+		  Points		  [10, 0; 0, -35]
+		  DstBlock		  "Logical\nOperator6"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator19"
+		  SrcPort		  1
+		  DstBlock		  "Logical\nOperator6"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "BTMd_iflt_MdlTempOver_warn"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Logical\nOperator5"
+		  SrcPort		  1
+		  DstBlock		  "BTMd_iflt_MdlTempOver_warn"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator21"
+		  SrcPort		  1
+		  DstBlock		  "Logical\nOperator5"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Constant18"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator22"
+		  DstPort		  2
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "CellTempMinDiag"
+	      SID		      406
+	      Ports		      [1, 3]
+	      Position		      [615, 388, 935, 482]
+	      LibraryVersion	      "1.762"
+	      TreatAsAtomicUnit	      on
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      System {
+		Name			"CellTempMinDiag"
+		Location		[202, 74, 1918, 1002]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"227"
+		Block {
+		  BlockType		  Inport
+		  Name			  "BTMd_t_CellTemp_min"
+		  SID			  424
+		  Position		  [35, 23, 65, 37]
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		  Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "BTMd_t_CellTemp_min"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant1"
+		  SID			  425
+		  Position		  [250, 145, 410, 165]
+		  BackgroundColor	  "green"
+		  ShowName		  off
+		  Value			  "BTMc_t_MdlTempUnder_fault"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant13"
+		  SID			  426
+		  Position		  [250, 185, 410, 205]
+		  BackgroundColor	  "green"
+		  ShowName		  off
+		  Value			  "BTMc_t_MdlTempUnder_fault"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant14"
+		  SID			  427
+		  Position		  [250, 35, 410, 55]
+		  BackgroundColor	  "green"
+		  ShowName		  off
+		  Value			  "BTMc_t_MdlTempUnder_fatal"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant2"
+		  SID			  428
+		  Position		  [250, 230, 405, 250]
+		  BackgroundColor	  "green"
+		  ShowName		  off
+		  Value			  "BTMc_t_MdlTempUnder_warn"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant3"
+		  SID			  429
+		  Position		  [250, 95, 410, 115]
+		  BackgroundColor	  "green"
+		  ShowName		  off
+		  Value			  "BTMc_t_MdlTempUnder_fatal"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator3"
+		  SID			  430
+		  Ports			  [2, 1]
+		  Position		  [540, 182, 570, 213]
+		  ShowName		  off
+		  AllPortsSameDT	  off
+		  OutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		  Port {
+		    PortNumber		    1
+		    Name		    "BTMd_iflt_MdlTempUnder_warn"
+		    MustResolveToSignalObject on
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator4"
+		  SID			  431
+		  Ports			  [2, 1]
+		  Position		  [540, 92, 570, 123]
+		  ShowName		  off
+		  AllPortsSameDT	  off
+		  OutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		  Port {
+		    PortNumber		    1
+		    Name		    "BTMd_iflt_MdlTempUnder_fault"
+		    MustResolveToSignalObject on
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator10"
+		  SID			  432
+		  Ports			  [2, 1]
+		  Position		  [445, 132, 475, 163]
+		  ShowName		  off
+		  Operator		  "<="
+		  InputSameDT		  off
+		  LogicOutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator11"
+		  SID			  433
+		  Ports			  [2, 1]
+		  Position		  [445, 82, 475, 113]
+		  ShowName		  off
+		  Operator		  ">"
+		  InputSameDT		  off
+		  LogicOutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator12"
+		  SID			  434
+		  Ports			  [2, 1]
+		  Position		  [450, 22, 480, 53]
+		  ShowName		  off
+		  Operator		  "<="
+		  InputSameDT		  off
+		  LogicOutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		  Port {
+		    PortNumber		    1
+		    Name		    "BTMd_iflt_MdlTempUnder_fatal"
+		    MustResolveToSignalObject on
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator2"
+		  SID			  435
+		  Ports			  [2, 1]
+		  Position		  [445, 172, 475, 203]
+		  ShowName		  off
+		  Operator		  ">"
+		  InputSameDT		  off
+		  LogicOutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator3"
+		  SID			  436
+		  Ports			  [2, 1]
+		  Position		  [445, 217, 475, 248]
+		  ShowName		  off
+		  Operator		  "<="
+		  InputSameDT		  off
+		  LogicOutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "BTMd_iflt_MdlTempUnder_fatal"
+		  SID			  437
+		  Position		  [750, 33, 780, 47]
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "BTMd_iflt_MdlTempUnder_fault"
+		  SID			  438
+		  Position		  [750, 103, 780, 117]
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "BTMd_iflt_MdlTempUnder_warn"
+		  SID			  439
+		  Position		  [750, 193, 780, 207]
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "BTMd_t_CellTemp_min"
+		  SrcPort		  1
+		  Points		  [150, 0]
+		  Branch {
+		    Points		    [0, 60]
+		    Branch {
+		    Points		    [0, 50]
+		    Branch {
+		    Points		    [0, 40]
+		    Branch {
+		    Points		    [0, 45]
+		    DstBlock		    "Relational\nOperator3"
+		    DstPort		    1
+		    }
+		    Branch {
+		    DstBlock		    "Relational\nOperator2"
+		    DstPort		    1
+		    }
+		    }
+		    Branch {
+		    DstBlock		    "Relational\nOperator10"
+		    DstPort		    1
+		    }
+		    }
+		    Branch {
+		    DstBlock		    "Relational\nOperator11"
+		    DstPort		    1
+		    }
+		  }
+		  Branch {
+		    DstBlock		    "Relational\nOperator12"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "Constant14"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator12"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Constant13"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator2"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Constant1"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator10"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Constant3"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator11"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator3"
+		  SrcPort		  1
+		  Points		  [45, 0]
+		  DstBlock		  "Logical\nOperator3"
+		  DstPort		  2
+		}
+		Line {
+		  Name			  "BTMd_iflt_MdlTempUnder_fatal"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Relational\nOperator12"
+		  SrcPort		  1
+		  DstBlock		  "BTMd_iflt_MdlTempUnder_fatal"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "BTMd_iflt_MdlTempUnder_fault"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Logical\nOperator4"
+		  SrcPort		  1
+		  DstBlock		  "BTMd_iflt_MdlTempUnder_fault"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator10"
+		  SrcPort		  1
+		  Points		  [10, 0; 0, -35]
+		  DstBlock		  "Logical\nOperator4"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator11"
+		  SrcPort		  1
+		  DstBlock		  "Logical\nOperator4"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "BTMd_iflt_MdlTempUnder_warn"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Logical\nOperator3"
+		  SrcPort		  1
+		  DstBlock		  "BTMd_iflt_MdlTempUnder_warn"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator2"
+		  SrcPort		  1
+		  DstBlock		  "Logical\nOperator3"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Constant2"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator3"
+		  DstPort		  2
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "MdlTempDifMaxDiag"
+	      SID		      494
+	      Ports		      [1, 3]
+	      Position		      [615, 507, 935, 603]
+	      LibraryVersion	      "1.762"
+	      TreatAsAtomicUnit	      on
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      System {
+		Name			"MdlTempDifMaxDiag"
+		Location		[202, 74, 1918, 1002]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"231"
+		Block {
+		  BlockType		  Inport
+		  Name			  "BTMd_t_MdlTempDif_max"
+		  SID			  511
+		  Position		  [110, 63, 140, 77]
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		  Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "BTMd_t_MdlTempDif_max"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant12"
+		  SID			  512
+		  Position		  [330, 175, 490, 195]
+		  BackgroundColor	  "green"
+		  ShowName		  off
+		  Value			  "BTMc_t_MdlTempDifOver_fault"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant20"
+		  SID			  513
+		  Position		  [330, 220, 490, 240]
+		  BackgroundColor	  "green"
+		  ShowName		  off
+		  Value			  "BTMc_t_MdlTempDifOver_fault"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant21"
+		  SID			  514
+		  Position		  [330, 75, 490, 95]
+		  BackgroundColor	  "green"
+		  ShowName		  off
+		  Value			  "BTMc_t_MdlTempDifOver_fatal"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant22"
+		  SID			  515
+		  Position		  [330, 265, 485, 285]
+		  BackgroundColor	  "green"
+		  ShowName		  off
+		  Value			  "BTMc_t_MdlTempDifOver_warn"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant23"
+		  SID			  516
+		  Position		  [330, 120, 490, 140]
+		  BackgroundColor	  "green"
+		  ShowName		  off
+		  Value			  "BTMc_t_MdlTempDifOver_fatal"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator1"
+		  SID			  517
+		  Ports			  [2, 1]
+		  Position		  [595, 217, 625, 248]
+		  ShowName		  off
+		  AllPortsSameDT	  off
+		  OutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		  Port {
+		    PortNumber		    1
+		    Name		    "BTMd_iflt_MdlTempDifOver_warn"
+		    MustResolveToSignalObject on
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator7"
+		  SID			  518
+		  Ports			  [2, 1]
+		  Position		  [595, 117, 625, 148]
+		  ShowName		  off
+		  AllPortsSameDT	  off
+		  OutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		  Port {
+		    PortNumber		    1
+		    Name		    "BTMd_iflt_MdlTempDifOver_fault"
+		    MustResolveToSignalObject on
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator13"
+		  SID			  519
+		  Ports			  [2, 1]
+		  Position		  [525, 162, 555, 193]
+		  ShowName		  off
+		  InputSameDT		  off
+		  LogicOutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator14"
+		  SID			  520
+		  Ports			  [2, 1]
+		  Position		  [525, 107, 555, 138]
+		  ShowName		  off
+		  Operator		  "<"
+		  InputSameDT		  off
+		  LogicOutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator15"
+		  SID			  521
+		  Ports			  [2, 1]
+		  Position		  [525, 62, 555, 93]
+		  ShowName		  off
+		  InputSameDT		  off
+		  LogicOutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		  Port {
+		    PortNumber		    1
+		    Name		    "BTMd_iflt_MdlTempDifOver_fatal"
+		    MustResolveToSignalObject on
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator23"
+		  SID			  522
+		  Ports			  [2, 1]
+		  Position		  [525, 207, 555, 238]
+		  ShowName		  off
+		  Operator		  "<"
+		  InputSameDT		  off
+		  LogicOutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator24"
+		  SID			  523
+		  Ports			  [2, 1]
+		  Position		  [525, 252, 555, 283]
+		  ShowName		  off
+		  InputSameDT		  off
+		  LogicOutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "BTMd_iflt_MdlTempDifOver_fatal"
+		  SID			  524
+		  Position		  [820, 73, 850, 87]
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "BTMd_iflt_MdlTempDifOver_fault"
+		  SID			  525
+		  Position		  [820, 128, 850, 142]
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "BTMd_iflt_MdlTempDifOver_warn"
+		  SID			  526
+		  Position		  [820, 228, 850, 242]
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "BTMd_t_MdlTempDif_max"
+		  SrcPort		  1
+		  Points		  [140, 0]
+		  Branch {
+		    Points		    [0, 45]
+		    Branch {
+		    Points		    [0, 55]
+		    Branch {
+		    Points		    [0, 45]
+		    Branch {
+		    Points		    [0, 45]
+		    DstBlock		    "Relational\nOperator24"
+		    DstPort		    1
+		    }
+		    Branch {
+		    DstBlock		    "Relational\nOperator23"
+		    DstPort		    1
+		    }
+		    }
+		    Branch {
+		    DstBlock		    "Relational\nOperator13"
+		    DstPort		    1
+		    }
+		    }
+		    Branch {
+		    DstBlock		    "Relational\nOperator14"
+		    DstPort		    1
+		    }
+		  }
+		  Branch {
+		    DstBlock		    "Relational\nOperator15"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "Constant21"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator15"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Constant20"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator23"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Constant12"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator13"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Constant23"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator14"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator24"
+		  SrcPort		  1
+		  Points		  [20, 0]
+		  DstBlock		  "Logical\nOperator1"
+		  DstPort		  2
+		}
+		Line {
+		  Name			  "BTMd_iflt_MdlTempDifOver_fatal"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Relational\nOperator15"
+		  SrcPort		  1
+		  DstBlock		  "BTMd_iflt_MdlTempDifOver_fatal"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "BTMd_iflt_MdlTempDifOver_fault"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Logical\nOperator7"
+		  SrcPort		  1
+		  DstBlock		  "BTMd_iflt_MdlTempDifOver_fault"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator13"
+		  SrcPort		  1
+		  Points		  [10, 0; 0, -40]
+		  DstBlock		  "Logical\nOperator7"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator14"
+		  SrcPort		  1
+		  DstBlock		  "Logical\nOperator7"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "BTMd_iflt_MdlTempDifOver_warn"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Logical\nOperator1"
+		  SrcPort		  1
+		  DstBlock		  "BTMd_iflt_MdlTempDifOver_warn"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator23"
+		  SrcPort		  1
+		  DstBlock		  "Logical\nOperator1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Constant22"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator24"
+		  DstPort		  2
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BTMd_iflt_MdlTempUnder_fatal"
+	      SID		      302
+	      Position		      [1125, 398, 1155, 412]
+	      IconDisplay	      "Port number"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BTMd_iflt_MdlTempUnder_fault"
+	      SID		      303
+	      Position		      [1125, 428, 1155, 442]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BTMd_iflt_MdlTempUnder_warn"
+	      SID		      304
+	      Position		      [1125, 458, 1155, 472]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BTMd_iflt_MdlTempOver_fatal"
+	      SID		      305
+	      Position		      [1125, 633, 1155, 647]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BTMd_iflt_MdlTempOver_fault"
+	      SID		      306
+	      Position		      [1125, 663, 1155, 677]
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BTMd_iflt_MdlTempOver_warn"
+	      SID		      307
+	      Position		      [1125, 693, 1155, 707]
+	      Port		      "6"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BTMd_iflt_MdlTempDifOver_fatal"
+	      SID		      308
+	      Position		      [1125, 518, 1155, 532]
+	      Port		      "7"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BTMd_iflt_MdlTempDifOver_fault"
+	      SID		      309
+	      Position		      [1125, 548, 1155, 562]
+	      Port		      "8"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BTMd_iflt_MdlTempDifOver_warn"
+	      SID		      310
+	      Position		      [1125, 578, 1155, 592]
+	      Port		      "9"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BTMd_iflt_BCUMaxTempOver_fatal"
+	      SID		      311
+	      Position		      [1125, 133, 1155, 147]
+	      Port		      "10"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BTMd_iflt_BCUMaxTempOver_fault"
+	      SID		      312
+	      Position		      [1125, 173, 1155, 187]
+	      Port		      "11"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BTMd_iflt_BCUMaxTempOver_warn"
+	      SID		      313
+	      Position		      [1125, 213, 1155, 227]
+	      Port		      "12"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BTMd_iflt_BMUMaxTempOver_fatal"
+	      SID		      314
+	      Position		      [1125, 278, 1155, 292]
+	      Port		      "13"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BTMd_iflt_BMUMaxTempOver_fault"
+	      SID		      315
+	      Position		      [1125, 308, 1155, 322]
+	      Port		      "14"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BTMd_iflt_BMUMaxTempOver_warn"
+	      SID		      316
+	      Position		      [1125, 338, 1155, 352]
+	      Port		      "15"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Line {
+	      SrcBlock		      "MdlTempDifMaxDiag"
+	      SrcPort		      3
+	      DstBlock		      "BTMd_iflt_MdlTempDifOver_warn"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "MdlTempDifMaxDiag"
+	      SrcPort		      2
+	      DstBlock		      "BTMd_iflt_MdlTempDifOver_fault"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "MdlTempDifMaxDiag"
+	      SrcPort		      1
+	      DstBlock		      "BTMd_iflt_MdlTempDifOver_fatal"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "BTMd_t_MdlTempDif_max"
+	      SrcPort		      1
+	      DstBlock		      "MdlTempDifMaxDiag"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "CellTempMaxDiag"
+	      SrcPort		      3
+	      DstBlock		      "BTMd_iflt_MdlTempOver_warn"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "CellTempMaxDiag"
+	      SrcPort		      2
+	      DstBlock		      "BTMd_iflt_MdlTempOver_fault"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "CellTempMaxDiag"
+	      SrcPort		      1
+	      DstBlock		      "BTMd_iflt_MdlTempOver_fatal"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "BTMd_t_CellTemp_max"
+	      SrcPort		      1
+	      DstBlock		      "CellTempMaxDiag"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "CellTempMinDiag"
+	      SrcPort		      3
+	      DstBlock		      "BTMd_iflt_MdlTempUnder_warn"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "CellTempMinDiag"
+	      SrcPort		      2
+	      DstBlock		      "BTMd_iflt_MdlTempUnder_fault"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "CellTempMinDiag"
+	      SrcPort		      1
+	      DstBlock		      "BTMd_iflt_MdlTempUnder_fatal"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "BTMd_t_CellTemp_min"
+	      SrcPort		      1
+	      DstBlock		      "CellTempMinDiag"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "BMUTempDiag"
+	      SrcPort		      3
+	      DstBlock		      "BTMd_iflt_BMUMaxTempOver_warn"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "BMUTempDiag"
+	      SrcPort		      2
+	      DstBlock		      "BTMd_iflt_BMUMaxTempOver_fault"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "BMUTempDiag"
+	      SrcPort		      1
+	      DstBlock		      "BTMd_iflt_BMUMaxTempOver_fatal"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "IPTd_t_BMUTemp"
+	      SrcPort		      1
+	      DstBlock		      "BMUTempDiag"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "BCUTempDiag"
+	      SrcPort		      3
+	      DstBlock		      "BTMd_iflt_BCUMaxTempOver_warn"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "BCUTempDiag"
+	      SrcPort		      2
+	      DstBlock		      "BTMd_iflt_BCUMaxTempOver_fault"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "BCUTempDiag"
+	      SrcPort		      1
+	      DstBlock		      "BTMd_iflt_BCUMaxTempOver_fatal"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "IPTd_t_BCUTemp"
+	      SrcPort		      1
+	      DstBlock		      "BCUTempDiag"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "IPTd_t_PackOutAirTemp"
+	      SrcPort		      1
+	      DstBlock		      "AirOutTempDiag"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator5"
+	  SID			  181
+	  Ports			  [15, 1]
+	  Position		  [1330, 71, 1375, 529]
+	  ShowName		  off
+	  Inputs		  "15"
+	  DisplayOption		  "bar"
+	  Port {
+	    PortNumber		    1
+	    Name		    "BTMd_iflt_FaultDiagnostic"
+	    PropagatedSignals	    "BTMd_iflt_MdlTempUnder_fatal, BTMd_iflt_MdlTempUnder_fault, BTMd_iflt_MdlTempUnder_warn, B"
+	    "TMd_iflt_MdlTempOver_fatal, BTMd_iflt_MdlTempOver_fault, BTMd_iflt_MdlTempOver_warn, BTMd_iflt_MdlTempDifOver_fat"
+	    "al, BTMd_iflt_MdlTempDifOver_fault, BTMd_iflt_MdlTempDifOver_warn, BTMd_iflt_BCUMaxTempOver_fatal, BTMd_iflt_BCUM"
+	    "axTempOver_fault, BTMd_iflt_BCUMaxTempOver_warn, BTMd_iflt_BMUMaxTempOver_fatal, BTMd_iflt_BMUMaxTempOver_fault, "
+	    "BTMd_iflt_BMUMaxTempOver_warn"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From1"
+	  SID			  530
+	  Position		  [300, 404, 495, 426]
+	  ShowName		  off
+	  GotoTag		  "BTMd_t_MdlTempDif_max"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From116"
+	  SID			  527
+	  Position		  [300, 329, 495, 351]
+	  ShowName		  off
+	  GotoTag		  "BTMd_t_CellTemp_min"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto1"
+	  SID			  529
+	  Position		  [1175, 734, 1355, 756]
+	  ShowName		  off
+	  GotoTag		  "BTMd_t_MdlTempDif_max"
+	  TagVisibility		  "local"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto24"
+	  SID			  528
+	  Position		  [1195, 779, 1375, 801]
+	  ShowName		  off
+	  GotoTag		  "BTMd_t_CellTemp_min"
+	  TagVisibility		  "local"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "BTMd_iflt_FaultDiagnostic"
+	  SID			  191
+	  Position		  [1525, 293, 1555, 307]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "BTMd_t_CellTemp_max"
+	  SID			  185
+	  Position		  [1525, 618, 1555, 632]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "BTMd_enum_MaxTempCellNum"
+	  SID			  189
+	  Position		  [1525, 663, 1555, 677]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "BTMd_enum_MaxTempMdlNum"
+	  SID			  322
+	  Position		  [1525, 708, 1555, 722]
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "BTMd_t_MdlTempDif_max"
+	  SID			  186
+	  Position		  [1525, 753, 1555, 767]
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "BTMd_t_CellTemp_min"
+	  SID			  184
+	  Position		  [1525, 798, 1555, 812]
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "BTMd_enum_MinTempCellNum"
+	  SID			  188
+	  Position		  [1525, 843, 1555, 857]
+	  Port			  "7"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "BTMd_enum_MinTempMdlNum"
+	  SID			  329
+	  Position		  [1525, 888, 1555, 902]
+	  Port			  "8"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "BTMd_t_PackTemp"
+	  SID			  183
+	  Position		  [1525, 933, 1555, 947]
+	  Port			  "9"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "BTMd_t_CellTemp_mean"
+	  SID			  317
+	  Position		  [1525, 978, 1555, 992]
+	  Port			  "10"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Line {
+	  SrcBlock		  "From1"
+	  SrcPort		  1
+	  DstBlock		  "BTMOBD"
+	  DstPort		  5
+	}
+	Line {
+	  SrcBlock		  "From116"
+	  SrcPort		  1
+	  DstBlock		  "BTMOBD"
+	  DstPort		  4
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "IPTd_t_BMUTemp"
+	  SrcPort		  1
+	  DstBlock		  "BTMOBD"
+	  DstPort		  3
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "BTMCalc"
+	  SrcPort		  7
+	  DstBlock		  "BTMd_enum_MinTempMdlNum"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "BTMCalc"
+	  SrcPort		  9
+	  DstBlock		  "BTMd_t_CellTemp_mean"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "BTMCalc"
+	  SrcPort		  3
+	  DstBlock		  "BTMd_enum_MaxTempMdlNum"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "IPTd_t_BCUTemp"
+	  SrcPort		  1
+	  DstBlock		  "BTMOBD"
+	  DstPort		  2
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "IPTd_t_PackOutAirTemp"
+	  SrcPort		  1
+	  DstBlock		  "BTMOBD"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "BTMCalc"
+	  SrcPort		  6
+	  DstBlock		  "BTMd_enum_MinTempCellNum"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "IPTd_t_MdlTemp"
+	  SrcPort		  1
+	  DstBlock		  "BTMCalc"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "BTMCalc"
+	  SrcPort		  4
+	  Points		  [25, 0]
+	  Branch {
+	    DstBlock		    "Goto1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "BTMd_t_MdlTempDif_max"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "BTMCalc"
+	  SrcPort		  5
+	  Points		  [30, 0]
+	  Branch {
+	    Points		    [0, -15]
+	    DstBlock		    "Goto24"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "BTMd_t_CellTemp_min"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "BTMCalc"
+	  SrcPort		  8
+	  DstBlock		  "BTMd_t_PackTemp"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "BTMCalc"
+	  SrcPort		  2
+	  DstBlock		  "BTMd_enum_MaxTempCellNum"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "BTMCalc"
+	  SrcPort		  1
+	  Points		  [135, 0]
+	  Branch {
+	    Points		    [0, -65; -505, 0; 0, -70]
+	    DstBlock		    "BTMOBD"
+	    DstPort		    6
+	  }
+	  Branch {
+	    DstBlock		    "BTMd_t_CellTemp_max"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "BTMOBD"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator5"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "BTMOBD"
+	  SrcPort		  2
+	  DstBlock		  "Bus\nCreator5"
+	  DstPort		  2
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "BTMOBD"
+	  SrcPort		  3
+	  DstBlock		  "Bus\nCreator5"
+	  DstPort		  3
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "BTMOBD"
+	  SrcPort		  4
+	  DstBlock		  "Bus\nCreator5"
+	  DstPort		  4
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "BTMOBD"
+	  SrcPort		  5
+	  DstBlock		  "Bus\nCreator5"
+	  DstPort		  5
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "BTMOBD"
+	  SrcPort		  6
+	  DstBlock		  "Bus\nCreator5"
+	  DstPort		  6
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "BTMOBD"
+	  SrcPort		  7
+	  DstBlock		  "Bus\nCreator5"
+	  DstPort		  7
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "BTMOBD"
+	  SrcPort		  8
+	  DstBlock		  "Bus\nCreator5"
+	  DstPort		  8
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "BTMOBD"
+	  SrcPort		  9
+	  DstBlock		  "Bus\nCreator5"
+	  DstPort		  9
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "BTMOBD"
+	  SrcPort		  10
+	  DstBlock		  "Bus\nCreator5"
+	  DstPort		  10
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "BTMOBD"
+	  SrcPort		  11
+	  DstBlock		  "Bus\nCreator5"
+	  DstPort		  11
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "BTMOBD"
+	  SrcPort		  12
+	  DstBlock		  "Bus\nCreator5"
+	  DstPort		  12
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "BTMOBD"
+	  SrcPort		  13
+	  DstBlock		  "Bus\nCreator5"
+	  DstPort		  13
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "BTMOBD"
+	  SrcPort		  14
+	  DstBlock		  "Bus\nCreator5"
+	  DstPort		  14
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "BTMOBD"
+	  SrcPort		  15
+	  DstBlock		  "Bus\nCreator5"
+	  DstPort		  15
+	}
+	Line {
+	  Name			  "BTMd_iflt_FaultDiagnostic"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nCreator5"
+	  SrcPort		  1
+	  DstBlock		  "BTMd_iflt_FaultDiagnostic"
+	  DstPort		  1
+	}
+      }
+    }
+  }
+}
+# Finite State Machines
+#
+#    Stateflow Version 7.1 (R2009a) dated Jul 17 2009, 10:24:20
+#
+#
+
+
+Stateflow {
+  machine {
+    id			    1
+    name		    "BTM_lib"
+    created		    "31-Mar-2015 09:56:46"
+    isLibrary		    1
+    firstTarget		    18
+    sfVersion		    71014000.00001
+  }
+  chart {
+    id			    2
+    name		    "BTM/BTMCalc/Temp_Parameter_Calculation/CellTemp_Min"
+    windowPosition	    [920.109 -171 200.25 189.75]
+    viewLimits		    [0 156.75 0 153.75]
+    screen		    [1 1 1920 1080 1.333333333333333]
+    treeNode		    [0 3 0 0]
+    firstTransition	    5
+    firstJunction	    4
+    viewObj		    2
+    machine		    1
+    subviewS {
+    }
+    ssIdHighWaterMark	    6
+    decomposition	    CLUSTER_CHART
+    type		    EML_CHART
+    firstData		    6
+    chartFileNumber	    7
+    disableImplicitCasting  1
+    eml {
+      name		      "min"
+    }
+  }
+  state {
+    id			    3
+    labelString		    "eML_blk_kernel()"
+    position		    [18 64.5 118 66]
+    fontSize		    12
+    chart		    2
+    treeNode		    [2 0 0 0]
+    superState		    SUBCHART
+    subviewer		    2
+    ssIdNumber		    1
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+    eml {
+      isEML		      1
+      script		      "function [min_temp,num] = min(temps)\n%#eml\n[I Y]=min(temps);\nmin_temp = I;\nnum =uint8(Y);"
+      editorLayout	      "100 M4x1[299 360 1080 733]"
+    }
+  }
+  junction {
+    id			    4
+    position		    [23.5747 49.5747 7]
+    chart		    2
+    linkNode		    [2 0 0]
+    subviewer		    2
+    ssIdNumber		    3
+    type		    CONNECTIVE_JUNCTION
+  }
+  transition {
+    id			    5
+    labelString		    "{eML_blk_kernel();}"
+    labelPosition	    [32.125 19.875 102.544 14.964]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 23.5747 14.625 0 0]
+    }
+    dst {
+      id		      4
+      intersection	      [7 0 -1 -1 23.5747 42.5747 0 0]
+    }
+    midPoint		    [23.5747 24.9468]
+    chart		    2
+    linkNode		    [2 0 0]
+    dataLimits		    [23.575 23.575 14.625 34.575]
+    subviewer		    2
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    2
+  }
+  data {
+    id			    6
+    ssIdNumber		    4
+    name		    "temps"
+    linkNode		    [2 0 7]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    7
+    ssIdNumber		    5
+    name		    "min_temp"
+    linkNode		    [2 6 8]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    8
+    ssIdNumber		    6
+    name		    "num"
+    linkNode		    [2 7 0]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  instance {
+    id			    9
+    name		    "BTM/BTMCalc/Temp_Parameter_Calculation/CellTemp_Min"
+    machine		    1
+    chart		    2
+  }
+  chart {
+    id			    10
+    name		    "BTM/BTMCalc/Temp_Parameter_Calculation/CellTemp_Max"
+    windowPosition	    [905.109 -171 200.25 189.75]
+    viewLimits		    [0 156.75 0 153.75]
+    screen		    [1 1 1920 1080 1.333333333333333]
+    treeNode		    [0 11 0 0]
+    firstTransition	    13
+    firstJunction	    12
+    viewObj		    10
+    machine		    1
+    subviewS {
+    }
+    ssIdHighWaterMark	    6
+    decomposition	    CLUSTER_CHART
+    type		    EML_CHART
+    firstData		    14
+    chartFileNumber	    13
+    disableImplicitCasting  1
+    eml {
+      name		      "max"
+    }
+  }
+  state {
+    id			    11
+    labelString		    "eML_blk_kernel()"
+    position		    [18 64.5 118 66]
+    fontSize		    12
+    chart		    10
+    treeNode		    [10 0 0 0]
+    superState		    SUBCHART
+    subviewer		    10
+    ssIdNumber		    1
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+    eml {
+      isEML		      1
+      script		      "function [max_temp,num] = max(temps)\n%#eml\n[I Y]=max(temps);\nmax_temp = I;\nnum =uint8(Y);"
+      editorLayout	      "100 M4x1[734 301 1080 733]"
+    }
+  }
+  junction {
+    id			    12
+    position		    [23.5747 49.5747 7]
+    chart		    10
+    linkNode		    [10 0 0]
+    subviewer		    10
+    ssIdNumber		    3
+    type		    CONNECTIVE_JUNCTION
+  }
+  transition {
+    id			    13
+    labelString		    "{eML_blk_kernel();}"
+    labelPosition	    [32.125 19.875 102.544 14.964]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 23.5747 14.625 0 0]
+    }
+    dst {
+      id		      12
+      intersection	      [7 0 -1 -1 23.5747 42.5747 0 0]
+    }
+    midPoint		    [23.5747 24.9468]
+    chart		    10
+    linkNode		    [10 0 0]
+    dataLimits		    [23.575 23.575 14.625 34.575]
+    subviewer		    10
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    2
+  }
+  data {
+    id			    14
+    ssIdNumber		    4
+    name		    "temps"
+    linkNode		    [10 0 15]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    15
+    ssIdNumber		    5
+    name		    "max_temp"
+    linkNode		    [10 14 16]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    16
+    ssIdNumber		    6
+    name		    "num"
+    linkNode		    [10 15 0]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  instance {
+    id			    17
+    name		    "BTM/BTMCalc/Temp_Parameter_Calculation/CellTemp_Max"
+    machine		    1
+    chart		    10
+  }
+  target {
+    id			    18
+    name		    "sfun"
+    description		    "Default Simulink S-Function Target."
+    machine		    1
+    linkNode		    [1 0 0]
+  }
+}
