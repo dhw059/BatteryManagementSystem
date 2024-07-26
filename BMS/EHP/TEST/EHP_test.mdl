@@ -1,0 +1,5270 @@
+Model {
+  Name			  "EHP_test"
+  Version		  7.4
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.21"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "GBK"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  MaxMDLFileLineLength	  120
+  Created		  "Tue Nov 11 09:38:16 2014"
+  Creator		  "zhaoxiangri"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "sunsijun"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Fri Mar 27 08:47:04 2015"
+  RTWModifiedTimeStamp	  349346819
+  ModelVersionFormat	  "1.%<AutoIncrement:21>"
+  ConfigurationManager	  "None"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "all"
+  WideLines		  off
+  ShowLineDimensions	  on
+  ShowPortDataTypes	  on
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  on
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  on
+  ExecutionContextIcon	  on
+  ShowLinearizationAnnotations off
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      1
+      Version		      "1.6.0"
+      Array {
+	Type			"Handle"
+	Dimension		9
+	Simulink.SolverCC {
+	  $ObjectID		  2
+	  Version		  "1.6.0"
+	  StartTime		  "0.0"
+	  StopTime		  "inf"
+	  AbsTol		  "auto"
+	  FixedStep		  "0.01"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  Solver		  "FixedStepDiscrete"
+	  SolverName		  "FixedStepDiscrete"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  3
+	  Version		  "1.6.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  4
+	  Version		  "1.6.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    7
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  EnforceIntegerDowncast  on
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  2147483647
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  5
+	  Version		  "1.6.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Use local settings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  StrictBusMsg		  "Warning"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  6
+	  Version		  "1.6.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  7
+	  Version		  "1.6.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  8
+	  Version		  "1.6.0"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  9
+	  Version		  "1.6.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    6
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      10
+	      Version		      "1.6.0"
+	      Array {
+		Type			"Cell"
+		Dimension		19
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"SFDataObjDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      SimulinkBlockComments   on
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      11
+	      Version		      "1.6.0"
+	      Array {
+		Type			"Cell"
+		Dimension		17
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"MultiInstanceERTCode"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportNonFinite"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"PortableWordSizes"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      TargetFunctionLibrary   "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      PortableWordSizes	      off
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	hdlcoderui.hdlcc {
+	  $ObjectID		  12
+	  Version		  "1.6.0"
+	  Description		  "HDL Coder custom configuration component"
+	  Name			  "HDL Coder"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    ""
+	    PropName		    "HDLConfigFile"
+	  }
+	  HDLCActiveTab		  "0"
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition    " [ 209, 225, 1400, 855 ] "
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    1
+  }
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      BusCreator
+      Inputs		      "4"
+      DisplayOption	      "none"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "fixdt(1,16,0)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      Display
+      Format		      "short"
+      Decimation	      "10"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      EnablePort
+      StatesWhenEnabling      "held"
+      PropagateVarSize	      "Only when enabling"
+      ShowOutputPort	      off
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      From
+      IconDisplay	      "Tag"
+      TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ParamMin		      "[]"
+      ParamMax		      "[]"
+      ParameterDataTypeMode   "Same as input"
+      ParameterDataType	      "fixdt(1,16,0)"
+      ParameterScalingMode    "Best Precision: Matrix-wise"
+      ParameterScaling	      "[]"
+      ParamDataTypeStr	      "Inherit: Same as input"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Same as input"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Goto
+      IconDisplay	      "Tag"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      DataType		      "auto"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchByCopyingInsideSignal off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Logic
+      Operator		      "AND"
+      Inputs		      "2"
+      IconShape		      "rectangular"
+      AllPortsSameDT	      on
+      OutDataTypeMode	      "Logical (see Configuration Parameters: Optimization)"
+      LogicDataType	      "uint(8)"
+      OutDataTypeStr	      "Inherit: Logical (see Configuration Parameters: Optimization)"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      DataType		      "auto"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      RelationalOperator
+      Operator		      ">="
+      InputSameDT	      on
+      LogicOutDataTypeMode    "Logical (see Configuration Parameters: Optimization)"
+      LogicDataType	      "uint(8)"
+      OutDataTypeStr	      "Inherit: Logical (see Configuration Parameters: Optimization)"
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      "S-Function"
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+      SFunctionDeploymentMode off
+    }
+    Block {
+      BlockType		      Saturate
+      UpperLimit	      "0.5"
+      LowerLimit	      "-0.5"
+      LinearizeAsGain	      on
+      ZeroCross		      on
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Same as input"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      AccumDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Switch
+      Criteria		      "u2 >= Threshold"
+      Threshold		      "0"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+      SampleTime	      "-1"
+      AllowDiffInputSizes     off
+    }
+    Block {
+      BlockType		      Terminator
+    }
+    Block {
+      BlockType		      TriggerPort
+      TriggerType	      "rising"
+      StatesWhenEnabling      "inherit"
+      PropagateVarSize	      "During execution"
+      ShowOutputPort	      off
+      OutputDataType	      "auto"
+      SampleTimeType	      "triggered"
+      SampleTime	      "1"
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      UnitDelay
+      X0		      "0"
+      SampleTime	      "1"
+      StateMustResolveToSignalObject off
+      RTWStateStorageClass    "Auto"
+    }
+  }
+  System {
+    Name		    "EHP_test"
+    Location		    [10, 82, 1893, 1011]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "188"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    354
+    Block {
+      BlockType		      Constant
+      Name		      "Constant"
+      SID		      7
+      Position		      [175, 130, 205, 160]
+      ShowName		      off
+      OutDataTypeMode	      "boolean"
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "boolean"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant1"
+      SID		      8
+      Position		      [175, 200, 205, 230]
+      ShowName		      off
+      OutDataTypeMode	      "boolean"
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "boolean"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant2"
+      SID		      9
+      Position		      [175, 270, 205, 300]
+      ShowName		      off
+      OutDataTypeMode	      "boolean"
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "boolean"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant3"
+      SID		      10
+      Position		      [175, 410, 205, 440]
+      ShowName		      off
+      OutDataTypeMode	      "boolean"
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "boolean"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant4"
+      SID		      11
+      Position		      [175, 340, 205, 370]
+      ShowName		      off
+      OutDataTypeMode	      "single"
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "single"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display"
+      SID		      6
+      Ports		      [1]
+      Position		      [705, 115, 795, 145]
+      ShowName		      off
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display1"
+      SID		      12
+      Ports		      [1]
+      Position		      [705, 160, 795, 190]
+      ShowName		      off
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display2"
+      SID		      13
+      Ports		      [1]
+      Position		      [705, 205, 795, 235]
+      ShowName		      off
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display3"
+      SID		      14
+      Ports		      [1]
+      Position		      [705, 250, 795, 280]
+      ShowName		      off
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display4"
+      SID		      15
+      Ports		      [1]
+      Position		      [705, 295, 795, 325]
+      ShowName		      off
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "EHP"
+      SID		      38
+      Ports		      [5, 5, 0, 1]
+      Position		      [340, 80, 605, 480]
+      LibraryVersion	      "1.762"
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"EHP"
+	Location		[2, 82, 1902, 1027]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"105"
+	Block {
+	  BlockType		  Inport
+	  Name			  "CTCd_flg_CtrNegSt"
+	  SID			  42
+	  Position		  [95, 158, 125, 172]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "CTCd_flg_CtrPosSt"
+	  SID			  43
+	  Position		  [95, 308, 125, 322]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "CTCd_flg_CtrPreSt"
+	  SID			  44
+	  Position		  [95, 458, 125, 472]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "IPTd_v_USample"
+	  SID			  45
+	  Position		  [95, 608, 125, 622]
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "IPTd_flg_HVILSt"
+	  SID			  46
+	  Position		  [90, 808, 120, 822]
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  TriggerPort
+	  Name			  "function"
+	  SID			  40
+	  Ports			  []
+	  Position		  [210, 15, 230, 35]
+	  TriggerType		  "function-call"
+	  StatesWhenEnabling	  "held"
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator5"
+	  SID			  47
+	  Ports			  [4, 1]
+	  Position		  [655, 260, 685, 605]
+	  ShowName		  off
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "HighVoltageInterlock"
+	  SID			  215
+	  Ports			  [1, 1]
+	  Position		  [305, 752, 540, 878]
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Function"
+	  RTWFcnNameOpts	  "User specified"
+	  RTWFcnName		  "HighVoltageInterlock"
+	  RTWFileNameOpts	  "Use function name"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "HighVoltageInterlock"
+	    Location		    [2, 82, 1902, 1027]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "484"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "IPTd_flg_HVILSt"
+	      SID		      216
+	      Position		      [85, 63, 115, 77]
+	      IconDisplay	      "Port number"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Gain"
+	      SID		      217
+	      Position		      [170, 55, 200, 85]
+	      ShowName		      off
+	      ParameterDataTypeMode   "Inherit via internal rule"
+	      ParameterDataType	      "fixdt(1, 16)"
+	      ParameterScaling	      "2^0"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeMode	      "Inherit via internal rule"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	      Port {
+		PortNumber		1
+		Name			"EHPd_flg_HVILSt"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "EHPd_flg_HVILSt"
+	      SID		      218
+	      Position		      [335, 63, 365, 77]
+	      IconDisplay	      "Port number"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Line {
+	      SrcBlock		      "IPTd_flg_HVILSt"
+	      SrcPort		      1
+	      DstBlock		      "Gain"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "EHPd_flg_HVILSt"
+	      Labels		      [0, 0]
+	      SrcBlock		      "Gain"
+	      SrcPort		      1
+	      DstBlock		      "EHPd_flg_HVILSt"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "IsolationDetection"
+	  SID			  219
+	  Description		  "$Author:Yan LiJuan$\n$Date:2015/03/26$  \n$Revision:1.0$     "
+	  Ports			  [4, 7]
+	  Position		  [315, 93, 550, 687]
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "IsolationDetection"
+	    Location		    [6, 82, 1906, 1008]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "135"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "CTCd_flg_CtrNegSt"
+	      SID		      220
+	      Position		      [85, 173, 115, 187]
+	      IconDisplay	      "Port number"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "CTCd_flg_CtrPosSt"
+	      SID		      221
+	      Position		      [85, 228, 115, 242]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "CTCd_flg_CtrPreSt"
+	      SID		      222
+	      Position		      [85, 283, 115, 297]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "IPTd_v_USample"
+	      SID		      223
+	      Position		      [85, 388, 115, 402]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "IslnClcn"
+	      SID		      224
+	      Description	      "$Author:Yan LiJuan$\n$Date:2015/03/26$  \n$Revision:1.0$     "
+	      Ports		      [5, 6]
+	      Position		      [960, 144, 1180, 431]
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      System {
+		Name			"IslnClcn"
+		Location		[2, 82, 1910, 1033]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "EHP_TrigClcnAftMeas"
+		  SID			  225
+		  Position		  [75, 28, 105, 42]
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "IPTd_v_PosCtrVol_chasis"
+		  SID			  226
+		  Position		  [75, 143, 105, 157]
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "IPTd_v_NegCtrVol_chasis"
+		  SID			  227
+		  Position		  [75, 263, 105, 277]
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "IPTd_v_PosCtrVolR_chasis"
+		  SID			  228
+		  Position		  [75, 383, 105, 397]
+		  Port			  "4"
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "IPTd_v_NegCtrVolR_chasis"
+		  SID			  229
+		  Position		  [75, 503, 105, 517]
+		  Port			  "5"
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "ELHPN_IslnDetnLim_P"
+		  SID			  230
+		  Position		  [885, 379, 1035, 411]
+		  BackgroundColor	  "yellow"
+		  ShowName		  off
+		  Value			  "EHPc_r_IsoDiag_limit"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "ELHPN_IslnDetnLim_P2"
+		  SID			  231
+		  Position		  [885, 314, 1035, 346]
+		  BackgroundColor	  "yellow"
+		  ShowName		  off
+		  Value			  "EHPc_r_IsoDiagWarn_limit"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "ELHPN_IslnDetnLim_P3"
+		  SID			  232
+		  Position		  [860, 719, 1010, 751]
+		  BackgroundColor	  "yellow"
+		  ShowName		  off
+		  Value			  "EHPc_r_IsoDiag_limit"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "ELHPN_IslnDetnLim_P5"
+		  SID			  233
+		  Position		  [880, 619, 1030, 651]
+		  BackgroundColor	  "yellow"
+		  ShowName		  off
+		  Value			  "EHPc_r_IsoDiagWarn_limit"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "IslnClcn"
+		  SID			  234
+		  Description		  "$Author:Yan LiJuan$\n$Date:2015/03/26$  \n$Revision:1.0$     "
+		  Ports			  [4, 2, 0, 1]
+		  Position		  [230, 87, 505, 573]
+		  MinAlgLoopOccurrences	  off
+		  PropExecContextOutsideSubsystem off
+		  RTWSystemCode		  "Auto"
+		  FunctionWithSeparateData off
+		  Opaque		  off
+		  RequestExecContextInheritance	off
+		  MaskHideContents	  off
+		  System {
+		    Name		    "IslnClcn"
+		    Location		    [121, 108, 1594, 944]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "IPTd_v_PosCtrVol_chasis"
+		    SID			    235
+		    Position		    [105, 298, 135, 312]
+		    IconDisplay		    "Port number"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "IPTd_v_NegCtrVol_chasis"
+		    SID			    236
+		    Position		    [100, 358, 130, 372]
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "IPTd_v_PosCtrVolR_chasis"
+		    SID			    237
+		    Position		    [170, 783, 200, 797]
+		    Port		    "3"
+		    IconDisplay		    "Port number"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "IPTd_v_NegCtrVolR_chasis"
+		    SID			    238
+		    Position		    [100, 418, 130, 432]
+		    Port		    "4"
+		    IconDisplay		    "Port number"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    }
+		    Block {
+		    BlockType		    TriggerPort
+		    Name		    "Trigger"
+		    SID			    239
+		    Ports		    []
+		    Position		    [565, 40, 585, 60]
+		    StatesWhenEnabling	    "held"
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Compare\nTo Zero1"
+		    SID			    240
+		    Ports		    [1, 1]
+		    Position		    [400, 195, 430, 225]
+		    ShowName		    off
+		    SourceBlock		    "simulink/Logic and Bit\nOperations/Compare\nTo Zero"
+		    SourceType		    "Compare To Zero"
+		    ShowPortLabels	    "FromPortIcon"
+		    SystemSampleTime	    "-1"
+		    FunctionWithSeparateData "off"
+		    RTWMemSecFuncInitTerm   "Inherit from model"
+		    RTWMemSecFuncExecute    "Inherit from model"
+		    RTWMemSecDataConstants  "Inherit from model"
+		    RTWMemSecDataInternal   "Inherit from model"
+		    RTWMemSecDataParameters "Inherit from model"
+		    relop		    ">"
+		    LogicOutDataTypeMode    "uint8"
+		    ZeroCross		    "on"
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Compare\nTo Zero2"
+		    SID			    241
+		    Ports		    [1, 1]
+		    Position		    [400, 140, 430, 170]
+		    ShowName		    off
+		    SourceBlock		    "simulink/Logic and Bit\nOperations/Compare\nTo Zero"
+		    SourceType		    "Compare To Zero"
+		    ShowPortLabels	    "FromPortIcon"
+		    SystemSampleTime	    "-1"
+		    FunctionWithSeparateData "off"
+		    RTWMemSecFuncInitTerm   "Inherit from model"
+		    RTWMemSecFuncExecute    "Inherit from model"
+		    RTWMemSecDataConstants  "Inherit from model"
+		    RTWMemSecDataInternal   "Inherit from model"
+		    RTWMemSecDataParameters "Inherit from model"
+		    relop		    ">"
+		    LogicOutDataTypeMode    "uint8"
+		    ZeroCross		    "on"
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Compare\nTo Zero3"
+		    SID			    242
+		    Ports		    [1, 1]
+		    Position		    [390, 545, 420, 575]
+		    ShowName		    off
+		    SourceBlock		    "simulink/Logic and Bit\nOperations/Compare\nTo Zero"
+		    SourceType		    "Compare To Zero"
+		    ShowPortLabels	    "FromPortIcon"
+		    SystemSampleTime	    "-1"
+		    FunctionWithSeparateData "off"
+		    RTWMemSecFuncInitTerm   "Inherit from model"
+		    RTWMemSecFuncExecute    "Inherit from model"
+		    RTWMemSecDataConstants  "Inherit from model"
+		    RTWMemSecDataInternal   "Inherit from model"
+		    RTWMemSecDataParameters "Inherit from model"
+		    relop		    ">"
+		    LogicOutDataTypeMode    "uint8"
+		    ZeroCross		    "on"
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Compare\nTo Zero4"
+		    SID			    243
+		    Ports		    [1, 1]
+		    Position		    [390, 590, 420, 620]
+		    ShowName		    off
+		    SourceBlock		    "simulink/Logic and Bit\nOperations/Compare\nTo Zero"
+		    SourceType		    "Compare To Zero"
+		    ShowPortLabels	    "FromPortIcon"
+		    SystemSampleTime	    "-1"
+		    FunctionWithSeparateData "off"
+		    RTWMemSecFuncInitTerm   "Inherit from model"
+		    RTWMemSecFuncExecute    "Inherit from model"
+		    RTWMemSecDataConstants  "Inherit from model"
+		    RTWMemSecDataInternal   "Inherit from model"
+		    RTWMemSecDataParameters "Inherit from model"
+		    relop		    ">"
+		    LogicOutDataTypeMode    "uint8"
+		    ZeroCross		    "on"
+		    }
+		    Block {
+		    BlockType		    From
+		    Name		    "From1"
+		    SID			    244
+		    Position		    [225, 196, 370, 224]
+		    ShowName		    off
+		    GotoTag		    "IPTd_v_NegCtrVolR_chasis"
+		    }
+		    Block {
+		    BlockType		    From
+		    Name		    "From10"
+		    SID			    245
+		    Position		    [170, 716, 310, 744]
+		    ShowName		    off
+		    GotoTag		    "IPTd_v_PosCtrVol_chasis"
+		    }
+		    Block {
+		    BlockType		    From
+		    Name		    "From2"
+		    SID			    246
+		    Position		    [225, 141, 365, 169]
+		    ShowName		    off
+		    GotoTag		    "IPTd_v_NegCtrVol_chasis"
+		    }
+		    Block {
+		    BlockType		    From
+		    Name		    "From3"
+		    SID			    247
+		    Position		    [230, 66, 370, 94]
+		    ShowName		    off
+		    GotoTag		    "IPTd_v_NegCtrVol_chasis"
+		    }
+		    Block {
+		    BlockType		    From
+		    Name		    "From4"
+		    SID			    248
+		    Position		    [230, 101, 370, 129]
+		    ShowName		    off
+		    GotoTag		    "IPTd_v_PosCtrVol_chasis"
+		    }
+		    Block {
+		    BlockType		    From
+		    Name		    "From5"
+		    SID			    249
+		    Position		    [170, 516, 310, 544]
+		    ShowName		    off
+		    GotoTag		    "IPTd_v_NegCtrVol_chasis"
+		    }
+		    Block {
+		    BlockType		    From
+		    Name		    "From6"
+		    SID			    250
+		    Position		    [170, 481, 310, 509]
+		    ShowName		    off
+		    GotoTag		    "IPTd_v_PosCtrVol_chasis"
+		    }
+		    Block {
+		    BlockType		    From
+		    Name		    "From7"
+		    SID			    251
+		    Position		    [170, 592, 335, 618]
+		    ShowName		    off
+		    GotoTag		    "IPTd_v_PosCtrVolR_chasis"
+		    }
+		    Block {
+		    BlockType		    From
+		    Name		    "From8"
+		    SID			    252
+		    Position		    [170, 546, 310, 574]
+		    ShowName		    off
+		    GotoTag		    "IPTd_v_PosCtrVol_chasis"
+		    }
+		    Block {
+		    BlockType		    From
+		    Name		    "From9"
+		    SID			    253
+		    Position		    [170, 656, 310, 684]
+		    ShowName		    off
+		    GotoTag		    "IPTd_v_NegCtrVol_chasis"
+		    }
+		    Block {
+		    BlockType		    Goto
+		    Name		    "Goto1"
+		    SID			    254
+		    Position		    [205, 380, 340, 410]
+		    ShowName		    off
+		    GotoTag		    "IPTd_v_NegCtrVolR_chasis"
+		    TagVisibility	    "local"
+		    }
+		    Block {
+		    BlockType		    Goto
+		    Name		    "Goto2"
+		    SID			    255
+		    Position		    [205, 262, 345, 288]
+		    ShowName		    off
+		    GotoTag		    "IPTd_v_PosCtrVol_chasis"
+		    TagVisibility	    "local"
+		    }
+		    Block {
+		    BlockType		    Goto
+		    Name		    "Goto3"
+		    SID			    256
+		    Position		    [340, 825, 475, 855]
+		    ShowName		    off
+		    GotoTag		    "IPTd_v_PosCtrVolR_chasis"
+		    TagVisibility	    "local"
+		    }
+		    Block {
+		    BlockType		    Goto
+		    Name		    "Goto4"
+		    SID			    257
+		    Position		    [205, 317, 345, 343]
+		    ShowName		    off
+		    GotoTag		    "IPTd_v_NegCtrVol_chasis"
+		    TagVisibility	    "local"
+		    }
+		    Block {
+		    BlockType		    SubSystem
+		    Name		    "IslnClcnMeasV1>=V2"
+		    SID			    258
+		    Ports		    [3, 1, 1]
+		    Position		    [390, 276, 660, 454]
+		    LibraryVersion	    "1.762"
+		    TreatAsAtomicUnit	    on
+		    MinAlgLoopOccurrences   off
+		    PropExecContextOutsideSubsystem off
+		    RTWSystemCode	    "Auto"
+		    FunctionWithSeparateData off
+		    Opaque		    off
+		    RequestExecContextInheritance off
+		    MaskHideContents	    off
+		    System {
+		    Name		    "IslnClcnMeasV1>=V2"
+		    Location		    [501, 356, 1556, 952]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "IPTd_v_PosCtrVol_chasis"
+		    SID			    259
+		    Position		    [85, 143, 115, 157]
+		    IconDisplay		    "Port number"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "IPTd_v_NegCtrVol_chasis"
+		    SID			    260
+		    Position		    [85, 213, 115, 227]
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "GET_HvNeg"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "IPTd_v_NegCtrVolR_chasis"
+		    SID			    261
+		    Position		    [85, 278, 115, 292]
+		    Port		    "3"
+		    IconDisplay		    "Port number"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    }
+		    Block {
+		    BlockType		    EnablePort
+		    Name		    "Enable"
+		    SID			    262
+		    Ports		    []
+		    Position		    [205, 55, 225, 75]
+		    }
+		    Block {
+		    BlockType		    Sum
+		    Name		    "Add"
+		    SID			    263
+		    Ports		    [2, 1]
+		    Position		    [390, 137, 420, 168]
+		    ShowName		    off
+		    InputSameDT		    off
+		    OutDataTypeMode	    "Inherit via internal rule"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^-10"
+		    OutDataTypeStr	    "Inherit: Inherit via internal rule"
+		    }
+		    Block {
+		    BlockType		    Sum
+		    Name		    "Add1"
+		    SID			    264
+		    Ports		    [2, 1]
+		    Position		    [285, 262, 315, 293]
+		    ShowName		    off
+		    Inputs		    "+-"
+		    InputSameDT		    off
+		    OutDataTypeMode	    "Inherit via internal rule"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^-10"
+		    OutDataTypeStr	    "Inherit: Inherit via internal rule"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "Constant"
+		    SID			    265
+		    Position		    [285, 85, 315, 115]
+		    ShowName		    off
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    }
+		    Block {
+		    BlockType		    Product
+		    Name		    "Divide"
+		    SID			    266
+		    Ports		    [2, 1]
+		    Position		    [285, 142, 315, 173]
+		    ShowName		    off
+		    Inputs		    "*/"
+		    InputSameDT		    off
+		    OutDataTypeMode	    "Inherit via internal rule"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^-10"
+		    OutDataTypeStr	    "Inherit: Inherit via internal rule"
+		    RndMeth		    "Floor"
+		    }
+		    Block {
+		    BlockType		    Product
+		    Name		    "Divide1"
+		    SID			    267
+		    Ports		    [2, 1]
+		    Position		    [390, 272, 420, 303]
+		    ShowName		    off
+		    Inputs		    "*/"
+		    InputSameDT		    off
+		    OutDataTypeMode	    "Inherit via internal rule"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^-10"
+		    OutDataTypeStr	    "Inherit: Inherit via internal rule"
+		    RndMeth		    "Floor"
+		    }
+		    Block {
+		    BlockType		    Product
+		    Name		    "Product"
+		    SID			    268
+		    Ports		    [2, 1]
+		    Position		    [510, 212, 540, 243]
+		    ShowName		    off
+		    InputSameDT		    off
+		    OutDataTypeMode	    "Inherit via internal rule"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    OutDataTypeStr	    "Inherit: Inherit via internal rule"
+		    }
+		    Block {
+		    BlockType		    Product
+		    Name		    "Product1"
+		    SID			    269
+		    Ports		    [2, 1]
+		    Position		    [655, 207, 685, 238]
+		    ShowName		    off
+		    InputSameDT		    off
+		    OutDataTypeMode	    "Inherit via internal rule"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    OutDataTypeStr	    "Inherit: Inherit via internal rule"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "Ro"
+		    SID			    270
+		    Position		    [510, 160, 615, 190]
+		    BackgroundColor	    "yellow"
+		    Value		    "EHPc_r_ClcnRo"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    }
+		    Block {
+		    BlockType		    Saturate
+		    Name		    "Saturation"
+		    SID			    271
+		    Position		    [745, 209, 780, 241]
+		    UpperLimit		    "10000000"
+		    LowerLimit		    "1"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "ELHPN_RIslnDetn"
+		    SID			    272
+		    Position		    [860, 218, 890, 232]
+		    IconDisplay		    "Port number"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    }
+		    Line {
+		    SrcBlock		    "Ro"
+		    SrcPort		    1
+		    Points		    [15, 0; 0, 40]
+		    DstBlock		    "Product1"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Product1"
+		    SrcPort		    1
+		    DstBlock		    "Saturation"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Product"
+		    SrcPort		    1
+		    DstBlock		    "Product1"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "Divide1"
+		    SrcPort		    1
+		    Points		    [30, 0; 0, -55]
+		    DstBlock		    "Product"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "Add"
+		    SrcPort		    1
+		    Points		    [30, 0; 0, 65]
+		    DstBlock		    "Product"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Add1"
+		    SrcPort		    1
+		    DstBlock		    "Divide1"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "IPTd_v_NegCtrVolR_chasis"
+		    SrcPort		    1
+		    Points		    [110, 0]
+		    Branch {
+		    Points		    [0, 35; 135, 0; 0, -25]
+		    DstBlock		    "Divide1"
+		    DstPort		    2
+		    }
+		    Branch {
+		    DstBlock		    "Add1"
+		    DstPort		    2
+		    }
+		    }
+		    Line {
+		    SrcBlock		    "Constant"
+		    SrcPort		    1
+		    Points		    [25, 0; 0, 45]
+		    DstBlock		    "Add"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Divide"
+		    SrcPort		    1
+		    DstBlock		    "Add"
+		    DstPort		    2
+		    }
+		    Line {
+		    Labels		    [0, 0; 0, 0]
+		    SrcBlock		    "IPTd_v_NegCtrVol_chasis"
+		    SrcPort		    1
+		    Points		    [105, 0]
+		    Branch {
+		    Points		    [0, 50]
+		    DstBlock		    "Add1"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [0, -55]
+		    DstBlock		    "Divide"
+		    DstPort		    2
+		    }
+		    }
+		    Line {
+		    SrcBlock		    "IPTd_v_PosCtrVol_chasis"
+		    SrcPort		    1
+		    DstBlock		    "Divide"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Saturation"
+		    SrcPort		    1
+		    DstBlock		    "ELHPN_RIslnDetn"
+		    DstPort		    1
+		    }
+		    Annotation {
+		    Name		    "Calculation V1 >= V2:"
+		    Position		    [85, 40]
+		    }
+		    Annotation {
+		    Name		    "Ri=Ro(1+V2/V1)((V1-V1Line)/V1Line"
+		    Position		    [380, 371]
+		    }
+		    }
+		    }
+		    Block {
+		    BlockType		    SubSystem
+		    Name		    "IslnClcnMeasV2>=V1"
+		    SID			    273
+		    Ports		    [3, 1, 1]
+		    Position		    [390, 641, 660, 819]
+		    LibraryVersion	    "1.762"
+		    TreatAsAtomicUnit	    on
+		    MinAlgLoopOccurrences   off
+		    PropExecContextOutsideSubsystem off
+		    RTWSystemCode	    "Auto"
+		    FunctionWithSeparateData off
+		    Opaque		    off
+		    RequestExecContextInheritance off
+		    MaskHideContents	    off
+		    System {
+		    Name		    "IslnClcnMeasV2>=V1"
+		    Location		    [517, 247, 1572, 843]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "IPTd_v_NegCtrVol_chasis"
+		    SID			    274
+		    Position		    [15, 148, 45, 162]
+		    IconDisplay		    "Port number"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "GET_HvNeg"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "IPTd_v_PosCtrVol_chasis"
+		    SID			    275
+		    Position		    [15, 218, 45, 232]
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "GET_HvPos"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "IPTd_v_PosCtrVolR_chasis"
+		    SID			    276
+		    Position		    [15, 283, 45, 297]
+		    Port		    "3"
+		    IconDisplay		    "Port number"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "GET_HvPosR0"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    }
+		    Block {
+		    BlockType		    EnablePort
+		    Name		    "Enable"
+		    SID			    277
+		    Ports		    []
+		    Position		    [145, 25, 165, 45]
+		    }
+		    Block {
+		    BlockType		    Sum
+		    Name		    "Add"
+		    SID			    278
+		    Ports		    [2, 1]
+		    Position		    [320, 142, 350, 173]
+		    ShowName		    off
+		    InputSameDT		    off
+		    OutDataTypeMode	    "Inherit via internal rule"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^-10"
+		    OutDataTypeStr	    "Inherit: Inherit via internal rule"
+		    SaturateOnIntegerOverflow off
+		    }
+		    Block {
+		    BlockType		    Sum
+		    Name		    "Add1"
+		    SID			    279
+		    Ports		    [2, 1]
+		    Position		    [215, 267, 245, 298]
+		    ShowName		    off
+		    Inputs		    "+-"
+		    InputSameDT		    off
+		    OutDataTypeMode	    "Inherit via internal rule"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^-10"
+		    OutDataTypeStr	    "Inherit: Inherit via internal rule"
+		    SaturateOnIntegerOverflow off
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "Constant"
+		    SID			    280
+		    Position		    [215, 90, 245, 120]
+		    ShowName		    off
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    }
+		    Block {
+		    BlockType		    Product
+		    Name		    "Divide"
+		    SID			    281
+		    Ports		    [2, 1]
+		    Position		    [215, 147, 245, 178]
+		    ShowName		    off
+		    Inputs		    "*/"
+		    InputSameDT		    off
+		    OutDataTypeMode	    "Inherit via internal rule"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^-10"
+		    OutDataTypeStr	    "Inherit: Inherit via internal rule"
+		    RndMeth		    "Floor"
+		    SaturateOnIntegerOverflow off
+		    }
+		    Block {
+		    BlockType		    Product
+		    Name		    "Divide1"
+		    SID			    282
+		    Ports		    [2, 1]
+		    Position		    [320, 277, 350, 308]
+		    ShowName		    off
+		    Inputs		    "*/"
+		    InputSameDT		    off
+		    OutDataTypeMode	    "Inherit via internal rule"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^-10"
+		    OutDataTypeStr	    "Inherit: Inherit via internal rule"
+		    RndMeth		    "Floor"
+		    SaturateOnIntegerOverflow off
+		    }
+		    Block {
+		    BlockType		    Product
+		    Name		    "Product"
+		    SID			    283
+		    Ports		    [2, 1]
+		    Position		    [440, 217, 470, 248]
+		    ShowName		    off
+		    InputSameDT		    off
+		    OutDataTypeMode	    "Inherit via internal rule"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    OutDataTypeStr	    "Inherit: Inherit via internal rule"
+		    SaturateOnIntegerOverflow off
+		    }
+		    Block {
+		    BlockType		    Product
+		    Name		    "Product1"
+		    SID			    284
+		    Ports		    [2, 1]
+		    Position		    [585, 212, 615, 243]
+		    ShowName		    off
+		    InputSameDT		    off
+		    OutDataTypeMode	    "Inherit via internal rule"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    OutDataTypeStr	    "Inherit: Inherit via internal rule"
+		    SaturateOnIntegerOverflow off
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "Ro"
+		    SID			    285
+		    Position		    [440, 165, 545, 195]
+		    BackgroundColor	    "yellow"
+		    Value		    "EHPc_r_ClcnRo"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    }
+		    Block {
+		    BlockType		    Saturate
+		    Name		    "Saturation1"
+		    SID			    286
+		    Position		    [675, 214, 710, 246]
+		    UpperLimit		    "10000000"
+		    LowerLimit		    "1"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "ELHPN_RIslnDetn"
+		    SID			    287
+		    Position		    [800, 223, 830, 237]
+		    IconDisplay		    "Port number"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    }
+		    Line {
+		    SrcBlock		    "Ro"
+		    SrcPort		    1
+		    Points		    [15, 0; 0, 40]
+		    DstBlock		    "Product1"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Product1"
+		    SrcPort		    1
+		    DstBlock		    "Saturation1"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Product"
+		    SrcPort		    1
+		    DstBlock		    "Product1"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "Divide1"
+		    SrcPort		    1
+		    Points		    [30, 0; 0, -55]
+		    DstBlock		    "Product"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "Add"
+		    SrcPort		    1
+		    Points		    [30, 0; 0, 65]
+		    DstBlock		    "Product"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Add1"
+		    SrcPort		    1
+		    DstBlock		    "Divide1"
+		    DstPort		    1
+		    }
+		    Line {
+		    Labels		    [0, 0; 0, 0]
+		    SrcBlock		    "IPTd_v_PosCtrVolR_chasis"
+		    SrcPort		    1
+		    Points		    [110, 0]
+		    Branch {
+		    Points		    [0, 35; 135, 0; 0, -25]
+		    DstBlock		    "Divide1"
+		    DstPort		    2
+		    }
+		    Branch {
+		    DstBlock		    "Add1"
+		    DstPort		    2
+		    }
+		    }
+		    Line {
+		    SrcBlock		    "Constant"
+		    SrcPort		    1
+		    Points		    [25, 0; 0, 45]
+		    DstBlock		    "Add"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Divide"
+		    SrcPort		    1
+		    DstBlock		    "Add"
+		    DstPort		    2
+		    }
+		    Line {
+		    Labels		    [0, 0; 0, 0]
+		    SrcBlock		    "IPTd_v_PosCtrVol_chasis"
+		    SrcPort		    1
+		    Points		    [105, 0]
+		    Branch {
+		    Points		    [0, 50]
+		    DstBlock		    "Add1"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [0, -55]
+		    DstBlock		    "Divide"
+		    DstPort		    2
+		    }
+		    }
+		    Line {
+		    Labels		    [0, 0; 0, 0]
+		    SrcBlock		    "IPTd_v_NegCtrVol_chasis"
+		    SrcPort		    1
+		    DstBlock		    "Divide"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Saturation1"
+		    SrcPort		    1
+		    DstBlock		    "ELHPN_RIslnDetn"
+		    DstPort		    1
+		    }
+		    Annotation {
+		    Name		    "Calculation V2 > V1:"
+		    Position		    [40, 26]
+		    }
+		    Annotation {
+		    Name		    "Ri=Ro(1+V1/V2)((V2-V2Line)/V2Line)"
+		    Position		    [360, 386]
+		    }
+		    }
+		    }
+		    Block {
+		    BlockType		    Logic
+		    Name		    "Logical\nOperator"
+		    SID			    288
+		    Ports		    [3, 1]
+		    Position		    [470, 75, 495, 235]
+		    ShowName		    off
+		    Inputs		    "3"
+		    AllPortsSameDT	    off
+		    OutDataTypeMode	    "boolean"
+		    LogicDataType	    "fixdt(0, 8)"
+		    OutDataTypeStr	    "boolean"
+		    }
+		    Block {
+		    BlockType		    Logic
+		    Name		    "Logical\nOperator1"
+		    SID			    289
+		    Ports		    [3, 1]
+		    Position		    [480, 490, 505, 630]
+		    ShowName		    off
+		    Inputs		    "3"
+		    AllPortsSameDT	    off
+		    OutDataTypeMode	    "boolean"
+		    LogicDataType	    "fixdt(0, 8)"
+		    OutDataTypeStr	    "boolean"
+		    }
+		    Block {
+		    BlockType		    RelationalOperator
+		    Name		    "Relational\nOperator1"
+		    SID			    290
+		    Ports		    [2, 1]
+		    Position		    [345, 477, 370, 548]
+		    ShowName		    off
+		    InputSameDT		    off
+		    LogicOutDataTypeMode    "boolean"
+		    LogicDataType	    "fixdt(0, 8)"
+		    OutDataTypeStr	    "boolean"
+		    }
+		    Block {
+		    BlockType		    RelationalOperator
+		    Name		    "Relational\nOperator2"
+		    SID			    291
+		    Ports		    [2, 1]
+		    Position		    [405, 62, 430, 133]
+		    ShowName		    off
+		    InputSameDT		    off
+		    LogicOutDataTypeMode    "boolean"
+		    LogicDataType	    "fixdt(0, 8)"
+		    OutDataTypeStr	    "boolean"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "ELHPN_RIslnDetn"
+		    SID			    292
+		    Position		    [820, 358, 850, 372]
+		    IconDisplay		    "Port number"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "ELHPN_RIslnDetn1"
+		    SID			    293
+		    Position		    [795, 728, 825, 742]
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    }
+		    Line {
+		    SrcBlock		    "Compare\nTo Zero4"
+		    SrcPort		    1
+		    DstBlock		    "Logical\nOperator1"
+		    DstPort		    3
+		    }
+		    Line {
+		    SrcBlock		    "Compare\nTo Zero3"
+		    SrcPort		    1
+		    DstBlock		    "Logical\nOperator1"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "Relational\nOperator1"
+		    SrcPort		    1
+		    DstBlock		    "Logical\nOperator1"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "From5"
+		    SrcPort		    1
+		    DstBlock		    "Relational\nOperator1"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "From6"
+		    SrcPort		    1
+		    DstBlock		    "Relational\nOperator1"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Compare\nTo Zero1"
+		    SrcPort		    1
+		    DstBlock		    "Logical\nOperator"
+		    DstPort		    3
+		    }
+		    Line {
+		    SrcBlock		    "Compare\nTo Zero2"
+		    SrcPort		    1
+		    DstBlock		    "Logical\nOperator"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "Relational\nOperator2"
+		    SrcPort		    1
+		    DstBlock		    "Logical\nOperator"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "From4"
+		    SrcPort		    1
+		    DstBlock		    "Relational\nOperator2"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "From3"
+		    SrcPort		    1
+		    DstBlock		    "Relational\nOperator2"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Logical\nOperator1"
+		    SrcPort		    1
+		    Points		    [15, 0]
+		    DstBlock		    "IslnClcnMeasV2>=V1"
+		    DstPort		    enable
+		    }
+		    Line {
+		    SrcBlock		    "From7"
+		    SrcPort		    1
+		    DstBlock		    "Compare\nTo Zero4"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "From8"
+		    SrcPort		    1
+		    DstBlock		    "Compare\nTo Zero3"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "IslnClcnMeasV2>=V1"
+		    SrcPort		    1
+		    Points		    [55, 0; 0, 5]
+		    DstBlock		    "ELHPN_RIslnDetn1"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "IslnClcnMeasV1>=V2"
+		    SrcPort		    1
+		    DstBlock		    "ELHPN_RIslnDetn"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "From1"
+		    SrcPort		    1
+		    DstBlock		    "Compare\nTo Zero1"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "From2"
+		    SrcPort		    1
+		    DstBlock		    "Compare\nTo Zero2"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Logical\nOperator"
+		    SrcPort		    1
+		    Points		    [25, 0]
+		    DstBlock		    "IslnClcnMeasV1>=V2"
+		    DstPort		    enable
+		    }
+		    Line {
+		    SrcBlock		    "IPTd_v_PosCtrVolR_chasis"
+		    SrcPort		    1
+		    Points		    [115, 0]
+		    Branch {
+		    Points		    [0, 50]
+		    DstBlock		    "Goto3"
+		    DstPort		    1
+		    }
+		    Branch {
+		    DstBlock		    "IslnClcnMeasV2>=V1"
+		    DstPort		    3
+		    }
+		    }
+		    Line {
+		    SrcBlock		    "From10"
+		    SrcPort		    1
+		    DstBlock		    "IslnClcnMeasV2>=V1"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "From9"
+		    SrcPort		    1
+		    DstBlock		    "IslnClcnMeasV2>=V1"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "IPTd_v_NegCtrVolR_chasis"
+		    SrcPort		    1
+		    Points		    [30, 0]
+		    Branch {
+		    Points		    [0, -30]
+		    DstBlock		    "Goto1"
+		    DstPort		    1
+		    }
+		    Branch {
+		    DstBlock		    "IslnClcnMeasV1>=V2"
+		    DstPort		    3
+		    }
+		    }
+		    Line {
+		    SrcBlock		    "IPTd_v_PosCtrVol_chasis"
+		    SrcPort		    1
+		    Points		    [35, 0]
+		    Branch {
+		    DstBlock		    "IslnClcnMeasV1>=V2"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [0, -30]
+		    DstBlock		    "Goto2"
+		    DstPort		    1
+		    }
+		    }
+		    Line {
+		    SrcBlock		    "IPTd_v_NegCtrVol_chasis"
+		    SrcPort		    1
+		    Points		    [30, 0]
+		    Branch {
+		    Points		    [0, -35]
+		    DstBlock		    "Goto4"
+		    DstPort		    1
+		    }
+		    Branch {
+		    DstBlock		    "IslnClcnMeasV1>=V2"
+		    DstPort		    2
+		    }
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator2"
+		  SID			  294
+		  Ports			  [2, 1]
+		  Position		  [1065, 365, 1095, 405]
+		  ShowName		  off
+		  Operator		  "<="
+		  InputSameDT		  off
+		  LogicOutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator3"
+		  SID			  295
+		  Ports			  [2, 1]
+		  Position		  [1065, 300, 1095, 340]
+		  ShowName		  off
+		  Operator		  "<="
+		  InputSameDT		  off
+		  LogicOutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator4"
+		  SID			  296
+		  Ports			  [2, 1]
+		  Position		  [1040, 705, 1070, 745]
+		  ShowName		  off
+		  Operator		  "<="
+		  InputSameDT		  off
+		  LogicOutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator6"
+		  SID			  297
+		  Ports			  [2, 1]
+		  Position		  [1060, 605, 1090, 645]
+		  ShowName		  off
+		  Operator		  "<="
+		  InputSameDT		  off
+		  LogicOutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "Subsystem"
+		  SID			  298
+		  Ports			  [1, 1]
+		  Position		  [655, 159, 810, 201]
+		  ShowName		  off
+		  LibraryVersion	  "1.762"
+		  MinAlgLoopOccurrences	  off
+		  PropExecContextOutsideSubsystem off
+		  RTWSystemCode		  "Auto"
+		  FunctionWithSeparateData off
+		  Opaque		  off
+		  RequestExecContextInheritance	off
+		  MaskHideContents	  off
+		  System {
+		    Name		    "Subsystem"
+		    Location		    [2, 82, 1910, 1033]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "ELHPN_RIslnDetn"
+		    SID			    299
+		    Position		    [70, 38, 100, 52]
+		    IconDisplay		    "Port number"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "Constant"
+		    SID			    300
+		    Position		    [125, 105, 155, 135]
+		    ShowName		    off
+		    Value		    "0"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "ELHPN_IninValIslnDetn_P"
+		    SID			    301
+		    Position		    [70, 160, 210, 190]
+		    BackgroundColor	    "yellow"
+		    ShowName		    off
+		    Value		    "EHPc_r_IsoDiagInitVal"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    }
+		    Block {
+		    BlockType		    RelationalOperator
+		    Name		    "Relational\nOperator"
+		    SID			    302
+		    Ports		    [2, 1]
+		    Position		    [215, 112, 245, 143]
+		    ShowName		    off
+		    Operator		    ">"
+		    InputSameDT		    off
+		    LogicOutDataTypeMode    "boolean"
+		    LogicDataType	    "fixdt(0, 8)"
+		    OutDataTypeStr	    "boolean"
+		    }
+		    Block {
+		    BlockType		    Switch
+		    Name		    "Switch2"
+		    SID			    303
+		    Position		    [290, 60, 325, 200]
+		    ShowName		    off
+		    Criteria		    "u2 ~= 0"
+		    InputSameDT		    off
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    SaturateOnIntegerOverflow off
+		    Port {
+		    PortNumber		    1
+		    Name		    "ELHPN_RIsln"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "EHPd_r_IsoRes"
+		    SID			    304
+		    Position		    [440, 123, 470, 137]
+		    IconDisplay		    "Port number"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    }
+		    Line {
+		    SrcBlock		    "ELHPN_IninValIslnDetn_P"
+		    SrcPort		    1
+		    DstBlock		    "Switch2"
+		    DstPort		    3
+		    }
+		    Line {
+		    SrcBlock		    "Relational\nOperator"
+		    SrcPort		    1
+		    Points		    [10, 0]
+		    Branch {
+		    DstBlock		    "Switch2"
+		    DstPort		    2
+		    }
+		    Branch {
+		    Points		    [0, -45]
+		    DstBlock		    "Switch2"
+		    DstPort		    1
+		    }
+		    }
+		    Line {
+		    SrcBlock		    "Constant"
+		    SrcPort		    1
+		    Points		    [20, 0; 0, 15]
+		    DstBlock		    "Relational\nOperator"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "ELHPN_RIslnDetn"
+		    SrcPort		    1
+		    Points		    [95, 0]
+		    DstBlock		    "Relational\nOperator"
+		    DstPort		    1
+		    }
+		    Line {
+		    Name		    "ELHPN_RIsln"
+		    Labels		    [0, 0; 0, 0]
+		    SrcBlock		    "Switch2"
+		    SrcPort		    1
+		    DstBlock		    "EHPd_r_IsoRes"
+		    DstPort		    1
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "Subsystem1"
+		  SID			  305
+		  Ports			  [1, 1]
+		  Position		  [650, 434, 805, 476]
+		  ShowName		  off
+		  LibraryVersion	  "1.762"
+		  MinAlgLoopOccurrences	  off
+		  PropExecContextOutsideSubsystem off
+		  RTWSystemCode		  "Auto"
+		  FunctionWithSeparateData off
+		  Opaque		  off
+		  RequestExecContextInheritance	off
+		  MaskHideContents	  off
+		  System {
+		    Name		    "Subsystem1"
+		    Location		    [561, 312, 1311, 665]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "ELHPN_RIslnDetn"
+		    SID			    306
+		    Position		    [70, 63, 100, 77]
+		    IconDisplay		    "Port number"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "Constant"
+		    SID			    307
+		    Position		    [125, 120, 155, 150]
+		    ShowName		    off
+		    Value		    "0"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "ELHPN_IninValIslnDetn_P"
+		    SID			    308
+		    Position		    [90, 160, 230, 190]
+		    BackgroundColor	    "yellow"
+		    ShowName		    off
+		    Value		    "EHPc_r_IsoDiagInitVal"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    }
+		    Block {
+		    BlockType		    RelationalOperator
+		    Name		    "Relational\nOperator"
+		    SID			    309
+		    Ports		    [2, 1]
+		    Position		    [215, 112, 245, 143]
+		    ShowName		    off
+		    Operator		    ">"
+		    InputSameDT		    off
+		    LogicOutDataTypeMode    "boolean"
+		    LogicDataType	    "fixdt(0, 8)"
+		    OutDataTypeStr	    "boolean"
+		    }
+		    Block {
+		    BlockType		    Switch
+		    Name		    "Switch2"
+		    SID			    310
+		    Position		    [290, 60, 325, 200]
+		    ShowName		    off
+		    Criteria		    "u2 ~= 0"
+		    InputSameDT		    off
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    SaturateOnIntegerOverflow off
+		    Port {
+		    PortNumber		    1
+		    Name		    "ELHPN_RIsln"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "EHPd_r_IsoRes"
+		    SID			    311
+		    Position		    [440, 123, 470, 137]
+		    IconDisplay		    "Port number"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^0"
+		    }
+		    Line {
+		    SrcBlock		    "ELHPN_IninValIslnDetn_P"
+		    SrcPort		    1
+		    DstBlock		    "Switch2"
+		    DstPort		    3
+		    }
+		    Line {
+		    SrcBlock		    "Relational\nOperator"
+		    SrcPort		    1
+		    Points		    [10, 0]
+		    Branch {
+		    DstBlock		    "Switch2"
+		    DstPort		    2
+		    }
+		    Branch {
+		    Points		    [0, -45]
+		    DstBlock		    "Switch2"
+		    DstPort		    1
+		    }
+		    }
+		    Line {
+		    SrcBlock		    "Constant"
+		    SrcPort		    1
+		    DstBlock		    "Relational\nOperator"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "ELHPN_RIslnDetn"
+		    SrcPort		    1
+		    Points		    [95, 0]
+		    DstBlock		    "Relational\nOperator"
+		    DstPort		    1
+		    }
+		    Line {
+		    Name		    "ELHPN_RIsln"
+		    Labels		    [0, 0; 0, 0]
+		    SrcBlock		    "Switch2"
+		    SrcPort		    1
+		    DstBlock		    "EHPd_r_IsoRes"
+		    DstPort		    1
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "EHPd_r_NegIsoRes"
+		  SID			  312
+		  Position		  [1205, 173, 1235, 187]
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "EHPd_r_PosIsoRes"
+		  SID			  313
+		  Position		  [1205, 448, 1235, 462]
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "EHPd_iflt_NegIso_fault"
+		  SID			  314
+		  Position		  [1205, 378, 1235, 392]
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "EHPd_iflt_NegIso_warn"
+		  SID			  315
+		  Position		  [1205, 313, 1235, 327]
+		  Port			  "4"
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "EHPd_iflt_PosIso_fault"
+		  SID			  316
+		  Position		  [1205, 718, 1235, 732]
+		  Port			  "5"
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "EHPd_iflt_PosIso_warn"
+		  SID			  317
+		  Position		  [1205, 618, 1235, 632]
+		  Port			  "6"
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator6"
+		  SrcPort		  1
+		  DstBlock		  "EHPd_iflt_PosIso_warn"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "ELHPN_IslnDetnLim_P5"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator6"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator3"
+		  SrcPort		  1
+		  DstBlock		  "EHPd_iflt_NegIso_warn"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator4"
+		  SrcPort		  1
+		  DstBlock		  "EHPd_iflt_PosIso_fault"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "ELHPN_IslnDetnLim_P3"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator4"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "ELHPN_IslnDetnLim_P2"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator3"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "IslnClcn"
+		  SrcPort		  2
+		  DstBlock		  "Subsystem1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Subsystem1"
+		  SrcPort		  1
+		  Points		  [25, 0]
+		  Branch {
+		    Points		    [0, 160]
+		    Branch {
+		    Points		    [0, 100]
+		    DstBlock		    "Relational\nOperator4"
+		    DstPort		    1
+		    }
+		    Branch {
+		    DstBlock		    "Relational\nOperator6"
+		    DstPort		    1
+		    }
+		  }
+		  Branch {
+		    DstBlock		    "EHPd_r_PosIsoRes"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "IPTd_v_NegCtrVolR_chasis"
+		  SrcPort		  1
+		  DstBlock		  "IslnClcn"
+		  DstPort		  4
+		}
+		Line {
+		  SrcBlock		  "IPTd_v_PosCtrVolR_chasis"
+		  SrcPort		  1
+		  DstBlock		  "IslnClcn"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "IPTd_v_NegCtrVol_chasis"
+		  SrcPort		  1
+		  DstBlock		  "IslnClcn"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "IPTd_v_PosCtrVol_chasis"
+		  SrcPort		  1
+		  DstBlock		  "IslnClcn"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "EHP_TrigClcnAftMeas"
+		  SrcPort		  1
+		  Points		  [260, 0]
+		  DstBlock		  "IslnClcn"
+		  DstPort		  trigger
+		}
+		Line {
+		  SrcBlock		  "IslnClcn"
+		  SrcPort		  1
+		  Points		  [0, -30]
+		  DstBlock		  "Subsystem"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator2"
+		  SrcPort		  1
+		  DstBlock		  "EHPd_iflt_NegIso_fault"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Subsystem"
+		  SrcPort		  1
+		  Points		  [15, 0]
+		  Branch {
+		    Points		    [0, 130]
+		    Branch {
+		    Points		    [0, 65]
+		    DstBlock		    "Relational\nOperator2"
+		    DstPort		    1
+		    }
+		    Branch {
+		    DstBlock		    "Relational\nOperator3"
+		    DstPort		    1
+		    }
+		  }
+		  Branch {
+		    DstBlock		    "EHPd_r_NegIsoRes"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "ELHPN_IslnDetnLim_P"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator2"
+		  DstPort		  2
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "IslnCtctrSt"
+	      SID		      318
+	      Description	      "$Author:Yan LiJuan$\n$Date:2015/03/26$  \n$Revision:1.0$     "
+	      Ports		      [3, 1]
+	      Position		      [235, 153, 445, 317]
+	      LibraryVersion	      "1.762"
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      System {
+		Name			"IslnCtctrSt"
+		Location		[218, 201, 1772, 1001]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "CTCd_flg_CtrNegSt"
+		  SID			  319
+		  Position		  [105, 118, 135, 132]
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "CTCd_flg_CtrPosSt"
+		  SID			  320
+		  Position		  [105, 173, 135, 187]
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "CTCd_flg_CtrPreSt"
+		  SID			  321
+		  Position		  [125, 613, 155, 627]
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  322
+		  Position		  [645, 194, 820, 226]
+		  BackgroundColor	  "yellow"
+		  ShowName		  off
+		  Value			  "EHPc_BatIsoTestCmd"
+		  OutDataTypeMode	  "boolean"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From2"
+		  SID			  323
+		  Position		  [95, 346, 245, 374]
+		  ShowName		  off
+		  GotoTag		  "CTCd_flg_CtrNegSt"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From3"
+		  SID			  324
+		  Position		  [100, 466, 250, 494]
+		  ShowName		  off
+		  GotoTag		  "CTCd_flg_CtrPosSt"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From6"
+		  SID			  325
+		  Position		  [95, 246, 245, 274]
+		  ShowName		  off
+		  GotoTag		  "CTCd_flg_CtrNegSt"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From7"
+		  SID			  326
+		  Position		  [95, 286, 245, 314]
+		  ShowName		  off
+		  GotoTag		  "CTCd_flg_CtrPosSt"
+		}
+		Block {
+		  BlockType		  Goto
+		  Name			  "Goto"
+		  SID			  327
+		  Position		  [270, 110, 410, 140]
+		  ShowName		  off
+		  GotoTag		  "CTCd_flg_CtrNegSt"
+		  TagVisibility		  "local"
+		}
+		Block {
+		  BlockType		  Goto
+		  Name			  "Goto1"
+		  SID			  328
+		  Position		  [270, 165, 410, 195]
+		  ShowName		  off
+		  GotoTag		  "CTCd_flg_CtrPosSt"
+		  TagVisibility		  "local"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator"
+		  SID			  329
+		  Ports			  [2, 1]
+		  Position		  [480, 374, 510, 461]
+		  ShowName		  off
+		  Operator		  "OR"
+		  AllPortsSameDT	  off
+		  OutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator1"
+		  SID			  330
+		  Ports			  [3, 1]
+		  Position		  [880, 177, 915, 383]
+		  ShowName		  off
+		  Operator		  "OR"
+		  Inputs		  "3"
+		  AllPortsSameDT	  off
+		  OutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		  Port {
+		    PortNumber		    1
+		    Name		    "ELHPN_ItMeas"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator3"
+		  SID			  331
+		  Ports			  [2, 1]
+		  Position		  [325, 239, 360, 321]
+		  ShowName		  off
+		  Operator		  "XOR"
+		  AllPortsSameDT	  off
+		  OutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator"
+		  SID			  332
+		  Ports			  [2, 1]
+		  Position		  [370, 352, 400, 383]
+		  ShowName		  off
+		  Operator		  "~="
+		  InputSameDT		  off
+		  LogicOutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator1"
+		  SID			  333
+		  Ports			  [2, 1]
+		  Position		  [370, 472, 400, 503]
+		  ShowName		  off
+		  Operator		  "~="
+		  InputSameDT		  off
+		  LogicOutDataTypeMode	  "boolean"
+		  LogicDataType		  "fixdt(0, 8)"
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  Terminator
+		  Name			  "Terminator"
+		  SID			  334
+		  Position		  [295, 610, 315, 630]
+		}
+		Block {
+		  BlockType		  UnitDelay
+		  Name			  "Unit Delay"
+		  SID			  335
+		  Position		  [290, 393, 325, 427]
+		  ShowName		  off
+		  SampleTime		  "-1"
+		}
+		Block {
+		  BlockType		  UnitDelay
+		  Name			  "Unit Delay1"
+		  SID			  336
+		  Position		  [290, 513, 325, 547]
+		  ShowName		  off
+		  SampleTime		  "-1"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "EHPd_flg_MeasSt"
+		  SID			  337
+		  Position		  [1125, 273, 1155, 287]
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Line {
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "Logical\nOperator1"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "ELHPN_ItMeas"
+		  Labels		  [0, 0; 0, 0]
+		  SrcBlock		  "Logical\nOperator1"
+		  SrcPort		  1
+		  DstBlock		  "EHPd_flg_MeasSt"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "CTCd_flg_CtrPreSt"
+		  SrcPort		  1
+		  DstBlock		  "Terminator"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Logical\nOperator3"
+		  SrcPort		  1
+		  DstBlock		  "Logical\nOperator1"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Logical\nOperator"
+		  SrcPort		  1
+		  Points		  [25, 0; 0, -70]
+		  DstBlock		  "Logical\nOperator1"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "From7"
+		  SrcPort		  1
+		  DstBlock		  "Logical\nOperator3"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "From6"
+		  SrcPort		  1
+		  DstBlock		  "Logical\nOperator3"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator1"
+		  SrcPort		  1
+		  Points		  [30, 0; 0, -50]
+		  DstBlock		  "Logical\nOperator"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator"
+		  SrcPort		  1
+		  Points		  [30, 0; 0, 25]
+		  DstBlock		  "Logical\nOperator"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Unit Delay1"
+		  SrcPort		  1
+		  Points		  [10, 0; 0, -35]
+		  DstBlock		  "Relational\nOperator1"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "From3"
+		  SrcPort		  1
+		  Points		  [15, 0]
+		  Branch {
+		    Points		    [0, 50]
+		    DstBlock		    "Unit Delay1"
+		    DstPort		    1
+		  }
+		  Branch {
+		    DstBlock		    "Relational\nOperator1"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "Unit Delay"
+		  SrcPort		  1
+		  Points		  [10, 0; 0, -35]
+		  DstBlock		  "Relational\nOperator"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "From2"
+		  SrcPort		  1
+		  Points		  [10, 0]
+		  Branch {
+		    Points		    [0, 50]
+		    DstBlock		    "Unit Delay"
+		    DstPort		    1
+		  }
+		  Branch {
+		    DstBlock		    "Relational\nOperator"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "CTCd_flg_CtrPosSt"
+		  SrcPort		  1
+		  DstBlock		  "Goto1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "CTCd_flg_CtrNegSt"
+		  SrcPort		  1
+		  DstBlock		  "Goto"
+		  DstPort		  1
+		}
+		Annotation {
+		  Name			  "Contactor State:"
+		  Position		  [91, 67]
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "IslnMeas"
+	      SID		      338
+	      Description	      "$Author:Yan LiJuan$\n$Date:2015/03/26$  \n$Revision:1.0$     "
+	      Ports		      [2, 6]
+	      Position		      [615, 155, 825, 480]
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      System {
+		Name			"IslnMeas"
+		Location		[750, 197, 1914, 1025]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "EHPd_flg_MeasSt"
+		  SID			  339
+		  Position		  [35, 128, 65, 142]
+		  IconDisplay		  "Port number"
+		  DataType		  "boolean"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "IPTd_v_USample"
+		  SID			  340
+		  Position		  [30, 333, 60, 347]
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "IslnMeas"
+		  SID			  341
+		  Description		  "$Author:Yan LiJuan$\n$Date:2015/03/26$  \n$Revision:1.0$     "
+		  Ports			  [2, 6]
+		  Position		  [105, 31, 585, 439]
+		  LibraryVersion	  "1.233"
+		  PermitHierarchicalResolution "ExplicitOnly"
+		  MinAlgLoopOccurrences	  off
+		  PropExecContextOutsideSubsystem off
+		  RTWSystemCode		  "Auto"
+		  FunctionWithSeparateData off
+		  Opaque		  off
+		  RequestExecContextInheritance	off
+		  MaskHideContents	  off
+		  MaskType		  "Stateflow"
+		  MaskDescription	  "Stateflow diagram"
+		  MaskDisplay		  "plot(sf('Private','sfblk','xIcon'),sf('Private','sfblk','yIcon'));text(0.5,0,sf('Private', 'sfblk'"
+		  ", 'tIcon'),'HorizontalAl','Center','VerticalAl','Bottom');"
+		  MaskSelfModifiable	  on
+		  MaskIconFrame		  off
+		  MaskIconOpaque	  off
+		  MaskIconRotate	  "none"
+		  MaskPortRotate	  "default"
+		  MaskIconUnits		  "autoscale"
+		  System {
+		    Name		    "IslnMeas"
+		    Location		    [257, 457, 812, 717]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    SIDHighWatermark	    22
+		    Block {
+		    BlockType		    Inport
+		    Name		    "EHPd_flg_MeasSt"
+		    SID			    10
+		    Position		    [20, 101, 40, 119]
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "USample"
+		    SID			    11
+		    Position		    [20, 136, 40, 154]
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Demux
+		    Name		    " Demux "
+		    SID			    20
+		    Ports		    [1, 1]
+		    Position		    [270, 280, 320, 320]
+		    Outputs		    "1"
+		    }
+		    Block {
+		    BlockType		    "S-Function"
+		    Name		    " SFunction "
+		    SID			    19
+		    Tag			    "Stateflow S-Function EHP_test 2"
+		    Ports		    [2, 7]
+		    Position		    [180, 104, 230, 266]
+		    FunctionName	    "sf_sfun"
+		    PortCounts		    "[2 7]"
+		    EnableBusSupport	    off
+		    Port {
+		    PortNumber		    2
+		    Name		    "GET_HvPos"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    Port {
+		    PortNumber		    3
+		    Name		    "GET_HvNeg"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    Port {
+		    PortNumber		    4
+		    Name		    "GET_HvPosR0"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    Port {
+		    PortNumber		    5
+		    Name		    "GET_HvNegR0"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    Port {
+		    PortNumber		    6
+		    Name		    "EHPd_enum_VoltCtrl"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    Port {
+		    PortNumber		    7
+		    Name		    "EHP_TrigClcnAftMeas"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    }
+		    Block {
+		    BlockType		    Terminator
+		    Name		    " Terminator "
+		    SID			    22
+		    Position		    [460, 291, 480, 309]
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "GET_HvPos"
+		    SID			    12
+		    Position		    [460, 101, 480, 119]
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "GET_HvNeg"
+		    SID			    13
+		    Position		    [460, 136, 480, 154]
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "GET_HvPosR0"
+		    SID			    14
+		    Position		    [460, 171, 480, 189]
+		    Port		    "3"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "GET_HvNegR0"
+		    SID			    15
+		    Position		    [460, 206, 480, 224]
+		    Port		    "4"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "EHPd_enum_VoltCtrl"
+		    SID			    18
+		    Position		    [460, 246, 480, 264]
+		    Port		    "5"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "EHP_TrigClcnAftMeas"
+		    SID			    17
+		    Position		    [460, 281, 480, 299]
+		    Port		    "6"
+		    IconDisplay		    "Port number"
+		    }
+		    Line {
+		    SrcBlock		    " SFunction "
+		    SrcPort		    1
+		    DstBlock		    " Demux "
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "EHPd_flg_MeasSt"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "USample"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    2
+		    }
+		    Line {
+		    Name		    "GET_HvPos"
+		    Labels		    [0, 0]
+		    SrcBlock		    " SFunction "
+		    SrcPort		    2
+		    DstBlock		    "GET_HvPos"
+		    DstPort		    1
+		    }
+		    Line {
+		    Name		    "GET_HvNeg"
+		    Labels		    [0, 0]
+		    SrcBlock		    " SFunction "
+		    SrcPort		    3
+		    DstBlock		    "GET_HvNeg"
+		    DstPort		    1
+		    }
+		    Line {
+		    Name		    "GET_HvPosR0"
+		    Labels		    [0, 0]
+		    SrcBlock		    " SFunction "
+		    SrcPort		    4
+		    DstBlock		    "GET_HvPosR0"
+		    DstPort		    1
+		    }
+		    Line {
+		    Name		    "GET_HvNegR0"
+		    Labels		    [0, 0]
+		    SrcBlock		    " SFunction "
+		    SrcPort		    5
+		    DstBlock		    "GET_HvNegR0"
+		    DstPort		    1
+		    }
+		    Line {
+		    Name		    "EHPd_enum_VoltCtrl"
+		    Labels		    [0, 0]
+		    SrcBlock		    " SFunction "
+		    SrcPort		    6
+		    DstBlock		    "EHPd_enum_VoltCtrl"
+		    DstPort		    1
+		    }
+		    Line {
+		    Name		    "EHP_TrigClcnAftMeas"
+		    Labels		    [0, 0]
+		    SrcBlock		    " SFunction "
+		    SrcPort		    7
+		    DstBlock		    "EHP_TrigClcnAftMeas"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    " Demux "
+		    SrcPort		    1
+		    DstBlock		    " Terminator "
+		    DstPort		    1
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "EHP_TrigClcnAftMeas"
+		  SID			  342
+		  Position		  [745, 403, 775, 417]
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "GET_HvPos"
+		  SID			  343
+		  Position		  [745, 53, 775, 67]
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "GET_HvNeg"
+		  SID			  344
+		  Position		  [745, 123, 775, 137]
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "GET_HvPosR0"
+		  SID			  345
+		  Position		  [745, 193, 775, 207]
+		  Port			  "4"
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "GET_HvNegR0"
+		  SID			  346
+		  Position		  [745, 263, 775, 277]
+		  Port			  "5"
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "EHPd_enum_VoltCtrl"
+		  SID			  347
+		  Position		  [745, 333, 775, 347]
+		  Port			  "6"
+		  IconDisplay		  "Port number"
+		  OutDataType		  "fixdt(1, 16)"
+		  OutScaling		  "2^0"
+		}
+		Line {
+		  SrcBlock		  "IslnMeas"
+		  SrcPort		  5
+		  DstBlock		  "EHPd_enum_VoltCtrl"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "EHPd_flg_MeasSt"
+		  SrcPort		  1
+		  DstBlock		  "IslnMeas"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "IslnMeas"
+		  SrcPort		  6
+		  DstBlock		  "EHP_TrigClcnAftMeas"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "IslnMeas"
+		  SrcPort		  4
+		  DstBlock		  "GET_HvNegR0"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "IslnMeas"
+		  SrcPort		  3
+		  DstBlock		  "GET_HvPosR0"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "IslnMeas"
+		  SrcPort		  2
+		  DstBlock		  "GET_HvNeg"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "IslnMeas"
+		  SrcPort		  1
+		  DstBlock		  "GET_HvPos"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "IPTd_v_USample"
+		  SrcPort		  1
+		  DstBlock		  "IslnMeas"
+		  DstPort		  2
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "EHPd_r_NegIsoRes"
+	      SID		      348
+	      Position		      [1335, 168, 1365, 182]
+	      IconDisplay	      "Port number"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "EHPd_r_PosIsoRes"
+	      SID		      349
+	      Position		      [1335, 213, 1365, 227]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "EHPd_iflt_NegIso_fault"
+	      SID		      350
+	      Position		      [1335, 258, 1365, 272]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "EHPd_iflt_NegIso_warn"
+	      SID		      351
+	      Position		      [1335, 303, 1365, 317]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "EHPd_iflt_PosIso_fault"
+	      SID		      352
+	      Position		      [1335, 348, 1365, 362]
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "EHPd_iflt_PosIso_warn"
+	      SID		      353
+	      Position		      [1335, 393, 1365, 407]
+	      Port		      "6"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "EHPd_enum_VoltCtrl"
+	      SID		      354
+	      Position		      [1335, 448, 1365, 462]
+	      Port		      "7"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Line {
+	      SrcBlock		      "IslnMeas"
+	      SrcPort		      6
+	      DstBlock		      "EHPd_enum_VoltCtrl"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "IslnClcn"
+	      SrcPort		      6
+	      DstBlock		      "EHPd_iflt_PosIso_warn"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "IslnClcn"
+	      SrcPort		      5
+	      DstBlock		      "EHPd_iflt_PosIso_fault"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "IslnClcn"
+	      SrcPort		      4
+	      DstBlock		      "EHPd_iflt_NegIso_warn"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "IslnClcn"
+	      SrcPort		      3
+	      DstBlock		      "EHPd_iflt_NegIso_fault"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "IslnClcn"
+	      SrcPort		      2
+	      DstBlock		      "EHPd_r_PosIsoRes"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "IslnClcn"
+	      SrcPort		      1
+	      DstBlock		      "EHPd_r_NegIsoRes"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "IslnMeas"
+	      SrcPort		      4
+	      DstBlock		      "IslnClcn"
+	      DstPort		      4
+	    }
+	    Line {
+	      SrcBlock		      "IslnMeas"
+	      SrcPort		      1
+	      DstBlock		      "IslnClcn"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "CTCd_flg_CtrPreSt"
+	      SrcPort		      1
+	      DstBlock		      "IslnCtctrSt"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "CTCd_flg_CtrPosSt"
+	      SrcPort		      1
+	      DstBlock		      "IslnCtctrSt"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "CTCd_flg_CtrNegSt"
+	      SrcPort		      1
+	      DstBlock		      "IslnCtctrSt"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "IslnMeas"
+	      SrcPort		      5
+	      DstBlock		      "IslnClcn"
+	      DstPort		      5
+	    }
+	    Line {
+	      SrcBlock		      "IPTd_v_USample"
+	      SrcPort		      1
+	      DstBlock		      "IslnMeas"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "IslnMeas"
+	      SrcPort		      3
+	      DstBlock		      "IslnClcn"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "IslnCtctrSt"
+	      SrcPort		      1
+	      DstBlock		      "IslnMeas"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "IslnMeas"
+	      SrcPort		      2
+	      DstBlock		      "IslnClcn"
+	      DstPort		      2
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "EHPd_r_NegIsoRes"
+	  SID			  50
+	  Position		  [685, 128, 715, 142]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "EHPd_r_PosIsoRes"
+	  SID			  51
+	  Position		  [685, 213, 715, 227]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "EHPd_enum_VoltCtrl"
+	  SID			  52
+	  Position		  [675, 638, 705, 652]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "EHPd_flg_HVILSt"
+	  SID			  53
+	  Position		  [680, 808, 710, 822]
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "EHPd_iflt_FaultDiagnostic"
+	  SID			  54
+	  Position		  [780, 428, 810, 442]
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Line {
+	  SrcBlock		  "IsolationDetection"
+	  SrcPort		  7
+	  DstBlock		  "EHPd_enum_VoltCtrl"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "IsolationDetection"
+	  SrcPort		  2
+	  DstBlock		  "EHPd_r_PosIsoRes"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "IsolationDetection"
+	  SrcPort		  1
+	  DstBlock		  "EHPd_r_NegIsoRes"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "IPTd_flg_HVILSt"
+	  SrcPort		  1
+	  DstBlock		  "HighVoltageInterlock"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "HighVoltageInterlock"
+	  SrcPort		  1
+	  DstBlock		  "EHPd_flg_HVILSt"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "IPTd_v_USample"
+	  SrcPort		  1
+	  DstBlock		  "IsolationDetection"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "CTCd_flg_CtrPreSt"
+	  SrcPort		  1
+	  DstBlock		  "IsolationDetection"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "CTCd_flg_CtrPosSt"
+	  SrcPort		  1
+	  DstBlock		  "IsolationDetection"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "CTCd_flg_CtrNegSt"
+	  SrcPort		  1
+	  DstBlock		  "IsolationDetection"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "IsolationDetection"
+	  SrcPort		  3
+	  DstBlock		  "Bus\nCreator5"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "IsolationDetection"
+	  SrcPort		  4
+	  DstBlock		  "Bus\nCreator5"
+	  DstPort		  2
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "IsolationDetection"
+	  SrcPort		  5
+	  DstBlock		  "Bus\nCreator5"
+	  DstPort		  3
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "IsolationDetection"
+	  SrcPort		  6
+	  DstBlock		  "Bus\nCreator5"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "Bus\nCreator5"
+	  SrcPort		  1
+	  DstBlock		  "EHPd_iflt_FaultDiagnostic"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Function-Call\nGenerator"
+      SID		      2
+      Ports		      [0, 1]
+      Position		      [355, 25, 400, 45]
+      LibraryVersion	      "1.762"
+      SourceBlock	      "simulink/Ports &\nSubsystems/Function-Call\nGenerator"
+      SourceType	      "Function-Call Generator"
+      sample_time	      "1"
+      numberOfIterations      "1"
+    }
+    Line {
+      SrcBlock		      "Function-Call\nGenerator"
+      SrcPort		      1
+      Points		      [65, 0]
+      DstBlock		      "EHP"
+      DstPort		      trigger
+    }
+    Line {
+      SrcBlock		      "Constant"
+      SrcPort		      1
+      Points		      [115, 0]
+      DstBlock		      "EHP"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Constant1"
+      SrcPort		      1
+      Points		      [115, 0]
+      DstBlock		      "EHP"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Constant2"
+      SrcPort		      1
+      Points		      [115, 0]
+      DstBlock		      "EHP"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Constant3"
+      SrcPort		      1
+      Points		      [115, 0]
+      DstBlock		      "EHP"
+      DstPort		      5
+    }
+    Line {
+      SrcBlock		      "Constant4"
+      SrcPort		      1
+      Points		      [115, 0]
+      DstBlock		      "EHP"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "EHP"
+      SrcPort		      1
+      Points		      [40, 0; 0, 10]
+      DstBlock		      "Display"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "EHP"
+      SrcPort		      2
+      Points		      [40, 0; 0, -25]
+      DstBlock		      "Display1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "EHP"
+      SrcPort		      3
+      Points		      [40, 0; 0, -60]
+      DstBlock		      "Display2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "EHP"
+      SrcPort		      4
+      Points		      [80, 0]
+      DstBlock		      "Display3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "EHP"
+      SrcPort		      5
+      Points		      [80, 0]
+      DstBlock		      "Display4"
+      DstPort		      1
+    }
+  }
+}
+# Finite State Machines
+#
+#    Stateflow Version 7.1 (R2009a) dated Jul 17 2009, 10:24:20
+#
+#
+
+
+Stateflow {
+  machine {
+    id			    1
+    name		    "EHP_test"
+    created		    "25-Mar-2015 10:29:02"
+    isLibrary		    0
+    firstTarget		    60
+    sfVersion		    71014000.00001
+  }
+  chart {
+    id			    2
+    name		    "EHP/IsolationDetection/IslnMeas/IslnMeas"
+    description		    "$Author:Yan LiJuan$\n$Date:2015/03/26$\n$Revision:1.0$"
+    windowPosition	    [48.75 -14.25 1440 732]
+    viewLimits		    [136.39 1044.115 0 452.4]
+    zoomFactor		    0.65
+    screen		    [1 1 1920 1080 1.333333333333333]
+    treeNode		    [0 14 0 0]
+    firstTransition	    27
+    viewObj		    2
+    machine		    1
+    toolbarMode		    LIBRARY_TOOLBAR
+    subviewS {
+      x1		      136.39
+      zoomFactor	      0.65
+    }
+    ssIdHighWaterMark	    93
+    decomposition	    CLUSTER_CHART
+    firstEvent		    43
+    firstData		    44
+    chartFileNumber	    2
+    userSpecifiedStateTransitionExecutionOrder 1
+    disableImplicitCasting  1
+  }
+  state {
+    id			    3
+    labelString		    "State0\nEHPd_enum_StMeasIso=0;"
+    position		    [35 78.375 158.75 120.75]
+    fontSize		    12
+    chart		    2
+    treeNode		    [4 0 0 5]
+    visible		    0
+    subviewer		    4
+    ssIdNumber		    1
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    4
+    labelString		    "Meas"
+    position		    [657.25 159 243.375 150.375]
+    fontSize		    12
+    chart		    2
+    treeNode		    [2 3 14 0]
+    firstTransition	    28
+    superState		    SUBCHART
+    subviewer		    2
+    subviewS {
+      x1		      -15
+      y1		      -15
+      pos		      [0 0 618.25 329.25]
+    }
+    ssIdNumber		    3
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    5
+    labelString		    "UMeas"
+    position		    [399.875 80.25 129.875 115.125]
+    fontSize		    12
+    chart		    2
+    treeNode		    [4 6 3 0]
+    firstTransition	    26
+    firstJunction	    15
+    superState		    SUBCHART
+    visible		    0
+    subviewer		    4
+    subviewS {
+      x1		      -15
+      y1		      -15
+      pos		      [0 0 1138.125 661.875]
+    }
+    ssIdNumber		    8
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+    firstData		    34
+  }
+  state {
+    id			    6
+    labelString		    "State1\nEHPd_enum_StMeasIso=1;\ndu:EHPd_tm_MeasIso = EHPd_tm_MeasIso+0.1;"
+    position		    [53.125 68.625 279.5 63.75]
+    fontSize		    12
+    chart		    2
+    treeNode		    [5 0 0 13]
+    visible		    0
+    subviewer		    5
+    ssIdNumber		    9
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    7
+    labelString		    "State2\nEHPd_enum_StMeasIso=2;\ndu:EHPd_tm_MeasIso = EHPd_tm_MeasIso+0.1;"
+    position		    [49.5 201 284.625 68.625]
+    fontSize		    12
+    chart		    2
+    treeNode		    [5 0 13 12]
+    visible		    0
+    subviewer		    5
+    ssIdNumber		    10
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    8
+    labelString		    "State4\nEHPd_enum_StMeasIso=4;\ndu:EHPd_tm_MeasIso= EHPd_tm_MeasIso+0.1;"
+    position		    [52.5 445.125 290.5 61.5]
+    fontSize		    12
+    chart		    2
+    treeNode		    [5 0 11 10]
+    visible		    0
+    subviewer		    5
+    ssIdNumber		    12
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    9
+    labelString		    "State3\nEHPd_enum_StMeasIso=3;\ndu:EHPd_tm_MeasIso= EHPd_tm_MeasIso+0.1;"
+    position		    [48.625 317.25 292.75 74.25]
+    fontSize		    12
+    chart		    2
+    treeNode		    [5 0 12 11]
+    visible		    0
+    subviewer		    5
+    ssIdNumber		    11
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    10
+    labelString		    "State5\nEHPd_enum_StMeasIso=5;\ndu:EHPd_tm_MeasIso = EHPd_tm_MeasIso+0.1;"
+    position		    [589.875 458.25 290.5 61.5]
+    fontSize		    12
+    chart		    2
+    treeNode		    [5 0 8 0]
+    visible		    0
+    subviewer		    5
+    ssIdNumber		    20
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    11
+    labelString		    "State6\nEHPd_enum_StMeasIso=6;\ndu:EHPd_tm_MeasIso = EHPd_tm_MeasIso+0.1;"
+    position		    [590.375 325.125 284.625 68.625]
+    fontSize		    12
+    chart		    2
+    treeNode		    [5 0 9 8]
+    visible		    0
+    subviewer		    5
+    ssIdNumber		    23
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    12
+    labelString		    "State7\nEHPd_enum_StMeasIso=7;\ndu:EHPd_tm_MeasIso= EHPd_tm_MeasIso+0.1;"
+    position		    [600.625 208.125 279.5 63.75]
+    fontSize		    12
+    chart		    2
+    treeNode		    [5 0 7 9]
+    visible		    0
+    subviewer		    5
+    ssIdNumber		    25
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    13
+    labelString		    "State8\nEHPd_enum_StMeasIso=8;\ndu:EHPd_tm_MeasIso= EHPd_tm_MeasIso+0.1;"
+    position		    [586.625 73.125 284.625 68.625]
+    fontSize		    12
+    chart		    2
+    treeNode		    [5 0 6 7]
+    visible		    0
+    subviewer		    5
+    ssIdNumber		    26
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    14
+    labelString		    "Wait\nEHPd_enum_StMeasIso=7;\n\ndu:\nEHPd_tm_Wait=EHPd_tm_Wait+0.1;"
+    position		    [43.4562 152.1563 251.375 154.875]
+    fontSize		    12
+    chart		    2
+    treeNode		    [2 0 0 4]
+    subviewer		    2
+    ssIdNumber		    52
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  junction {
+    id			    15
+    position		    [728.125 28.875 7]
+    chart		    2
+    linkNode		    [5 0 0]
+    visible		    0
+    subviewer		    5
+    quantum		    [0 0 25 0]
+    ssIdNumber		    30
+    type		    CONNECTIVE_JUNCTION
+  }
+  transition {
+    id			    16
+    labelString		    "{EHPd_tm_MeasIso = 0;EHPd_enum_VoltCtrl = EHP_HvCtrl_St;}"
+    labelPosition	    [196.637 47.651 341.835 14.971]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 188.2167 38.625 0 0]
+    }
+    dst {
+      id		      6
+      intersection	      [1 0 -1 0.4833 188.2167 68.625 0 0]
+    }
+    midPoint		    [188.2167 50.0165]
+    chart		    2
+    linkNode		    [5 25 18]
+    visible		    0
+    dataLimits		    [185.817 190.617 38.625 68.625]
+    subviewer		    5
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    13
+  }
+  transition {
+    id			    17
+    labelPosition	    [451.49 58.641 8.246 14.971]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 465.8905 50.25 0 0]
+    }
+    dst {
+      id		      5
+      intersection	      [1 0 -1 0.5083 465.8905 80.25 0 0]
+    }
+    midPoint		    [465.8905 61.6415]
+    chart		    2
+    linkNode		    [4 28 31]
+    visible		    0
+    dataLimits		    [463.491 468.29 50.25 80.25]
+    subviewer		    4
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    14
+  }
+  transition {
+    id			    18
+    labelString		    "[EHPd_tm_MeasIso >= EHPc_tm_MeasIso1_P]\n{EHPd_tm_MeasIso = 0;EHPd_enum_VoltCtrl = EHP_HvPosCtrl"
+    "_St;}"
+    labelPosition	    [190.49 151.608 362.824 28.444]
+    fontSize		    12
+    src {
+      id		      6
+      intersection	      [3 0 1 0.5139 188.9947 132.375 0 -32.8125]
+    }
+    dst {
+      id		      7
+      intersection	      [1 -0 -1 0.4901 188.9947 201 0 32.8125]
+    }
+    midPoint		    [188.99 163.9186]
+    chart		    2
+    linkNode		    [5 16 24]
+    visible		    0
+    dataLimits		    [186.595 191.395 132.375 201]
+    stampAngle		    NaN
+    subviewer		    5
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    15
+  }
+  transition {
+    id			    19
+    labelString		    "[EHPd_tm_MeasIso >= EHPc_tm_MeasIso2_P]\n{EHPd_tm_MeasIso = 0;GET_HvPos=USample;EHPd_enum_VoltCt"
+    "rl = EHP_HvCtrl_St;}"
+    labelPosition	    [188 276.75 465.525 28.444]
+    fontSize		    12
+    src {
+      id		      7
+      intersection	      [3 -0 1 0.516 187.2585 269.625 0 5.3125]
+    }
+    dst {
+      id		      9
+      intersection	      [1 0 -1 0.4736 187.2585 317.25 0 -4.5625]
+    }
+    midPoint		    [187.25 290.2121]
+    chart		    2
+    linkNode		    [5 24 23]
+    visible		    0
+    dataLimits		    [184.858 189.659 269.625 317.25]
+    stampAngle		    NaN
+    subviewer		    5
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    16
+  }
+  transition {
+    id			    20
+    labelString		    "[EHPd_tm_MeasIso >= EHPc_tm_MeasIso3_P]\n{EHPd_tm_MeasIso = 0;EHPd_enum_VoltCtrl = EHP_HvNegCtrl"
+    "_St;}"
+    labelPosition	    [188.75 399.75 363.574 28.444]
+    fontSize		    12
+    src {
+      id		      9
+      intersection	      [3 0 1 0.5162 190.2575 391.5 0 7.5]
+    }
+    dst {
+      id		      8
+      intersection	      [1 -0 -1 0.4742 190.2575 445.125 0 -7.5]
+    }
+    midPoint		    [190.25 415.2176]
+    chart		    2
+    linkNode		    [5 23 22]
+    visible		    0
+    dataLimits		    [187.857 192.658 391.5 445.125]
+    stampAngle		    NaN
+    subviewer		    5
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    17
+  }
+  transition {
+    id			    21
+    labelString		    "[EHPd_tm_MeasIso >= EHPc_tm_MeasIso4_P]\n{EHPd_tm_MeasIso = 0;GET_HvNeg=USample;EHPd_enum_VoltCt"
+    "rl = EHP_HvCtrl_St;}"
+    labelPosition	    [340.374 499.121 466.274 28.444]
+    fontSize		    12
+    src {
+      id		      8
+      intersection	      [2 1 -0 0.5976 343 481.8774 0 4.875]
+    }
+    dst {
+      id		      10
+      intersection	      [4 -1 0 0.6158 589.875 481.8774 0 -4.875]
+    }
+    midPoint		    [467.5436 481.875]
+    chart		    2
+    linkNode		    [5 22 0]
+    visible		    0
+    dataLimits		    [343 589.875 479.477 484.277]
+    subviewer		    5
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    19
+  }
+  transition {
+    id			    22
+    labelString		    "[EHPd_tm_MeasIso >= EHPc_tm_MeasIso5_P]\n{EHPd_tm_MeasIso = 0;EHPd_enum_VoltCtrl = EHP_HvPosR0Ct"
+    "rl_St;}"
+    labelPosition	    [731.75 411.75 377.817 28.444]
+    fontSize		    12
+    src {
+      id		      10
+      intersection	      [1 0 -1 0.4858 731.0082 458.25 0 -4.875]
+    }
+    dst {
+      id		      11
+      intersection	      [3 -0 1 0.5059 731.0082 393.75 0 4.125]
+    }
+    midPoint		    [731 428.8585]
+    chart		    2
+    linkNode		    [5 20 21]
+    visible		    0
+    dataLimits		    [728.608 733.408 393.75 458.25]
+    stampAngle		    NaN
+    subviewer		    5
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    24
+  }
+  transition {
+    id			    23
+    labelString		    "[EHPd_tm_MeasIso >= EHPc_tm_MeasIso6_P]\n{EHPd_tm_MeasIso = 0;GET_HvPosR0=USample;EHPd_enum_Volt"
+    "Ctrl = EHP_HvCtrl_St;}"
+    labelPosition	    [735.625 288.375 480.517 28.444]
+    fontSize		    12
+    src {
+      id		      11
+      intersection	      [1 -0 -1 0.4835 727.9932 325.125 0 -13.125]
+    }
+    dst {
+      id		      12
+      intersection	      [3 0 1 0.5443 727.9932 271.875 0 12.375]
+    }
+    midPoint		    [728 301.6031]
+    chart		    2
+    linkNode		    [5 19 20]
+    visible		    0
+    dataLimits		    [725.593 730.393 271.875 325.125]
+    stampAngle		    NaN
+    subviewer		    5
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    28
+  }
+  transition {
+    id			    24
+    labelString		    "[EHPd_tm_MeasIso >= EHPc_tm_MeasIso7_P]\n{EHPd_tm_MeasIso = 0;EHPd_enum_VoltCtrl = EHP_HvNegR0Ct"
+    "rl_St;}"
+    labelPosition	    [731.75 167.25 378.567 28.444]
+    fontSize		    12
+    src {
+      id		      12
+      intersection	      [1 0 -1 0.4638 730.2468 208.125 0 -10.875]
+    }
+    dst {
+      id		      13
+      intersection	      [3 -0 1 0.4954 730.2468 141.75 0 10.125]
+    }
+    midPoint		    [730.25 177.7553]
+    chart		    2
+    linkNode		    [5 18 19]
+    visible		    0
+    dataLimits		    [727.847 732.647 141.75 208.125]
+    stampAngle		    NaN
+    subviewer		    5
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    29
+  }
+  transition {
+    id			    25
+    labelString		    "[EHPd_tm_MeasIso >= EHPc_tm_MeasIso8_P]\n{GET_HvNegR0=USample;EHPd_enum_VoltCtrl = EHP_HvCtrl_St"
+    ";}"
+    labelPosition	    [728.75 41.25 356.827 28.444]
+    fontSize		    12
+    src {
+      id		      13
+      intersection	      [1 0 -1 0.4971 728.125 73.125 0 0]
+    }
+    dst {
+      id		      15
+      intersection	      [0 0 1 -1 728.125 35.875 0 0]
+    }
+    midPoint		    [728.125 57.9509]
+    chart		    2
+    linkNode		    [5 26 16]
+    visible		    0
+    dataLimits		    [725.725 730.525 35.875 73.125]
+    subviewer		    5
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    31
+  }
+  transition {
+    id			    26
+    labelString		    "{EHPd_tm_Wait=0;EHP_TrigClcnAftMeas;}"
+    labelPosition	    [867.014 0 228.639 14.971]
+    fontSize		    12
+    arrowSize		    5
+    src {
+      id		      15
+      intersection	      [0 0.8191 -0.5737 -1 733.8584 24.8591 0 0]
+    }
+    dst {
+      id		      5
+      intersection	      [4 1 0 0.7326 -9 176.9854 1 0]
+    }
+    midPoint		    [513.7242 53.9645]
+    chart		    2
+    linkNode		    [5 0 25]
+    visible		    0
+    dataLimits		    [0 771.949 0 183.735]
+    stampAngle		    3.4992
+    subviewer		    5
+    type		    SUB
+    subLink		    [27 0 28]
+    slide {
+      midPointSticky	      1
+    }
+    executionOrder	    1
+    ssIdNumber		    32
+  }
+  transition {
+    id			    27
+    labelString		    "{EHPd_tm_Wait=0;EHP_TrigClcnAftMeas;}"
+    labelPosition	    [0 0 224.629 14.11]
+    fontSize		    12
+    src {
+      id		      15
+      intersection	      [0 0.8191 -0.5737 -1 733.8584 24.8591 0 0]
+    }
+    dst {
+      id		      14
+      intersection	      [1 0 -1 0.8476 153.5 81.75 0 0]
+    }
+    chart		    2
+    linkNode		    [2 0 30]
+    visible		    0
+    dataLimits		    [733.858 790.25 0 24.859]
+    subviewer		    2
+    type		    SUPER
+    firstSubWire	    26
+    executionOrder	    1
+    ssIdNumber		    33
+  }
+  transition {
+    id			    28
+    labelString		    "{EHPd_tm_Wait=0;EHP_TrigClcnAftMeas;}"
+    labelPosition	    [201.682 27.664 228.639 14.971]
+    fontSize		    12
+    arrowSize		    5
+    src {
+      id		      5
+      intersection	      [4 -1 0 0.7326 409.625 111.0344 2 0]
+    }
+    dst {
+      id		      4
+      intersection	      [1 0 1 0.3291 203.4661 -9 1 0]
+    }
+    midPoint		    [271.3579 80.8259]
+    chart		    2
+    linkNode		    [4 0 17]
+    visible		    0
+    dataLimits		    [196.716 409.625 0 116.284]
+    stampAngle		    NaN
+    subviewer		    4
+    type		    SUB
+    subLink		    [27 26 30]
+    slide {
+      sticky		      SRC_STICK
+      midPointSticky	      1
+    }
+    executionOrder	    4294967295
+    ssIdNumber		    35
+  }
+  transition {
+    id			    29
+    labelPosition	    [798.561 109.214 7.309 14.11]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 797.5 90.75 0 0]
+    }
+    dst {
+      id		      4
+      intersection	      [1 0 -1 0.5763 797.5 159 0 0]
+    }
+    midPoint		    [797.5 122.098]
+    chart		    2
+    linkNode		    [2 30 33]
+    dataLimits		    [797.5 797.5 90.75 151]
+    subviewer		    2
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    51
+  }
+  transition {
+    id			    30
+    labelString		    "{EHPd_tm_Wait=0;EHP_TrigClcnAftMeas;}"
+    labelPosition	    [445.499 85.658 224.629 14.11]
+    fontSize		    12
+    src {
+      id		      4
+      intersection	      [1 0 -1 0.3291 737.3447 165.3375 2 0]
+    }
+    dst {
+      id		      14
+      intersection	      [1 0 -1 0.8476 256.5217 152.1563 0 0]
+    }
+    midPoint		    [481.2641 34.033]
+    chart		    2
+    linkNode		    [2 27 29]
+    dataLimits		    [256.522 737.345 34.092 165.338]
+    stampAngle		    NaN
+    subviewer		    2
+    type		    SUB
+    subLink		    [27 28 0]
+    slide {
+      sticky		      SRC_STICK
+      midPointSticky	      1
+    }
+    executionOrder	    4294967295
+    ssIdNumber		    53
+  }
+  transition {
+    id			    31
+    labelString		    "[EHPd_flg_MeasSt==0]"
+    labelPosition	    [265.482 90.372 125.189 14.971]
+    fontSize		    12
+    src {
+      id		      3
+      intersection	      [2 1 0 0.208 193.75 103.4937 0 -3]
+    }
+    dst {
+      id		      5
+      intersection	      [4 -1 -0 0.7981 399.875 103.4937 0 3]
+    }
+    midPoint		    [297.0328 103.4965]
+    chart		    2
+    linkNode		    [4 17 32]
+    visible		    0
+    dataLimits		    [193.75 399.875 101.094 105.894]
+    stampAngle		    NaN
+    subviewer		    4
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    54
+  }
+  transition {
+    id			    32
+    labelString		    "[EHPd_flg_MeasSt==1]"
+    labelPosition	    [264.679 118.498 125.189 14.971]
+    fontSize		    12
+    src {
+      id		      5
+      intersection	      [4 -1 -0 0.6613 399.875 119.2428 0 -12.75]
+    }
+    dst {
+      id		      3
+      intersection	      [2 1 0 0.3385 193.75 119.2428 0 12.75]
+    }
+    midPoint		    [296.5922 119.2475]
+    chart		    2
+    linkNode		    [4 31 0]
+    visible		    0
+    dataLimits		    [193.75 399.875 116.843 121.643]
+    stampAngle		    NaN
+    subviewer		    4
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    55
+  }
+  transition {
+    id			    33
+    labelString		    "[EHPd_tm_Wait>=EHPc_tm_Wait_P]"
+    labelPosition	    [310.915 231.656 194.418 14.11]
+    fontSize		    12
+    src {
+      id		      14
+      intersection	      [2 1 0 0.6392 294.8312 251.1498 0 13.3125]
+    }
+    dst {
+      id		      4
+      intersection	      [4 -1 -0 0.3872 657.25 251.1498 0 -13.3125]
+    }
+    midPoint		    [479.6586 251.1519]
+    chart		    2
+    linkNode		    [2 29 0]
+    dataLimits		    [294.831 649.25 251.15 251.152]
+    stampAngle		    NaN
+    subviewer		    2
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    57
+  }
+  data {
+    id			    34
+    ssIdNumber		    41
+    name		    "EHPd_tm_MeasIso"
+    linkNode		    [5 0 35]
+    scope		    LOCAL_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "double"
+  }
+  data {
+    id			    35
+    ssIdNumber		    42
+    name		    "EHPc_tm_MeasIso1_P"
+    linkNode		    [5 34 36]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 5
+    machine		    1
+    props {
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "double"
+  }
+  data {
+    id			    36
+    ssIdNumber		    43
+    name		    "EHPc_tm_MeasIso2_P"
+    linkNode		    [5 35 37]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 6
+    machine		    1
+    props {
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "double"
+  }
+  data {
+    id			    37
+    ssIdNumber		    44
+    name		    "EHPc_tm_MeasIso3_P"
+    linkNode		    [5 36 38]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 7
+    machine		    1
+    props {
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "double"
+  }
+  data {
+    id			    38
+    ssIdNumber		    45
+    name		    "EHPc_tm_MeasIso4_P"
+    linkNode		    [5 37 39]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 8
+    machine		    1
+    props {
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "double"
+  }
+  data {
+    id			    39
+    ssIdNumber		    46
+    name		    "EHPc_tm_MeasIso5_P"
+    linkNode		    [5 38 40]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 9
+    machine		    1
+    props {
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "double"
+  }
+  data {
+    id			    40
+    ssIdNumber		    47
+    name		    "EHPc_tm_MeasIso6_P"
+    linkNode		    [5 39 41]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 10
+    machine		    1
+    props {
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "double"
+  }
+  data {
+    id			    41
+    ssIdNumber		    48
+    name		    "EHPc_tm_MeasIso7_P"
+    linkNode		    [5 40 42]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 11
+    machine		    1
+    props {
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "double"
+  }
+  data {
+    id			    42
+    ssIdNumber		    49
+    name		    "EHPc_tm_MeasIso8_P"
+    linkNode		    [5 41 0]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 12
+    machine		    1
+    props {
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "double"
+  }
+  event {
+    id			    43
+    ssIdNumber		    77
+    name		    "EHP_TrigClcnAftMeas"
+    linkNode		    [2 0 0]
+    scope		    OUTPUT_EVENT
+    trigger		    EITHER_EDGE_EVENT
+    machine		    1
+  }
+  data {
+    id			    44
+    ssIdNumber		    63
+    name		    "EHPd_flg_MeasSt"
+    linkNode		    [2 0 45]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "boolean"
+  }
+  data {
+    id			    45
+    ssIdNumber		    64
+    name		    "USample"
+    linkNode		    [2 44 46]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "double"
+  }
+  data {
+    id			    46
+    ssIdNumber		    66
+    name		    "GET_HvPos"
+    linkNode		    [2 45 47]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "double"
+  }
+  data {
+    id			    47
+    ssIdNumber		    67
+    name		    "GET_HvNeg"
+    linkNode		    [2 46 48]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "double"
+  }
+  data {
+    id			    48
+    ssIdNumber		    68
+    name		    "GET_HvPosR0"
+    linkNode		    [2 47 49]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "double"
+  }
+  data {
+    id			    49
+    ssIdNumber		    69
+    name		    "GET_HvNegR0"
+    linkNode		    [2 48 50]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "double"
+  }
+  data {
+    id			    50
+    ssIdNumber		    71
+    name		    "EHPd_enum_StMeasIso"
+    linkNode		    [2 49 51]
+    scope		    LOCAL_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "double"
+  }
+  data {
+    id			    51
+    ssIdNumber		    72
+    name		    "EHPd_tm_Wait"
+    linkNode		    [2 50 52]
+    scope		    LOCAL_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "double"
+  }
+  data {
+    id			    52
+    ssIdNumber		    76
+    name		    "EHPc_tm_Wait_P"
+    linkNode		    [2 51 53]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 13
+    machine		    1
+    props {
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "double"
+  }
+  data {
+    id			    53
+    ssIdNumber		    80
+    name		    "EHPd_enum_VoltCtrl"
+    linkNode		    [2 52 54]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "double"
+  }
+  data {
+    id			    54
+    ssIdNumber		    89
+    name		    "EHP_HvCtrl_St"
+    linkNode		    [2 53 55]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    machine		    1
+    props {
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "double"
+  }
+  data {
+    id			    55
+    ssIdNumber		    90
+    name		    "EHP_HvNegCtrl_St"
+    linkNode		    [2 54 56]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 1
+    machine		    1
+    props {
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "double"
+  }
+  data {
+    id			    56
+    ssIdNumber		    91
+    name		    "EHP_HvNegR0Ctrl_St"
+    linkNode		    [2 55 57]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 2
+    machine		    1
+    props {
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "double"
+  }
+  data {
+    id			    57
+    ssIdNumber		    92
+    name		    "EHP_HvPosCtrl_St"
+    linkNode		    [2 56 58]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 3
+    machine		    1
+    props {
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "double"
+  }
+  data {
+    id			    58
+    ssIdNumber		    93
+    name		    "EHP_HvPosR0Ctrl_St"
+    linkNode		    [2 57 0]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 4
+    machine		    1
+    props {
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "double"
+  }
+  instance {
+    id			    59
+    name		    "EHP/IsolationDetection/IslnMeas/IslnMeas"
+    machine		    1
+    chart		    2
+  }
+  target {
+    id			    60
+    name		    "sfun"
+    description		    "Default Simulink S-Function Target."
+    machine		    1
+    linkNode		    [1 0 0]
+  }
+}

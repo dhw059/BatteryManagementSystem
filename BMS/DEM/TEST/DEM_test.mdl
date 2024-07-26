@@ -1,0 +1,2446 @@
+Model {
+  Name			  "DEM_test"
+  Version		  7.4
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.50"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "GBK"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  MaxMDLFileLineLength	  120
+  Created		  "Tue Nov 11 09:36:50 2014"
+  Creator		  "zhaoxiangri"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "sunsijun"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Thu Sep 10 10:33:31 2015"
+  RTWModifiedTimeStamp	  363781727
+  ModelVersionFormat	  "1.%<AutoIncrement:50>"
+  ConfigurationManager	  "None"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks on
+  BrowserLookUnderMasks	  on
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      1
+      Version		      "1.6.0"
+      Array {
+	Type			"Handle"
+	Dimension		9
+	Simulink.SolverCC {
+	  $ObjectID		  2
+	  Version		  "1.6.0"
+	  StartTime		  "0.0"
+	  StopTime		  "inf"
+	  AbsTol		  "auto"
+	  FixedStep		  "0.01"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  Solver		  "ode3"
+	  SolverName		  "ode3"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  3
+	  Version		  "1.6.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Structure"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  4
+	  Version		  "1.6.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    7
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  EnforceIntegerDowncast  on
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  2147483647
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  5
+	  Version		  "1.6.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "none"
+	  FcnCallInpInsideContextMsg "Use local settings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  StrictBusMsg		  "Warning"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  6
+	  Version		  "1.6.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  7
+	  Version		  "1.6.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  8
+	  Version		  "1.6.0"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  9
+	  Version		  "1.6.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    6
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      10
+	      Version		      "1.6.0"
+	      Array {
+		Type			"Cell"
+		Dimension		19
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"SFDataObjDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      SimulinkBlockComments   on
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      11
+	      Version		      "1.6.0"
+	      Array {
+		Type			"Cell"
+		Dimension		17
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"MultiInstanceERTCode"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportNonFinite"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"PortableWordSizes"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      TargetFunctionLibrary   "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      PortableWordSizes	      off
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	hdlcoderui.hdlcc {
+	  $ObjectID		  12
+	  Version		  "1.6.0"
+	  Description		  "HDL Coder custom configuration component"
+	  Name			  "HDL Coder"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    ""
+	    PropName		    "HDLConfigFile"
+	  }
+	  HDLCActiveTab		  "0"
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      ExtraOptions	      "-aGenerateTraceInfo=0 -aIgnoreTestpoints=0 "
+      CurrentDlgPage	      "Diagnostics/Connectivity"
+      ConfigPrmDlgPosition    " [ 520, 225, 1571, 855 ] "
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    1
+  }
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "fixdt(1,16,0)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      DataType		      "auto"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchByCopyingInsideSignal off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      DataType		      "auto"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      "S-Function"
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+      SFunctionDeploymentMode off
+    }
+    Block {
+      BlockType		      Saturate
+      UpperLimit	      "0.5"
+      LowerLimit	      "-0.5"
+      LinearizeAsGain	      on
+      ZeroCross		      on
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Same as input"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+    }
+    Block {
+      BlockType		      Scope
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Terminator
+    }
+  }
+  System {
+    Name		    "DEM_test"
+    Location		    [214, 74, 1918, 1019]
+    Open		    on
+    ModelBrowserVisibility  on
+    ModelBrowserWidth	    212
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "355"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    1235
+    Block {
+      BlockType		      Constant
+      Name		      "Constant3"
+      SID		      1221
+      Position		      [25, 110, 55, 140]
+      ShowName		      off
+      Value		      "0"
+      OutDataTypeMode	      "boolean"
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "boolean"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant4"
+      SID		      1222
+      Position		      [25, 145, 55, 175]
+      ShowName		      off
+      OutDataTypeMode	      "boolean"
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "boolean"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant5"
+      SID		      1223
+      Position		      [25, 180, 55, 210]
+      ShowName		      off
+      Value		      "0"
+      OutDataTypeMode	      "boolean"
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "boolean"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope1"
+      SID		      1224
+      Ports		      [5]
+      Position		      [380, 115, 415, 205]
+      ShowName		      off
+      Floating		      off
+      Location		      [5, 48, 1925, 1039]
+      Open		      off
+      NumInputPorts	      "5"
+      ZoomMode		      "xonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+	axes2			"%<SignalLabel>"
+	axes3			"%<SignalLabel>"
+	axes4			"%<SignalLabel>"
+	axes5			"%<SignalLabel>"
+      }
+      YMin		      "-5~-5~-5~-5~-5"
+      YMax		      "5~5~5~5~5"
+      SaveName		      "ScopeData1"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "diagnostic2"
+      SID		      1210
+      Ports		      [3, 5]
+      Position		      [145, 106, 310, 214]
+      BackgroundColor	      "cyan"
+      ShowName		      off
+      AttributesFormatString  "[AFL_INCREMENT=%<afl_inc>]\\n[AFL_DECREMENT=%<afl_dec>]\\n[AFL_THRESHOLD=%<afl_threshol"
+      "d>]\\n[AFF_THRESHOLD=%<aff_threshold>]"
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Reusable function"
+      RTWFcnNameOpts	      "User specified"
+      RTWFcnName	      "diagnostic"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      MaskType		      "Fault_Diagnostic"
+      MaskDescription	      "AFL:Accumulated Failure Level.\nAFF:Accumulated Failure Frequency\nAFL_INCREMENT:The valu"
+      "e of the internal counter gets incremented each cycle if the ifault is active [uint8] [0...255].\nAFL_DECREMENT:"
+      "The value of  the internal counter gets decremented each cycle if the ifault is inactive [uint8] [0...255].\nAFL"
+      "_THRESHOLD:When the internal counter is more than AFL_THRESHOLD,fault is confirmed.\nAFF_THRESHOLD:The aff_count"
+      " must be less than AFF_THRESHOLD."
+      MaskPromptString	      "AFL_INCREMENT|AFL_DECREMENT|AFL_THRESHOLD|AFF_THRESHOLD"
+      MaskStyleString	      "edit,edit,edit,edit"
+      MaskTunableValueString  "on,on,on,on"
+      MaskCallbackString      "|||"
+      MaskEnableString	      "on,on,on,on"
+      MaskVisibilityString    "on,on,on,on"
+      MaskToolTipString	      "on,on,on,on"
+      MaskVariables	      "afl_inc=@1;afl_dec=@2;afl_threshold=@3;aff_threshold=@4;"
+      MaskDisplay	      "disp('DIAGNOSTIC')\nport_label('input',1,'iwarn')\nport_label('input',2,'ifault')\nport_label"
+      "('input',3,'ifatal')\nport_label('output',1,'afl_count')\nport_label('output',2,'aff_count')\nport_label('output"
+      "',3,'cfault')\nport_label('output',4,'history_cfault')\nport_label('output',5,'fault_level')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "3|3|10|255"
+      System {
+	Name			"diagnostic2"
+	Location		[202, 82, 1902, 1027]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"370"
+	Block {
+	  BlockType		  Inport
+	  Name			  "iwarn"
+	  SID			  1211
+	  Position		  [20, 38, 50, 52]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "ifault"
+	  SID			  1212
+	  Position		  [20, 83, 50, 97]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "ifatal"
+	  SID			  1213
+	  Position		  [20, 128, 50, 142]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Saturate
+	  Name			  "Saturation"
+	  SID			  1214
+	  Position		  [335, 45, 365, 75]
+	  ShowName		  off
+	  UpperLimit		  "aff_threshold"
+	  LowerLimit		  "0"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "diagnostic"
+	  SID			  1215
+	  Ports			  [3, 5]
+	  Position		  [105, 20, 310, 160]
+	  PermitHierarchicalResolution "ExplicitOnly"
+	  TreatAsAtomicUnit	  on
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    0
+	    PropName		    "AvailSigsLoadSave"
+	  }
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskType		  "Stateflow"
+	  MaskDisplay		  "plot(sf('Private','sfblk','xIcon'),sf('Private','sfblk','yIcon'));text(0.5,0,sf('Private', 'sfblk',"
+	  " 'tIcon'),'HorizontalAl','Center','VerticalAl','Bottom');"
+	  MaskSelfModifiable	  on
+	  MaskIconFrame		  off
+	  MaskIconOpaque	  off
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "autoscale"
+	  System {
+	    Name		    "diagnostic"
+	    Location		    [480, 85, 1060, 386]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    46
+	    Block {
+	      BlockType		      Inport
+	      Name		      "iwarn"
+	      SID		      44
+	      Position		      [20, 101, 40, 119]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "ifault"
+	      SID		      31
+	      Position		      [20, 136, 40, 154]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "ifatal"
+	      SID		      45
+	      Position		      [20, 171, 40, 189]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Demux
+	      Name		      " Demux "
+	      SID		      41
+	      Ports		      [1, 1]
+	      Position		      [270, 245, 320, 285]
+	      Outputs		      "1"
+	    }
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      " SFunction "
+	      SID		      40
+	      Tag		      "Stateflow S-Function DEM_test 1"
+	      Ports		      [3, 6]
+	      Position		      [180, 102, 230, 243]
+	      FunctionName	      "sf_sfun"
+	      Parameters	      "aff_threshold,afl_dec,afl_inc,afl_threshold"
+	      PortCounts	      "[3 6]"
+	      EnableBusSupport	      on
+	      Port {
+		PortNumber		2
+		Name			"afl_count"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		3
+		Name			"aff_count"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		4
+		Name			"cfault"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		5
+		Name			"history_cfault"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		6
+		Name			"fault_level"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Terminator
+	      Name		      " Terminator "
+	      SID		      43
+	      Position		      [460, 256, 480, 274]
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "afl_count"
+	      SID		      34
+	      Position		      [460, 101, 480, 119]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "aff_count"
+	      SID		      35
+	      Position		      [460, 136, 480, 154]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "cfault"
+	      SID		      32
+	      Position		      [460, 171, 480, 189]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "history_cfault"
+	      SID		      33
+	      Position		      [460, 206, 480, 224]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "fault_level"
+	      SID		      46
+	      Position		      [460, 246, 480, 264]
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      " SFunction "
+	      SrcPort		      1
+	      DstBlock		      " Demux "
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "iwarn"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "ifault"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "ifatal"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      3
+	    }
+	    Line {
+	      Name		      "afl_count"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      2
+	      DstBlock		      "afl_count"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "aff_count"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      3
+	      DstBlock		      "aff_count"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "cfault"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      4
+	      DstBlock		      "cfault"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "history_cfault"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      5
+	      DstBlock		      "history_cfault"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "fault_level"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      6
+	      DstBlock		      "fault_level"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      " Demux "
+	      SrcPort		      1
+	      DstBlock		      " Terminator "
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "afl_count"
+	  SID			  1216
+	  Position		  [410, 23, 440, 37]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "aff_count"
+	  SID			  1219
+	  Position		  [410, 53, 440, 67]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "cfault"
+	  SID			  1217
+	  Position		  [410, 83, 440, 97]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "history_cfault"
+	  SID			  1218
+	  Position		  [410, 113, 440, 127]
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "fault_level"
+	  SID			  1220
+	  Position		  [410, 143, 440, 157]
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "diagnostic"
+	  SrcPort		  5
+	  DstBlock		  "fault_level"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "ifatal"
+	  SrcPort		  1
+	  DstBlock		  "diagnostic"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "iwarn"
+	  SrcPort		  1
+	  DstBlock		  "diagnostic"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "ifault"
+	  SrcPort		  1
+	  DstBlock		  "diagnostic"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "diagnostic"
+	  SrcPort		  1
+	  DstBlock		  "afl_count"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "diagnostic"
+	  SrcPort		  3
+	  DstBlock		  "cfault"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "diagnostic"
+	  SrcPort		  4
+	  DstBlock		  "history_cfault"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "diagnostic"
+	  SrcPort		  2
+	  DstBlock		  "Saturation"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Saturation"
+	  SrcPort		  1
+	  DstBlock		  "aff_count"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Constant3"
+      SrcPort		      1
+      DstBlock		      "diagnostic2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Constant4"
+      SrcPort		      1
+      DstBlock		      "diagnostic2"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Constant5"
+      SrcPort		      1
+      DstBlock		      "diagnostic2"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "diagnostic2"
+      SrcPort		      1
+      DstBlock		      "Scope1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "diagnostic2"
+      SrcPort		      5
+      DstBlock		      "Scope1"
+      DstPort		      5
+    }
+    Line {
+      SrcBlock		      "diagnostic2"
+      SrcPort		      2
+      DstBlock		      "Scope1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "diagnostic2"
+      SrcPort		      3
+      DstBlock		      "Scope1"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "diagnostic2"
+      SrcPort		      4
+      DstBlock		      "Scope1"
+      DstPort		      4
+    }
+  }
+}
+# Finite State Machines
+#
+#    Stateflow Version 7.1 (R2009a) dated Jul 17 2009, 10:24:20
+#
+#
+
+
+Stateflow {
+  machine {
+    id			    1
+    name		    "DEM_test"
+    created		    "11-Nov-2014 09:36:53"
+    isLibrary		    0
+    firstTarget		    64
+    debug {
+      animation		      [1 0.6]
+    }
+    sfVersion		    71014000.00001
+  }
+  chart {
+    id			    2
+    name		    "diagnostic2/diagnostic"
+    windowPosition	    [18.75 15 1440 727.5]
+    viewLimits		    [125.238 1038.549 107.258 559.499]
+    zoomFactor		    0.654
+    screen		    [1 1 1920 1080 1.333333333333333]
+    treeNode		    [0 8 0 0]
+    firstTransition	    38
+    viewObj		    2
+    machine		    1
+    subviewS {
+      x1		      125.238
+      y1		      107.258
+      zoomFactor	      0.654
+    }
+    ssIdHighWaterMark	    187
+    decomposition	    CLUSTER_CHART
+    firstData		    50
+    chartFileNumber	    1
+    disableImplicitCasting  1
+    supportVariableSizing   0
+  }
+  state {
+    id			    3
+    labelString		    "No_Cfault\ncfault=0;\ncounter=0;\nfault_level=0;\nafl_count=counter;"
+    position		    [236.028 259.8456 109.5004 65.454]
+    fontSize		    12
+    chart		    2
+    treeNode		    [8 0 4 5]
+    superState		    SUBCHART
+    subviewer		    2
+    subviewS {
+      x1		      -8.945
+      y1		      -8.945
+      pos		      [0 0 108.233 79.542]
+    }
+    ssIdNumber		    1
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    4
+    labelString		    "Counter"
+    position		    [424.1303 213.6516 285.2477 282.429]
+    fontSize		    12
+    chart		    2
+    treeNode		    [8 7 0 3]
+    firstTransition	    29
+    subviewer		    2
+    subviewS {
+      x1		      -12.827
+      y1		      -12.827
+      pos		      [0 0 300.203 493.662]
+    }
+    ssIdNumber		    2
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    5
+    labelString		    "Cfault"
+    position		    [799.1945 418.9691 132.0068 54.3382]
+    fontSize		    12
+    chart		    2
+    treeNode		    [8 0 3 0]
+    firstTransition	    39
+    firstJunction	    15
+    superState		    SUBCHART
+    subviewer		    2
+    subviewS {
+      x1		      -9.375
+      y1		      -9.375
+      zoomFactor	      0.625
+      pos		      [0 0 280.936 398.876]
+    }
+    ssIdNumber		    162
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    6
+    labelString		    "AFL_DEC"
+    position		    [440.3437 392.9428 224.4069 72.6675]
+    fontSize		    12
+    chart		    2
+    treeNode		    [4 0 7 0]
+    firstTransition	    31
+    firstJunction	    11
+    superState		    SUBCHART
+    subviewer		    2
+    subviewS {
+      x1		      -3
+      y1		      -3
+      zoomFactor	      0.2
+      pos		      [0 0 253.534 103.9]
+    }
+    ssIdNumber		    4
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    7
+    labelString		    "AFL_INC"
+    position		    [437.6868 249.1982 224.9283 80.5798]
+    fontSize		    12
+    chart		    2
+    treeNode		    [4 0 0 6]
+    firstTransition	    30
+    firstJunction	    9
+    superState		    SUBCHART
+    subgrouped		    1
+    subviewer		    2
+    subviewS {
+      x1		      -3.51
+      y1		      -3.51
+      zoomFactor	      0.234
+      pos		      [0 0 263.51 153.803]
+    }
+    ssIdNumber		    5
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    8
+    labelString		    "Fault_Diagnostic"
+    position		    [222.821 156.3713 718.145 391.727]
+    fontSize		    12
+    chart		    2
+    treeNode		    [2 4 0 0]
+    firstTransition	    23
+    firstJunction	    13
+    subviewer		    2
+    subviewS {
+      x1		      -8.945
+      y1		      -8.945
+      pos		      [0 0 718.145 391.727]
+    }
+    ssIdNumber		    86
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  junction {
+    id			    9
+    position		    [27.3082 88.9731 7]
+    chart		    2
+    linkNode		    [7 0 10]
+    visible		    0
+    isGrouped		    1
+    subviewer		    7
+    ssIdNumber		    19
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    10
+    position		    [250.6158 88.9731 7]
+    chart		    2
+    linkNode		    [7 9 0]
+    visible		    0
+    isGrouped		    1
+    subviewer		    7
+    ssIdNumber		    20
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    11
+    position		    [27.0078 58.3224 7]
+    chart		    2
+    linkNode		    [6 0 12]
+    visible		    0
+    subviewer		    6
+    ssIdNumber		    21
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    12
+    position		    [242.0774 58.3224 7]
+    chart		    2
+    linkNode		    [6 11 0]
+    visible		    0
+    subviewer		    6
+    ssIdNumber		    22
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    13
+    position		    [864.5736 271.2381 7]
+    chart		    2
+    linkNode		    [8 0 14]
+    subviewer		    2
+    quantum		    [0 0 36 27]
+    ssIdNumber		    104
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    14
+    position		    [266.5404 435.1885 7]
+    chart		    2
+    linkNode		    [8 13 0]
+    subviewer		    2
+    quantum		    [37 26 0 0]
+    ssIdNumber		    102
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    15
+    position		    [44.0379 123.8686 7]
+    chart		    2
+    linkNode		    [5 0 16]
+    visible		    0
+    subviewer		    5
+    ssIdNumber		    164
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    16
+    position		    [176.2989 123.8686 7]
+    chart		    2
+    linkNode		    [5 15 18]
+    visible		    0
+    subviewer		    5
+    ssIdNumber		    166
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    17
+    position		    [172.205 190.5781 7]
+    chart		    2
+    linkNode		    [5 18 20]
+    visible		    0
+    subviewer		    5
+    ssIdNumber		    168
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    18
+    position		    [44.0379 190.5781 7]
+    chart		    2
+    linkNode		    [5 16 17]
+    visible		    0
+    subviewer		    5
+    ssIdNumber		    170
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    19
+    position		    [173.6937 253.9531 7]
+    chart		    2
+    linkNode		    [5 20 22]
+    visible		    0
+    subviewer		    5
+    ssIdNumber		    174
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    20
+    position		    [44.0379 253.9531 7]
+    chart		    2
+    linkNode		    [5 17 19]
+    visible		    0
+    subviewer		    5
+    ssIdNumber		    176
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    21
+    position		    [44.0379 352.3803 7]
+    chart		    2
+    linkNode		    [5 22 0]
+    visible		    0
+    subviewer		    5
+    ssIdNumber		    179
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    22
+    position		    [44.0379 311.6274 7]
+    chart		    2
+    linkNode		    [5 19 21]
+    visible		    0
+    subviewer		    5
+    ssIdNumber		    181
+    type		    CONNECTIVE_JUNCTION
+  }
+  transition {
+    id			    23
+    labelString		    "{aff_count=0;}"
+    labelPosition	    [272.469 216.848 74.52 14.197]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 270.1916 201.2667 0 0]
+    }
+    dst {
+      id		      3
+      intersection	      [1 0 -1 0.312 270.1916 259.8456 0 0]
+    }
+    midPoint		    [270.1916 227.5689]
+    chart		    2
+    linkNode		    [8 0 24]
+    dataLimits		    [267.792 272.592 201.267 259.846]
+    subviewer		    2
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    6
+  }
+  transition {
+    id			    24
+    labelString		    "[iwarn==1||...\nifault==1||...\nifatal==1]"
+    labelPosition	    [359.06 272.471 68.637 40.632]
+    fontSize		    12
+    src {
+      id		      3
+      intersection	      [2 1 0 0.1113 345.5285 267.1274 0 -9]
+    }
+    dst {
+      id		      7
+      intersection	      [4 -1 0 0.7775 437.6868 267.1274 0 9]
+    }
+    midPoint		    [389.3504 267.1274]
+    chart		    2
+    linkNode		    [8 23 27]
+    dataLimits		    [345.529 437.687 264.727 269.527]
+    subviewer		    2
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    7
+  }
+  transition {
+    id			    25
+    labelString		    "{afl_count=counter;counter-=afl_dec;}"
+    labelPosition	    [33.17 39.778 199.537 14.197]
+    fontSize		    12
+    src {
+      id		      11
+      intersection	      [0 1 0 -1 34.0078 58.3224 0 0]
+    }
+    dst {
+      id		      12
+      intersection	      [0 -1 0 -1 235.0774 58.3224 0 0]
+    }
+    midPoint		    [134.653 58.3224]
+    chart		    2
+    linkNode		    [6 31 35]
+    visible		    0
+    dataLimits		    [34.008 235.077 55.922 60.722]
+    subviewer		    6
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    17
+  }
+  transition {
+    id			    26
+    labelString		    "[counter<=0]"
+    labelPosition	    [304.652 413.773 67.656 14.197]
+    fontSize		    12
+    src {
+      id		      6
+      intersection	      [4 -1 0 0.4186 440.3437 435.1885 0 -31.5025]
+    }
+    dst {
+      id		      14
+      intersection	      [0 1 0 -1 273.5404 435.1885 0 31.5]
+    }
+    midPoint		    [357.5766 435.1885]
+    chart		    2
+    linkNode		    [8 37 28]
+    dataLimits		    [273.54 440.344 432.789 437.588]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      DST_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    9
+  }
+  transition {
+    id			    27
+    labelString		    "[counter>=afl_threshold]"
+    labelPosition	    [716.268 249.151 129.92 14.197]
+    fontSize		    12
+    src {
+      id		      7
+      intersection	      [2 1 0 0.2735 662.6151 271.2381 0 -68.2491]
+    }
+    dst {
+      id		      13
+      intersection	      [0 -1 0 -1 857.5736 271.2381 0 46.8813]
+    }
+    midPoint		    [760.0719 271.2381]
+    chart		    2
+    linkNode		    [8 24 36]
+    dataLimits		    [662.615 857.574 268.838 273.638]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      DST_STICK
+      midPointSticky	      1
+    }
+    executionOrder	    1
+    ssIdNumber		    10
+  }
+  transition {
+    id			    28
+    labelString		    "[iwarn==0&&...\nifault==0&&...\nifatal==0]"
+    labelPosition	    [720.353 400.974 78.442 40.632]
+    fontSize		    12
+    src {
+      id		      5
+      intersection	      [4 -1 -0 0.4413 799.1945 449.3305 0 -3.1923]
+    }
+    dst {
+      id		      6
+      intersection	      [2 1 0 0.776 664.7506 449.3305 0 3.1923]
+    }
+    midPoint		    [733.3105 449.3305]
+    chart		    2
+    linkNode		    [8 26 0]
+    dataLimits		    [664.751 799.194 446.93 451.73]
+    subviewer		    2
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    11
+  }
+  transition {
+    id			    29
+    labelString		    "[iwarn==0&&...\nifault==0&&...\nifatal==0&&...\ncounter<afl_threshold]"
+    labelPosition	    [471.197 333.851 119.624 53.85]
+    fontSize		    12
+    src {
+      id		      7
+      intersection	      [3 -0 1 0.8805 464.5657 329.778 0 106.803]
+    }
+    dst {
+      id		      6
+      intersection	      [1 0 -1 0.1079 464.5657 392.9428 0 -106.803]
+    }
+    midPoint		    [464.5709 358.4728]
+    chart		    2
+    linkNode		    [4 0 34]
+    dataLimits		    [462.166 466.966 329.778 392.943]
+    stampAngle		    NaN
+    subviewer		    2
+    drawStyle		    SMART
+    executionOrder	    2
+    ssIdNumber		    39
+  }
+  transition {
+    id			    30
+    labelPosition	    [26.177 43.06 7.354 14.197]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0.1476 27.3082 27.1095 0 0]
+    }
+    dst {
+      id		      9
+      intersection	      [0 -0 -1 -1 27.3082 81.9731 0 0]
+    }
+    midPoint		    [27.3082 51.4733]
+    chart		    2
+    linkNode		    [7 0 32]
+    visible		    0
+    isGrouped		    1
+    dataLimits		    [24.908 29.708 27.11 81.973]
+    stampAngle		    0.24
+    subviewer		    7
+    drawStyle		    SMART
+    slide {
+      arcL		      17.0457
+    }
+    executionOrder	    1
+    ssIdNumber		    13
+  }
+  transition {
+    id			    31
+    labelPosition	    [31.606 24.934 7.354 14.197]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0.2643 27.0078 27.3 0 0]
+    }
+    dst {
+      id		      11
+      intersection	      [0 -0 -1 -1 27.0078 51.3224 0 0]
+    }
+    midPoint		    [27.0078 35.5727]
+    chart		    2
+    linkNode		    [6 0 25]
+    visible		    0
+    dataLimits		    [24.608 29.408 27.3 51.322]
+    subviewer		    6
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    18
+  }
+  transition {
+    id			    32
+    labelString		    "{afl_count=counter;counter+=afl_inc;}"
+    labelPosition	    [44.616 71.035 198.556 14.197]
+    fontSize		    12
+    src {
+      id		      9
+      intersection	      [0 1 0 -1 34.3082 88.9731 0 0]
+    }
+    dst {
+      id		      10
+      intersection	      [0 -1 0 -1 243.6158 88.9731 0 0]
+    }
+    midPoint		    [139.2515 88.9731]
+    chart		    2
+    linkNode		    [7 30 33]
+    visible		    0
+    isGrouped		    1
+    dataLimits		    [34.308 243.616 86.573 91.373]
+    subviewer		    7
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    15
+  }
+  transition {
+    id			    33
+    labelPosition	    [2.205 102.598 7.354 14.197]
+    fontSize		    12
+    src {
+      id		      7
+      intersection	      [4 1 0 0.3108 0 106.0017 0 0]
+    }
+    dst {
+      id		      9
+      intersection	      [0 -0.8485 0.5291 -1 21.3687 92.6768 0 0]
+    }
+    midPoint		    [7.989 102.8941]
+    chart		    2
+    linkNode		    [7 32 0]
+    visible		    0
+    isGrouped		    1
+    dataLimits		    [0 21.369 92.677 106.002]
+    stampAngle		    -2.2118
+    subviewer		    7
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+      midPointSticky	      1
+    }
+    executionOrder	    1
+    ssIdNumber		    31
+  }
+  transition {
+    id			    34
+    labelString		    "[(iwarn==1||...\nifault==1||...\nifatal==1)&&...\ncounter>0]"
+    labelPosition	    [629.71 335.767 75.991 53.85]
+    fontSize		    12
+    src {
+      id		      6
+      intersection	      [1 0 -1 0.8159 623.4326 392.9428 0 53.7955]
+    }
+    dst {
+      id		      7
+      intersection	      [3 -0 1 0.1742 623.4326 329.778 0 -53.7955]
+    }
+    midPoint		    [623.4329 364.248]
+    chart		    2
+    linkNode		    [4 29 0]
+    dataLimits		    [621.033 625.833 329.778 392.943]
+    stampAngle		    NaN
+    subviewer		    2
+    drawStyle		    SMART
+    executionOrder	    2
+    ssIdNumber		    41
+  }
+  transition {
+    id			    35
+    labelPosition	    [7.474 53.01 7.354 14.197]
+    fontSize		    12
+    src {
+      id		      6
+      intersection	      [4 1 0 0.3598 0 66.5159 0 0]
+    }
+    dst {
+      id		      11
+      intersection	      [0 -0.9569 0.2903 -1 20.3095 60.3545 0 0]
+    }
+    midPoint		    [6.6284 65.2734]
+    chart		    2
+    linkNode		    [6 25 0]
+    visible		    0
+    dataLimits		    [0 20.31 60.355 66.516]
+    stampAngle		    -2.1665
+    subviewer		    6
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+      midPointSticky	      1
+    }
+    executionOrder	    1
+    ssIdNumber		    37
+  }
+  transition {
+    id			    36
+    labelPosition	    [865.985 321.996 7.354 14.197]
+    fontSize		    12
+    src {
+      id		      13
+      intersection	      [0 0 1 -1 864.5736 278.2381 0 0]
+    }
+    dst {
+      id		      5
+      intersection	      [1 0 -1 0.4953 864.5736 418.9691 0 0]
+    }
+    midPoint		    [864.5736 347.4022]
+    chart		    2
+    linkNode		    [8 27 37]
+    dataLimits		    [862.174 866.974 278.238 418.969]
+    stampAngle		    1.5708
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      SRC_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    105
+  }
+  transition {
+    id			    37
+    labelPosition	    [266.54 368.87 7.354 14.197]
+    fontSize		    12
+    src {
+      id		      14
+      intersection	      [0 0 -1 -1 266.5404 428.1885 0 0]
+    }
+    dst {
+      id		      3
+      intersection	      [3 0 1 0.7213 266.5404 325.2996 0 0]
+    }
+    midPoint		    [266.5404 378.7681]
+    chart		    2
+    linkNode		    [8 36 26]
+    dataLimits		    [264.14 268.94 325.3 428.188]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      SRC_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    103
+  }
+  transition {
+    id			    38
+    labelPosition	    [390.802 135.325 7.354 14.197]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 391.345 118.6582 0 0]
+    }
+    dst {
+      id		      8
+      intersection	      [1 0 -1 0.2347 391.345 156.3713 0 0]
+    }
+    midPoint		    [391.345 134.0739]
+    chart		    2
+    linkNode		    [2 0 0]
+    dataLimits		    [388.945 393.745 118.658 156.371]
+    subviewer		    2
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    94
+  }
+  transition {
+    id			    39
+    labelString		    "{afl_count=afl_threshold;\ncounter=afl_threshold;\ncfault=1;\nhistory_cfault=1;\naff_count++;}"
+    labelPosition	    [51.016 35.859 132.371 67.068]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 44.0379 27.6563 0 0]
+    }
+    dst {
+      id		      15
+      intersection	      [7 -0 -1 -1 44.0379 116.8686 0 0]
+    }
+    midPoint		    [44.0379 69.9411]
+    chart		    2
+    linkNode		    [5 0 41]
+    visible		    0
+    dataLimits		    [41.638 46.438 27.656 116.869]
+    subviewer		    5
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    163
+  }
+  transition {
+    id			    40
+    labelPosition	    [41.732 304.778 7.354 14.197]
+    fontSize		    12
+    src {
+      id		      22
+      intersection	      [0 0 1 -1 44.0379 318.6274 0 0]
+    }
+    dst {
+      id		      21
+      intersection	      [0 0 -1 -1 44.0379 345.3803 0 0]
+    }
+    midPoint		    [44.0379 328.3247]
+    chart		    2
+    linkNode		    [5 49 0]
+    visible		    0
+    dataLimits		    [41.638 46.438 318.627 345.38]
+    subviewer		    5
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    183
+  }
+  transition {
+    id			    41
+    labelString		    "[iwarn==1]"
+    labelPosition	    [102.539 103.953 55.89 14.197]
+    fontSize		    12
+    src {
+      id		      15
+      intersection	      [0 1 0 -1 51.0379 123.8686 0 0]
+    }
+    dst {
+      id		      16
+      intersection	      [0 -1 0 -1 169.2989 123.8686 0 0]
+    }
+    midPoint		    [108.4786 123.8686]
+    chart		    2
+    linkNode		    [5 39 42]
+    visible		    0
+    dataLimits		    [51.038 169.299 121.469 126.269]
+    subviewer		    5
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    167
+  }
+  transition {
+    id			    42
+    labelString		    "{fault_level = 1;}"
+    labelPosition	    [138.507 148.597 85.796 14.197]
+    fontSize		    12
+    src {
+      id		      16
+      intersection	      [0 -0.8929 0.4503 -1 170.0489 127.021 0 0]
+    }
+    dst {
+      id		      18
+      intersection	      [0 0.8929 -0.4503 -1 50.2879 187.4258 0 0]
+    }
+    midPoint		    [111.3691 156.6178]
+    chart		    2
+    linkNode		    [5 41 43]
+    visible		    0
+    dataLimits		    [50.288 170.049 127.021 187.426]
+    subviewer		    5
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    169
+  }
+  transition {
+    id			    43
+    labelPosition	    [44.038 157.669 7.354 14.197]
+    fontSize		    12
+    src {
+      id		      15
+      intersection	      [0 0 1 -1 44.0379 130.8686 0 0]
+    }
+    dst {
+      id		      18
+      intersection	      [0 0 -1 -1 44.0379 183.5781 0 0]
+    }
+    midPoint		    [44.0379 154.1085]
+    chart		    2
+    linkNode		    [5 42 44]
+    visible		    0
+    dataLimits		    [41.638 46.438 130.869 183.578]
+    subviewer		    5
+    drawStyle		    SMART
+    executionOrder	    2
+    ssIdNumber		    172
+  }
+  transition {
+    id			    44
+    labelString		    "[ifault==1]"
+    labelPosition	    [79.971 176.66 53.439 14.197]
+    fontSize		    12
+    src {
+      id		      18
+      intersection	      [0 1 0 -1 51.0379 190.5781 0 0]
+    }
+    dst {
+      id		      17
+      intersection	      [0 -1 0 -1 165.205 190.5781 0 0]
+    }
+    midPoint		    [106.3426 190.5781]
+    chart		    2
+    linkNode		    [5 43 45]
+    visible		    0
+    dataLimits		    [51.038 165.205 188.178 192.978]
+    subviewer		    5
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    173
+  }
+  transition {
+    id			    45
+    labelString		    "{fault_level = 2;}"
+    labelPosition	    [137.678 211.542 85.796 14.197]
+    fontSize		    12
+    src {
+      id		      17
+      intersection	      [0 -0.8964 0.4432 -1 165.9302 193.6808 0 0]
+    }
+    dst {
+      id		      20
+      intersection	      [0 0.8964 -0.4432 -1 50.3127 250.8504 0 0]
+    }
+    midPoint		    [109.4273 221.6199]
+    chart		    2
+    linkNode		    [5 44 46]
+    visible		    0
+    dataLimits		    [50.313 165.93 193.681 250.85]
+    subviewer		    5
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    175
+  }
+  transition {
+    id			    46
+    labelPosition	    [44.038 222.349 7.354 14.197]
+    fontSize		    12
+    src {
+      id		      18
+      intersection	      [0 0 1 -1 44.0379 197.5781 0 0]
+    }
+    dst {
+      id		      20
+      intersection	      [0 0 -1 -1 44.0379 246.9531 0 0]
+    }
+    midPoint		    [44.0379 219.0783]
+    chart		    2
+    linkNode		    [5 45 47]
+    visible		    0
+    dataLimits		    [41.638 46.438 197.578 246.953]
+    subviewer		    5
+    drawStyle		    SMART
+    executionOrder	    2
+    ssIdNumber		    177
+  }
+  transition {
+    id			    47
+    labelString		    "[ifatal==1]"
+    labelPosition	    [79.776 239.766 52.948 14.197]
+    fontSize		    12
+    src {
+      id		      20
+      intersection	      [0 1 0 -1 51.0379 253.9531 0 0]
+    }
+    dst {
+      id		      19
+      intersection	      [0 -1 0 -1 166.6937 253.9531 0 0]
+    }
+    midPoint		    [107.1193 253.9531]
+    chart		    2
+    linkNode		    [5 46 48]
+    visible		    0
+    dataLimits		    [51.038 166.694 251.553 256.353]
+    subviewer		    5
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    178
+  }
+  transition {
+    id			    48
+    labelString		    "{fault_level = 3;}"
+    labelPosition	    [133.468 277.238 85.796 14.197]
+    fontSize		    12
+    src {
+      id		      19
+      intersection	      [0 -0.9137 0.4064 -1 167.2979 256.7981 0 0]
+    }
+    dst {
+      id		      22
+      intersection	      [0 0.9137 -0.4064 -1 50.4336 308.7824 0 0]
+    }
+    midPoint		    [110.2182 282.1887]
+    chart		    2
+    linkNode		    [5 47 49]
+    visible		    0
+    dataLimits		    [50.434 167.298 256.798 308.782]
+    subviewer		    5
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    180
+  }
+  transition {
+    id			    49
+    labelPosition	    [44.038 282.254 7.354 14.197]
+    fontSize		    12
+    src {
+      id		      20
+      intersection	      [0 0 1 -1 44.0379 260.9531 0 0]
+    }
+    dst {
+      id		      22
+      intersection	      [0 0 -1 -1 44.0379 304.6274 0 0]
+    }
+    midPoint		    [44.0379 279.479]
+    chart		    2
+    linkNode		    [5 48 40]
+    visible		    0
+    dataLimits		    [41.638 46.438 260.953 304.627]
+    subviewer		    5
+    drawStyle		    SMART
+    executionOrder	    2
+    ssIdNumber		    182
+  }
+  data {
+    id			    50
+    ssIdNumber		    158
+    name		    "iwarn"
+    linkNode		    [2 0 51]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "boolean"
+  }
+  data {
+    id			    51
+    ssIdNumber		    61
+    name		    "afl_count"
+    linkNode		    [2 50 52]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_INT16_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "int16"
+  }
+  data {
+    id			    52
+    ssIdNumber		    108
+    name		    "aff_count"
+    linkNode		    [2 51 53]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    53
+    ssIdNumber		    62
+    name		    "afl_dec"
+    linkNode		    [2 52 54]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 1
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    54
+    ssIdNumber		    63
+    name		    "afl_inc"
+    linkNode		    [2 53 55]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 2
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    55
+    ssIdNumber		    64
+    name		    "afl_threshold"
+    linkNode		    [2 54 56]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 3
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    56
+    ssIdNumber		    65
+    name		    "cfault"
+    linkNode		    [2 55 57]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "boolean"
+  }
+  data {
+    id			    57
+    ssIdNumber		    66
+    name		    "history_cfault"
+    linkNode		    [2 56 58]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "boolean"
+  }
+  data {
+    id			    58
+    ssIdNumber		    67
+    name		    "ifault"
+    linkNode		    [2 57 59]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "boolean"
+  }
+  data {
+    id			    59
+    ssIdNumber		    109
+    name		    "aff_threshold"
+    linkNode		    [2 58 60]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    60
+    ssIdNumber		    157
+    name		    "counter"
+    linkNode		    [2 59 61]
+    scope		    LOCAL_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_INT16_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "int16"
+  }
+  data {
+    id			    61
+    ssIdNumber		    159
+    name		    "ifatal"
+    linkNode		    [2 60 62]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "boolean"
+  }
+  data {
+    id			    62
+    ssIdNumber		    161
+    name		    "fault_level"
+    linkNode		    [2 61 0]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "uint8"
+  }
+  instance {
+    id			    63
+    name		    "diagnostic2/diagnostic"
+    machine		    1
+    chart		    2
+  }
+  target {
+    id			    64
+    name		    "sfun"
+    description		    "Default Simulink S-Function Target."
+    machine		    1
+    linkNode		    [1 0 65]
+  }
+  target {
+    id			    65
+    name		    "rtw"
+    machine		    1
+    linkNode		    [1 64 0]
+  }
+}
