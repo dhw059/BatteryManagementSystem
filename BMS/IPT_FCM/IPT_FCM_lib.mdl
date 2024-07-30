@@ -1,0 +1,6145 @@
+Library {
+  Name			  "IPT_FCM_lib"
+  Version		  7.4
+  MdlSubVersion		  0
+  SavedCharacterEncoding  "GBK"
+  LibraryType		  "BlockLibrary"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  MaxMDLFileLineLength	  120
+  Created		  "Wed May 27 11:23:28 2015"
+  Creator		  "sunsijun"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "sunsijun"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Thu Oct 29 13:29:08 2015"
+  RTWModifiedTimeStamp	  368026146
+  ModelVersionFormat	  "1.%<AutoIncrement:22>"
+  ConfigurationManager	  "none"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "user"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      1
+      Version		      "1.6.0"
+      Array {
+	Type			"Handle"
+	Dimension		9
+	Simulink.SolverCC {
+	  $ObjectID		  2
+	  Version		  "1.6.0"
+	  StartTime		  "0.0"
+	  StopTime		  "10.0"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  Solver		  "ode45"
+	  SolverName		  "ode45"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  3
+	  Version		  "1.6.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  4
+	  Version		  "1.6.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    7
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  EnforceIntegerDowncast  on
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  2147483647
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  5
+	  Version		  "1.6.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Use local settings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  StrictBusMsg		  "Warning"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  6
+	  Version		  "1.6.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  7
+	  Version		  "1.6.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  8
+	  Version		  "1.6.0"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  9
+	  Version		  "1.6.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    6
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      10
+	      Version		      "1.6.0"
+	      Array {
+		Type			"Cell"
+		Dimension		19
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"SFDataObjDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M_T"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      SimulinkBlockComments   on
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      11
+	      Version		      "1.6.0"
+	      Array {
+		Type			"Cell"
+		Dimension		16
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"PortableWordSizes"
+		Cell			"PurelyIntegerCode"
+		Cell			"MultiInstanceERTCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      TargetFunctionLibrary   "None"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      PortableWordSizes	      off
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    on
+	      AutosarCompliant	      off
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	hdlcoderui.hdlcc {
+	  $ObjectID		  12
+	  Version		  "1.6.0"
+	  Description		  "HDL Coder custom configuration component"
+	  Name			  "HDL Coder"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    ""
+	    PropName		    "HDLConfigFile"
+	  }
+	  HDLCActiveTab		  "0"
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition    " [ 520, 225, 1400, 855 ] "
+    }
+    PropName		    "ConfigurationSets"
+  }
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      BusCreator
+      Inputs		      "4"
+      DisplayOption	      "none"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      From
+      IconDisplay	      "Tag"
+      TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ParamMin		      "[]"
+      ParamMax		      "[]"
+      ParameterDataTypeMode   "Same as input"
+      ParameterDataType	      "fixdt(1,16,0)"
+      ParameterScalingMode    "Best Precision: Matrix-wise"
+      ParameterScaling	      "[]"
+      ParamDataTypeStr	      "Inherit: Same as input"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Same as input"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Goto
+      IconDisplay	      "Tag"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      DataType		      "auto"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchByCopyingInsideSignal off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      DataType		      "auto"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Terminator
+    }
+    Block {
+      BlockType		      TriggerPort
+      TriggerType	      "rising"
+      StatesWhenEnabling      "inherit"
+      PropagateVarSize	      "During execution"
+      ShowOutputPort	      off
+      OutputDataType	      "auto"
+      SampleTimeType	      "triggered"
+      SampleTime	      "1"
+      ZeroCross		      on
+    }
+  }
+  System {
+    Name		    "IPT_FCM_lib"
+    Location		    [214, 82, 1902, 1027]
+    Open		    on
+    ModelBrowserVisibility  on
+    ModelBrowserWidth	    212
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "63"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    1332
+    Block {
+      BlockType		      SubSystem
+      Name		      "FCM_IPT"
+      SID		      1070
+      Ports		      [45, 13, 0, 1]
+      Position		      [960, 16, 1300, 1464]
+      LibraryVersion	      "*1.21"
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Function"
+      RTWFcnNameOpts	      "Use subsystem name"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"FCM_IPT"
+	Location		[214, 82, 1876, 1010]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"127"
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_enum_CRMRecgResult"
+	  SID			  1071
+	  Position		  [425, 358, 455, 372]
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "HLd_enum_CRMRecgResult"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_enum_CRMChagrSerNum"
+	  SID			  1072
+	  Position		  [425, 393, 455, 407]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "HLd_enum_CRMChagrSerNum"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_num_CRMChagrAreaCode"
+	  SID			  1073
+	  Position		  [425, 428, 455, 442]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "HLd_num_CRMChagrAreaCode"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_flg_CRMRX"
+	  SID			  1074
+	  Position		  [425, 463, 455, 477]
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "HLd_flg_CRMRX"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_second_CTSTimeSynInfor"
+	  SID			  1075
+	  Position		  [425, 548, 455, 562]
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_minute_CTSTimeSynInfor"
+	  SID			  1076
+	  Position		  [425, 583, 455, 597]
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_hour_CTSTimeSynInfor"
+	  SID			  1077
+	  Position		  [425, 618, 455, 632]
+	  Port			  "7"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_day_CTSTimeSynInfor"
+	  SID			  1078
+	  Position		  [425, 653, 455, 667]
+	  Port			  "8"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_month_CTSTimeSynInfor"
+	  SID			  1079
+	  Position		  [425, 688, 455, 702]
+	  Port			  "9"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_year_CTSTimeSynInfor"
+	  SID			  1080
+	  Position		  [425, 723, 455, 737]
+	  Port			  "10"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_flg_CTSRX"
+	  SID			  1081
+	  Position		  [425, 758, 455, 772]
+	  Port			  "11"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_v_CMLChagrMaxOptVolt"
+	  SID			  1082
+	  Position		  [425, 843, 455, 857]
+	  Port			  "12"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_v_CMLChagrMinOptVolt"
+	  SID			  1083
+	  Position		  [425, 878, 455, 892]
+	  Port			  "13"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_i_CMLChagrMaxOptCur"
+	  SID			  1084
+	  Position		  [425, 913, 455, 927]
+	  Port			  "14"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_flg_CMLRX"
+	  SID			  1085
+	  Position		  [425, 948, 455, 962]
+	  Port			  "15"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_enum_CROChagrOptReady"
+	  SID			  1086
+	  Position		  [430, 1028, 460, 1042]
+	  Port			  "16"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_flg_CRORX"
+	  SID			  1087
+	  Position		  [430, 1068, 460, 1082]
+	  Port			  "17"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_v_CCSChagrOptVolt"
+	  SID			  1088
+	  Position		  [430, 1153, 460, 1167]
+	  Port			  "18"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_i_CCSChagrOptCur"
+	  SID			  1089
+	  Position		  [430, 1188, 460, 1202]
+	  Port			  "19"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_tm_CCSChaTimeTotal"
+	  SID			  1090
+	  Position		  [430, 1223, 460, 1237]
+	  Port			  "20"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_flg_CCSRX"
+	  SID			  1091
+	  Position		  [430, 1258, 460, 1272]
+	  Port			  "21"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "HLd_flg_CCSRX"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_enum_CSTBMSChaStopResn1"
+	  SID			  1092
+	  Position		  [1780, 363, 1810, 377]
+	  Port			  "22"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_enum_CSTBMSChaStopResn2"
+	  SID			  1093
+	  Position		  [1780, 398, 1810, 412]
+	  Port			  "23"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_enum_CSTBMSChaStopResn3"
+	  SID			  1094
+	  Position		  [1780, 433, 1810, 447]
+	  Port			  "24"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_enum_CSTBMSChaFailResn1"
+	  SID			  1095
+	  Position		  [1780, 468, 1810, 482]
+	  Port			  "25"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_enum_CSTBMSChaFailResn2"
+	  SID			  1096
+	  Position		  [1780, 503, 1810, 517]
+	  Port			  "26"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_enum_CSTBMSChaFailResn3"
+	  SID			  1097
+	  Position		  [1780, 538, 1810, 552]
+	  Port			  "27"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_enum_CSTBMSChaFailResn4"
+	  SID			  1098
+	  Position		  [1780, 573, 1810, 587]
+	  Port			  "28"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_enum_CSTBMSChaFailResn5"
+	  SID			  1099
+	  Position		  [1780, 608, 1810, 622]
+	  Port			  "29"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_enum_CSTBMSChaFailResn6"
+	  SID			  1100
+	  Position		  [1780, 643, 1810, 657]
+	  Port			  "30"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_enum_CSTBMSChaErrResn1"
+	  SID			  1101
+	  Position		  [1780, 678, 1810, 692]
+	  Port			  "31"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_enum_CSTBMSChaErrResn2"
+	  SID			  1102
+	  Position		  [1780, 713, 1810, 727]
+	  Port			  "32"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_flg_CSTRX"
+	  SID			  1103
+	  Position		  [1780, 748, 1810, 762]
+	  Port			  "33"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_tm_CSDChaTimeTotal"
+	  SID			  1104
+	  Position		  [1780, 838, 1810, 852]
+	  Port			  "34"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_c_CSDOptEnergy"
+	  SID			  1105
+	  Position		  [1780, 873, 1810, 887]
+	  Port			  "35"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_enum_CSDChagrNum"
+	  SID			  1106
+	  Position		  [1780, 908, 1810, 922]
+	  Port			  "36"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_flg_CSDRX"
+	  SID			  1107
+	  Position		  [1780, 943, 1810, 957]
+	  Port			  "37"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_enum_CEMBRMTmOver3921"
+	  SID			  1108
+	  Position		  [1780, 1038, 1810, 1052]
+	  Port			  "38"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_enum_CEMBRMTmOver3922"
+	  SID			  1109
+	  Position		  [1780, 1078, 1810, 1092]
+	  Port			  "39"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_enum_CEMBRMTmOver3923"
+	  SID			  1110
+	  Position		  [1780, 1118, 1810, 1132]
+	  Port			  "40"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_enum_CEMBRMTmOver3924"
+	  SID			  1111
+	  Position		  [1780, 1158, 1810, 1172]
+	  Port			  "41"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_enum_CEMBRMTmOver3925"
+	  SID			  1112
+	  Position		  [1780, 1198, 1810, 1212]
+	  Port			  "42"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_enum_CEMBRMTmOver3926"
+	  SID			  1113
+	  Position		  [1780, 1238, 1810, 1252]
+	  Port			  "43"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_enum_CEMBRMTmOver3927"
+	  SID			  1114
+	  Position		  [1780, 1278, 1810, 1292]
+	  Port			  "44"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "HLd_flg_CEMRX"
+	  SID			  1115
+	  Position		  [1780, 1318, 1810, 1332]
+	  Port			  "45"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  TriggerPort
+	  Name			  "function"
+	  SID			  1116
+	  Ports			  []
+	  Position		  [1295, 135, 1333, 160]
+	  TriggerType		  "function-call"
+	  StatesWhenEnabling	  "held"
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator"
+	  SID			  1117
+	  Ports			  [8, 1]
+	  Position		  [2605, 1358, 2620, 1612]
+	  ShowName		  off
+	  Inputs		  "8"
+	  DisplayOption		  "bar"
+	  Port {
+	    PortNumber		    1
+	    Name		    "IPTd_flg_RX"
+	    PropagatedSignals	    "IPTd_flg_CRMRX, IPTd_flg_CTSRX, IPTd_flg_CMLRX, IPTd_flg_CRORX, IPTd_flg_CCSRX, IPTd_flg_C"
+	    "STRX, IPTd_flg_CSDRX, IPTd_flg_CEMRX"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator1"
+	  SID			  1118
+	  Ports			  [11, 1]
+	  Position		  [2600, 361, 2610, 729]
+	  ShowName		  off
+	  Inputs		  "11"
+	  DisplayOption		  "bar"
+	  Port {
+	    PortNumber		    1
+	    Name		    "IPTd_enum_CSTChaStopFailResn"
+	    PropagatedSignals	    "IPTd_enum_CSTBMSChaStopResn1, IPTd_enum_CSTBMSChaStopResn2, IPTd_enum_CSTBMSChaStopResn3, "
+	    "IPTd_enum_CSTBMSChaFailResn1, IPTd_enum_CSTBMSChaFailResn2, IPTd_enum_CSTBMSChaFailResn3, IPTd_enum_CSTBMSChaFail"
+	    "Resn4, IPTd_enum_CSTBMSChaFailResn5, IPTd_enum_CSTBMSChaFailResn6, IPTd_enum_CSTBMSChaErrResn1, IPTd_enum_CSTBMSC"
+	    "haErrResn2"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator2"
+	  SID			  1119
+	  Ports			  [7, 1]
+	  Position		  [2605, 1022, 2620, 1308]
+	  ShowName		  off
+	  Inputs		  "7"
+	  DisplayOption		  "bar"
+	  Port {
+	    PortNumber		    1
+	    Name		    "IPTd_enum_CEMTimeOver"
+	    PropagatedSignals	    "IPTd_enum_CEMTimeOver3921, IPTd_enum_CEMTimeOver3922, IPTd_enum_CEMTimeOver3923, IPTd_enum"
+	    "_CEMTimeOver3924, IPTd_enum_CEMTimeOver3925, IPTd_enum_CEMTimeOver3926, IPTd_enum_CEMTimeOver3927"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "FCM_CCS_50ms"
+	  SID			  1120
+	  Ports			  [4, 4]
+	  Position		  [625, 1144, 1020, 1281]
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Reusable function"
+	  RTWFcnNameOpts	  "Use subsystem name"
+	  RTWFileNameOpts	  "Use subsystem name"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "IPTd_v_CCSChagrOptVolt"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    2
+	    PropagatedSignals	    "IPTd_i_CCSChagrOptCur"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    3
+	    PropagatedSignals	    "IPTd_tm_CCSChaTimeTotal"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    4
+	    PropagatedSignals	    "IPTd_flg_CCSRX"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  System {
+	    Name		    "FCM_CCS_50ms"
+	    Location		    [202, 82, 1902, 1010]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "137"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_v_CCSChagrOptVolt"
+	      SID		      1121
+	      Position		      [190, 203, 220, 217]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_i_CCSChagrOptCur"
+	      SID		      1122
+	      Position		      [190, 323, 220, 337]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_tm_CCSChaTimeTotal"
+	      SID		      1123
+	      Position		      [190, 433, 220, 447]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"HLd_tm_CCSChaTimeTotal"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_flg_CCSRX"
+	      SID		      1124
+	      Position		      [190, 498, 220, 512]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"HLd_flg_CCSRX"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "CAN to Actual Value"
+	      SID		      1125
+	      Ports		      [1, 1]
+	      Position		      [355, 190, 500, 230]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[GAIN=%<gain>]\\n[OFFSET=%<offset>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/CAN to Actual Value"
+	      SourceType	      "Value Conversion"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      gain		      "0.1"
+	      offset		      "0"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "CAN to Actual Value1"
+	      SID		      1126
+	      Ports		      [1, 1]
+	      Position		      [350, 310, 495, 350]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[GAIN=%<gain>]\\n[OFFSET=%<offset>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/CAN to Actual Value"
+	      SourceType	      "Value Conversion"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      gain		      "0.1"
+	      offset		      "-400"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "saturation"
+	      SID		      1127
+	      Ports		      [1, 1]
+	      Position		      [815, 420, 960, 460]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[UPPER_LIMIT=%<upper_limit>]\\n[LOWER_LIMIT=%<lower_limit>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/saturation"
+	      SourceType	      "saturation"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      upper_limit	      "600"
+	      lower_limit	      "0"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_tm_CCSChaTimeTotal"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "saturation1"
+	      SID		      1128
+	      Ports		      [1, 1]
+	      Position		      [810, 190, 955, 230]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[UPPER_LIMIT=%<upper_limit>]\\n[LOWER_LIMIT=%<lower_limit>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/saturation"
+	      SourceType	      "saturation"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      upper_limit	      "750"
+	      lower_limit	      "0"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_v_CCSChagrOptVolt"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "saturation2"
+	      SID		      1129
+	      Ports		      [1, 1]
+	      Position		      [810, 310, 955, 350]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[UPPER_LIMIT=%<upper_limit>]\\n[LOWER_LIMIT=%<lower_limit>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/saturation"
+	      SourceType	      "saturation"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      upper_limit	      "0"
+	      lower_limit	      "-400"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_i_CCSChagrOptCur"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "signal_debug1"
+	      SID		      1130
+	      Ports		      [1, 1]
+	      Position		      [575, 190, 720, 230]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[SWITCH=%<debug_switch>]\\n[VALUE=%<debug_value>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/signal_debug"
+	      SourceType	      "signal debug"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      debug_switch	      "IPTc_dbgsw_CCSChagrOptVolt"
+	      debug_value	      "IPTc_dbgval_CCSChagrOptVolt"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "signal_debug3"
+	      SID		      1131
+	      Ports		      [1, 1]
+	      Position		      [575, 485, 720, 525]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[SWITCH=%<debug_switch>]\\n[VALUE=%<debug_value>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/signal_debug"
+	      SourceType	      "signal debug"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      debug_switch	      "IPTc_dbgsw_CCSRX"
+	      debug_value	      "IPTc_dbgval_CCSRX"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_flg_CCSRX"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "signal_debug5"
+	      SID		      1132
+	      Ports		      [1, 1]
+	      Position		      [575, 310, 720, 350]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[SWITCH=%<debug_switch>]\\n[VALUE=%<debug_value>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/signal_debug"
+	      SourceType	      "signal debug"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      debug_switch	      "IPTc_dbgsw_CCSChagrOptCur"
+	      debug_value	      "IPTc_dbgval_CCSChagrOptCur"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_v_CCSChagrOptVolt"
+	      SID		      1133
+	      Position		      [1295, 203, 1325, 217]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_i_CCSChagrOptCur"
+	      SID		      1134
+	      Position		      [1295, 323, 1325, 337]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_tm_CCSChaTimeTotal"
+	      SID		      1135
+	      Position		      [1295, 433, 1325, 447]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_flg_CCSRX"
+	      SID		      1136
+	      Position		      [1290, 498, 1320, 512]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "HLd_flg_CCSRX"
+	      SrcPort		      1
+	      DstBlock		      "signal_debug3"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_flg_CCSRX"
+	      Labels		      [0, 0]
+	      SrcBlock		      "signal_debug3"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_flg_CCSRX"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_i_CCSChagrOptCur"
+	      Labels		      [0, 0]
+	      SrcBlock		      "saturation2"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_i_CCSChagrOptCur"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_v_CCSChagrOptVolt"
+	      Labels		      [0, 0]
+	      SrcBlock		      "saturation1"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_v_CCSChagrOptVolt"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "HLd_i_CCSChagrOptCur"
+	      SrcPort		      1
+	      DstBlock		      "CAN to Actual Value1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "HLd_v_CCSChagrOptVolt"
+	      SrcPort		      1
+	      DstBlock		      "CAN to Actual Value"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "signal_debug1"
+	      SrcPort		      1
+	      DstBlock		      "saturation1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "CAN to Actual Value1"
+	      SrcPort		      1
+	      DstBlock		      "signal_debug5"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "CAN to Actual Value"
+	      SrcPort		      1
+	      DstBlock		      "signal_debug1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "signal_debug5"
+	      SrcPort		      1
+	      DstBlock		      "saturation2"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_tm_CCSChaTimeTotal"
+	      Labels		      [0, 0]
+	      SrcBlock		      "saturation"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_tm_CCSChaTimeTotal"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "HLd_tm_CCSChaTimeTotal"
+	      SrcPort		      1
+	      DstBlock		      "saturation"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "FCM_CEM_250ms"
+	  SID			  1137
+	  Ports			  [8, 8]
+	  Position		  [2030, 1020, 2425, 1350]
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Reusable function"
+	  RTWFcnNameOpts	  "Use subsystem name"
+	  RTWFileNameOpts	  "Use subsystem name"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "IPTd_enum_CEMTimeOver3921"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    2
+	    PropagatedSignals	    "IPTd_enum_CEMTimeOver3922"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    3
+	    PropagatedSignals	    "IPTd_enum_CEMTimeOver3923"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    4
+	    PropagatedSignals	    "IPTd_enum_CEMTimeOver3924"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    5
+	    PropagatedSignals	    "IPTd_enum_CEMTimeOver3925"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    6
+	    PropagatedSignals	    "IPTd_enum_CEMTimeOver3926"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    7
+	    PropagatedSignals	    "IPTd_enum_CEMTimeOver3927"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    8
+	    PropagatedSignals	    "IPTd_flg_CEMRX"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  System {
+	    Name		    "FCM_CEM_250ms"
+	    Location		    [202, 82, 1902, 1027]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "130"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_enum_CEMBRMTmOver3921"
+	      SID		      1138
+	      Position		      [115, 128, 145, 142]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_enum_CEMBRMTmOver3922"
+	      SID		      1139
+	      Position		      [115, 203, 145, 217]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"HLd_enum_CEMBRMTmOver3922"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_enum_CEMBRMTmOver3923"
+	      SID		      1140
+	      Position		      [115, 283, 145, 297]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"HLd_enum_CEMBRMTmOver3923"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_enum_CEMBRMTmOver3924"
+	      SID		      1141
+	      Position		      [115, 358, 145, 372]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_enum_CEMBRMTmOver3925"
+	      SID		      1142
+	      Position		      [115, 438, 145, 452]
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_enum_CEMBRMTmOver3926"
+	      SID		      1143
+	      Position		      [115, 513, 145, 527]
+	      Port		      "6"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_enum_CEMBRMTmOver3927"
+	      SID		      1144
+	      Position		      [120, 583, 150, 597]
+	      Port		      "7"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_flg_CEMRX"
+	      SID		      1145
+	      Position		      [120, 663, 150, 677]
+	      Port		      "8"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "signal_debug1"
+	      SID		      1146
+	      Ports		      [1, 1]
+	      Position		      [495, 190, 640, 230]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[SWITCH=%<debug_switch>]\\n[VALUE=%<debug_value>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/signal_debug"
+	      SourceType	      "signal debug"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      debug_switch	      "IPTc_dbgsw_CEMBRMTmOver3922"
+	      debug_value	      "IPTc_dbgval_CEMBRMTmOver3922"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_enum_CEMTimeOver3922"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "signal_debug12"
+	      SID		      1147
+	      Ports		      [1, 1]
+	      Position		      [495, 650, 640, 690]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[SWITCH=%<debug_switch>]\\n[VALUE=%<debug_value>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/signal_debug"
+	      SourceType	      "signal debug"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      debug_switch	      "IPTc_dbgsw_CSDRX"
+	      debug_value	      "IPTc_dbgval_CSDRX"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_flg_CEMRX"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "signal_debug2"
+	      SID		      1148
+	      Ports		      [1, 1]
+	      Position		      [495, 270, 640, 310]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[SWITCH=%<debug_switch>]\\n[VALUE=%<debug_value>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/signal_debug"
+	      SourceType	      "signal debug"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      debug_switch	      "IPTc_dbgsw_CEMBRMTmOver3923"
+	      debug_value	      "IPTc_dbgval_CEMBRMTmOver3923"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_enum_CEMTimeOver3923"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "signal_debug3"
+	      SID		      1149
+	      Ports		      [1, 1]
+	      Position		      [495, 345, 640, 385]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[SWITCH=%<debug_switch>]\\n[VALUE=%<debug_value>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/signal_debug"
+	      SourceType	      "signal debug"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      debug_switch	      "IPTc_dbgsw_CEMBRMTmOver3924"
+	      debug_value	      "IPTc_dbgval_CEMBRMTmOver3924"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_enum_CEMTimeOver3924"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "signal_debug4"
+	      SID		      1150
+	      Ports		      [1, 1]
+	      Position		      [495, 115, 640, 155]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[SWITCH=%<debug_switch>]\\n[VALUE=%<debug_value>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/signal_debug"
+	      SourceType	      "signal debug"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      debug_switch	      "IPTc_dbgsw_CEMBRMTmOver3921"
+	      debug_value	      "IPTc_dbgval_CEMBRMTmOver3921"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_enum_CEMTimeOver3921"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "signal_debug5"
+	      SID		      1151
+	      Ports		      [1, 1]
+	      Position		      [495, 425, 640, 465]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[SWITCH=%<debug_switch>]\\n[VALUE=%<debug_value>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/signal_debug"
+	      SourceType	      "signal debug"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      debug_switch	      "IPTc_dbgsw_CEMBRMTmOver3925"
+	      debug_value	      "IPTc_dbgval_CEMBRMTmOver3925"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_enum_CEMTimeOver3925"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "signal_debug6"
+	      SID		      1152
+	      Ports		      [1, 1]
+	      Position		      [495, 500, 640, 540]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[SWITCH=%<debug_switch>]\\n[VALUE=%<debug_value>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/signal_debug"
+	      SourceType	      "signal debug"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      debug_switch	      "IPTc_dbgsw_CEMBRMTmOver3926"
+	      debug_value	      "IPTc_dbgval_CEMBRMTmOver3926"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_enum_CEMTimeOver3926"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "signal_debug7"
+	      SID		      1153
+	      Ports		      [1, 1]
+	      Position		      [495, 570, 640, 610]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[SWITCH=%<debug_switch>]\\n[VALUE=%<debug_value>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/signal_debug"
+	      SourceType	      "signal debug"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      debug_switch	      "IPTc_dbgsw_CEMBRMTmOver3927"
+	      debug_value	      "IPTc_dbgval_CEMBRMTmOver3927"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_enum_CEMTimeOver3927"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_enum_CEMTimeOver3921"
+	      SID		      1154
+	      Position		      [865, 128, 895, 142]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_enum_CEMTimeOver3922"
+	      SID		      1155
+	      Position		      [865, 203, 895, 217]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_enum_CEMTimeOver3923"
+	      SID		      1156
+	      Position		      [865, 283, 895, 297]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_enum_CEMTimeOver3924"
+	      SID		      1157
+	      Position		      [865, 358, 895, 372]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_enum_CEMTimeOver3925"
+	      SID		      1158
+	      Position		      [865, 438, 895, 452]
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_enum_CEMTimeOver3926"
+	      SID		      1159
+	      Position		      [865, 513, 895, 527]
+	      Port		      "6"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_enum_CEMTimeOver3927"
+	      SID		      1160
+	      Position		      [865, 583, 895, 597]
+	      Port		      "7"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_flg_CEMRX"
+	      SID		      1161
+	      Position		      [870, 663, 900, 677]
+	      Port		      "8"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      Name		      "IPTd_flg_CEMRX"
+	      Labels		      [0, 0]
+	      SrcBlock		      "signal_debug12"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_flg_CEMRX"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "HLd_flg_CEMRX"
+	      SrcPort		      1
+	      DstBlock		      "signal_debug12"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_enum_CEMTimeOver3925"
+	      Labels		      [0, 0]
+	      SrcBlock		      "signal_debug5"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_enum_CEMTimeOver3925"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_enum_CEMTimeOver3927"
+	      Labels		      [0, 0]
+	      SrcBlock		      "signal_debug7"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_enum_CEMTimeOver3927"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_enum_CEMTimeOver3926"
+	      Labels		      [0, 0]
+	      SrcBlock		      "signal_debug6"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_enum_CEMTimeOver3926"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "HLd_enum_CEMBRMTmOver3927"
+	      SrcPort		      1
+	      DstBlock		      "signal_debug7"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "HLd_enum_CEMBRMTmOver3926"
+	      SrcPort		      1
+	      DstBlock		      "signal_debug6"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "HLd_enum_CEMBRMTmOver3925"
+	      SrcPort		      1
+	      DstBlock		      "signal_debug5"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "HLd_enum_CEMBRMTmOver3924"
+	      SrcPort		      1
+	      DstBlock		      "signal_debug3"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_enum_CEMTimeOver3924"
+	      Labels		      [0, 0]
+	      SrcBlock		      "signal_debug3"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_enum_CEMTimeOver3924"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_enum_CEMTimeOver3923"
+	      Labels		      [0, 0]
+	      SrcBlock		      "signal_debug2"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_enum_CEMTimeOver3923"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "HLd_enum_CEMBRMTmOver3923"
+	      SrcPort		      1
+	      DstBlock		      "signal_debug2"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_enum_CEMTimeOver3922"
+	      Labels		      [0, 0]
+	      SrcBlock		      "signal_debug1"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_enum_CEMTimeOver3922"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "HLd_enum_CEMBRMTmOver3922"
+	      SrcPort		      1
+	      DstBlock		      "signal_debug1"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_enum_CEMTimeOver3921"
+	      Labels		      [0, 0]
+	      SrcBlock		      "signal_debug4"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_enum_CEMTimeOver3921"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "HLd_enum_CEMBRMTmOver3921"
+	      SrcPort		      1
+	      DstBlock		      "signal_debug4"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "FCM_CML_250ms"
+	  SID			  1162
+	  Ports			  [4, 4]
+	  Position		  [625, 831, 1030, 974]
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Reusable function"
+	  RTWFcnNameOpts	  "Use subsystem name"
+	  RTWFileNameOpts	  "Use subsystem name"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "IPTd_v_CMLChagrMaxOptVolt"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    2
+	    PropagatedSignals	    "IPTd_v_CMLChagrMinOptVolt"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    3
+	    PropagatedSignals	    "IPTd_i_CMLChagrMaxOptCur"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    4
+	    PropagatedSignals	    "IPTd_flg_CMLRX"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  System {
+	    Name		    "FCM_CML_250ms"
+	    Location		    [2, 82, 1702, 1027]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "148"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_v_CMLChagrMaxOptVolt"
+	      SID		      1163
+	      Position		      [110, 178, 140, 192]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_v_CMLChagrMinOptVolt"
+	      SID		      1164
+	      Position		      [110, 303, 140, 317]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_i_CMLChagrMaxOptCur"
+	      SID		      1165
+	      Position		      [110, 458, 140, 472]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_flg_CMLRX"
+	      SID		      1166
+	      Position		      [110, 578, 140, 592]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "CAN to Actual Value"
+	      SID		      1167
+	      Ports		      [1, 1]
+	      Position		      [285, 165, 430, 205]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[GAIN=%<gain>]\\n[OFFSET=%<offset>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/CAN to Actual Value"
+	      SourceType	      "Value Conversion"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      gain		      "0.1"
+	      offset		      "0"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "CAN to Actual Value1"
+	      SID		      1168
+	      Ports		      [1, 1]
+	      Position		      [280, 290, 425, 330]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[GAIN=%<gain>]\\n[OFFSET=%<offset>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/CAN to Actual Value"
+	      SourceType	      "Value Conversion"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      gain		      "0.1"
+	      offset		      "0"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "CAN to Actual Value2"
+	      SID		      1169
+	      Ports		      [1, 1]
+	      Position		      [280, 445, 425, 485]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[GAIN=%<gain>]\\n[OFFSET=%<offset>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/CAN to Actual Value"
+	      SourceType	      "Value Conversion"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      gain		      "0.1"
+	      offset		      "-400"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "debounce"
+	      SID		      1327
+	      Ports		      [1, 1]
+	      Position		      [285, 565, 430, 605]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[DEBOUNCE_TIME=%<debounce_time>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/debounce"
+	      SourceType	      "debounce"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      debounce_time	      "30"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "saturation1"
+	      SID		      1170
+	      Ports		      [1, 1]
+	      Position		      [715, 165, 860, 205]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[UPPER_LIMIT=%<upper_limit>]\\n[LOWER_LIMIT=%<lower_limit>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/saturation"
+	      SourceType	      "saturation"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      upper_limit	      "750"
+	      lower_limit	      "0"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_v_CMLChagrMaxOptVolt"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "saturation2"
+	      SID		      1171
+	      Ports		      [1, 1]
+	      Position		      [715, 290, 860, 330]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[UPPER_LIMIT=%<upper_limit>]\\n[LOWER_LIMIT=%<lower_limit>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/saturation"
+	      SourceType	      "saturation"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      upper_limit	      "750"
+	      lower_limit	      "0"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_v_CMLChagrMinOptVolt"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "saturation3"
+	      SID		      1172
+	      Ports		      [1, 1]
+	      Position		      [715, 445, 860, 485]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[UPPER_LIMIT=%<upper_limit>]\\n[LOWER_LIMIT=%<lower_limit>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/saturation"
+	      SourceType	      "saturation"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      upper_limit	      "0"
+	      lower_limit	      "-400"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_i_CMLChagrMaxOptCur"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "signal_debug1"
+	      SID		      1173
+	      Ports		      [1, 1]
+	      Position		      [495, 165, 640, 205]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[SWITCH=%<debug_switch>]\\n[VALUE=%<debug_value>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/signal_debug"
+	      SourceType	      "signal debug"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      debug_switch	      "IPTc_dbgsw_CMLChagrMaxOptVolt"
+	      debug_value	      "IPTc_dbgval_CMLChagrMaxOptVolt"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "signal_debug2"
+	      SID		      1174
+	      Ports		      [1, 1]
+	      Position		      [490, 290, 635, 330]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[SWITCH=%<debug_switch>]\\n[VALUE=%<debug_value>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/signal_debug"
+	      SourceType	      "signal debug"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      debug_switch	      "IPTc_dbgsw_CMLChagrMinOptVolt"
+	      debug_value	      "IPTc_dbgval_CMLChagrMinOptVolt"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "signal_debug3"
+	      SID		      1175
+	      Ports		      [1, 1]
+	      Position		      [490, 565, 635, 605]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[SWITCH=%<debug_switch>]\\n[VALUE=%<debug_value>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/signal_debug"
+	      SourceType	      "signal debug"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      debug_switch	      "IPTc_dbgsw_CMLRX"
+	      debug_value	      "IPTc_dbgval_CMLRX"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_flg_CMLRX"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "signal_debug5"
+	      SID		      1176
+	      Ports		      [1, 1]
+	      Position		      [490, 445, 635, 485]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[SWITCH=%<debug_switch>]\\n[VALUE=%<debug_value>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/signal_debug"
+	      SourceType	      "signal debug"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      debug_switch	      "IPTc_dbgsw_CMLChagrMaxOptCur"
+	      debug_value	      "IPTc_dbgval_CMLChagrMaxOptCur"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_v_CMLChagrMaxOptVolt"
+	      SID		      1177
+	      Position		      [1070, 178, 1100, 192]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_v_CMLChagrMinOptVolt"
+	      SID		      1178
+	      Position		      [1070, 303, 1100, 317]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_i_CMLChagrMaxOptCur"
+	      SID		      1179
+	      Position		      [1070, 458, 1100, 472]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_flg_CMLRX"
+	      SID		      1180
+	      Position		      [1075, 578, 1105, 592]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "debounce"
+	      SrcPort		      1
+	      DstBlock		      "signal_debug3"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "HLd_flg_CMLRX"
+	      SrcPort		      1
+	      DstBlock		      "debounce"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_flg_CMLRX"
+	      Labels		      [0, 0]
+	      SrcBlock		      "signal_debug3"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_flg_CMLRX"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_i_CMLChagrMaxOptCur"
+	      Labels		      [0, 0]
+	      SrcBlock		      "saturation3"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_i_CMLChagrMaxOptCur"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_v_CMLChagrMinOptVolt"
+	      Labels		      [0, 0]
+	      SrcBlock		      "saturation2"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_v_CMLChagrMinOptVolt"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "signal_debug1"
+	      SrcPort		      1
+	      DstBlock		      "saturation1"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_v_CMLChagrMaxOptVolt"
+	      Labels		      [0, 0]
+	      SrcBlock		      "saturation1"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_v_CMLChagrMaxOptVolt"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "HLd_i_CMLChagrMaxOptCur"
+	      SrcPort		      1
+	      DstBlock		      "CAN to Actual Value2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "HLd_v_CMLChagrMinOptVolt"
+	      SrcPort		      1
+	      DstBlock		      "CAN to Actual Value1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "HLd_v_CMLChagrMaxOptVolt"
+	      SrcPort		      1
+	      DstBlock		      "CAN to Actual Value"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "signal_debug5"
+	      SrcPort		      1
+	      DstBlock		      "saturation3"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "CAN to Actual Value2"
+	      SrcPort		      1
+	      DstBlock		      "signal_debug5"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "CAN to Actual Value1"
+	      SrcPort		      1
+	      DstBlock		      "signal_debug2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "signal_debug2"
+	      SrcPort		      1
+	      DstBlock		      "saturation2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "CAN to Actual Value"
+	      SrcPort		      1
+	      DstBlock		      "signal_debug1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "FCM_CRM_250ms"
+	  SID			  1181
+	  Ports			  [4, 4]
+	  Position		  [625, 350, 1020, 485]
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Reusable function"
+	  RTWFcnNameOpts	  "Use subsystem name"
+	  RTWFileNameOpts	  "Use subsystem name"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "IPTd_enum_CRMRecgResult"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    2
+	    PropagatedSignals	    "IPTd_enum_CRMChagrSerNum"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    3
+	    PropagatedSignals	    "IPTd_num_CRMChagrAreaCode"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    4
+	    PropagatedSignals	    "IPTd_flg_CRMRX"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  System {
+	    Name		    "FCM_CRM_250ms"
+	    Location		    [2, 82, 1702, 1027]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "144"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_enum_CRMRecgResult"
+	      SID		      1182
+	      Position		      [90, 198, 120, 212]
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"HLd_enum_CRMRecgResult"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_enum_CRMChagrSerNum"
+	      SID		      1183
+	      Position		      [90, 323, 120, 337]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"HLd_enum_CRMChagrSerNum"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_num_CRMChagrAreaCode"
+	      SID		      1184
+	      Position		      [90, 423, 120, 437]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"HLd_num_CRMChagrAreaCode"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_flg_CRMRX"
+	      SID		      1185
+	      Position		      [90, 493, 120, 507]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"HLd_flg_CRMRX"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "CAN to Actual Value1"
+	      SID		      1186
+	      Ports		      [1, 1]
+	      Position		      [285, 310, 430, 350]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[GAIN=%<gain>]\\n[OFFSET=%<offset>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/CAN to Actual Value"
+	      SourceType	      "Value Conversion"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      gain		      "1"
+	      offset		      "1"
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Gain"
+	      SID		      1187
+	      Position		      [480, 415, 510, 445]
+	      ShowName		      off
+	      ParameterDataTypeMode   "Inherit via internal rule"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	      Port {
+		PortNumber		1
+		Name			"IPTd_num_CRMChagrAreaCode"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "saturation1"
+	      SID		      1188
+	      Ports		      [1, 1]
+	      Position		      [725, 185, 870, 225]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[UPPER_LIMIT=%<upper_limit>]\\n[LOWER_LIMIT=%<lower_limit>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/saturation"
+	      SourceType	      "saturation"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      upper_limit	      "255"
+	      lower_limit	      "0"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_enum_CRMRecgResult"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "saturation2"
+	      SID		      1189
+	      Ports		      [1, 1]
+	      Position		      [725, 310, 870, 350]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[UPPER_LIMIT=%<upper_limit>]\\n[LOWER_LIMIT=%<lower_limit>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/saturation"
+	      SourceType	      "saturation"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      upper_limit	      "100"
+	      lower_limit	      "1"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_enum_CRMChagrSerNum"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "signal_debug"
+	      SID		      1190
+	      Ports		      [1, 1]
+	      Position		      [480, 185, 625, 225]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[SWITCH=%<debug_switch>]\\n[VALUE=%<debug_value>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/signal_debug"
+	      SourceType	      "signal debug"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      debug_switch	      "IPTc_dbgsw_CRMRecgResult"
+	      debug_value	      "IPTc_dbgval_CRMRecgResult"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "signal_debug1"
+	      SID		      1191
+	      Ports		      [1, 1]
+	      Position		      [480, 310, 625, 350]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[SWITCH=%<debug_switch>]\\n[VALUE=%<debug_value>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/signal_debug"
+	      SourceType	      "signal debug"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      debug_switch	      "IPTc_dbgsw_CRMChagrSerNum"
+	      debug_value	      "IPTc_dbgval_CRMChagrSerNum"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "signal_debug3"
+	      SID		      1192
+	      Ports		      [1, 1]
+	      Position		      [480, 480, 625, 520]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[SWITCH=%<debug_switch>]\\n[VALUE=%<debug_value>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/signal_debug"
+	      SourceType	      "signal debug"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      debug_switch	      "IPTc_dbgsw_CRMRX"
+	      debug_value	      "IPTc_dbgval_CRMRX"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_flg_CRMRX"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_enum_CRMRecgResult"
+	      SID		      1193
+	      Position		      [1085, 198, 1115, 212]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_enum_CRMChagrSerNum"
+	      SID		      1194
+	      Position		      [1085, 323, 1115, 337]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_num_CRMChagrAreaCode"
+	      SID		      1195
+	      Position		      [1085, 423, 1115, 437]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_flg_CRMRX"
+	      SID		      1196
+	      Position		      [1085, 493, 1115, 507]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      Name		      "IPTd_flg_CRMRX"
+	      Labels		      [0, 0]
+	      SrcBlock		      "signal_debug3"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_flg_CRMRX"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "HLd_flg_CRMRX"
+	      SrcPort		      1
+	      DstBlock		      "signal_debug3"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_enum_CRMChagrSerNum"
+	      Labels		      [0, 0]
+	      SrcBlock		      "saturation2"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_enum_CRMChagrSerNum"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_enum_CRMRecgResult"
+	      Labels		      [0, 0]
+	      SrcBlock		      "saturation1"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_enum_CRMRecgResult"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_num_CRMChagrAreaCode"
+	      Labels		      [0, 0]
+	      SrcBlock		      "Gain"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_num_CRMChagrAreaCode"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "CAN to Actual Value1"
+	      SrcPort		      1
+	      DstBlock		      "signal_debug1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "signal_debug1"
+	      SrcPort		      1
+	      DstBlock		      "saturation2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "signal_debug"
+	      SrcPort		      1
+	      DstBlock		      "saturation1"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "HLd_enum_CRMRecgResult"
+	      SrcPort		      1
+	      DstBlock		      "signal_debug"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "HLd_num_CRMChagrAreaCode"
+	      SrcPort		      1
+	      DstBlock		      "Gain"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "HLd_enum_CRMChagrSerNum"
+	      SrcPort		      1
+	      DstBlock		      "CAN to Actual Value1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "FCM_CRO_250ms"
+	  SID			  1197
+	  Ports			  [2, 2]
+	  Position		  [625, 1014, 1025, 1096]
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Reusable function"
+	  RTWFcnNameOpts	  "Use subsystem name"
+	  RTWFileNameOpts	  "Use subsystem name"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "IPTd_enum_CROChagrOptReady"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    2
+	    PropagatedSignals	    "IPTd_flg_CRORX"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  System {
+	    Name		    "FCM_CRO_250ms"
+	    Location		    [2, 82, 1902, 1027]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "137"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_enum_CROChagrOptReady"
+	      SID		      1198
+	      Position		      [185, 178, 215, 192]
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"HLd_enum_CROChagrOptReady"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_flg_CRORX"
+	      SID		      1199
+	      Position		      [185, 283, 215, 297]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "debounce"
+	      SID		      1328
+	      Ports		      [1, 1]
+	      Position		      [305, 270, 450, 310]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[DEBOUNCE_TIME=%<debounce_time>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/debounce"
+	      SourceType	      "debounce"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      debounce_time	      "30"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "signal_debug"
+	      SID		      1200
+	      Ports		      [1, 1]
+	      Position		      [550, 165, 695, 205]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[SWITCH=%<debug_switch>]\\n[VALUE=%<debug_value>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/signal_debug"
+	      SourceType	      "signal debug"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      debug_switch	      "IPTc_dbgsw_CROChagrOptReady"
+	      debug_value	      "IPTc_dbgval_CROChagrOptReady"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_enum_CROChagrOptReady"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "signal_debug3"
+	      SID		      1201
+	      Ports		      [1, 1]
+	      Position		      [550, 270, 695, 310]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[SWITCH=%<debug_switch>]\\n[VALUE=%<debug_value>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/signal_debug"
+	      SourceType	      "signal debug"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      debug_switch	      "IPTc_dbgsw_CRORX"
+	      debug_value	      "IPTc_dbgval_CRORX"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_flg_CRORX"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_enum_CROChagrOptReady"
+	      SID		      1202
+	      Position		      [915, 178, 945, 192]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_flg_CRORX"
+	      SID		      1203
+	      Position		      [915, 283, 945, 297]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "debounce"
+	      SrcPort		      1
+	      DstBlock		      "signal_debug3"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "HLd_flg_CRORX"
+	      SrcPort		      1
+	      DstBlock		      "debounce"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_flg_CRORX"
+	      Labels		      [0, 0]
+	      SrcBlock		      "signal_debug3"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_flg_CRORX"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_enum_CROChagrOptReady"
+	      Labels		      [0, 0]
+	      SrcBlock		      "signal_debug"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_enum_CROChagrOptReady"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "HLd_enum_CROChagrOptReady"
+	      SrcPort		      1
+	      DstBlock		      "signal_debug"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "FCM_CSD_250ms"
+	  SID			  1204
+	  Ports			  [4, 4]
+	  Position		  [2030, 825, 2425, 970]
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Reusable function"
+	  RTWFcnNameOpts	  "Use subsystem name"
+	  RTWFileNameOpts	  "Use subsystem name"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "IPTd_tm_CSDChaTimeTotal"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    2
+	    PropagatedSignals	    "IPTd_c_CSDOptEnergy"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    3
+	    PropagatedSignals	    "IPTd_enum_CSDChagrNum"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    4
+	    PropagatedSignals	    "IPTd_flg_CSDRX"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  System {
+	    Name		    "FCM_CSD_250ms"
+	    Location		    [2, 82, 1702, 1027]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "158"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_tm_CSDChaTimeTotal"
+	      SID		      1205
+	      Position		      [165, 213, 195, 227]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_c_CSDOptEnergy"
+	      SID		      1206
+	      Position		      [165, 288, 195, 302]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_enum_CSDChagrNum"
+	      SID		      1207
+	      Position		      [165, 368, 195, 382]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_flg_CSDRX"
+	      SID		      1208
+	      Position		      [165, 453, 195, 467]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "CAN to Actual Value1"
+	      SID		      1209
+	      Ports		      [1, 1]
+	      Position		      [365, 275, 510, 315]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[GAIN=%<gain>]\\n[OFFSET=%<offset>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/CAN to Actual Value"
+	      SourceType	      "Value Conversion"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      gain		      "0.1"
+	      offset		      "0"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_c_CSDOptEnergy"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "CAN to Actual Value2"
+	      SID		      1210
+	      Ports		      [1, 1]
+	      Position		      [365, 355, 510, 395]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[GAIN=%<gain>]\\n[OFFSET=%<offset>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/CAN to Actual Value"
+	      SourceType	      "Value Conversion"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      gain		      "1"
+	      offset		      "1"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "saturation1"
+	      SID		      1211
+	      Ports		      [1, 1]
+	      Position		      [780, 200, 925, 240]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[UPPER_LIMIT=%<upper_limit>]\\n[LOWER_LIMIT=%<lower_limit>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/saturation"
+	      SourceType	      "saturation"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      upper_limit	      "600"
+	      lower_limit	      "0"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_tm_CSDChaTimeTotal"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "saturation2"
+	      SID		      1212
+	      Ports		      [1, 1]
+	      Position		      [780, 355, 925, 395]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[UPPER_LIMIT=%<upper_limit>]\\n[LOWER_LIMIT=%<lower_limit>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/saturation"
+	      SourceType	      "saturation"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      upper_limit	      "100"
+	      lower_limit	      "0"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_enum_CSDChagrNum"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "signal_debug12"
+	      SID		      1213
+	      Ports		      [1, 1]
+	      Position		      [580, 440, 725, 480]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[SWITCH=%<debug_switch>]\\n[VALUE=%<debug_value>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/signal_debug"
+	      SourceType	      "signal debug"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      debug_switch	      "IPTc_dbgsw_CSDRX"
+	      debug_value	      "IPTc_dbgval_CSDRX"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_flg_CSDRX"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "signal_debug2"
+	      SID		      1214
+	      Ports		      [1, 1]
+	      Position		      [580, 355, 725, 395]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[SWITCH=%<debug_switch>]\\n[VALUE=%<debug_value>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/signal_debug"
+	      SourceType	      "signal debug"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      debug_switch	      "IPTc_dbgsw_CSDChagrNum"
+	      debug_value	      "IPTc_dbgval_CSDChagrNum"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_tm_CSDChaTimeTotal"
+	      SID		      1215
+	      Position		      [1115, 213, 1145, 227]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_c_CSDOptEnergy"
+	      SID		      1216
+	      Position		      [1115, 288, 1145, 302]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_enum_CSDChagrNum"
+	      SID		      1217
+	      Position		      [1115, 368, 1145, 382]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_flg_CSDRX"
+	      SID		      1218
+	      Position		      [1115, 453, 1145, 467]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "HLd_flg_CSDRX"
+	      SrcPort		      1
+	      DstBlock		      "signal_debug12"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_flg_CSDRX"
+	      Labels		      [0, 0]
+	      SrcBlock		      "signal_debug12"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_flg_CSDRX"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_enum_CSDChagrNum"
+	      Labels		      [0, 0]
+	      SrcBlock		      "saturation2"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_enum_CSDChagrNum"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_c_CSDOptEnergy"
+	      Labels		      [0, 0]
+	      SrcBlock		      "CAN to Actual Value1"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_c_CSDOptEnergy"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "signal_debug2"
+	      SrcPort		      1
+	      DstBlock		      "saturation2"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_tm_CSDChaTimeTotal"
+	      Labels		      [0, 0]
+	      SrcBlock		      "saturation1"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_tm_CSDChaTimeTotal"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "CAN to Actual Value2"
+	      SrcPort		      1
+	      DstBlock		      "signal_debug2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "HLd_tm_CSDChaTimeTotal"
+	      SrcPort		      1
+	      DstBlock		      "saturation1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "HLd_enum_CSDChagrNum"
+	      SrcPort		      1
+	      DstBlock		      "CAN to Actual Value2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "HLd_c_CSDOptEnergy"
+	      SrcPort		      1
+	      DstBlock		      "CAN to Actual Value1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "FCM_CST_10ms"
+	  SID			  1219
+	  Ports			  [12, 12]
+	  Position		  [2030, 361, 2430, 764]
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Reusable function"
+	  RTWFcnNameOpts	  "Use subsystem name"
+	  RTWFileNameOpts	  "Use subsystem name"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "IPTd_enum_CSTBMSChaStopResn1"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    2
+	    PropagatedSignals	    "IPTd_enum_CSTBMSChaStopResn2"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    3
+	    PropagatedSignals	    "IPTd_enum_CSTBMSChaStopResn3"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    4
+	    PropagatedSignals	    "IPTd_enum_CSTBMSChaFailResn1"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    5
+	    PropagatedSignals	    "IPTd_enum_CSTBMSChaFailResn2"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    6
+	    PropagatedSignals	    "IPTd_enum_CSTBMSChaFailResn3"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    7
+	    PropagatedSignals	    "IPTd_enum_CSTBMSChaFailResn4"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    8
+	    PropagatedSignals	    "IPTd_enum_CSTBMSChaFailResn5"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    9
+	    PropagatedSignals	    "IPTd_enum_CSTBMSChaFailResn6"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    10
+	    PropagatedSignals	    "IPTd_enum_CSTBMSChaErrResn1"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    11
+	    PropagatedSignals	    "IPTd_enum_CSTBMSChaErrResn2"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    12
+	    PropagatedSignals	    "IPTd_flg_CSTRX"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  System {
+	    Name		    "FCM_CST_10ms"
+	    Location		    [2, 82, 1702, 1027]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_enum_CSTBMSChaStopResn1"
+	      SID		      1220
+	      Position		      [345, 28, 375, 42]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_enum_CSTBMSChaStopResn2"
+	      SID		      1221
+	      Position		      [345, 108, 375, 122]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"HLd_enum_CSTBMSChaStopResn2"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_enum_CSTBMSChaStopResn3"
+	      SID		      1222
+	      Position		      [345, 188, 375, 202]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"HLd_enum_CSTBMSChaStopResn3"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_enum_CSTBMSChaFailResn1"
+	      SID		      1223
+	      Position		      [345, 268, 375, 282]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"HLd_enum_CSTBMSChaFailResn1"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_enum_CSTBMSChaFailResn2"
+	      SID		      1224
+	      Position		      [345, 343, 375, 357]
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_enum_CSTBMSChaFailResn3"
+	      SID		      1225
+	      Position		      [345, 418, 375, 432]
+	      Port		      "6"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"HLd_enum_CSTBMSChaFailResn3"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_enum_CSTBMSChaFailResn4"
+	      SID		      1226
+	      Position		      [345, 493, 375, 507]
+	      Port		      "7"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_enum_CSTBMSChaFailResn5"
+	      SID		      1227
+	      Position		      [345, 568, 375, 582]
+	      Port		      "8"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_enum_CSTBMSChaFailResn6"
+	      SID		      1228
+	      Position		      [345, 643, 375, 657]
+	      Port		      "9"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"HLd_enum_CSTBMSChaFailResn6"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_enum_CSTBMSChaErrResn1"
+	      SID		      1229
+	      Position		      [345, 713, 375, 727]
+	      Port		      "10"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_enum_CSTBMSChaErrResn2"
+	      SID		      1230
+	      Position		      [345, 788, 375, 802]
+	      Port		      "11"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_flg_CSTRX"
+	      SID		      1231
+	      Position		      [345, 878, 375, 892]
+	      Port		      "12"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "signal_debug1"
+	      SID		      1232
+	      Ports		      [1, 1]
+	      Position		      [750, 15, 895, 55]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[SWITCH=%<debug_switch>]\\n[VALUE=%<debug_value>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/signal_debug"
+	      SourceType	      "signal debug"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      debug_switch	      "IPTc_dbgsw_CSTBMSChaStopResn1"
+	      debug_value	      "IPTc_dbgval_CSTBMSChaStopResn1"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_enum_CSTBMSChaStopResn1"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "signal_debug10"
+	      SID		      1233
+	      Ports		      [1, 1]
+	      Position		      [750, 700, 895, 740]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[SWITCH=%<debug_switch>]\\n[VALUE=%<debug_value>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/signal_debug"
+	      SourceType	      "signal debug"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      debug_switch	      "IPTc_dbgsw_CSTBMSChaErrResn1"
+	      debug_value	      "IPTc_dbgval_CSTBMSChaErrResn1"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_enum_CSTBMSChaErrResn1"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "signal_debug11"
+	      SID		      1234
+	      Ports		      [1, 1]
+	      Position		      [750, 775, 895, 815]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[SWITCH=%<debug_switch>]\\n[VALUE=%<debug_value>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/signal_debug"
+	      SourceType	      "signal debug"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      debug_switch	      "IPTc_dbgsw_CSTBMSChaErrResn2"
+	      debug_value	      "IPTc_dbgval_CSTBMSChaErrResn2"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_enum_CSTBMSChaErrResn2"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "signal_debug12"
+	      SID		      1235
+	      Ports		      [1, 1]
+	      Position		      [750, 865, 895, 905]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[SWITCH=%<debug_switch>]\\n[VALUE=%<debug_value>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/signal_debug"
+	      SourceType	      "signal debug"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      debug_switch	      "IPTc_dbgsw_CSTRX"
+	      debug_value	      "IPTc_dbgval_CSTRX"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_flg_CSTRX"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "signal_debug2"
+	      SID		      1236
+	      Ports		      [1, 1]
+	      Position		      [750, 255, 895, 295]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[SWITCH=%<debug_switch>]\\n[VALUE=%<debug_value>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/signal_debug"
+	      SourceType	      "signal debug"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      debug_switch	      "IPTc_dbgsw_CSTBMSChaFailResn1"
+	      debug_value	      "IPTc_dbgval_CSTBMSChaFailResn1"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_enum_CSTBMSChaFailResn1"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "signal_debug3"
+	      SID		      1237
+	      Ports		      [1, 1]
+	      Position		      [750, 95, 895, 135]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[SWITCH=%<debug_switch>]\\n[VALUE=%<debug_value>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/signal_debug"
+	      SourceType	      "signal debug"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      debug_switch	      "IPTc_dbgsw_CSTBMSChaStopResn2"
+	      debug_value	      "IPTc_dbgval_CSTBMSChaStopResn2"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_enum_CSTBMSChaStopResn2"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "signal_debug4"
+	      SID		      1238
+	      Ports		      [1, 1]
+	      Position		      [750, 330, 895, 370]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[SWITCH=%<debug_switch>]\\n[VALUE=%<debug_value>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/signal_debug"
+	      SourceType	      "signal debug"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      debug_switch	      "IPTc_dbgsw_CSTBMSChaFailResn2"
+	      debug_value	      "IPTc_dbgval_CSTBMSChaFailResn2"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_enum_CSTBMSChaFailResn2"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "signal_debug5"
+	      SID		      1239
+	      Ports		      [1, 1]
+	      Position		      [750, 405, 895, 445]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[SWITCH=%<debug_switch>]\\n[VALUE=%<debug_value>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/signal_debug"
+	      SourceType	      "signal debug"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      debug_switch	      "IPTc_dbgsw_CSTBMSChaFailResn3"
+	      debug_value	      "IPTc_dbgval_CSTBMSChaFailResn3"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_enum_CSTBMSChaFailResn3"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "signal_debug6"
+	      SID		      1240
+	      Ports		      [1, 1]
+	      Position		      [750, 480, 895, 520]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[SWITCH=%<debug_switch>]\\n[VALUE=%<debug_value>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/signal_debug"
+	      SourceType	      "signal debug"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      debug_switch	      "IPTc_dbgsw_CSTBMSChaFailResn4"
+	      debug_value	      "IPTc_dbgval_CSTBMSChaFailResn4"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_enum_CSTBMSChaFailResn4"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "signal_debug7"
+	      SID		      1241
+	      Ports		      [1, 1]
+	      Position		      [750, 175, 895, 215]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[SWITCH=%<debug_switch>]\\n[VALUE=%<debug_value>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/signal_debug"
+	      SourceType	      "signal debug"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      debug_switch	      "IPTc_dbgsw_CSTBMSChaStopResn3"
+	      debug_value	      "IPTc_dbgval_CSTBMSChaStopResn3"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_enum_CSTBMSChaStopResn3"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "signal_debug8"
+	      SID		      1242
+	      Ports		      [1, 1]
+	      Position		      [750, 555, 895, 595]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[SWITCH=%<debug_switch>]\\n[VALUE=%<debug_value>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/signal_debug"
+	      SourceType	      "signal debug"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      debug_switch	      "IPTc_dbgsw_CSTBMSChaFailResn5"
+	      debug_value	      "IPTc_dbgval_CSTBMSChaFailResn5"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_enum_CSTBMSChaFailResn5"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "signal_debug9"
+	      SID		      1243
+	      Ports		      [1, 1]
+	      Position		      [750, 630, 895, 670]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[SWITCH=%<debug_switch>]\\n[VALUE=%<debug_value>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/signal_debug"
+	      SourceType	      "signal debug"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      debug_switch	      "IPTc_dbgsw_CSTBMSChaFailResn6"
+	      debug_value	      "IPTc_dbgval_CSTBMSChaFailResn6"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_enum_CSTBMSChaFailResn6"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_enum_CSTBMSChaStopResn1"
+	      SID		      1244
+	      Position		      [1150, 28, 1180, 42]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_enum_CSTBMSChaStopResn2"
+	      SID		      1245
+	      Position		      [1150, 108, 1180, 122]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_enum_CSTBMSChaStopResn3"
+	      SID		      1246
+	      Position		      [1150, 188, 1180, 202]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_enum_CSTBMSChaFailResn1"
+	      SID		      1247
+	      Position		      [1150, 268, 1180, 282]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_enum_CSTBMSChaFailResn2"
+	      SID		      1248
+	      Position		      [1150, 343, 1180, 357]
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_enum_CSTBMSChaFailResn3"
+	      SID		      1249
+	      Position		      [1150, 418, 1180, 432]
+	      Port		      "6"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_enum_CSTBMSChaFailResn4"
+	      SID		      1250
+	      Position		      [1150, 493, 1180, 507]
+	      Port		      "7"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_enum_CSTBMSChaFailResn5"
+	      SID		      1251
+	      Position		      [1150, 568, 1180, 582]
+	      Port		      "8"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_enum_CSTBMSChaFailResn6"
+	      SID		      1252
+	      Position		      [1150, 643, 1180, 657]
+	      Port		      "9"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_enum_CSTBMSChaErrResn1"
+	      SID		      1253
+	      Position		      [1150, 713, 1180, 727]
+	      Port		      "10"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_enum_CSTBMSChaErrResn2"
+	      SID		      1254
+	      Position		      [1150, 788, 1180, 802]
+	      Port		      "11"
+	      IconDisplay	      "Port number"
+	      DataType		      "uint8"
+	      OutDataTypeStr	      "uint8"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_flg_CSTRX"
+	      SID		      1255
+	      Position		      [1150, 878, 1180, 892]
+	      Port		      "12"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "HLd_flg_CSTRX"
+	      SrcPort		      1
+	      DstBlock		      "signal_debug12"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_flg_CSTRX"
+	      Labels		      [0, 0]
+	      SrcBlock		      "signal_debug12"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_flg_CSTRX"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "HLd_enum_CSTBMSChaErrResn2"
+	      SrcPort		      1
+	      DstBlock		      "signal_debug11"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_enum_CSTBMSChaErrResn2"
+	      Labels		      [0, 0]
+	      SrcBlock		      "signal_debug11"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_enum_CSTBMSChaErrResn2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "HLd_enum_CSTBMSChaErrResn1"
+	      SrcPort		      1
+	      DstBlock		      "signal_debug10"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_enum_CSTBMSChaErrResn1"
+	      Labels		      [0, 0]
+	      SrcBlock		      "signal_debug10"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_enum_CSTBMSChaErrResn1"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_enum_CSTBMSChaFailResn6"
+	      Labels		      [0, 0]
+	      SrcBlock		      "signal_debug9"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_enum_CSTBMSChaFailResn6"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_enum_CSTBMSChaFailResn5"
+	      Labels		      [0, 0]
+	      SrcBlock		      "signal_debug8"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_enum_CSTBMSChaFailResn5"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_enum_CSTBMSChaFailResn4"
+	      Labels		      [0, 0]
+	      SrcBlock		      "signal_debug6"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_enum_CSTBMSChaFailResn4"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_enum_CSTBMSChaFailResn3"
+	      Labels		      [0, 0]
+	      SrcBlock		      "signal_debug5"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_enum_CSTBMSChaFailResn3"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_enum_CSTBMSChaFailResn2"
+	      Labels		      [0, 0]
+	      SrcBlock		      "signal_debug4"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_enum_CSTBMSChaFailResn2"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_enum_CSTBMSChaFailResn1"
+	      Labels		      [0, 0]
+	      SrcBlock		      "signal_debug2"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_enum_CSTBMSChaFailResn1"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "HLd_enum_CSTBMSChaFailResn6"
+	      SrcPort		      1
+	      DstBlock		      "signal_debug9"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "HLd_enum_CSTBMSChaFailResn5"
+	      SrcPort		      1
+	      DstBlock		      "signal_debug8"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "HLd_enum_CSTBMSChaFailResn4"
+	      SrcPort		      1
+	      DstBlock		      "signal_debug6"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "HLd_enum_CSTBMSChaFailResn3"
+	      SrcPort		      1
+	      DstBlock		      "signal_debug5"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "HLd_enum_CSTBMSChaFailResn2"
+	      SrcPort		      1
+	      DstBlock		      "signal_debug4"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "HLd_enum_CSTBMSChaFailResn1"
+	      SrcPort		      1
+	      DstBlock		      "signal_debug2"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_enum_CSTBMSChaStopResn3"
+	      Labels		      [0, 0]
+	      SrcBlock		      "signal_debug7"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_enum_CSTBMSChaStopResn3"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_enum_CSTBMSChaStopResn2"
+	      Labels		      [0, 0]
+	      SrcBlock		      "signal_debug3"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_enum_CSTBMSChaStopResn2"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "HLd_enum_CSTBMSChaStopResn3"
+	      SrcPort		      1
+	      DstBlock		      "signal_debug7"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "HLd_enum_CSTBMSChaStopResn2"
+	      SrcPort		      1
+	      DstBlock		      "signal_debug3"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "HLd_enum_CSTBMSChaStopResn1"
+	      SrcPort		      1
+	      DstBlock		      "signal_debug1"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_enum_CSTBMSChaStopResn1"
+	      Labels		      [0, 0]
+	      SrcBlock		      "signal_debug1"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_enum_CSTBMSChaStopResn1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "FCM_CTS_500ms"
+	  SID			  1256
+	  Ports			  [7, 7]
+	  Position		  [625, 529, 1025, 791]
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Reusable function"
+	  RTWFcnNameOpts	  "Use subsystem name"
+	  RTWFileNameOpts	  "Use subsystem name"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "IPTd_second_CTSTimeSynInfor"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    2
+	    PropagatedSignals	    "IPTd_minute_CTSTimeSynInfor"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    3
+	    PropagatedSignals	    "IPTd_hour_CTSTimeSynInfor"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    4
+	    PropagatedSignals	    "IPTd_day_CTSTimeSynInfor"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    5
+	    PropagatedSignals	    "IPTd_month_CTSTimeSynInfor"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    6
+	    PropagatedSignals	    "IPTd_year_CTSTimeSynInfor"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    7
+	    PropagatedSignals	    "IPTd_flg_CTSRX"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  System {
+	    Name		    "FCM_CTS_500ms"
+	    Location		    [2, 82, 1902, 1027]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "145"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_second_CTSTimeSynInfor"
+	      SID		      1257
+	      Position		      [190, 33, 220, 47]
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"HLd_second_CTSTimeSynInfor"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_minute_CTSTimeSynInfor"
+	      SID		      1258
+	      Position		      [190, 133, 220, 147]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"HLd_minute_CTSTimeSynInfor"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_hour_CTSTimeSynInfor"
+	      SID		      1259
+	      Position		      [190, 233, 220, 247]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"HLd_hour_CTSTimeSynInfor"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_day_CTSTimeSynInfor"
+	      SID		      1260
+	      Position		      [190, 333, 220, 347]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"HLd_day_CTSTimeSynInfor"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_month_CTSTimeSynInfor"
+	      SID		      1261
+	      Position		      [190, 423, 220, 437]
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"HLd_month_CTSTimeSynInfor"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_year_CTSTimeSynInfor"
+	      SID		      1262
+	      Position		      [190, 508, 220, 522]
+	      Port		      "6"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"HLd_year_CTSTimeSynInfor"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "HLd_flg_CTSRX"
+	      SID		      1263
+	      Position		      [190, 593, 220, 607]
+	      Port		      "7"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "debounce"
+	      SID		      1326
+	      Ports		      [1, 1]
+	      Position		      [345, 580, 490, 620]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[DEBOUNCE_TIME=%<debounce_time>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/debounce"
+	      SourceType	      "debounce"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      debounce_time	      "30"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "saturation1"
+	      SID		      1264
+	      Ports		      [1, 1]
+	      Position		      [545, 20, 690, 60]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[UPPER_LIMIT=%<upper_limit>]\\n[LOWER_LIMIT=%<lower_limit>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/saturation"
+	      SourceType	      "saturation"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      upper_limit	      "60"
+	      lower_limit	      "0"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_second_CTSTimeSynInfor"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "saturation2"
+	      SID		      1265
+	      Ports		      [1, 1]
+	      Position		      [545, 220, 690, 260]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[UPPER_LIMIT=%<upper_limit>]\\n[LOWER_LIMIT=%<lower_limit>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/saturation"
+	      SourceType	      "saturation"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      upper_limit	      "24"
+	      lower_limit	      "0"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_hour_CTSTimeSynInfor"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "saturation3"
+	      SID		      1266
+	      Ports		      [1, 1]
+	      Position		      [545, 120, 690, 160]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[UPPER_LIMIT=%<upper_limit>]\\n[LOWER_LIMIT=%<lower_limit>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/saturation"
+	      SourceType	      "saturation"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      upper_limit	      "60"
+	      lower_limit	      "0"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_minute_CTSTimeSynInfor"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "saturation4"
+	      SID		      1267
+	      Ports		      [1, 1]
+	      Position		      [545, 320, 690, 360]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[UPPER_LIMIT=%<upper_limit>]\\n[LOWER_LIMIT=%<lower_limit>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/saturation"
+	      SourceType	      "saturation"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      upper_limit	      "31"
+	      lower_limit	      "0"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_day_CTSTimeSynInfor"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "saturation5"
+	      SID		      1268
+	      Ports		      [1, 1]
+	      Position		      [545, 410, 690, 450]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[UPPER_LIMIT=%<upper_limit>]\\n[LOWER_LIMIT=%<lower_limit>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/saturation"
+	      SourceType	      "saturation"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      upper_limit	      "12"
+	      lower_limit	      "0"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_month_CTSTimeSynInfor"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "saturation6"
+	      SID		      1269
+	      Ports		      [1, 1]
+	      Position		      [545, 495, 690, 535]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[UPPER_LIMIT=%<upper_limit>]\\n[LOWER_LIMIT=%<lower_limit>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/saturation"
+	      SourceType	      "saturation"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      upper_limit	      "2235"
+	      lower_limit	      "1985"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_year_CTSTimeSynInfor"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "signal_debug2"
+	      SID		      1270
+	      Ports		      [1, 1]
+	      Position		      [545, 580, 690, 620]
+	      BackgroundColor	      "cyan"
+	      ShowName		      off
+	      AttributesFormatString  "[SWITCH=%<debug_switch>]\\n[VALUE=%<debug_value>]"
+	      LibraryVersion	      "1.158"
+	      SourceBlock	      "Defined_Functionality/signal_debug"
+	      SourceType	      "signal debug"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      debug_switch	      "IPTc_dbgsw_CTSRX"
+	      debug_value	      "IPTc_dbgval_CTSRX"
+	      Port {
+		PortNumber		1
+		Name			"IPTd_flg_CTSRX"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_second_CTSTimeSynInfor"
+	      SID		      1271
+	      Position		      [900, 33, 930, 47]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_minute_CTSTimeSynInfor"
+	      SID		      1272
+	      Position		      [900, 133, 930, 147]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_hour_CTSTimeSynInfor"
+	      SID		      1273
+	      Position		      [900, 233, 930, 247]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_day_CTSTimeSynInfor"
+	      SID		      1274
+	      Position		      [900, 333, 930, 347]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_month_CTSTimeSynInfor"
+	      SID		      1275
+	      Position		      [900, 423, 930, 437]
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_year_CTSTimeSynInfor"
+	      SID		      1276
+	      Position		      [900, 508, 930, 522]
+	      Port		      "6"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IPTd_flg_CTSRX"
+	      SID		      1277
+	      Position		      [890, 593, 920, 607]
+	      Port		      "7"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "debounce"
+	      SrcPort		      1
+	      DstBlock		      "signal_debug2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "HLd_flg_CTSRX"
+	      SrcPort		      1
+	      DstBlock		      "debounce"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_flg_CTSRX"
+	      Labels		      [0, 0]
+	      SrcBlock		      "signal_debug2"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_flg_CTSRX"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_year_CTSTimeSynInfor"
+	      Labels		      [0, 0]
+	      SrcBlock		      "saturation6"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_year_CTSTimeSynInfor"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "HLd_year_CTSTimeSynInfor"
+	      SrcPort		      1
+	      DstBlock		      "saturation6"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_day_CTSTimeSynInfor"
+	      Labels		      [0, 0]
+	      SrcBlock		      "saturation4"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_day_CTSTimeSynInfor"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_month_CTSTimeSynInfor"
+	      Labels		      [0, 0]
+	      SrcBlock		      "saturation5"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_month_CTSTimeSynInfor"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "HLd_month_CTSTimeSynInfor"
+	      SrcPort		      1
+	      DstBlock		      "saturation5"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "HLd_day_CTSTimeSynInfor"
+	      SrcPort		      1
+	      DstBlock		      "saturation4"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_hour_CTSTimeSynInfor"
+	      Labels		      [0, 0]
+	      SrcBlock		      "saturation2"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_hour_CTSTimeSynInfor"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "HLd_hour_CTSTimeSynInfor"
+	      SrcPort		      1
+	      DstBlock		      "saturation2"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_minute_CTSTimeSynInfor"
+	      Labels		      [0, 0]
+	      SrcBlock		      "saturation3"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_minute_CTSTimeSynInfor"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "HLd_minute_CTSTimeSynInfor"
+	      SrcPort		      1
+	      DstBlock		      "saturation3"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IPTd_second_CTSTimeSynInfor"
+	      Labels		      [0, 0]
+	      SrcBlock		      "saturation1"
+	      SrcPort		      1
+	      DstBlock		      "IPTd_second_CTSTimeSynInfor"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "HLd_second_CTSTimeSynInfor"
+	      SrcPort		      1
+	      DstBlock		      "saturation1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From10"
+	  SID			  1278
+	  Position		  [1645, 1399, 1810, 1421]
+	  ShowName		  off
+	  GotoTag		  "IPTd_flg_CTSRX"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "IPTd_flg_CTSRX"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From11"
+	  SID			  1279
+	  Position		  [1645, 1429, 1810, 1451]
+	  ShowName		  off
+	  GotoTag		  "IPTd_flg_CMLRX"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "IPTd_flg_CMLRX"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From12"
+	  SID			  1280
+	  Position		  [1645, 1459, 1810, 1481]
+	  ShowName		  off
+	  GotoTag		  "IPTd_flg_CRORX"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "IPTd_flg_CRORX"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From13"
+	  SID			  1281
+	  Position		  [1645, 1489, 1810, 1511]
+	  ShowName		  off
+	  GotoTag		  "IPTd_flg_CCSRX"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "IPTd_flg_CCSRX"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From14"
+	  SID			  1282
+	  Position		  [1645, 1519, 1810, 1541]
+	  ShowName		  off
+	  GotoTag		  "IPTd_flg_CSTRX"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "IPTd_flg_CSTRX"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From15"
+	  SID			  1283
+	  Position		  [1645, 1549, 1810, 1571]
+	  ShowName		  off
+	  GotoTag		  "IPTd_flg_CSDRX"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "IPTd_flg_CSDRX"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From16"
+	  SID			  1284
+	  Position		  [1645, 1579, 1810, 1601]
+	  ShowName		  off
+	  GotoTag		  "IPTd_flg_CEMRX"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "IPTd_flg_CEMRX"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From9"
+	  SID			  1285
+	  Position		  [1645, 1369, 1810, 1391]
+	  ShowName		  off
+	  GotoTag		  "IPTd_flg_CRMRX"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "IPTd_flg_CRMRX"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto10"
+	  SID			  1286
+	  Position		  [1260, 1064, 1440, 1086]
+	  ShowName		  off
+	  GotoTag		  "IPTd_flg_CRORX"
+	  TagVisibility		  "local"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto11"
+	  SID			  1287
+	  Position		  [1260, 1254, 1440, 1276]
+	  ShowName		  off
+	  GotoTag		  "IPTd_flg_CCSRX"
+	  TagVisibility		  "local"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto13"
+	  SID			  1288
+	  Position		  [2865, 940, 3070, 960]
+	  ShowName		  off
+	  GotoTag		  "IPTd_flg_CSDRX"
+	  TagVisibility		  "local"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto14"
+	  SID			  1289
+	  Position		  [2865, 1315, 3070, 1335]
+	  ShowName		  off
+	  GotoTag		  "IPTd_flg_CEMRX"
+	  TagVisibility		  "local"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto15"
+	  SID			  1290
+	  Position		  [2865, 745, 3075, 765]
+	  ShowName		  off
+	  GotoTag		  "IPTd_flg_CSTRX"
+	  TagVisibility		  "local"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto6"
+	  SID			  1291
+	  Position		  [1260, 459, 1445, 481]
+	  ShowName		  off
+	  GotoTag		  "IPTd_flg_CRMRX"
+	  TagVisibility		  "local"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto8"
+	  SID			  1292
+	  Position		  [1260, 754, 1440, 776]
+	  ShowName		  off
+	  GotoTag		  "IPTd_flg_CTSRX"
+	  TagVisibility		  "local"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto9"
+	  SID			  1293
+	  Position		  [1260, 944, 1445, 966]
+	  ShowName		  off
+	  GotoTag		  "IPTd_flg_CMLRX"
+	  TagVisibility		  "local"
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator"
+	  SID			  1294
+	  Position		  [1260, 425, 1280, 445]
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator1"
+	  SID			  1295
+	  Position		  [1260, 545, 1280, 565]
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator2"
+	  SID			  1296
+	  Position		  [1260, 580, 1280, 600]
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator3"
+	  SID			  1297
+	  Position		  [1260, 615, 1280, 635]
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator4"
+	  SID			  1298
+	  Position		  [1260, 650, 1280, 670]
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator5"
+	  SID			  1299
+	  Position		  [1260, 685, 1280, 705]
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator6"
+	  SID			  1300
+	  Position		  [1260, 720, 1280, 740]
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator7"
+	  SID			  1301
+	  Position		  [1260, 390, 1280, 410]
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator8"
+	  SID			  1302
+	  Position		  [2865, 905, 2885, 925]
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "IPTd_enum_CRMRecgResult"
+	  SID			  1303
+	  Position		  [1260, 358, 1290, 372]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "IPTd_v_CMLChagrMaxOptVolt"
+	  SID			  1304
+	  Position		  [1260, 843, 1290, 857]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "IPTd_v_CMLChagrMinOptVolt"
+	  SID			  1305
+	  Position		  [1260, 878, 1290, 892]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "IPTd_i_CMLChagrMaxOptCur"
+	  SID			  1306
+	  Position		  [1260, 913, 1290, 927]
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "IPTd_enum_CROChagrOptReady"
+	  SID			  1307
+	  Position		  [1260, 1028, 1290, 1042]
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "IPTd_v_CCSChagrOptVolt"
+	  SID			  1308
+	  Position		  [1260, 1153, 1290, 1167]
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "IPTd_i_CCSChagrOptCur"
+	  SID			  1309
+	  Position		  [1260, 1188, 1290, 1202]
+	  Port			  "7"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "IPTd_tm_CCSChaTimeTotal"
+	  SID			  1310
+	  Position		  [1260, 1223, 1290, 1237]
+	  Port			  "8"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "IPTd_enum_CSTChaStopFailResn"
+	  SID			  1311
+	  Position		  [2865, 538, 2895, 552]
+	  Port			  "9"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "IPTd_tm_CSDChaTimeTotal"
+	  SID			  1312
+	  Position		  [2865, 838, 2895, 852]
+	  Port			  "10"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "IPTd_c_CSDOptEnergy"
+	  SID			  1313
+	  Position		  [2865, 873, 2895, 887]
+	  Port			  "11"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "IPTd_enum_CEMTimeOver"
+	  SID			  1314
+	  Position		  [2880, 1158, 2910, 1172]
+	  Port			  "12"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "IPTd_flg_RX"
+	  SID			  1315
+	  Position		  [2865, 1478, 2895, 1492]
+	  Port			  "13"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "HLd_flg_CEMRX"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CEM_250ms"
+	  DstPort		  8
+	}
+	Line {
+	  SrcBlock		  "HLd_flg_CSDRX"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CSD_250ms"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "HLd_flg_CSTRX"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CST_10ms"
+	  DstPort		  12
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "HLd_flg_CCSRX"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CCS_50ms"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "HLd_flg_CRORX"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CRO_250ms"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "HLd_flg_CMLRX"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CML_250ms"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "HLd_flg_CTSRX"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CTS_500ms"
+	  DstPort		  7
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "HLd_flg_CRMRX"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CRM_250ms"
+	  DstPort		  4
+	}
+	Line {
+	  Name			  "IPTd_enum_CSTChaStopFailResn"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nCreator1"
+	  SrcPort		  1
+	  DstBlock		  "IPTd_enum_CSTChaStopFailResn"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "IPTd_enum_CEMTimeOver"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nCreator2"
+	  SrcPort		  1
+	  DstBlock		  "IPTd_enum_CEMTimeOver"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CST_10ms"
+	  SrcPort		  11
+	  DstBlock		  "Bus\nCreator1"
+	  DstPort		  11
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CST_10ms"
+	  SrcPort		  10
+	  DstBlock		  "Bus\nCreator1"
+	  DstPort		  10
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CST_10ms"
+	  SrcPort		  9
+	  DstBlock		  "Bus\nCreator1"
+	  DstPort		  9
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CST_10ms"
+	  SrcPort		  8
+	  DstBlock		  "Bus\nCreator1"
+	  DstPort		  8
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CST_10ms"
+	  SrcPort		  7
+	  DstBlock		  "Bus\nCreator1"
+	  DstPort		  7
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CST_10ms"
+	  SrcPort		  6
+	  DstBlock		  "Bus\nCreator1"
+	  DstPort		  6
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CST_10ms"
+	  SrcPort		  5
+	  DstBlock		  "Bus\nCreator1"
+	  DstPort		  5
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CST_10ms"
+	  SrcPort		  4
+	  DstBlock		  "Bus\nCreator1"
+	  DstPort		  4
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CST_10ms"
+	  SrcPort		  3
+	  DstBlock		  "Bus\nCreator1"
+	  DstPort		  3
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CST_10ms"
+	  SrcPort		  2
+	  DstBlock		  "Bus\nCreator1"
+	  DstPort		  2
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CST_10ms"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator1"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "IPTd_flg_RX"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nCreator"
+	  SrcPort		  1
+	  DstBlock		  "IPTd_flg_RX"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "From16"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator"
+	  DstPort		  8
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "From15"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator"
+	  DstPort		  7
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "From14"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator"
+	  DstPort		  6
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "From13"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator"
+	  DstPort		  5
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "From12"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator"
+	  DstPort		  4
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "From11"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator"
+	  DstPort		  3
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "From10"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator"
+	  DstPort		  2
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "From9"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CEM_250ms"
+	  SrcPort		  8
+	  DstBlock		  "Goto14"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CSD_250ms"
+	  SrcPort		  4
+	  DstBlock		  "Goto13"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CST_10ms"
+	  SrcPort		  12
+	  DstBlock		  "Goto15"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CCS_50ms"
+	  SrcPort		  4
+	  DstBlock		  "Goto11"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CRO_250ms"
+	  SrcPort		  2
+	  DstBlock		  "Goto10"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CEM_250ms"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator2"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CEM_250ms"
+	  SrcPort		  2
+	  DstBlock		  "Bus\nCreator2"
+	  DstPort		  2
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CEM_250ms"
+	  SrcPort		  3
+	  DstBlock		  "Bus\nCreator2"
+	  DstPort		  3
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CEM_250ms"
+	  SrcPort		  4
+	  DstBlock		  "Bus\nCreator2"
+	  DstPort		  4
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CEM_250ms"
+	  SrcPort		  5
+	  DstBlock		  "Bus\nCreator2"
+	  DstPort		  5
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CEM_250ms"
+	  SrcPort		  6
+	  DstBlock		  "Bus\nCreator2"
+	  DstPort		  6
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CEM_250ms"
+	  SrcPort		  7
+	  DstBlock		  "Bus\nCreator2"
+	  DstPort		  7
+	}
+	Line {
+	  SrcBlock		  "HLd_enum_CEMBRMTmOver3921"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CEM_250ms"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "HLd_enum_CEMBRMTmOver3922"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CEM_250ms"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "HLd_enum_CEMBRMTmOver3923"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CEM_250ms"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "HLd_enum_CEMBRMTmOver3924"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CEM_250ms"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "HLd_enum_CEMBRMTmOver3925"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CEM_250ms"
+	  DstPort		  5
+	}
+	Line {
+	  SrcBlock		  "HLd_enum_CEMBRMTmOver3926"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CEM_250ms"
+	  DstPort		  6
+	}
+	Line {
+	  SrcBlock		  "HLd_enum_CEMBRMTmOver3927"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CEM_250ms"
+	  DstPort		  7
+	}
+	Line {
+	  SrcBlock		  "HLd_tm_CSDChaTimeTotal"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CSD_250ms"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "HLd_c_CSDOptEnergy"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CSD_250ms"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "HLd_enum_CSDChagrNum"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CSD_250ms"
+	  DstPort		  3
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CSD_250ms"
+	  SrcPort		  3
+	  DstBlock		  "Terminator8"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CSD_250ms"
+	  SrcPort		  2
+	  DstBlock		  "IPTd_c_CSDOptEnergy"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CSD_250ms"
+	  SrcPort		  1
+	  DstBlock		  "IPTd_tm_CSDChaTimeTotal"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "HLd_enum_CSTBMSChaErrResn2"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CST_10ms"
+	  DstPort		  11
+	}
+	Line {
+	  SrcBlock		  "HLd_enum_CSTBMSChaErrResn1"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CST_10ms"
+	  DstPort		  10
+	}
+	Line {
+	  SrcBlock		  "HLd_enum_CSTBMSChaFailResn6"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CST_10ms"
+	  DstPort		  9
+	}
+	Line {
+	  SrcBlock		  "HLd_enum_CSTBMSChaFailResn5"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CST_10ms"
+	  DstPort		  8
+	}
+	Line {
+	  SrcBlock		  "HLd_enum_CSTBMSChaFailResn4"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CST_10ms"
+	  DstPort		  7
+	}
+	Line {
+	  SrcBlock		  "HLd_enum_CSTBMSChaFailResn3"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CST_10ms"
+	  DstPort		  6
+	}
+	Line {
+	  SrcBlock		  "HLd_enum_CSTBMSChaFailResn2"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CST_10ms"
+	  DstPort		  5
+	}
+	Line {
+	  SrcBlock		  "HLd_enum_CSTBMSChaFailResn1"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CST_10ms"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "HLd_enum_CSTBMSChaStopResn3"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CST_10ms"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "HLd_enum_CSTBMSChaStopResn2"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CST_10ms"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "HLd_enum_CSTBMSChaStopResn1"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CST_10ms"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CCS_50ms"
+	  SrcPort		  3
+	  DstBlock		  "IPTd_tm_CCSChaTimeTotal"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CCS_50ms"
+	  SrcPort		  2
+	  DstBlock		  "IPTd_i_CCSChagrOptCur"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CCS_50ms"
+	  SrcPort		  1
+	  DstBlock		  "IPTd_v_CCSChagrOptVolt"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "HLd_tm_CCSChaTimeTotal"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CCS_50ms"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "HLd_i_CCSChagrOptCur"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CCS_50ms"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "HLd_v_CCSChagrOptVolt"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CCS_50ms"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "HLd_enum_CROChagrOptReady"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CRO_250ms"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CRO_250ms"
+	  SrcPort		  1
+	  DstBlock		  "IPTd_enum_CROChagrOptReady"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CML_250ms"
+	  SrcPort		  1
+	  DstBlock		  "IPTd_v_CMLChagrMaxOptVolt"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CML_250ms"
+	  SrcPort		  2
+	  DstBlock		  "IPTd_v_CMLChagrMinOptVolt"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CML_250ms"
+	  SrcPort		  3
+	  DstBlock		  "IPTd_i_CMLChagrMaxOptCur"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "HLd_v_CMLChagrMaxOptVolt"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CML_250ms"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "HLd_v_CMLChagrMinOptVolt"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CML_250ms"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "HLd_i_CMLChagrMaxOptCur"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CML_250ms"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "HLd_year_CTSTimeSynInfor"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CTS_500ms"
+	  DstPort		  6
+	}
+	Line {
+	  SrcBlock		  "HLd_month_CTSTimeSynInfor"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CTS_500ms"
+	  DstPort		  5
+	}
+	Line {
+	  SrcBlock		  "HLd_day_CTSTimeSynInfor"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CTS_500ms"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "HLd_hour_CTSTimeSynInfor"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CTS_500ms"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "HLd_minute_CTSTimeSynInfor"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CTS_500ms"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "HLd_second_CTSTimeSynInfor"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CTS_500ms"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CRM_250ms"
+	  SrcPort		  3
+	  DstBlock		  "Terminator"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CRM_250ms"
+	  SrcPort		  2
+	  DstBlock		  "Terminator7"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CRM_250ms"
+	  SrcPort		  1
+	  DstBlock		  "IPTd_enum_CRMRecgResult"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "HLd_num_CRMChagrAreaCode"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CRM_250ms"
+	  DstPort		  3
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "HLd_enum_CRMChagrSerNum"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CRM_250ms"
+	  DstPort		  2
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "HLd_enum_CRMRecgResult"
+	  SrcPort		  1
+	  DstBlock		  "FCM_CRM_250ms"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CML_250ms"
+	  SrcPort		  4
+	  DstBlock		  "Goto9"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CTS_500ms"
+	  SrcPort		  6
+	  DstBlock		  "Terminator6"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CTS_500ms"
+	  SrcPort		  5
+	  DstBlock		  "Terminator5"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CTS_500ms"
+	  SrcPort		  4
+	  DstBlock		  "Terminator4"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CTS_500ms"
+	  SrcPort		  3
+	  DstBlock		  "Terminator3"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CTS_500ms"
+	  SrcPort		  2
+	  DstBlock		  "Terminator2"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CTS_500ms"
+	  SrcPort		  1
+	  DstBlock		  "Terminator1"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CTS_500ms"
+	  SrcPort		  7
+	  DstBlock		  "Goto8"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "FCM_CRM_250ms"
+	  SrcPort		  4
+	  DstBlock		  "Goto6"
+	  DstPort		  1
+	}
+	Annotation {
+	  Name			  "$Author:Sun Sijun$\n$Date:2015/10/29$\n$Revision:1.0$"
+	  Position		  [1566, 164]
+	}
+	Annotation {
+	  Position		  [2205, 702]
+	}
+      }
+    }
+  }
+}
