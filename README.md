@@ -4,5 +4,6 @@
 [Hongwei Du] 
 
 
-<img src="figs/BMS-interface.jpg" width="600">
-<img src="figs/电池管理系统硬件框图.png" width="600">
+<img src="figs/BMS-interface.jpg" width="300">
+
+<img src="figs/电池管理系统硬件框图.png" width="300">
